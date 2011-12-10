@@ -1,0 +1,114 @@
+<?php
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function scheduler_form_alter(&$form, $form_state, $form_id) {
+  // Csak node form-okra.
+  if ($form['#id'] == 'node-form'/* && user_access('administer nodes')*/) {
+    $node = &$form['#node'];
+
+    // Használjuk a jQuery UI Datepicker controlt.
+    drupal_add_css(drupal_get_path('module', 'scheduler') .'/ui.datepicker.css');
+    drupal_add_js(drupal_get_path('module', 'scheduler') .'/ui.datepicker.js');
+    drupal_add_js(drupal_get_path('module', 'scheduler') .'/scheduler.js');
+    
+    // Értékek betöltése, ha a node már létezik.
+    $publish = FALSE;
+    if (!empty($node->publish_on)) {
+      $publish = $node->publish_on;
+    }
+    elseif (($node->nid > 0) && ($defaults = db_fetch_object(db_query('SELECT publish_on FROM {scheduler} WHERE nid = %d', $node->nid)))) {
+      $publish = $defaults->publish_on;
+    }
+    if ($form['#post']['publish_on']) {
+      // Post információ megőrzése.
+      $publish = $form['#post']['publish_on'];
+    }
+    
+    $form['options']['#collapsed'] = $publish ? FALSE : $form['options']['#collapsed'];
+    $form['options']['publish_on'] = array(
+      '#type' => 'textfield', 
+      '#title' => 'Időzített közzététel', 
+      '#maxlength' => 25,
+      '#default_value' => $publish ? format_date($publish, 'custom', 'Y-m-d H:i:s O') : '',
+      '#description' => strtr('Formátum: %time. Üresen hagyva törölhető az érték.', array('%time' => format_date(time(), 'custom', 'Y-m-d H:i:s O'))),
+      '#weight' => 20,
+    );
+  }
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function scheduler_nodeapi(&$node, $op, $teaser = NULL, $page = NULL) {
+  if (!is_numeric($node->publish_on)) {
+    $node->publish_on = strtotime($node->publish_on);
+  }
+
+  switch ($op) {
+    case 'validate':
+      // Ha később akarják közétenni, most még nem szabad.
+      if (!empty($node->publish_on)) {
+        $node->status = 0;
+        if (!is_numeric($node->publish_on) || ($node->publish_on < time())) {
+          form_set_error('publish_on', 'Az időzítés időpontja jövőbeli dátum kell legyen.');
+        }
+      }
+      break;
+    
+    case 'insert':
+      if (!empty($node->publish_on)) {
+        db_query('INSERT INTO {scheduler} (nid, publish_on) VALUES (%d, %d)', $node->nid, $node->publish_on);
+      }
+      break;
+
+    case 'update':
+      $exists = db_result(db_query('SELECT nid FROM {scheduler} WHERE nid = %d', $node->nid));
+	
+      // Ehhez már volt meglévő rekord.
+      if ($exists) {
+        if (empty($node->publish_on)) {
+          // Törölte a user.
+          db_query('DELETE FROM {scheduler} WHERE nid = %d', $node->nid);
+        }
+        else {
+          // Átírta a user.
+          db_query('UPDATE {scheduler} SET publish_on = %d WHERE nid = %d', $node->publish_on, $node->nid);
+        }
+      }
+      // Új rekord, ha később kell közzétenni.
+      elseif (!empty($node->publish_on)) {
+        db_query('INSERT INTO {scheduler} (nid, publish_on) VALUES (%d, %d)', $node->nid, $node->publish_on);
+      }
+      break;
+
+    case 'delete':
+      // Mindenképpen törlés.
+      db_query('DELETE FROM {scheduler} WHERE nid = %d', $node->nid);
+      break;
+  }
+}
+
+/**
+ * Implementation of hook_cron().
+ */
+function scheduler_cron() {
+  $clear_cache = FALSE;
+  
+  // Közzéteendő tartalmak.
+  $nodes = db_query('SELECT n.*, s.publish_on FROM {scheduler} s LEFT JOIN {node} n ON s.nid = n.nid WHERE n.status = 0 AND s.publish_on > 0 AND s.publish_on < %d', time());
+  
+  while ($node = db_fetch_object($nodes)) {
+    db_query('UPDATE {node} SET created = %d, changed = %d, status = 1 WHERE nid = %d', $node->publish_on, $node->publish_on, $node->nid);
+    db_query('DELETE FROM {scheduler} WHERE nid = %d', $node->nid);
+    db_query('TRUNCATE TABLE cache_block');
+    watchdog('content', check_plain($node->type) .': '. check_plain($node->title) .' időzített közzététele.', WATCHDOG_NOTICE, l(t('view'), 'node/'. $node->nid));
+    $clear_cache = TRUE;
+  }
+  
+  // Minden cache törlése, hogy lássák az új tartalmakat.
+  if ($clear_cache) {
+    cache_clear_all();
+  }
+}

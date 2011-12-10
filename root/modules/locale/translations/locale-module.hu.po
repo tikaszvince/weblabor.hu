@@ -1,0 +1,344 @@
+# $Id: locale-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/locale/locale.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: locale.module,v 1.155 2006/12/27 13:11:59 drumm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-10 23:34+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/locale/locale.module:22
+msgid ""
+"The locale module allows you to present your Drupal site in a language other "
+"than the default English. You can use it to set up a multi-lingual web site "
+"or replace given <em>built-in</em> text with text which has been customized "
+"for your site. Whenever the locale module encounters text which needs to be "
+"displayed, it tries to translate it into the currently selected language. If "
+"a translation is not available, then the string is remembered, so you can "
+"look up untranslated strings easily."
+msgstr ""
+"A nyelvek modul lehetővé teszi, hogy a webhely az alapértelmezett angoltól "
+"eltérő nyelven jelenjen meg. Használható többnyelvű webhelyek létrehozására, "
+"vagy arra, hogy a Drupal részét képező beépített szövegek, üzenetek helyett "
+"saját, a webhelyhez igazított változat kerüljön megjelenítésre. Bámikor, "
+"amikor a nyelvek modul megjelenítendő szöveget talál, megpróbálja azt az "
+"éppen kiválsztott nyelvre lefordítani. Ha a fordítás nem áll rendelkezésre, "
+"a karaktersorozatot megjegyzi a rendszer, így könnyen visszakereshetők a "
+"lefordítatlan szövegek."
+
+#: modules/locale/locale.module:23
+msgid ""
+"The locale module provides two options for providing translations. The first "
+"is the integrated web interface, via which you can search for untranslated "
+"strings, and specify their translations. An easier and less time-consuming "
+"method is to import existing translations for your language. These "
+"translations are available as <em>GNU gettext Portable Object files</em> "
+"(<em>.po</em> files for short). Translations for many languages are "
+"available for download from the translation page."
+msgstr ""
+"A Drupal nyelvek modulja kétféle lehetőséget biztosít a fordításra. Az egyik "
+"a beépített webes szerkesztői felület, amelyen lehetőségünk van megkeresni a "
+"lefordítatlan karaktersorozatokat és egy egyszerű űrlap segítségével megadni "
+"a fordításukat. Könnyebb és kevésbé időigényes módszer egy már kész fordítás "
+"importálása. A kész fordítások <em>GNU Gettext Portable Object fájlok</em> "
+"(röviden <em>.po</em> fájlok) formájában érhetők el. A legtöbb nyelvhez a "
+"fordítás letölthető a drupal.org fordítás (translation) oldaláról. A magyar "
+"fordítások elérhetők a drupal.hu webhelyen."
+
+#: modules/locale/locale.module:24
+msgid ""
+"If an existing translation does not meet your needs, the <em>.po</em> files "
+"are easily edited with special editing tools. The locale module's import "
+"feature allows you to add strings from such files into your site's database. "
+"The export functionality enables you to share your translations with others, "
+"generating Portable Object files from your site strings."
+msgstr ""
+"Ha egy meglevő fordítás valamiért nem felelne meg, a <em>.po</em> fájlok egy "
+"erre a célra alkalmas szövegszerkesztővel könnyen átírhatók. Az import opció "
+"lehetőséget ad arra, hogy a nyelvi adatbázisba importáljuk az így "
+"elkészített fordításokat. Az export funkcióval a webhely "
+"karaktersorozataiból Portable Object fájlok készíthetők, így másokkal is "
+"megoszthatjuk a fordításunkat."
+
+#: modules/locale/locale.module:25
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@locale\">Locale page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@locale"
+"\">nyelvek kezeléséről szóló oldalán található</a>."
+
+#: modules/locale/locale.module:29
+msgid ""
+"<p>Drupal provides support for the translation of its interface text into "
+"different languages. This page provides an overview of the installed "
+"languages. You can add a language on the <a href=\"@add-language\">add "
+"language page</a>, or directly by <a href=\"@import\">importing a "
+"translation</a>. If multiple languages are enabled, registered users will be "
+"able to set their preferred language. The site default will be used for "
+"anonymous visitors and for users without their own settings.</p><p>Drupal "
+"interface translations may be added or extended by several courses: by <a "
+"href=\"@import\">importing</a> an existing translation, by <a href=\"@search"
+"\">translating everything</a> from scratch, or by a combination of these "
+"approaches.</p>"
+msgstr ""
+"<p>A Drupal lehetővé teszi, hogy a felhasználói felületét az eredeti "
+"angolról más nyelvekre fordítsuk. Ezen ez oldalon a jelenleg telepített "
+"nyelvek áttekintése látható. További nyelvek a <a href=\"@add-language"
+"\">nyelv hozzáadása</a> oldalon vagy közvetlenül a fordítás <a href=\"@import"
+"\">importálásán</a> keresztül adhatók hozzá a rendszerhez. Ha több nyelv is "
+"engedélyezett, a belépett felhasználók maguk választhatnak közülük. A "
+"webhely látogatói, és akik nem állítottak be nyelvet maguknak, az "
+"alapértelmezett nyelvet fogják használni.</p><p>Több lehetőség is kínálkozik "
+"a felhasználói felület fordítására: <a href=\"@import\">importálható</a> egy "
+"már létező fordítás, vagy <a href=\"@search\">a karaktersorozatokat "
+"egyenként</a>, magunk fordíthatjuk, de alkalmazható a két megközelítés "
+"együttesen is.</p>"
+
+#: modules/locale/locale.module:31
+msgid ""
+"You need to add all languages in which you would like to display the site "
+"interface. If you can't find the desired language in the quick-add dropdown, "
+"then you will need to provide the proper language code yourself. The "
+"language code may be used to negotiate with browsers and to present flags, "
+"etc., so it is important to pick a code that is standardised for the desired "
+"language. You can also add a language by <a href=\"@import\">importing a "
+"translation</a>."
+msgstr ""
+"Itt lehet megadni azokat a nyelveket, amelyeket a felhasználói felületen "
+"használni szeretnénk. Amennyiben a kívánt nyelv nem szerepel a gyors "
+"hozzáadást lehetővé tevő listán, akkor a megfelelő nyelv adatait kézzel kell "
+"megadni. A nyelv kódja hasznos lehet a böngészők számára, és nyelvválasztást "
+"lehetővé tevő zászlók biztosításakor, ezért lényeges a szabványos kód "
+"használata. Új nyelvet úgy is hozzá lehet adni, hogy <a href=\"@import"
+"\">fordítást importálunk</a> egy a rendszerben még nem szereplő nyelven."
+
+#: modules/locale/locale.module:33
+msgid ""
+"This page allows you to import a translation provided in the gettext "
+"Portable Object (.po) format. The easiest way to get your site translated is "
+"to obtain an existing Drupal translation and to import it. You can find "
+"existing translations on the <a href=\"@url\">Drupal translation page</a>. "
+"Note that importing a translation file might take a while."
+msgstr ""
+"Ezen az oldalon lehetőség van Gettext Portable Object (.po) formátumú "
+"fordítások importálására. Legegyszerűbben úgy lehet újabb nyelvi támogatást "
+"létrehozni, hogy egy már létező Drupal fordítást szerzünk be, majd azt saját "
+"rendszerünkbe importáljuk. Kész fordítások letölthetőek a <a href=\"@url"
+"\">Drupal fordítások</a> weboldalról is. A fordítás importálása hosszú időt "
+"vehet igénybe!"
+
+#: modules/locale/locale.module:35
+msgid ""
+"This page allows you to export Drupal strings. The first option is to export "
+"a translation so it can be shared. The second option generates a translation "
+"template, which contains all Drupal strings, but without their translations. "
+"You can use this template to start a new translation using various software "
+"packages designed for this task."
+msgstr ""
+"Ezen az oldalon lehetőségünk van webhelyünk felületének karaktersorozatait "
+"exportálni. Az első opciót választva a már lefordított karaktersorozatokat "
+"lehet exportálni és így másoknak továbbadni. A második opciót választva egy "
+"fordítási sablon hozható létre, amely fordítás nélkül tartalmazza az eredeti "
+"Drupal karaktersorozatokat. Ez a sablon használható speciális alkalmazások "
+"segítségével új fordítások elkészítéséhez."
+
+#: modules/locale/locale.module:37
+msgid ""
+"It is often convenient to get the strings from your setup on the <a href="
+"\"@export\">export page</a>, and use a desktop Gettext translation editor to "
+"edit the translations. On this page you can search in the translated and "
+"untranslated strings, and the default English texts provided by Drupal."
+msgstr ""
+"Általában célszerű a webhely karaktersorozatait <a href=\"@export"
+"\">exportálnunk</a>, majd külön Gettext program segítségével szerkesztenünk, "
+"és újból importálnunk a változásokat. Ezen az oldalon azonban lehetőségünk "
+"van arra, hogy keressünk a lefordított, a fordítatlan, valamint az eredeti "
+"angol nyelvű Drupal változat karaktersorozatai között, és egyenként "
+"szerkesszük azokat."
+
+#: modules/locale/locale.module:51
+msgid "Localization"
+msgstr "Nyelvek"
+
+#: modules/locale/locale.module:52
+msgid "Configure site localization and user interface translation."
+msgstr "A webhely által biztosított felület nyelvek beállítása."
+
+#: modules/locale/locale.module:58
+msgid "Manage languages"
+msgstr "Nyelvek kezelése"
+
+#: modules/locale/locale.module:63
+msgid "Manage strings"
+msgstr "Karaktersorozatok kezelése"
+
+#: modules/locale/locale.module:107
+msgid "Edit string"
+msgstr "Karaktersorozat szerkesztése"
+
+#: modules/locale/locale.module:113
+msgid "Delete string"
+msgstr "Karaktersorozat törlése"
+
+#: modules/locale/locale.module:142
+msgid "Interface language settings"
+msgstr "A felhasználói felület nyelvi beállítása"
+
+#: modules/locale/locale.module:149
+msgid ""
+"Selecting a different locale will change the interface language of the site."
+msgstr "Eltérő nyelv választása megváltoztatja a webhely felületének nyelvét."
+
+#: modules/locale/locale.module:314
+msgid "The English locale cannot be deleted."
+msgstr "A beépített angol nyelv nem távolítható el."
+
+#: modules/locale/locale.module:326
+msgid "Are you sure you want to delete the language %name?"
+msgstr "„%name” nyelv biztosan törölhető?"
+
+#: modules/locale/locale.module:326
+msgid ""
+"Deleting a language will remove all data associated with it. This action "
+"cannot be undone."
+msgstr ""
+"A törlés a nyelvet és minden hozzátartozó adatot is érint. A művelet nem "
+"visszavonható."
+
+#: modules/locale/locale.module:338
+msgid "The language %locale has been removed."
+msgstr "„%locale” nyelv eltávolítva."
+
+#: modules/locale/locale.module:128
+msgid "administer locales"
+msgstr "nyelvek adminisztrációja"
+
+#: modules/locale/locale.module:0
+msgid "January"
+msgstr "január"
+
+#: modules/locale/locale.module:0
+msgid "Jan"
+msgstr "jan"
+
+#: modules/locale/locale.module:0
+msgid "February"
+msgstr "február"
+
+#: modules/locale/locale.module:0
+msgid "Feb"
+msgstr "feb"
+
+#: modules/locale/locale.module:0
+msgid "March"
+msgstr "március"
+
+#: modules/locale/locale.module:0
+msgid "Mar"
+msgstr "már"
+
+#: modules/locale/locale.module:0
+msgid "April"
+msgstr "április"
+
+#: modules/locale/locale.module:0
+msgid "Apr"
+msgstr "ápr"
+
+#: modules/locale/locale.module:0;0
+msgid "May"
+msgstr "május"
+
+#: modules/locale/locale.module:0
+msgid "June"
+msgstr "június"
+
+#: modules/locale/locale.module:0
+msgid "Jun"
+msgstr "jún"
+
+#: modules/locale/locale.module:0
+msgid "July"
+msgstr "július"
+
+#: modules/locale/locale.module:0
+msgid "Jul"
+msgstr "júl"
+
+#: modules/locale/locale.module:0
+msgid "August"
+msgstr "augusztus"
+
+#: modules/locale/locale.module:0
+msgid "Aug"
+msgstr "aug"
+
+#: modules/locale/locale.module:0
+msgid "September"
+msgstr "szeptember"
+
+#: modules/locale/locale.module:0
+msgid "Sep"
+msgstr "szep"
+
+#: modules/locale/locale.module:0
+msgid "October"
+msgstr "október"
+
+#: modules/locale/locale.module:0
+msgid "Oct"
+msgstr "okt"
+
+#: modules/locale/locale.module:0
+msgid "November"
+msgstr "november"
+
+#: modules/locale/locale.module:0
+msgid "Nov"
+msgstr "nov"
+
+#: modules/locale/locale.module:0
+msgid "December"
+msgstr "december"
+
+#: modules/locale/locale.module:0
+msgid "Dec"
+msgstr "dec"
+
+#: modules/locale/locale.module:0;0
+msgid "Thu"
+msgstr "cs"
+
+#: modules/locale/locale.module:0
+msgid "Fri"
+msgstr "p"
+
+#: modules/locale/locale.module:0
+msgid "Sat"
+msgstr "szo"
+
+#: modules/locale/locale.module:0
+msgid "Sun"
+msgstr "v"
+
+#: modules/locale/locale.module:0
+msgid "Mon"
+msgstr "h"
+
+#: modules/locale/locale.module:0
+msgid "Tue"
+msgstr "k"
+
+#: modules/locale/locale.module:0
+msgid "Wed"
+msgstr "sze"

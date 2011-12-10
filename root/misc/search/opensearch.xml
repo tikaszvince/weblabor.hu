@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <ShortName>Weblabor (Google)</ShortName>
+ <Description>Weblabor keresés (Google)</Description>
+ <Tags>Web Development</Tags>
+ <Contact>info-remove-this@weblabor.hu</Contact> 
+ <Image height="16" width="16" type="image/gif">http://weblabor.hu/misc/search/weblabor.gif</Image> 
+ <Url type="text/html" template="http://google.com/search?q={searchTerms}&amp;sitesearch=weblabor.hu&amp;domains=weblabor.hu&amp;ie=UTF-8&amp;oe=UTF-8"/>
+</OpenSearchDescription>

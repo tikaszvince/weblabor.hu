@@ -1,0 +1,1285 @@
+/**
+ * Weblabor.hu design, Copyright 2008.
+ */
+
+/**
+ * Főoldal elrendezés.
+ */
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0;
+  background: #333 url(images/backstripe.gif);
+  line-height: 1.45em;
+}
+#page {
+  position: relative;
+  width: 961px;
+  margin: auto;
+  background: url(images/contentback.png) repeat-y;
+  color:#000;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+body.no-sidebars #page {
+  background: #fff;
+  color:#000;
+}
+body.no-sidebars #content {
+  width:941px;
+}
+body.page-wide #page {
+  background: url(images/contentback-wide.png) repeat-y;
+}
+#sidebar-right,
+#sidebar-left {
+  padding: 0 10px 10px 10px;
+  float: right;
+  background-color: #EEEECC; /* contentback.png szín */
+  width: 179px;
+  margin-left: 1px;
+}
+#content {
+  float: left;
+  width: 541px;
+  padding: 13px 10px;
+  background-color: #fff;
+}
+body.page-wide #content {
+  width: 741px;
+}
+#header {
+  background: url(images/wlheader.png) no-repeat;
+  height: 148px;
+  position: relative;
+  width: 961px; /* #page szélesség */
+}
+#header-region {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 128px;
+  width: 180px;
+  background: #000 url(images/headwide.png);
+  color: #fff;
+  padding: 10px;
+}
+#footer {
+  font-size: 0.8em;
+  background-color: #3d3d3d;
+  padding: 0.5em 0.5em 1em 0.5em;
+  margin-top: 3em;
+  clear: both;
+}
+
+/**
+ * Lábléc elemek.
+ */
+#footer {
+  color: #fff;
+  line-height: 1.6em;
+}
+#footer a {
+  color: #fff;
+}
+#footer #licence-issn {
+  float: right;
+  color: #fff;
+}
+#footer #hosting-logo {
+  float: left;
+  padding-right: 0.5em;
+}
+
+/**
+ * Oldalsáv elemek (és kereső mező).
+ */
+.block {
+  padding-bottom: 1em;
+  font-size: 0.9em;
+}
+.block h2 {
+  color: #333;
+  border-bottom: 1px solid #666;
+  font-size: 1.4em;
+  margin-top: 13px;
+}
+
+.block .content {
+  margin: 0 0 0.5em 0;
+  padding-top: 0.3em;
+  overflow: hidden;
+}
+
+.sidebar .block a {
+  text-decoration: none;
+}
+.sidebar .block a:hover {
+  text-decoration: underline;
+}
+.sidebar .block .more-link a {
+  font-weight: bold;
+}
+#block-pages-search .content {
+  padding-top: 0;
+}
+#block-pages-search h2 {
+  display: none;
+}
+#block-pages-search .form-text {
+  border: 1px solid #7e6850;
+  width: 178px;
+  background-color: #f6e7d8;
+}
+#block-pages-search .form-submit {
+  float: right;
+}
+#block-pages-search a {
+  float: left;
+  color: #dee039; /* fejléc linkek színe */
+}
+#block-tagadelic-12 .content {
+  text-align: justify;
+  line-height: 1.6em;
+}
+#block-blogmark-0 div.item-list ul li, #block-wlarticle-0 div.item-list ul li {
+  list-style-type: none;
+  padding: 0 0 0.6em 0;
+  margin-left: 0.8em;
+}
+#block-blogmark-0 div.item-list ul li a, #block-wlarticle-0 div.item-list ul li a {
+  font-weight: bold;
+}
+#block-blogmark-0 div.item-list ul li a.comment-count {
+  font-weight: normal;
+}
+#block-wlarticle-0 div.item-list ul li {
+    text-align:center;
+}
+
+/**
+ * Twitter widget
+ */
+
+#block-wltwitter-0 {
+}
+
+#block-wltwitter-0 p {
+    overflow: hidden;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ddd;
+}
+
+#block-wltwitter-0 q:before,
+#block-wltwitter-0 q:after {
+    content: '';
+}
+
+#block-wltwitter-0 .url {
+    float: right;
+    background: none;
+    padding: 3px 0 0 3px;
+    margin-left: .2em;
+}
+
+#block-wltwitter-0 .published {
+    font-size: 0.85em;
+    white-space: pre;
+    display: block;
+}
+
+#block-wltwitter-0 .twitter-user {
+    font-weight: bold;
+    font-style: normal;
+}
+#block-wltwitter-0 a.link-external {
+    padding-right: 0;
+    background: transparent;
+}
+
+/**
+ * Fejléc elemek.
+ */
+#header h1 {
+  margin: 0;
+  padding: 0;
+}
+#header h1 a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px; /* A képen lévő logóra állítva */
+  width: 114px;
+  height: 110px;
+  text-indent: -800px;
+}
+#header #userpanel {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  font-size: 0.9em;
+}
+#header #userpanel a {
+  color: #dee039; /* fejléc linkek színe */
+}
+#header #pagenav {
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  padding: 0.6em;
+  background-color: #000;
+  font-size: 0.9em;
+}
+#header #pagenav ul {
+  margin: 0;
+}
+#header #pagenav ul li {
+  display: inline;
+  background: none;
+  padding: 0;
+  margin-left: 1.4em;
+}
+#header #pagenav ul li a, #header #pagenav ul li {
+  color: white;
+  text-decoration: none;
+}
+#header #pagenav ul li a:hover {
+  text-decoration: underline;
+}
+#header #pagenav ul li a.active {
+  color: #dee039; /* fejléc linkek színe */
+  font-size: 1.1em;
+}
+
+/**
+ * Linkek általában.
+ */
+a, a:link, a:active, a:visited {
+  text-decoration: underline;
+  color: #036; /* kék */
+}
+a:visited {
+  color: #7a3434; /* barna */
+}
+a.link-external {
+  padding-right: 12px;
+  background: transparent url(images/link-external.gif) no-repeat right center;
+}
+#footer a.link-external {
+  background: none;
+  padding: 0;
+}
+
+/**
+ * Listák általában.
+ */
+ul {
+  margin: 0.5em 0 1em;
+  padding: 0;
+}
+ul li {
+  margin: 0.4em 0 0.4em 0.5em;
+}
+ul.menu, .item-list ul {
+  margin: 0.35em 0 0 -0.5em;
+  padding: 0;
+}
+ul.menu ul, .item-list ul ul {
+  margin-left: 0em;
+}
+ul li, ul.menu li, .item-list ul li {
+  margin: 0.15em 0 0.15em 1.5em;
+}
+ul li.leaf a, ul li.expanded a, ul li.collapsed a {
+  display: block;
+}
+ul.inline li {
+  background: none;
+  margin: 0;
+  padding: 0 1em 0 0;
+}
+fieldset ul.clear-block li {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+}
+
+/**
+ * Fülek.
+ */
+.tabs {
+  border-bottom: 1px dotted #adadad;
+  margin-bottom: 0.5em;
+}
+ul.primary, ul.primary li, ul.secondary, ul.secondary li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+ul.primary {
+  padding: 0.5em 0 10px;
+}
+ul.secondary {
+  margin-bottom: 0.5em;
+}
+ul.primary li a, ul.primary li.active a, ul.primary li a:hover, ul.primary li a:visited,
+ul.secondary li a, ul.secondary li.active a, ul.secondary li a:hover, ul.secondary li a:visited {
+  border: 0;
+  background: transparent;
+  padding: 4px 1em;
+  margin: 0 0 0 1px;
+  height: auto;
+  text-decoration: none;
+  position: relative;
+  top: -1px;
+}
+ul.primary li.active a, ul.primary li.active a:link, ul.primary li.active a:visited, ul.primary li a:hover,
+ul.secondary li.active a, ul.secondary li.active a:link, ul.secondary li.active a:visited, ul.secondary li a:hover {
+  background: url(images/bg-tab.png) repeat-x 0 50%;
+  color: #fff;
+}
+
+/**
+ * Collapsible fieldsets
+ */
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #d9eaf5;
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;
+}
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: .6em;
+}
+html.js fieldset.collapsible legend a {
+  padding-left: 2em;
+  background: url(images/menu-expanded.gif) no-repeat 0% 50%;
+}
+html.js fieldset.collapsed legend a {
+  background: url(images/menu-collapsed.gif) no-repeat 0% 50%;
+}
+
+/**
+ * Nodes
+ */
+.front .sticky {
+    background:#e8e1d9;
+    padding:.5em;
+}
+
+.node {
+  margin-bottom: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #ddd;
+}
+.node .title {
+  font-size: 1.9em;
+  font-weight: bold !important;
+  line-height: 1.1em;
+}
+.node .title a,
+.node .title a:link,
+.node .title a:active,
+.node .title a:visited {
+  text-decoration: none;
+  font-weight: normal;
+  color: #930;
+}
+.node .title a:hover {
+  text-decoration: underline;
+}
+div.links {
+  text-align: right;
+  font-weight: bold;
+}
+div.links a, div.tags a, .meta a {
+  text-decoration: none;
+}
+div.links a {
+  text-transform: lowercase;
+}
+div.links a:hover, div.tags a:hover, .meta a:hover {
+  text-decoration: underline;
+}
+div.links span.comment_comments,
+div.links li.comment_comments a,
+div.links li.comment_add a,
+div.links span.comment_forbidden {
+  padding-left: 20px;
+  background: url(images/comment.png) left top no-repeat;
+}
+div.links li.comment_comments a.comments-new {
+  background: none;
+  padding-left: 0;
+}
+div.links li.retweet a {
+  padding-left: 20px;
+  background: url(images/retweet.png) left top no-repeat;
+}
+.node .meta, .comment .meta {
+  padding: 0 0 0.5em 0.4em;
+}
+.node div.tags {
+  background: url(images/tag.png) left top no-repeat;
+  padding-left: 22px;
+  margin-bottom: .5em;
+}
+.node .content {
+  margin: 0 0 .5em 0;
+  padding-bottom: 0.8em;
+  font-size: 1.05em;
+  overflow: hidden; /* pl. /archive/all/1999 */
+}
+.node .content h3 {
+  clear: both;
+  font-weight: bold;
+}
+
+.node .content  h3.first {
+   clear: none;
+   margin-top: 0;
+}
+
+span.visitcount, a.statistics_counter {
+  color: #8d8d8d;
+}
+
+
+/**
+ * Comments
+ */
+div.comment {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  background-color: #e1d4c5;
+  margin: 1em 0;
+}
+div.comment.even {
+  background-color: #e8e1d9;
+}
+div.comment h3 {
+  margin: 0 0 0.1em 0;
+}
+div.comment h3 a {
+  text-decoration: none;
+}
+div.comment h3 a:hover {
+  text-decoration: underline;
+}
+div.comment div.links {
+  margin: 0.5em 0 0 0;
+}
+div.comment .commentnum {
+  float: right;
+  line-height: 0.8em;
+  font-size: 3em;
+  color: #fff;
+  font-weight: bold;
+}
+
+/**
+ * Admin Styles
+ */
+div.admin-panel,
+div.admin-panel .description,
+div.admin-panel .body,
+div.admin,
+div.admin .left,
+div.admin .right,
+div.admin .expert-link,
+div.item-list,
+.menu {
+  margin: 0;
+  padding: 0;
+}
+div.admin .left {
+  float: left;
+  width: 48%;
+}
+div.admin .right {
+  float: right;
+  width: 48%;
+}
+div.admin-panel {
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;
+  padding: 1em 1em 1.5em;
+  font-size: 0.9em;
+}
+div.admin-panel .description {
+  margin-bottom: 1.5em;
+}
+div.admin-panel dl {
+  margin: 0;
+}
+div.admin-panel dd {
+  color: #898989;
+  font-size: 0.92em;
+  line-height: 1.3em;
+  margin-top: -.2em;
+  margin-bottom: .65em;
+}
+table.system-status-report th {
+  border-color: #d3e7f4;
+}
+#autocomplete li.selected, tr.selected td, tr.selected td.active {
+  background: #027ac6;
+  color: #fff;
+}
+#autocomplete li {
+    margin: 0;
+    padding-left: 5px;
+}
+tr.selected td a:link, tr.selected td a:visited, tr.selected td a:active {
+  color: #d3e7f4;
+}
+
+
+blockquote {
+  font-style: italic;
+}
+
+q:before {
+    content: '„';
+}
+
+q:after {
+    content: '”';
+}
+
+
+pre {
+ font-size: 1.2em;
+ padding: 1em;
+ background: #eee;
+}
+li {
+ padding-bottom: .3em;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .25em;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+  font-weight: normal;
+  line-height: 1.1em;
+}
+h1 {
+  font-size: 2.1em;
+}
+h2 {
+  font-size: 1.9em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5, h6 {
+  font-size: 1em;
+}
+p {
+  margin: 0 0 .5em 0;
+}
+
+/*
+** Common declarations for child classes of node, comment, block, box etc
+*/
+.title {
+  margin: 0 0 .25em 0;
+}
+.messages {
+  padding: 0.3em;
+  margin: 0.5em 0em 0.5em 0em;
+}
+.status {
+  border: 1px solid #3a3;
+  color: #3a3;
+}
+.error, form-item input.error {
+  border: 1px solid red;
+  color: red;
+}
+
+/*
+ * Forms
+ */
+.form-text, textarea {
+  border: 1px solid #a3a3a3;
+}
+.form-item textarea {
+  font-size: 1.2em;
+}
+.form-item input.error, .form-item textarea.error {
+  border: 1px solid #c52020;
+  color: #494949;
+}
+
+/**
+ * Generic elements.
+ */
+.messages {
+  background-color: #fff;
+  border: 1px solid #b8d3e5;
+}
+/*.preview {
+  background-color: #fcfce8;
+  border: 1px solid #e5e58f;
+}*/
+div.status {
+  color: #3a3;
+  border-color: #c7f2c8;
+  background-image: url(images/information.png);
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  padding: 0.3em 0.3em 0.3em 30px;
+}
+div.error {
+  color: #c52020;
+  background-image: url(images/error.png);
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  padding: 0.3em 0.3em 0.3em 30px;
+}
+div.help {
+  font-size: 0.9em;
+  background: #ffffcc url(images/help.png) no-repeat 5px 5px;
+  border: 1px dashed #ffe666;
+  padding: 0.3em 0.3em 0.3em 30px;
+}
+div.help p {
+  margin: 0px;
+}
+
+/**
+ * Tables
+ */
+table {
+  margin: 1em 0;
+  width: 100%;
+}
+thead th {
+  border-bottom: 2px solid #d3e7f4;
+  color: #494949;
+  font-weight: bold;
+}
+th a:link, th a:visited {
+  color: #6f9dbd;
+}
+td, th {
+  padding: .3em .5em;
+}
+tr.even, tr.odd, tbody th {
+  border: solid #d3e7f4;
+  border-width: 1px 0;
+}
+tr.odd, tr.info {
+  background-color: #edf5fa;
+}
+tr.even {
+  background-color: #fff;
+}
+tr.odd td.active {
+  background-color: #ddecf5;
+}
+tr.even td.active {
+  background-color: #e6f1f7;
+}
+td.region, td.module, td.container {
+  border-top: 1.5em solid #fff;
+  border-bottom: 1px solid #b4d7f0;
+  background-color: #d4e7f3;
+  color: #455067;
+  font-weight: bold;
+}
+tr:first-child td.region, tr:first-child td.module, tr:first-child td.container {
+  border-top-width: 0;
+}
+
+/**
+ * Watchdog.module
+ */
+tr.watchdog-user {
+  background-color: #fcf9e5;
+}
+tr.watchdog-user td.active {
+  background-color: #fbf5cf;
+}
+tr.watchdog-content {
+  background-color: #fefefe;
+}
+tr.watchdog-content td.active {
+  background-color: #f5f5f5;
+}
+tr.watchdog-warning {
+  background-color: #fdf5e6;
+}
+tr.watchdog-warning td.active {
+  background-color: #fdf2de;
+}
+tr.watchdog-error {
+  background-color: #fbe4e4;
+}
+tr.watchdog-error td.active {
+  background-color: #fbdbdb;
+}
+tr.watchdog-page-not-found, tr.watchdog-access-denied {
+  background: #d7ffd7;
+}
+tr.watchdog-page-not-found td.active, tr.watchdog-access-denied td.active {
+  background: #c7eec7;
+}
+
+/**
+ * Status report colors.
+ */
+table.system-status-report tr.error, table.system-status-report tr.error th {
+  background-color: #fcc;
+  border-color: #ebb;
+  color: #200;
+}
+table.system-status-report tr.warning, table.system-status-report tr.warning th {
+  background-color: #ffd;
+  border-color: #eeb;
+}
+table.system-status-report tr.ok, table.system-status-report tr.ok th {
+  background-color: #dfd;
+  border-color: #beb;
+}
+
+/**
+ * Misc page styles
+ */
+#figure-ccsticker, #figure-rssicons, #logo-oreillyug, #logo-peachpitug {
+  float: right;
+  padding: 0 0 1em 1em;
+}
+.only-in-print {
+  display: none;
+}
+ul#sitemap a, ul#help-info a {
+  display: inline;
+}
+.marker {
+  width: 14px;
+  height: 14px;
+  text-indent: -20px;
+  overflow: hidden;
+  background: url(/sites/all/themes/wl/images/new.png);
+  float: right;
+  display: block;
+
+  /*background-color: #dee039;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 5px;
+  padding: 10px 3px 0;*/
+}
+.marker-comment {
+  background: url(/sites/all/themes/wl/images/newc.png);
+  /*background-color: green;*/
+}
+#tracker td {
+  vertical-align: top;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+#tracker td ul {
+  margin: 0 0 0 0.4em;
+}
+#tracker td li {
+  padding-bottom: 0;
+  font-size: 0.88em;
+}
+
+.jobcolumn {
+  width: 45%;
+  float: left;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+.jobcolumn ul li {
+  background: none;
+  padding: 0.6em;
+}
+.jobcolumn .odd {
+  background-color: #edf5fa;
+}
+.jobs-links {
+  font-weight: bold;
+  text-align: right;
+}
+
+.node.bookreview h3, .node.bookreview p {
+  font-size: 1em;
+}
+.node.bookreview .header h3, .node.bookreview .header p {
+  display: inline;
+}
+.node.bookreview p {
+  padding-left: 0.5em;
+}
+.node.bookreview .attach-file p {
+  display:block;
+  font-size: small;
+}
+.node.bookreview div.wrap {
+  padding-bottom: 0.5em;  
+}
+.node.bookreview .header {
+  background-color: #edf5fa;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.node.bookreview .header ul {
+  margin: 0;
+}
+
+#searchbox-inline {
+  margin: 1em;
+}
+#searchbox-inline .form-text {
+  width: 400px;
+}
+#searchbox-inline .form-submit {
+  margin-top: 3px;
+  font-weight: normal;
+}
+
+
+/**
+ * Attachment (and bbcode) styles
+ */
+.attach-right, .attach-list-right, .bb-comment-right {
+  float: right;
+  margin: 5px 0 5px 5px;
+}
+.attach-left, .attach-list-left, .bb-comment-left {
+  float: left;
+  margin: 5px 5px 5px 0;
+}
+.attach-left {
+    margin-right: 20px;
+}
+.attach-right {
+    margin-left: 20px;
+}
+.attach-center, .attach-list-center, .attach-album {
+  margin: 5px;
+  text-align: center;
+}
+.attach-file p, .attach-album p {
+  margin: 1px;
+  font-size: small;
+  text-align: center;
+}
+.attach-list p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.attach-file img, .attach-album img {
+  border: 1px solid #a5a5a5;
+  padding: 3px;
+}
+.attach-list {
+  border-top: 4px solid #ddd8af;
+  background-color: #e8e5ca;
+  padding: 0.8em;
+  width: 200px;
+}
+.attach-list .item-list ul li {
+  margin-left: 20px;
+}
+.attach-list h3 {
+  color: black;
+  font-size: 1em;
+}
+.attach-album div {
+  float: left;
+  margin: 2px;
+}
+.attach-album span {
+  display: block;
+  clear: both;
+  font-size: 1px;
+}
+.attach-icon {
+  float: left;
+  border: 1px solid #555555;
+  margin: 0 0.5em 0.5em 0;
+  padding: 1px;
+}
+
+ul#mlthread ul {
+  margin-left: 1em;
+}
+
+html.js input.form-inplace-sending {
+  height: 20px;
+  background-image: url(/misc/progress.gif);
+}
+
+/**
+ * User biographs (for authors)
+ */
+.userbio {
+  border-top: 1px solid #bbb;
+  background: #eee;
+  padding: 10px 30px 10px 30px;
+  margin: 10px 0 -5px 0;
+  clear: both;
+}
+* html .userbio {
+  height: 1%;
+}
+.userbio:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.userbio img {
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin: 0 10px 0 0;
+}
+.profile .userbio {
+  border: 1px solid #ccc;
+  padding: 10px;
+  float: right;
+  width: 270px;
+}
+.userbio h5 {
+  font-size: 1.2em;
+  display: inline;
+  margin-right: 1em;
+}
+
+/**
+ * Avatars
+ */
+a.wlavatar {
+  padding-left: 18px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+div.wlavatar label, div.wlavatar .description {
+  display: block;
+}
+div.wlavatar .option {
+  white-space: nowrap;
+}
+
+/**
+ * Mailing lists.
+ */
+#mailinglist-index table td {
+  text-align: center;
+  line-height: 2em;
+}
+.page-levlistak .maillists dt {
+  padding: 0.3em 0 0.5em 0;
+}
+.page-levlistak .maillists dd ul li {
+  background-image: none;
+}
+.page-levlistak .maillists dd ul {
+  padding: 0.5em 0;
+}
+
+/**
+ * Forums.
+ */
+#forum tr td.forum {
+  background-image: url(images/forum-default.png);
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  padding-left: 34px;
+}
+#forum #forum-0 tr td.forum {
+  padding-left: 25px;
+}
+
+/**
+ * Pagers.
+ */
+.item-list ul.pager li {
+  padding: 0;
+  margin: 0;
+}
+.item-list ul.pager li a {
+  text-decoration: none;
+  border: 1px solid #e5e5e5;
+  padding: 0.2em;
+  color: #036;
+}
+.item-list ul.pager li a:hover {
+  background-color: #036;
+  color: #fff;
+}
+
+/**
+ * Misc.
+ */
+/* Hide teaser role selector */
+#edit-teaser-include-wrapper {
+  display: none;
+}
+
+
+body.stripped {
+  background: #fff;
+  padding: 0 1em 1em 1em;
+}
+
+/* Archive calendar ---------------------------------------------------------------- */
+.block-archive table {
+    table-layout:fixed;
+}
+.block-archive table, .block-archive td.day-blank {
+	border: 1px solid #adadad;
+}
+.block-archive td {
+	background: #eec;
+	border: 1px solid #adadad;
+	text-align: center;
+	font-size: 0.9em;
+	padding: 0.2em 0.3em;
+}
+.block-archive td a {
+	font-weight: bold;
+}
+.block-archive .row-week td a:hover {
+	background-color: #a7c526;
+	color: #000;
+}
+.block-archive thead th {
+	border: none;
+}
+.block-archive tr.odd td.active,
+.block-archive tr.even td.active  {
+	background: #eec;
+}
+.block-archive caption {
+	margin-bottom: 0.3em;
+	font-size: 1.1em;
+}
+
+/* Source code --------------------------------------------------------- */
+
+div.bb-code-block {
+	clear: both;
+	display: block;
+	font-family: monospace;
+	margin: 0 5px 0 5px;
+	padding: 5px;
+	border: 1px solid #a5a5a5;
+	background: #d9d9d9 url(/sites/all/themes/wl/images/codebg.png);
+	color: #000;
+	overflow: auto;
+	font-size: 11px;
+	line-height: 14px;
+}
+.sourcecode pre {
+	clear: both;
+	display: block;
+	font-family: monospace;
+	margin: 15px 5px 15px 5px;
+	padding: 5px;
+	border: 1px solid #a5a5a5;
+	background: #d9d9d9 url(/sites/all/themes/wl/images/codebg.png);
+	overflow: auto;
+	font-size: 11px;
+	line-height: 14px;
+}
+.sourcecode-cmd pre {
+	background: #000;
+	color: #fff;
+	outline: 1px solid #000;
+	font-weight: bold;
+}
+.sourcecode-cmd code {
+	color: #fff;
+}
+* html .bb-code-block,
+* html  .sourcecode {
+	width: 95%;
+	overflow: scroll !important;
+}
+
+/* BB quotation ----------------------------------------------------------- */
+
+div.bb-quote {
+	margin: 0.5em 1.0em;
+}
+div.bb-quote-body {
+	background-image: url(/sites/all/themes/wl/images/quotes.gif);
+	background-repeat: no-repeat;
+	font-style: italic;
+	padding: 0.3em;
+	padding-left: 30px;
+}
+
+.bb-comment {
+	border-left: 4px solid #eabe10;
+	padding: 0.8em;
+	margin: 0.2em;
+	background-color: #fffcaf;
+}
+.bb-comment-left, .bb-comment-right {
+	width: 200px;
+}
+.bb-comment-center {
+	margin: 0 2em;
+}
+
+/* Tagadelic-custom ------------------------------------------------------- */
+
+.tagadelic.level1 {
+	color: #abc;
+}
+.tagadelic.level2 {
+	color: #789;
+}
+.tagadelic.level6 {
+	font-weight: bold;
+}
+.wrapper.tagadelic {
+	line-height: 2em;
+}
+
+/* Series ---------------------------------------------------------------- */
+
+
+.series-box {
+ background: #eee;
+ border-left: 3px solid #bbb;
+ padding: 0 1em 1em 1em;
+ margin: 0 1em 1em 0;
+ float: left;
+ width: 40%;
+}
+
+.series-right {
+ float: right;
+ margin: 0 0 1em 1em;
+}
+
+.series-box h3 {
+ margin:.5em 0;
+ color: #333;
+ border-bottom: 1px solid #434545;
+ background: url(images/node-article.png) no-repeat left center;
+ padding-left: 20px;
+ font-size: 1.35em;
+}
+
+.series-box .item-list li {
+ list-style-type: square;
+ margin-bottom: .2em;
+ font-size:.85em;
+}
+
+/**
+ * End-of-proof szimbolum
+ */
+.whateffect {
+    display: inline;
+}
+
+.qed {
+    color: #bbb;
+    border: 0;
+}
+
+/**
+ * Tartalmi kepek
+ */
+ 
+.figure {
+    text-align: center;
+}
+
+.figure img {
+    border: 1px solid #A5A5A5;
+    padding: 3px;
+}
+
+
+/**
+ * Korulfolyatas
+ */
+
+.right {
+    float: right;
+    margin-left: 15px;
+}
+
+.left {
+    float: left;
+    margin-right: 15px;
+}
+
+
+/**
+ * Kodokhoz, kodszavakhoz
+ */
+
+code, var {
+    color: #666;
+}
+
+code, var, kbd, samp {
+    font-family:
+        "Consolas",
+        "Monaco",
+        "Lucida Console",
+        "Andale Mono",
+        "Liberation Mono",
+        "DejaVu Sans Mono",
+        "Bitstream Vera Sans Mono",
+        "Courier New",
+        monospace
+    ;
+}
+
+var {
+   font-style: normal;
+}
+
+/**
+ * Gombok, menufeluratok
+ */
+kbd {
+   background: #eee;
+   color: #000;
+   padding: 2px 4px;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #ccc #aaa #888 #bbb;
+}
+
+.sourcecode-cmd kbd {
+   background: inherit;
+   color: inherit;
+   padding: 0;
+   border: 0;
+}
+
+.sourcecode-cmd samp {
+   color: #eeeecc;
+}
+
+/**
+ * Eloadas lista
+ */
+.sessions dt {
+   margin-top: 1em;
+}

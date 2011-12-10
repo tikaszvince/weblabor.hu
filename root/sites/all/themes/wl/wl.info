@@ -1,0 +1,15 @@
+name = Weblabor
+description = A Weblabor Drupal 6-ra átdolgozott arculata.
+core = 6.x
+version = 6.x-dev
+engine = phptemplate
+
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+
+scripts[] = wl.js
+scripts[] = bbeditor.js
+
+regions[left] = bal oldalsáv
+regions[right] = jobb oldalsáv
+regions[header] = fejléc

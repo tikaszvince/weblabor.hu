@@ -1,0 +1,5 @@
+; $Id$
+name = Publishboard
+description = Beküldött tartalmak kezelését segíti
+package = "Drupal.hu"
+core = 6.x

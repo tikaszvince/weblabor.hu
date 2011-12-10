@@ -1,0 +1,16 @@
+<?php
+
+function bookreview_update_2000() {
+  // Attach-flexi update itt, mert így a legegyszerűbb.
+  return _system_update_utf8(array('bookreview', 'bookreview_links', 'bookreview_authors', 'attach_flexi'));
+}
+
+function bookreview_update_2001() {
+  $ret = array();
+  $ret[] = update_sql("UPDATE node_revisions, bookreview SET node_revisions.body = bookreview.review WHERE node_revisions.nid = bookreview.nid");
+  $ret[] = update_sql("ALTER TABLE bookreview DROP COLUMN booktitle");
+  $ret[] = update_sql("ALTER TABLE bookreview DROP COLUMN synopsis");
+  $ret[] = update_sql("ALTER TABLE bookreview DROP COLUMN contents");
+  $ret[] = update_sql("ALTER TABLE bookreview DROP COLUMN review");
+  return $ret;
+}

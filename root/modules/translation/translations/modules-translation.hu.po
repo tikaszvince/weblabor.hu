@@ -1,0 +1,244 @@
+# $Id: modules-translation.po,v 1.1.2.7 2008/01/31 00:08:33 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-translation)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  translation.pages.inc,v 1.2 2008/01/07 13:18:40 goba
+#  translation.module,v 1.23 2008/01/28 11:38:58 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-01-11 00:39+0100\n"
+"PO-Revision-Date: 2008-01-22 17:48+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: modules/translation/translation.pages.inc:41
+msgid "outdated"
+msgstr "nem aktuális"
+
+#: modules/translation/translation.pages.inc:50
+msgid "add translation"
+msgstr "fordítás hozzáadása"
+
+#: modules/translation/translation.pages.inc:52
+msgid "Not translated"
+msgstr "Nincs lefordítva"
+
+#: modules/translation/translation.pages.inc:57
+msgid "Translations of %title"
+msgstr "%title fordításai"
+
+#: modules/translation/translation.module:34
+msgid ""
+"The content translation module allows content to be translated into "
+"different languages. Working with the <a href=\"@locale\">locale module</a> "
+"(which manages enabled languages and provides translation for the site "
+"interface), the content translation module is key to creating and "
+"maintaining translated site content."
+msgstr ""
+"A tartalom fordítás modul a webhelyen megjelenő tartalmak több nyelvre "
+"fordítását teszi lehetővé. A <a href=\"@locale\">locale modullal</a> "
+"együttműködve (amely a nyelvek listáját kezeli és a felület nyelvének "
+"lefordítását teszi lehetővé), a tartalom fordítás modul alapvető a több "
+"nyelvű tartalmak létrehozásában és kezeléséhez."
+
+#: modules/translation/translation.module:35
+msgid "Configuring content translation and translation-enabled content types:"
+msgstr "A tartalom fordítás és fordítás-képes tartalom típusok beállítása:"
+
+#: modules/translation/translation.module:36
+msgid ""
+"Assign the <em>translate content</em> permission to the appropriate user "
+"roles at the <a href=\"@permissions\">Permissions configuration page</a>."
+msgstr ""
+"A <em>tartalom fordítása</em> jogosultságot meg kell adni a kívánt "
+"felhasználói csoportoknak a <a href=\"@permissions\">jogosultságok beállító "
+"oldalán</a>."
+
+#: modules/translation/translation.module:37
+msgid ""
+"Add and enable desired languages at the <a href=\"@languages\">Languages "
+"configuration page</a>."
+msgstr ""
+"Hozzá kell adni és be kell kapcsolni a kívánt nyelveket a <a href="
+"\"@languages\">nyelvek beállító oldalán</a>."
+
+#: modules/translation/translation.module:38
+msgid ""
+"Determine which <a href=\"@content-types\">content types</a> should support "
+"translation features. To enable translation support for a content type, edit "
+"the type and at the <em>Multilingual support</em> drop down, select "
+"<em>Enabled, with translation</em>. (<em>Multilingual support</em> is "
+"located within <em>Workflow settings</em>.) Be sure to save each content "
+"type after enabling multilingual support."
+msgstr ""
+"Meg kell határozni, hogy mely <a href=\"@content-types\">tartalom típusokat</"
+"a> kell nyelvi képességekkel felruházni. Egy tartalom típus fordítás "
+"támogatásának bekapcsolásához a típus szerkesztési oldalán a <em>Több nyelvű "
+"támogatás</em> lehetőségek közül az <em>Engedélyezett, fordítás "
+"támogatással</em> lehetőséget kell választani. (A <em>Több nyelvű támogatás</"
+"em> a <em>Munkafolyamat beállítások</em> alatt található.) Gondoskodni kell "
+"a tartalom típus beállításainak elmentéséről."
+
+#: modules/translation/translation.module:39
+msgid "Working with translation-enabled content types:"
+msgstr "Fordítás-képes tartalom típusok kezelése:"
+
+#: modules/translation/translation.module:40
+msgid ""
+"Use the <em>Language</em> drop down to select the appropriate language when "
+"creating or editing posts."
+msgstr ""
+"A tartalom mentésekor vagy szerkesztésekor a <em>Nyelv</em> lenyíló menüből "
+"ki kell választani a használt nyelvet."
+
+#: modules/translation/translation.module:41
+msgid ""
+"Provide new or edit current translations for existing posts via the "
+"<em>Translation</em> tab. Only visible while viewing a post as a user with "
+"the <em>translate content</em> permission, this tab allows translations to "
+"be added or edited using a specialized editing form that also displays the "
+"content being translated."
+msgstr ""
+"Új fordítás létrehozására vagy meglévő fordítás szerkesztésére a "
+"<em>Fordítás</em> fül ad lehetőséget. A fül csak a <em>tartalmak fordítása</"
+"em> jogosultsággal rendelkező felhasználók számára látható. Új fordítások "
+"létrehozásakor a felület a tartalom eredeti nyelvű változatát biztosítva "
+"segíti a munkát."
+
+#: modules/translation/translation.module:42
+msgid ""
+"Update translations as needed, so that they accurately reflect changes in "
+"the content of the original post. The translation status flag provides a "
+"simple method for tracking outdated translations. After editing a post, for "
+"example, select the <em>Flag translations as outdated</em> check box to mark "
+"all of its translations as outdated and in need of revision. Individual "
+"translations may be marked for revision by selecting the <em>This "
+"translation needs to be updated</em> check box on the translation editing "
+"form."
+msgstr ""
+"A fordítások célszerűen az erdeti szöveg tartalmát követik. A fordítási "
+"állapot jelölő egyszerű lehetőséget ad, hogy a már nem aktuális fordításokat "
+"jelezni lehessen. Egy tartalom szerkesztésekor <em>A fordítások nem "
+"aktuálisként jelölése</em> jelölőnégyzet használatával a fordítások "
+"frissítésre érettnek jelölhetőek. Az egyes fordítások frissításekor a "
+"fordítók az <em>Ezt a fordítást frissíteni kell</em> jelölőnégyzet "
+"törlésével jelezhetik, hogy a fordítás frissült és újra aktuális."
+
+#: modules/translation/translation.module:43
+msgid ""
+"The <a href=\"@content-node\">Content management administration page</a> "
+"displays the language of each post, and also allows filtering by language or "
+"translation status."
+msgstr ""
+"A <a href=\"@content-node\">tartalmak adminisztrációs oldala</a> minden "
+"tartalom nyelvét is megjeleníti, és nyelv vagy fordítási állapot szerinti "
+"szűrést is lehetővé tesz."
+
+#: modules/translation/translation.module:44
+msgid ""
+"Use the <a href=\"@blocks\">language switcher block</a> provided by locale "
+"module to allow users to select a language. If available, both the site "
+"interface and site content are presented in the language selected."
+msgstr ""
+"A locale modul által biztosított <a href=\"@blocks\">nyelv váltó blokk</a> "
+"segítségével a felhasználók nyelvet választhatnak. Ha lehetséges, mind a "
+"felület nyelve, mind a tartalom nyelve a kiválasztottra vált."
+
+#: modules/translation/translation.module:45
+msgid ""
+"For more information, see the online handbook entry for <a href="
+"\"@translation\">Translation module</a>."
+msgstr ""
+"További információ az online kézikönyv <a href=\"@translation\">tartalom "
+"fordítás modulról szóló oldalán</a> olvasható."
+
+#: modules/translation/translation.module:48
+msgid ""
+"Translations of a piece of content are managed with translation sets. Each "
+"translation set has one source post and any number of translations in any of "
+"the <a href=\"!languages\">enabled languages</a>. All translations are "
+"tracked to be up to date or outdated based on whether the source post was "
+"modified significantly."
+msgstr ""
+"A beküldött tartalmak fordításai fordítás csomagokba vannak szervezve. "
+"Minden fordítási csomag egy forrás tartalommal rendelkezik és bármennyi "
+"fordítással az <a href=\"!languages\">engedélyezett nyelvek</a> "
+"valamelyikére. Minden fordítás aktuális vagy nem attól függően, hogy a "
+"forrás tartalom jelentősen frissült-e, mióta a fordítást legutóbb "
+"frissítették."
+
+#: modules/translation/translation.module:102
+msgid "Enabled, with translation"
+msgstr "Engedélyezett, fordítás támogatással"
+
+#: modules/translation/translation.module:104
+msgid ""
+"Enable multilingual support for this content type. If enabled, a language "
+"selection field will be added to the editing form, allowing you to select "
+"from one of the <a href=\"!languages\">enabled languages</a>. You can also "
+"turn on translation for this content type, which lets you have content "
+"translated to any of the enabled languages. If disabled, new posts are saved "
+"with the default language. Existing content will not be affected by changing "
+"this option."
+msgstr ""
+"Többnyelvű tartalom kezelés támogatás bekapcsolása ehhez a tartalom "
+"típushoz. Ha engedélyezett, egy nyelv választó mező jelenik meg a "
+"szerkesztési űrlapon, lehetővé téve a tartalom valamely <a href=\"!languages"
+"\">engedélyezett nyelvhez</a> rendelését. A tartalom típus fordítási "
+"támogatással is ellátható, mely lehetővé teszi a beküldött tartalmak több "
+"nyelvre fordítását. Ha nincs engedélyezve, az új tartalmakat az "
+"alapértelmezett nyelven menti el a rendszer. A meglévő tartalmak nem "
+"változnak meg a beállítás módosításával."
+
+#: modules/translation/translation.module:127
+msgid "Translation settings"
+msgstr "Fordítási beállítások"
+
+#: modules/translation/translation.module:138
+msgid "Flag translations as outdated"
+msgstr "A fordítások nem aktuálisként jelölése"
+
+#: modules/translation/translation.module:140
+msgid ""
+"If you made a significant change, which means translations should be "
+"updated, you can flag all translations of this post as outdated. This will "
+"not change any other property of those posts, like whether they are "
+"published or not."
+msgstr ""
+"Ha a tartalom szerkesztésekor olyan jelentős változás ment végbe, hogy a "
+"fordításokat frissíteni kell, itt minden fordítás frissítésre szükségesnek "
+"jelölhető. Ez nem változtatja meg a fordítások közzétételi állapotát, vagy "
+"bármilyen más tulajdonságát."
+
+#: modules/translation/translation.module:147
+msgid "This translation needs to be updated"
+msgstr "Ezt a fordítást frissíteni kell"
+
+#: modules/translation/translation.module:149
+msgid ""
+"When this option is checked, this translation needs to be updated because "
+"the source post has changed. Uncheck when the translation is up to date "
+"again."
+msgstr ""
+"Ha ez a jelölőnégyzet meg van jelölve, akkor a fordítást frissíteni kell, "
+"mert a forrás tartalom a legutóbbi fordítás óta frissült. Kikapcsolható, ha "
+"a fordítás újra aktuális."
+
+#: modules/translation/translation.module:89
+msgid "translate content"
+msgstr "tartalom fordítása"
+
+#: modules/translation/translation.module:59
+msgid "Translate"
+msgstr "Fordítás"
+
+#: modules/translation/translation.module:0
+msgid "translation"
+msgstr "fordítás"

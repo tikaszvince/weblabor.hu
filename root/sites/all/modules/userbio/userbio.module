@@ -1,0 +1,172 @@
+<?php
+
+/* 01-24: eredeti készlet, Meleg Tamás
+      25: RelakS <relaks@fibermail.hu>
+   26-27: KGYT <kgyt@kgyt.hu>
+   28-30: RelakS <rlks@mailbox.hu>
+      31: PiG
+   32-33: sly <hunsly@gmail.com>
+   34-35: Jakab <bringajakab@freemail.hu> 
+      36: Szeghy Barna <barna@szeghy.hu> 
+      37: Tikasz Vince (tiku) <vince.tikasz@gmail.com>
+      38: El Tebe <info@tibi-team.hu> 
+   39-45: Rek Zoltan <zoltanrek@freemail.hu>
+      46: Tikasz Vince (tiku) <vince.tikasz@gmail.com>
+*/
+define("WL_DEFAULT_AVATAR", 14);
+define("WL_MAX_AVATAR",     46);
+
+/**
+ * A hook_user() megvalósítása.
+ */
+function userbio_user($type, &$edit, &$user, $category = NULL) {
+  if ($type == "form" && $category == 'Személyes adatok') {
+    // User bio settings
+    if (userbio_canhave($user)) {
+      $form['Személyes adatok']['userbio'] = array(
+        '#type' => 'textarea',
+        '#title' => 'Bemutatkozás',
+        '#description' => check_plain('BBcode használható. A <!--break--> megadása utáni rész csak a profil oldalon jelenik meg.'),
+        '#weight' => 20,
+        '#default_value' => $user->userbio
+      );
+    }
+    // Avatars
+    $options = array();
+    foreach (range(1, WL_MAX_AVATAR) as $num) {
+      $options[$num] = userbio_avatar($num);
+    }
+    $form['Személyes adatok']['wl_avatar'] = array(
+      '#prefix' => '<div class="container-inline wlavatar">',
+      '#type' => 'radios',
+      '#title' => 'Avatár',
+      '#options' => $options,
+      '#description' => 'Lenne kedved újabb avatárokat készíteni nekünk? <a href="/weblabor/impresszum">Várjuk jelentkezésed</a>!',
+      '#default_value' => userbio_valid_avatar($user),
+      '#weight' => 25,
+      '#suffix' => '</div>',
+    );
+    return $form;
+  }
+  elseif ($type == 'view') {
+    $output = array('wlavatar' => array('title' => 'Avatár', 'value' => userbio_avatar(userbio_valid_avatar($user)), 'class' => 'wlavatar'));
+    if (userbio_canhave($user)) {
+      $output['userbio'] = array('title' => 'Bemutatkozás', 'value' => theme('userbio_display', $user, FALSE, TRUE), 'class' => 'userbio');
+    }
+    return array('Személyes adatok' => $output);
+  }
+}
+
+/**
+ * Admin vagy cikke van => lehet bemutatkozója.
+ */
+function userbio_canhave(&$user) {
+  $artcount = db_fetch_object(db_query("SELECT COUNT(*) as artcount FROM {node} WHERE uid = %d AND type = 'article'", $user->uid));
+  return ($artcount->artcount > 0 || in_array('administrator', $user->roles));
+}
+
+// TODO: call from theme! Test!
+function theme_userbio_display(&$object, $showname = TRUE, $full = FALSE) {
+  $name = $object->name;
+  $userbio = $facetag = '';
+  if (isset($object->nid)) { 
+  	// $node felhasználói adatokkal a $node->data alatt.
+    $data = unserialize($object->data);
+    $userbio = $data['userbio'];
+  }
+  elseif (isset($object->userbio)) { 
+  	// $user objektum.
+    $userbio = $object->userbio;
+  }
+
+  if (!$full) {
+    // Rövid megjelenítés a cikkek alján, a break töri.
+    if (($delimiter = strpos($userbio, '<!--break-->')) > 0) {
+      $userbio = substr($userbio, 0, $delimiter);
+    }
+  }
+  $userbio = str_replace("<!--break-->", "", $userbio);
+
+  if ($userbio) {
+    if ($showname) {
+      // A név megjelenhet a rövidebb megjelenésben, mert ott nincs különben név.
+      $userbio = '[h5]'. $name .'[/h5]'. $userbio;
+    }
+    $userbio = check_markup($userbio, FILTER_FORMAT_DEFAULT);
+
+    $faceimg = '/misc/userfaces/'. $object->uid .'.jpg';
+    if (file_exists(STORAGE_FOLDER .'root'. $faceimg)) {
+      $facetag = '<img src="'. $faceimg .'" width="64" height="64" alt="'. $name .' arcképe" />';
+    }
+    return '<div class="userbio">'. $facetag . $userbio .'</div>';
+  }
+  return '';
+}
+
+/**
+ * Visszatér az adott userhez kapcsolódó avatár azonosítójával.
+ */
+function userbio_valid_avatar($user = NULL) {
+  // Üres fejű avatár az anonímoknak.
+  if (!is_object($user) || $user->uid == 0) { 
+    return 0;
+  }
+  // Csak a megengedett sávba eső avatárok engedélyezése.
+  if ($user->wl_avatar >= 1 && $user->wl_avatar <= WL_MAX_AVATAR) {
+    return $user->wl_avatar;
+  }
+  // Végső esetben az alapértelmezett avatár.
+  return WL_DEFAULT_AVATAR;
+}
+
+/**
+ * Visszaad egy az adott számú avatárt jelképező képet.
+ */
+function userbio_avatar($num) {
+  return sprintf('<img src="/misc/avatar/%02d.gif" alt="avatár" />', $num);
+}
+
+/**
+ * Aláírás nem adható meg a user_edit űrlapon. 
+ */
+function userbio_user_edit_form_alter(&$form, $form_state) {
+  unset($form['comment_settings']);
+}
+
+/**
+ * Weblabor szerkesztőségi cc funkció a contact_mail_user űrlapon. 
+ */
+function userbio_form_alter(&$form, $form_state, $form_id) {
+  if (($form_id == 'contact_mail_user') && user_access('access administration pages')) {
+    $form['toeditors'] = array(
+      '#title' => 'Másolat a Weblabor szerkesztőknek',
+      '#type' => 'checkbox',
+      '#description' => 'Másolat küldése a szerkesztőségi email címre is.',
+      '#weight' => 9,
+    );
+    $form['copy']['#description'] = 'Másolat küldése a személyes email címre.';
+    $form['submit']['#weight'] = 10;
+    $form['#submit'] = array('userbio_mail_user_submit' => array()) + $form['#submit'];
+  }
+}
+
+/**
+ * Kontakt kérelem rögzítése.
+ */
+function userbio_mail_user_submit($form, &$form_state) {
+  $GLOBALS['userbio_toeditors'] = (bool) $form_state['values']['toeditors'];
+}
+
+/**
+ * Email cc ha kérték. 
+ */
+function userbio_mail_alter(&$message) {
+  if ($message['id'] == 'contact_user_mail' && isset($GLOBALS['userbio_toeditors']) && $GLOBALS['userbio_toeditors']) {
+    $message['headers']['Cc'] = 'info@weblabor.hu';
+  }
+}
+
+/**
+ * A hook_theme() megvalósítása.
+ */
+function userbio_theme() {  return array(    'userbio_display' => array(      'arguments' => array('object', 'showname', 'full'),    ),  );}

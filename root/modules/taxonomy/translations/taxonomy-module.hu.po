@@ -1,0 +1,382 @@
+# $Id: taxonomy-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/taxonomy/taxonomy.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: taxonomy.module,v 1.330 2007/01/11 03:29:15 unconed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-11 00:00+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: modules/taxonomy/taxonomy.module:78
+msgid "Create vocabularies and terms to categorize your content."
+msgstr "Tartalmak kategorizálását teszi lehetővé."
+
+#: modules/taxonomy/taxonomy.module:88
+msgid "Add vocabulary"
+msgstr "Szótár hozzáadása"
+
+#: modules/taxonomy/taxonomy.module:95
+msgid "Edit vocabulary"
+msgstr "Szótár szerkesztése"
+
+#: modules/taxonomy/taxonomy.module:101
+msgid "Edit term"
+msgstr "Kifejezés szerkesztése"
+
+#: modules/taxonomy/taxonomy.module:107
+msgid "Taxonomy term"
+msgstr "Taxonómia kifejezés"
+
+#: modules/taxonomy/taxonomy.module:113
+msgid "Autocomplete taxonomy"
+msgstr "Taxonómia kifejezések automatikus kiegészítése"
+
+#: modules/taxonomy/taxonomy.module:122
+msgid "List terms"
+msgstr "Kifejezések listája"
+
+#: modules/taxonomy/taxonomy.module:134
+msgid "Add term"
+msgstr "Kifejezés hozzáadása"
+
+#: modules/taxonomy/taxonomy.module:159
+msgid "edit vocabulary"
+msgstr "szótár szerkesztése"
+
+#: modules/taxonomy/taxonomy.module:160
+msgid "list terms"
+msgstr "kifejezések listája"
+
+#: modules/taxonomy/taxonomy.module:161
+msgid "add terms"
+msgstr "kifejezések hozzáadása"
+
+#: modules/taxonomy/taxonomy.module:165
+msgid "No categories available."
+msgstr "Egy kategória sincs definiálva."
+
+#: modules/taxonomy/taxonomy.module:202
+msgid "No terms available."
+msgstr "Nincs elérhető kifejezés."
+
+#: modules/taxonomy/taxonomy.module:220
+msgid "Vocabulary name"
+msgstr "Szótár neve"
+
+#: modules/taxonomy/taxonomy.module:223
+msgid "The name for this vocabulary. Example: \"Topic\"."
+msgstr "A szótár neve. Például „Cikkek”."
+
+#: modules/taxonomy/taxonomy.module:229
+msgid "Description of the vocabulary; can be used by modules."
+msgstr "A szótár leírása, melyet más modulok megjeleníthetnek."
+
+#: modules/taxonomy/taxonomy.module:232
+msgid "Help text"
+msgstr "Rövid leírás"
+
+#: modules/taxonomy/taxonomy.module:234
+msgid "Instructions to present to the user when choosing a term."
+msgstr "Kifejezés kiválasztásakor megjelenő leírás."
+
+#: modules/taxonomy/taxonomy.module:237
+msgid "Types"
+msgstr "Típusok"
+
+#: modules/taxonomy/taxonomy.module:240
+msgid "A list of node types you want to associate with this vocabulary."
+msgstr "Azon tartalom típusok listája, melyek ebbe a szótárba sorolhatóak."
+
+#: modules/taxonomy/taxonomy.module:244
+msgid "Hierarchy"
+msgstr "Hierarchia"
+
+#: modules/taxonomy/taxonomy.module:246
+msgid "Single"
+msgstr "Egyszeres"
+
+#: modules/taxonomy/taxonomy.module:246
+msgid "Multiple"
+msgstr "Többszörös"
+
+#: modules/taxonomy/taxonomy.module:247
+msgid ""
+"Allows <a href=\"@help-url\">a tree-like hierarchy</a> between terms of this "
+"vocabulary."
+msgstr ""
+"Lehetővé tesz <a href=\"@help-url\">fa-jellegű hierarchiát</a> a szótár "
+"kifejezései között."
+
+#: modules/taxonomy/taxonomy.module:250;413
+msgid "Related terms"
+msgstr "Kapcsolódó kifejezések"
+
+#: modules/taxonomy/taxonomy.module:252
+msgid "Allows <a href=\"@help-url\">related terms</a> in this vocabulary."
+msgstr ""
+"Lehetővé teszi <a href=\"@help-url\">kapcsolódó kifejezések</a> használatát "
+"a szótárban."
+
+#: modules/taxonomy/taxonomy.module:255
+msgid "Free tagging"
+msgstr "Szabad címkézés"
+
+#: modules/taxonomy/taxonomy.module:257
+msgid "Content is categorized by typing terms instead of choosing from a list."
+msgstr ""
+"A tartalmak a kifejezések egyszerű begépelésével kategorizálhatók listából "
+"történő választás helyett."
+
+#: modules/taxonomy/taxonomy.module:260
+msgid "Multiple select"
+msgstr "Többszörös választás"
+
+#: modules/taxonomy/taxonomy.module:262
+msgid ""
+"Allows nodes to have more than one term from this vocabulary (always true "
+"for free tagging)."
+msgstr ""
+"Engedélyezi a tartalmak számára, hogy több ebbe a szótárba tartozó "
+"kifejezéshez kapcsolódjanak (szabad címkézés esetén mindig engedélyezett)."
+
+#: modules/taxonomy/taxonomy.module:267
+msgid ""
+"If enabled, every node <strong>must</strong> have at least one term in this "
+"vocabulary."
+msgstr ""
+"Minden tartalomnak <strong>legalább</strong> egy kifejezéshez kapcsolódnia "
+"kell ebben a szótárban, ha engedélyezett."
+
+#: modules/taxonomy/taxonomy.module:272
+msgid ""
+"In listings, the heavier vocabularies will sink and the lighter vocabularies "
+"will be positioned nearer the top."
+msgstr ""
+"Különböző felsorolásokban a nehezebb szótárak lesüllyednek, a könnyebbek "
+"közelebb lesznek a lista elejéhez, illetve tetejéhez."
+
+#: modules/taxonomy/taxonomy.module:292
+msgid "Created new vocabulary %name."
+msgstr "„%name” szótár létrejött."
+
+#: modules/taxonomy/taxonomy.module:295
+msgid "Updated vocabulary %name."
+msgstr "„%name” szótár frissítve."
+
+#: modules/taxonomy/taxonomy.module:363
+msgid "Are you sure you want to delete the vocabulary %title?"
+msgstr "„%title” szótár biztosan törölhető?"
+
+#: modules/taxonomy/taxonomy.module:366
+msgid ""
+"Deleting a vocabulary will delete all the terms in it. This action cannot be "
+"undone."
+msgstr ""
+"A szótár törlése minden benne található kifejezés törlését is maga után "
+"vonja. A művelet nem vonható vissza."
+
+#: modules/taxonomy/taxonomy.module:373
+msgid "Deleted vocabulary %name."
+msgstr "„%name” szótár törlése megtörtént."
+
+#: modules/taxonomy/taxonomy.module:382
+msgid "Term name"
+msgstr "Kifejezés neve"
+
+#: modules/taxonomy/taxonomy.module:385
+msgid "The name of this term."
+msgstr "A kifejezés neve."
+
+#: modules/taxonomy/taxonomy.module:392
+msgid "A description of the term."
+msgstr "A kifejezés leírása."
+
+#: modules/taxonomy/taxonomy.module:405
+msgid "Parent term"
+msgstr "Szülő kifejezés"
+
+#: modules/taxonomy/taxonomy.module:408
+msgid "Parents"
+msgstr "Szülők"
+
+#: modules/taxonomy/taxonomy.module:408
+msgid "Parent terms"
+msgstr "Szülő kifejezések"
+
+#: modules/taxonomy/taxonomy.module:418
+msgid "Synonyms"
+msgstr "Szinonimák"
+
+#: modules/taxonomy/taxonomy.module:420
+msgid "<a href=\"@help-url\">Synonyms</a> of this term, one synonym per line."
+msgstr ""
+"A kifejezés <a href=\"@help-url\">szinonimái</a>, soronként egyesével "
+"megadva."
+
+#: modules/taxonomy/taxonomy.module:425
+msgid ""
+"In listings, the heavier terms will sink and the lighter terms will be "
+"positioned nearer the top."
+msgstr ""
+"Különböző felsorolásokban a nehezebb kifejezések lesüllyednek, a könnyebbek "
+"közelebb lesznek a lista elejéhez, illetve tetejéhez."
+
+#: modules/taxonomy/taxonomy.module:454
+msgid "Created new term %term."
+msgstr "„%term” kifejezés létrejött."
+
+#: modules/taxonomy/taxonomy.module:457
+msgid "The term %term has been updated."
+msgstr "„%term” kifejezés frissítve."
+
+#: modules/taxonomy/taxonomy.module:583
+msgid "Are you sure you want to delete the term %title?"
+msgstr "„%title” kifejezés biztosan törölhető?"
+
+#: modules/taxonomy/taxonomy.module:586
+msgid ""
+"Deleting a term will delete all its children if there are any. This action "
+"cannot be undone."
+msgstr ""
+"Egy kifejezés törlése minden gyermek kifejezését is törli, amennyiben van "
+"ilyen. A művelet nem vonható vissza."
+
+#: modules/taxonomy/taxonomy.module:593
+msgid "Deleted term %name."
+msgstr "„%name” kifejezés törlése megtörtént."
+
+#: modules/taxonomy/taxonomy.module:701
+msgid ""
+"A comma-separated list of terms describing this content. Example: funny, "
+"bungee jumping, \"Company, Inc.\"."
+msgstr ""
+"A tartalmat meghatározó kifejezések vesszővel elválasztott listája. Például: "
+"móka, kötélugrás, mogyorós csoki, \"Cégnév, Kft.\"."
+
+#: modules/taxonomy/taxonomy.module:781
+msgid "The %name vocabulary can not be modified in this way."
+msgstr "%name szótár így nem módosítható."
+
+#: modules/taxonomy/taxonomy.module:1268
+msgid "There are currently no posts in this category."
+msgstr "Jelenleg nincs beküldött tartalom a kategóriában."
+
+#: modules/taxonomy/taxonomy.module:1442
+msgid ""
+"The taxonomy module is one of the most popular features because users often "
+"want to create categories to organize content by type. A simple example "
+"would be organizing a list of music reviews by musical genre."
+msgstr ""
+"A taxonómia modul egyike a legnépszerűbbeknek, mivel a felhasználók gyakran "
+"igénylik a létrehozott tartalmak kategorizálását. A modul alkalmazási "
+"területe rendkívül széles, például lehetséges a zenei kritikák "
+"osztályozása műfajuk szerint."
+
+#: modules/taxonomy/taxonomy.module:1443
+msgid ""
+"Taxonomy is the study of classification. The taxonomy module allows you to "
+"define vocabularies (sets of categories) which are used to classify content. "
+"The module supports hierarchical classification and association between "
+"terms, allowing for truly flexible information retrieval and classification. "
+"The taxonomy module allows multiple lists of categories for classification "
+"(controlled vocabularies) and offers the possibility of creating thesauri "
+"(controlled vocabularies that indicate the relationship of terms) and "
+"taxonomies (controlled vocabularies where relationships are indicated "
+"hierarchically). To view and manage the terms of each vocabulary, click on "
+"the associated <em>list terms</em> link. To delete a vocabulary and all its "
+"terms, choose <em>edit vocabulary.</em>"
+msgstr ""
+"A taxonómia modul segítségével a tartalmak szótárakba (kategória "
+"csoportokba) rendezhetőek. Korlátlan mennyiségű kategória és csoportosítási "
+"rendszer létrehozása támogatott (irányított szótárak), tezaurusz jellegű "
+"rendszerek készítésének lehetősége is biztosított (irányított szótárak a "
+"kifejezések kapcsolataival), illetve taxonómia rendszerű kategorizálás is "
+"lehetséges (irányított szótárak hierarchikus kapcsolatokkal). A szabad "
+"kategorizálási lehetőséggel a kategóriák a tartalom létrehozásával együtt "
+"vehetők fel. A kifejezések megtekintésére és kezelésére a <em>kifejezések "
+"listája</em>, a szótárak és kifejezéseik törlésére a <em>szótár "
+"szerkesztése</em> oldalakon van lehetőség."
+
+#: modules/taxonomy/taxonomy.module:1444
+msgid ""
+"A controlled vocabulary is a set of terms to use for describing content "
+"(known as descriptors in indexing lingo). Drupal allows you to describe each "
+"piece of content (blog, story, etc.) using one or many of these terms. For "
+"simple implementations, you might create a set of categories without "
+"subcategories, similar to Slashdot's sections. For more complex "
+"implementations, you might create a hierarchical list of categories."
+msgstr ""
+"Amikor irányított szótárat hozunk létre, kifejezések egy halmazát "
+"definiáljuk a tartalmak leírása érdekében (ezeket leíróknak nevezik a "
+"kategorizálási szaknyelvben). A Drupal lehetővé teszi, hogy minden tartalom "
+"típust (blogbejegyzés, írás, fórum téma stb.) egy vagy több ilyen "
+"kifejezéssel írjunk le. A legegyszerűbb felhasználási lehetőség a Slashdot."
+"org által használt egyszintű kategória rendszer, de többszintű "
+"kategorizálásra is lehetőség van. A linktárak illetve fórumok jellemzően az "
+"utóbbi csoportba tartoznak."
+
+#: modules/taxonomy/taxonomy.module:1445
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@taxonomy\">Taxonomy page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href="
+"\"@taxonomy\">taxonómia modulról szóló oldalán</a> olvasható."
+
+#: modules/taxonomy/taxonomy.module:1448
+msgid ""
+"The taxonomy module allows you to classify content into categories and "
+"subcategories; it allows multiple lists of categories for classification "
+"(controlled vocabularies) and offers the possibility of creating thesauri "
+"(controlled vocabularies that indicate the relationship of terms), "
+"taxonomies (controlled vocabularies where relationships are indicated "
+"hierarchically), and free vocabularies where terms, or tags, are defined "
+"during content creation. To view and manage the terms of each vocabulary, "
+"click on the associated <em>list terms</em> link. To delete a vocabulary and "
+"all its terms, choose \"edit vocabulary\"."
+msgstr ""
+"A taxonómia modul segítségével a tartalmak szótárakba (kategória "
+"csoportokba) rendezhetőek. Korlátlan mennyiségű kategória és csoportosítási "
+"rendszer létrehozása támogatott (irányított szótárak), tezaurusz jellegű "
+"rendszerek készítésének lehetősége is biztosított (irányított szótárak a "
+"kifejezések kapcsolataival), illetve taxonómia rendszerű kategorizálás is "
+"lehetséges (irányított szótárak hierarchikus kapcsolatokkal). A szabad "
+"kategorizálási lehetőséget használva a kategóriák a tartalom létrehozásával "
+"egyidőben vehetők fel. A kifejezések megtekintésére és kezelésére a "
+"<em>kifejezések listája</em>, a szótárak és kifejezéseik törlésére a "
+"<em>szótár szerkesztése</em> oldalakon van lehetőség."
+
+#: modules/taxonomy/taxonomy.module:1450
+msgid ""
+"When you create a controlled vocabulary you are creating a set of terms to "
+"use for describing content (known as descriptors in indexing lingo). Drupal "
+"allows you to describe each piece of content (blog, story, etc.) using one "
+"or many of these terms. For simple implementations, you might create a set "
+"of categories without subcategories. For more complex implementations, you "
+"might create a hierarchical list of categories."
+msgstr ""
+"Amikor irányított szótárat hozunk létre, kifejezések egy halmazát "
+"definiáljuk a tartalmak leírása érdekében (ezeket leíróknak nevezik a "
+"kategorizálási szaknyelvben). A Drupal lehetővé teszi, hogy minden tartalom "
+"típust (blogbejegyzés, írás, fórum téma stb.) egy vagy több ilyen "
+"kifejezéssel írjunk le. A legegyszerűbb felhasználási lehetőség egy "
+"egyszintű kategória rendszer, de többszintű kategorizálásra is "
+"lehetőség van. A linktárak illetve fórumok jellemzően az utóbbi "
+"csoportba tartoznak."
+
+#: modules/taxonomy/taxonomy.module:13
+msgid "administer taxonomy"
+msgstr "taxonómia adminisztrációja"
+
+#: modules/taxonomy/taxonomy.module:0
+msgid "taxonomy"
+msgstr "taxonómia"

@@ -1,0 +1,209 @@
+# $Id: path-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/path/path.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: path.module,v 1.105 2007/01/09 08:34:03 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-11 00:15+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/path/path.module:15
+msgid ""
+"The path module allows you to specify aliases for Drupal URLs. Such aliases "
+"improve readability of URLs for your users and may help internet search "
+"engines to index your content more effectively. More than one alias may be "
+"created for a given page."
+msgstr ""
+"Az útvonal modullal a Drupal webcímeihez álnevek rendelhetőek. Ezek az "
+"álnevek javíthatják a webcímek olvashatóságát és segíthetnek az internetes "
+"keresőknek a tartalom hatékony indexelésében. Egynél több álnév is "
+"rendelhető egy adott útvonalhoz."
+
+#: modules/path/path.module:16
+msgid ""
+"<p>Some examples of URL aliases are:</p>\n"
+"<ul>\n"
+"<li>user/login =&gt; login</li>\n"
+"<li>image/tid/16 =&gt; store</li>\n"
+"<li>taxonomy/term/7+19+20+21 =&gt; store/products/whirlygigs</li>\n"
+"<li>node/3 =&gt; contact</li>\n"
+"</ul>\n"
+msgstr ""
+"<p>Néhány példa az útvonal álnevekre:</p>\n"
+"<ul>\n"
+"<li>user/login =&gt; belepes</li>\n"
+"<li>image/tid/16 =&gt; aruhaz</li>\n"
+"<li>taxonomy/term/7+19+20+21 =&gt; aruhaz/termekek/kiegeszitok</li>\n"
+"<li>node/3 =&gt; kapcsolat</li>\n"
+"</ul>\n"
+
+#: modules/path/path.module:24
+msgid ""
+"The path module enables an extra field for aliases in all node input and "
+"editing forms (when users have the appropriate permissions). It also "
+"provides an interface to view and edit all URL aliases. The two permissions "
+"related to URL aliasing are \"administer url aliases\" and \"create url "
+"aliases\". "
+msgstr ""
+"Az útvonal modul a megfelelő jogosultsággal rendelkező felhasználók számára "
+"egy kiegészítő mezőt jelenít meg a tartalmak beküldési és szerkesztési "
+"űrlapján, mely segítségével a tartalom útvonalát elfedő álnév közvetlenül "
+"megadható. Emellett saját felületet nyújt a már meglévő álnevek "
+"megtekintésére és szerkesztésére. Az útvonal álnevekhez két jogosultság "
+"kapcsolódik: „útvonal álnevek adminisztrációja” és „útvonal álnevek "
+"létrehozása”."
+
+#: modules/path/path.module:25
+msgid ""
+"This module also comes with user-defined mass URL aliasing capabilities, "
+"which is useful if you wish to uniformly use URLs different from the "
+"default. For example, you may want to have your URLs presented in a "
+"different language. Access to the Drupal source code on the web server is "
+"required to set up these kinds of aliases. "
+msgstr ""
+"Ez a modul támogatja tömeges útvonal álnevek létrehozását is, melyek "
+"segítségével szabályos, egységes álnevek alakíthatóak ki programozottan. "
+"Megoldható például, hogy az útvonalak helyi nyelven legyenek elérhetőek. "
+"Ennek a funkciónak a kihasználásához hozzá kell férni a webkiszolgálón levő "
+"Drupal forráskódjához. "
+
+#: modules/path/path.module:26
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@path\">Path page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@path"
+"\">útvonal elfedésről szóló oldalán</a> olvasható."
+
+#: modules/path/path.module:29
+msgid ""
+"Drupal provides users complete control over URLs through aliasing. This "
+"feature is typically used to make URLs human-readable or easy to remember. "
+"For example, one could map the relative URL 'node/1' onto 'about'. Each "
+"system path can have multiple aliases."
+msgstr ""
+"A Drupal képes a webcímeket &ndash; elsősorban a könnyű megjegyezhetőség, "
+"illetve az olvashatóság érdekében &ndash; álnevek segítségével elfedni. "
+"Például a „node/1” útvonalat elfedhetjük a „rolunk” álnévvel. A rendszerben "
+"egy útvonalhoz több álnév is kapcsolódhat."
+
+#: modules/path/path.module:31
+msgid ""
+"Enter the path you wish to create the alias for, followed by the name of the "
+"new alias."
+msgstr "Ezen az oldalon lehet megadni az útvonalat és a hozzá tartozó álnevet."
+
+#: modules/path/path.module:42
+msgid "URL aliases"
+msgstr "Útvonal álnevek"
+
+#: modules/path/path.module:43
+msgid "Change your site's URL paths by aliasing them."
+msgstr "A webcímek megváltoztatása álnevek felvételével."
+
+#: modules/path/path.module:46
+msgid "Edit alias"
+msgstr "Álnév szerkesztése"
+
+#: modules/path/path.module:51
+msgid "Delete alias"
+msgstr "Álnév törlése"
+
+#: modules/path/path.module:58
+msgid "Add alias"
+msgstr "Álnév hozzáadása"
+
+#: modules/path/path.module:99
+msgid "Are you sure you want to delete path alias %title?"
+msgstr "„%title” álnév biztosan törölhető?"
+
+#: modules/path/path.module:122
+msgid "The alias has been deleted."
+msgstr "Az álnév törölve."
+
+#: modules/path/path.module:180
+msgid "Existing system path"
+msgstr "Drupal alapértelmezett útvonal"
+
+#: modules/path/path.module:184
+msgid ""
+"Specify the existing path you wish to alias. For example: node/28, forum/1, "
+"taxonomy/term/1+2."
+msgstr ""
+"A Drupal rendszer által kezelt alapértelmezett útvonal, mint például: "
+"node/28, forum/1, taxonomy/term/1+2."
+
+#: modules/path/path.module:192
+msgid ""
+"Specify an alternative path by which this data can be accessed. For example, "
+"type \"about\" when writing an about page. Use a relative path and don't add "
+"a trailing slash or the URL alias won't work."
+msgstr ""
+"Az az útvonal álnév, melyet az alapértelmezett útvonal elfedésére szeretnénk "
+"használni. Megadhatjuk például a „joginyilatkozat” útvonalat egy jogi "
+"nyilatkozat esetén. Relatív címet kell megadni, sem kezdő sem záró perjelet "
+"nem szabad alkalmazni."
+
+#: modules/path/path.module:198
+msgid "Update alias"
+msgstr "Álnév frissítése"
+
+#: modules/path/path.module:201
+msgid "Create new alias"
+msgstr "Új álnév létrehozása"
+
+#: modules/path/path.module:219
+msgid "The path is already in use."
+msgstr "Az álnév már más útvonalhoz van rendelve."
+
+#: modules/path/path.module:263
+msgid "URL path settings"
+msgstr "Az útvonal beállításai"
+
+#: modules/path/path.module:275
+msgid ""
+"Optionally specify an alternative URL by which this node can be accessed. "
+"For example, type \"about\" when writing an about page. Use a relative path "
+"and don't add a trailing slash or the URL alias won't work."
+msgstr ""
+"Nem szükséges. Meg lehet adni egy útvonal álnevet, mely alatt ez a tartalom "
+"elérhető lesz. Beállítható például a „joginyilatkozat” útvonal egy jogi "
+"nyilatkozat esetén. Relatív címet kell megadni, sem kezdő sem záró perjelet "
+"nem szabad alkalmazni."
+
+#: modules/path/path.module:300
+msgid "Alias"
+msgstr "Álnév"
+
+#: modules/path/path.module:313
+msgid "No URL aliases available."
+msgstr "Egy álnév sincs definiálva."
+
+#: modules/path/path.module:337
+msgid "The alias %alias is already in use."
+msgstr "%alias álnév már használatban van."
+
+#: modules/path/path.module:347
+msgid "The alias has been saved."
+msgstr "Az álnév elmentve."
+
+#: modules/path/path.module:291
+msgid "create url aliases"
+msgstr "útvonal álnevek létrehozása"
+
+#: modules/path/path.module:291
+msgid "administer url aliases"
+msgstr "útvonal álnevek adminisztrációja"
+
+#: modules/path/path.module:0
+msgid "path"
+msgstr "útvonal"

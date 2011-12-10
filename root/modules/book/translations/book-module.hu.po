@@ -1,0 +1,295 @@
+# $Id: book-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/book/book.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: book.module,v 1.406 2007/01/09 08:31:22 drumm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-10 23:22+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/book/book.module:15
+msgid "Book page"
+msgstr "Könyvlap"
+
+#: modules/book/book.module:17
+msgid ""
+"A book is a collaborative writing effort: users can collaborate writing the "
+"pages of the book, positioning the pages in the right order, and reviewing "
+"or modifying pages previously written. So when you have some information to "
+"share or when you read a page of the book and you didn't like it, or if you "
+"think a certain page could have been written better, you can do something "
+"about it."
+msgstr ""
+"A könyvek létrehozása közösségi folyamat: a felhasználók együtt írhatják a "
+"könyveket, rendszerezhetik azokat, áttekinthetik, illetve módosíthatják a "
+"már előzőleg elkészítetteket. Megosztani való tudás birtokában lévő "
+"felhasználók bővíthetnek egy-egy könyvet, illetve javíthatnak a meglévő "
+"könyvlapokon is."
+
+#: modules/book/book.module:68
+msgid "Add child page"
+msgstr "Gyermek lap hozzáadása"
+
+#: modules/book/book.module:74
+msgid "Printer-friendly version"
+msgstr "Nyomtatóbarát változat"
+
+#: modules/book/book.module:76
+msgid "Show a printer-friendly version of this book page and its sub-pages."
+msgstr "A könyv lapjainak nyomtatóbarát változata."
+
+#: modules/book/book.module:94;111
+msgid "Books"
+msgstr "Könyvek"
+
+#: modules/book/book.module:95
+msgid "Manage site's books and orphaned book pages."
+msgstr "Könyvlapok és árva lapok kezelése."
+
+#: modules/book/book.module:104
+msgid "Orphan pages"
+msgstr "Árva lapok"
+
+#: modules/book/book.module:134
+msgid "Outline"
+msgstr "Vázlat"
+
+#: modules/book/book.module:156
+msgid "Book navigation"
+msgstr "Könyv navigáció"
+
+#: modules/book/book.module:216
+msgid ""
+"The parent section in which to place this page. Note that each page whose "
+"parent is &lt;top-level&gt; is an independent, top-level book."
+msgstr ""
+"A szülő lap, melyhez a könyv ezen lapja tartozik. Azon lapok, melyek szülője "
+"a &lt;legfelső szint&gt;, különálló könyvekként jelennek meg."
+
+#: modules/book/book.module:216
+msgid "The parent that this page belongs in."
+msgstr "A könyvben található szülő lap."
+
+#: modules/book/book.module:240;272
+msgid "Pages at a given level are ordered first by weight and then by title."
+msgstr ""
+"Az egy szinten található lapok először súly szerint, majd cím szerint "
+"lesznek sorrendezve."
+
+#: modules/book/book.module:266
+msgid "The parent page in the book."
+msgstr "A könyvben található szülő lap."
+
+#: modules/book/book.module:276
+msgid ""
+"An explanation to help other authors understand your motivations to put this "
+"post into the book."
+msgstr "A könyv vázlatába illesztés okának leírása."
+
+#: modules/book/book.module:282;309
+msgid "Update book outline"
+msgstr "Könyv vázlat módosítása"
+
+#: modules/book/book.module:285;314
+msgid "Remove from book outline"
+msgstr "Eltávolítás a könyv vázlatából"
+
+#: modules/book/book.module:289;304
+msgid "Add to book outline"
+msgstr "Hozzáadás könyv vázlatához"
+
+#: modules/book/book.module:307
+msgid "The post has been added to the book."
+msgstr "A tartalom bekerült a könyv vázlatába."
+
+#: modules/book/book.module:312
+msgid "The book outline has been updated."
+msgstr "A könyv vázlata frissült."
+
+#: modules/book/book.module:316
+msgid "The post has been removed from the book."
+msgstr "A tartalom eltávolítva a könyv vázlatából."
+
+#: modules/book/book.module:493
+msgid "up"
+msgstr "fel"
+
+#: modules/book/book.module:493
+msgid "Go to parent page"
+msgstr "Ugrás a szülő lapra."
+
+#: modules/book/book.module:548
+msgid "top-level"
+msgstr "legfelső szint"
+
+#: modules/book/book.module:653
+msgid "Unknown export format."
+msgstr "Ismeretlen exportálási formátum."
+
+#: modules/book/book.module:884;918
+msgid "Save book pages"
+msgstr "Könyvlapok mentése"
+
+#: modules/book/book.module:923
+msgid "There are no orphan pages."
+msgstr "Nincsenek árva lapok."
+
+#: modules/book/book.module:938
+msgid "%type: updated %title."
+msgstr "%type: „%title” könyv módosítva."
+
+#: modules/book/book.module:938;0
+msgid "book"
+msgstr "könyv"
+
+#: modules/book/book.module:945
+msgid "Updated book %title."
+msgstr "„%title” könyv módosítva."
+
+#: modules/book/book.module:949
+msgid "Updated orphan book pages."
+msgstr "Árva lapok frissítve."
+
+#: modules/book/book.module:971
+msgid "outline"
+msgstr "vázlat"
+
+#: modules/book/book.module:984
+msgid ""
+"The <em>book</em> module is suited for creating structured, multi-page "
+"hypertexts such as site resource guides, manuals, and Frequently Asked "
+"Questions (FAQs). It permits a document to have chapters, sections, "
+"subsections, etc. Authors with suitable permissions can add pages to a "
+"collaborative book,  placing them into the existing document by adding them "
+"to a table of contents menu."
+msgstr ""
+"A <em>könyv</em> modul lehetővé teszi strukturált, több oldalas dokumentumok "
+"létrehozását. Például kézikönyvek, dokumentációk, Gyakran Ismételt Kérdések "
+"tarthatók karban segítségével. A dokumentumok fejezetekből állhatnak, "
+"tetszőlegesen részletes felbontásban. A megfelelő jogosultsággal rendelkező "
+"szerzők a meglévő könyvekbe is könnyen illeszthetnek újabb lapokat, azok "
+"vázlatába helyezve az új oldalakat."
+
+#: modules/book/book.module:985
+msgid ""
+"Book pages have navigation elements at the bottom of the page for moving "
+"through the text.  These link to the previous and next pages in the book, as "
+"well as a link labeled <em>up</em>, leading to the level above in the "
+"structure.  More comprehensive navigation may be provided by enabling the "
+"<em>book navigation block</em> on the <a href=\"@admin-block\">block "
+"administration page</a>."
+msgstr ""
+"A könyvek <em>előző</em>, <em>fel</em> és <em>következő</em> navigációs "
+"lehetőséget is biztosítanak az olvasók számára a könyvlap oldalak alján. "
+"További navigációs segítség adható a <em>könyv navigáció</em> blokk <a href="
+"\"@admin-block\">bekapcsolásával</a>."
+
+#: modules/book/book.module:986
+msgid ""
+"Users can select the <em>printer-friendly version</em> link visible at the "
+"bottom of a book page to generate a printer-friendly display of the page and "
+"all of its subsections. "
+msgstr ""
+"Az olvasók a könyvek <em>nyomtatóbarát változatát</em> is megtekinthetik a "
+"könyv lapjainak alján adott linkek segítéségével, melyeket használva az "
+"adott lapot és minden a vázlatban alá helyezett lapot egyszerre "
+"kinyomtathatnak."
+
+#: modules/book/book.module:987
+msgid ""
+"Posts of type %book are automatically added to the book hierarchy. Users "
+"with the <em>outline posts in books</em> permission can also add content of "
+"any other type to a book, placing it into the existing book structure "
+"through the interface that's available by clicking on the <em>outline</em> "
+"tab while viewing that post."
+msgstr ""
+"A %book típusú tartalmak automatikusan bekerülnek a könyvek hierarchiájába. "
+"A <em>tartalmak könyvekbe helyezése</em> jogosultsággal rendelkező "
+"felhasználók bármilyen más típusú tartalmat is a könyvekbe illeszthetnek a "
+"tartalmak <em>vázlat</em> fülén elérhető oldal segítségével."
+
+#: modules/book/book.module:988
+msgid ""
+"Administrators can view a list of all books on the <a href=\"@admin-node-book"
+"\">book administration page</a>.  In this list there is a link to an outline "
+"page for each book, from which is it possible to change the titles of "
+"sections, or to change their weight, thus reordering sections. From this "
+"administrative interface, it is also possible to determine whether there are "
+"any orphan pages - pages that have become disconnected from the rest of the "
+"book structure."
+msgstr ""
+"Az arra jogosultak minden könyvet áttekinthetnek a <a href=\"@admin-node-book"
+"\">könyvek adminisztrációs oldalán</a>. Ott minden könyvhöz tartozik egy "
+"vázlat szerkesztő felület, mely lehetővé teszi a címek szerkesztését és a "
+"lapok sorrendjének megváltoztatását a súlyok módosításával. Az árva (azaz "
+"könyvekbe nem illesztett) lapok is áttekinthetőek."
+
+#: modules/book/book.module:989
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@book\">Book page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@book"
+"\">könyvekről szóló oldalán</a> olvasható."
+
+#: modules/book/book.module:992
+msgid ""
+"The book module offers a means to organize content, authored by many users, "
+"in an online manual, outline or FAQ."
+msgstr ""
+"A könyv modul lehetővé teszi, hogy a felhasználók közösen szerkesszenek "
+"kézikönyveket, leírásokat és/vagy GYIK gyűjteményeket."
+
+#: modules/book/book.module:994
+msgid ""
+"Pages in a book are like a tree. As pages are edited, reorganized and "
+"removed, child pages might be left with no link to the rest of the book. "
+"Such pages are referred to as \"orphan pages\". On this page, administrators "
+"can review their books for orphans and reattach those pages as desired."
+msgstr ""
+"Egy könyv lapjai fa szerkezetben helyezkednek el. Ahogy a lapokat "
+"átszerkesztjük, átszervezzük és töröljük, a gyermek oldalak kapcsolata "
+"elveszhet a könyv többi részétől. Az ilyen oldalakat hívjuk „árva lapoknak”. "
+"Ez az oldal lehetővé teszi az árva lapok csatolását a könyv valamely "
+"részéhez."
+
+#: modules/book/book.module:998
+msgid ""
+"The outline feature allows you to include posts in the <a href=\"@book"
+"\">book hierarchy</a>."
+msgstr ""
+"A vázlat szerkesztő lehetővé teszi, hogy bármilyen tartalom bekerülhessen <a "
+"href=\"@book\">a könyvek rendszerébe</a>."
+
+#: modules/book/book.module:26
+msgid "outline posts in books"
+msgstr "tartalmak könyvekbe helyezése"
+
+#: modules/book/book.module:26
+msgid "create book pages"
+msgstr "könyvlapok létrehozása"
+
+#: modules/book/book.module:26
+msgid "create new books"
+msgstr "új könyvek létrehozása"
+
+#: modules/book/book.module:26
+msgid "edit book pages"
+msgstr "könyvlapok szerkesztése"
+
+#: modules/book/book.module:26
+msgid "edit own book pages"
+msgstr "saját könyvlapok szerkesztése"
+
+#: modules/book/book.module:26
+msgid "see printer-friendly version"
+msgstr "nyomtatóbarát változat hozzáférése"

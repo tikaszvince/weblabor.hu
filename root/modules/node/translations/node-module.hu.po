@@ -1,0 +1,710 @@
+# $Id: node-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/node/node.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: node.module,v 1.776 2007/01/14 02:12:29 unconed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-16 11:35+0100\n"
+"PO-Revision-Date: 2007-01-10 23:47+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/node/node.module:18
+msgid ""
+"All content in a website is stored and treated as <b>nodes</b>. Therefore "
+"nodes are any postings such as blogs, stories, polls and forums. The node "
+"module manages these content types and is one of the strengths of Drupal "
+"over other content management systems."
+msgstr ""
+"Minden tartalom, ami a webhelyen előfordul úgynevezett „tartalmi "
+"elemként”van tárolva és kezelve. Tartalmi elem például a blogbejegyzés, az "
+"írás, a szavazás, a fórumok. Ezen tartalom típusokat a tartalom modul "
+"kezeli, ami a Drupal egyik legnagyobb erőssége a többi tartalomkezelő "
+"rendszerhez képest."
+
+#: modules/node/node.module:19
+msgid ""
+"Treating all content as nodes allows the flexibility of creating new types "
+"of content. It also allows you to painlessly apply new features or changes "
+"to all content. Comments are not stored as nodes but are always associated "
+"with a node."
+msgstr ""
+"A tartalmak tartalmi elemként való kezelése teszi lehetővé, hogy új tartalom "
+"típusokat hozhatunk létre. Arra is lehetőséget biztosít, hogy egyszerűen "
+"végezzünk módosításokat vagy adjunk funkcionalitást minden tartalomhoz. A "
+"megjegyzések nem tartalmi elemként vannak tárolva, viszont mindig hozzá "
+"vannak rendelve egy másik tartalmi elemhez."
+
+#: modules/node/node.module:20
+msgid ""
+"<p>Node module features</p>\n"
+"<ul>\n"
+"<li>The list tab provides an interface to search and sort all content on "
+"your site.</li>\n"
+"<li>The configure settings tab has basic settings for content on your site.</"
+"li>\n"
+"<li>The configure content types tab lists all content types for your site "
+"and lets you configure their default workflow.</li>\n"
+"<li>The search tab lets you search all content on your site</li>\n"
+"</ul>\n"
+msgstr ""
+"<p>A tartalom kezelő modul funkciói:</p>\n"
+"<ul>\n"
+"<li>A „lista” fülön található a tartalmak számos szempont szerinti "
+"listázását biztosító felület.</li>\n"
+"<li>A „beállítások” menüben lehetőség van a tartalmak néhány "
+"alapbeállításának módosítására.</li>\n"
+"<li>A „tartalom típusok” menüben lehetőség van a típusok munkafolyamatának "
+"és más tulajdonságainak beállítására.</li>\n"
+"<li>A „keresés” fülön a webhelyen megjelent tartalmak kereshetők.</li>\n"
+"</ul>\n"
+
+#: modules/node/node.module:28
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@node\">Node page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@node"
+"\">tartalmakról szóló oldalán</a> található."
+
+#: modules/node/node.module:31
+msgid ""
+"Enter a simple pattern to search for a post. Words are matched exactly. "
+"Phrases can be surrounded by quotes to do an exact search."
+msgstr ""
+"Egyszerű kifejezések kereshetőek a tartalmakban. A megadott szavak csak "
+"pontos egyezés esetén illeszkednek, a több szóból álló kifejezéseket "
+"idézőjelben lehet megadni."
+
+#: modules/node/node.module:33
+msgid ""
+"Below is a list of all the content types on your site. All posts that exist "
+"on your site are instances of one of these content types."
+msgstr ""
+"Az alábbi tartalom típusok vannak használatban a webhelyen. Minden tartalom "
+"ezek közül valamelyik típusba tartozik."
+
+#: modules/node/node.module:35
+msgid ""
+"To create a new content type, enter the human-readable name, the machine-"
+"readable name, and all other relevant fields that are on this page. Once "
+"created, users of your site will be able to create posts that are instances "
+"of this content type."
+msgstr ""
+"Új tartalom típus létrehozásához a típus emberek számára olvasható neve, a "
+"programok által kezelt neve és más adatai adandóak meg. A létrehozott "
+"tartalom típusok példányaiként az arra jogosult felhasználók tartalmakat "
+"küldhetnek be a webhelyen."
+
+#: modules/node/node.module:39
+msgid ""
+"The revisions let you track differences between multiple versions of a post."
+msgstr ""
+"A változáskövetés lehetővé teszi a különböző korábbi állapotokra való "
+"visszatérést, és az azokkal való összehasonlítást."
+
+#: modules/node/node.module:798;1074;1128
+msgid "Content"
+msgstr "Tartalom"
+
+#: modules/node/node.module:815
+msgid "Content ranking"
+msgstr "Rangsorolás"
+
+#: modules/node/node.module:817
+msgid ""
+"The following numbers control which properties the content search should "
+"favor when ordering the results. Higher numbers mean more influence, zero "
+"means the property is ignored. Changing these numbers does not require the "
+"search index to be rebuilt. Changes take effect immediately."
+msgstr ""
+"A következő számok határozzák meg, hogy milyen szempontok alapján rendezi a "
+"találatokat sorba a kereső. Nagyobb szám nagyobb befolyást jelent, nulla "
+"esetén a szempont figyelmen kívül lesz hagyva. A számok változtatása nem "
+"teszi szükségessé a keresési index újraépítését, így a módosítások azonnal "
+"érvényre lépnek."
+
+#: modules/node/node.module:819
+msgid "Keyword relevance"
+msgstr "Találati pontosság"
+
+#: modules/node/node.module:820
+msgid "Recently posted"
+msgstr "Közzététel frissessége"
+
+#: modules/node/node.module:822
+msgid "Number of comments"
+msgstr "Megjegyzések száma"
+
+#: modules/node/node.module:825
+msgid "Number of views"
+msgstr "Olvasások száma"
+
+#: modules/node/node.module:952
+msgid "Factor"
+msgstr "Szempont"
+
+#: modules/node/node.module:972
+msgid ""
+"If the site is experiencing problems with permissions to content, you may "
+"have to rebuild the permissions cache. Possible causes for permission "
+"problems are disabling modules or configuration changes to permissions. "
+"Rebuilding will remove all privileges to posts, and replace them with "
+"permissions based on the current modules and settings."
+msgstr ""
+"Ha a tartalmakra vonatkozó jogosultságokkal kapcsolatos gondok merülnek fel, "
+"szükség lehet a jogosultság gyorsítótár frissítésére. Az ilyen hibák "
+"lehetséges okai közé sorolható a modulok kikapcsolása vagy a jogosultságok "
+"beállításainak változtatása. A gyorsítótár frissítése minden tartalmakhoz "
+"kapcsolódó jogosultságot töröl, majd felveszi az aktuális modulok és "
+"beállítások alapján érvényes jogosultságokat."
+
+#: modules/node/node.module:973
+msgid ""
+"Rebuilding may take some time if there is a lot of content or complex "
+"permission settings. After rebuilding has completed posts will automatically "
+"use the new permissions."
+msgstr ""
+"A jogosultság gyorsítótár frissítése sok időt vehet igénybe, ha nagy "
+"mennyiségű tartalom van a rendszerben vagy összetettek a jogosultság "
+"beállítások. A frissítést követően a tartalmak azonnal az aktuális "
+"jogosultságokkal lesznek elérhetőek."
+
+#: modules/node/node.module:975
+msgid "Node access status"
+msgstr "Tartalom elérési állapot"
+
+#: modules/node/node.module:977;1005;1015
+msgid "Rebuild permissions"
+msgstr "Jogosultságok frissítése"
+
+#: modules/node/node.module:981
+msgid "Number of posts on main page"
+msgstr "Oldalakon megjelenő tartalmak száma"
+
+#: modules/node/node.module:983
+msgid ""
+"The default maximum number of posts to display per page on overview pages "
+"such as the main page."
+msgstr ""
+"Az áttekintő oldalakon (mint például a címlap) megjelenő tartalmak száma."
+
+#: modules/node/node.module:986
+msgid "Length of trimmed posts"
+msgstr "Bevezetők hossza"
+
+#: modules/node/node.module:987
+msgid "200 characters"
+msgstr "200 karakter"
+
+#: modules/node/node.module:987
+msgid "400 characters"
+msgstr "400 karakter"
+
+#: modules/node/node.module:987
+msgid "600 characters"
+msgstr "600 karakter"
+
+#: modules/node/node.module:988
+msgid "800 characters"
+msgstr "800 karakter"
+
+#: modules/node/node.module:988
+msgid "1000 characters"
+msgstr "1000 karakter"
+
+#: modules/node/node.module:988
+msgid "1200 characters"
+msgstr "1200 karakter"
+
+#: modules/node/node.module:988
+msgid "1400 characters"
+msgstr "1400 karakter"
+
+#: modules/node/node.module:989
+msgid "1600 characters"
+msgstr "1600 karakter"
+
+#: modules/node/node.module:989
+msgid "1800 characters"
+msgstr "1800 karakter"
+
+#: modules/node/node.module:989
+msgid "2000 characters"
+msgstr "2000 karakter"
+
+#: modules/node/node.module:990
+msgid ""
+"The maximum number of characters used in the trimmed version of a post. "
+"Drupal will use this setting to determine at which offset long posts should "
+"be trimmed. The trimmed version of a post is typically used as a teaser when "
+"displaying the post on the main page, in XML feeds, etc. To disable teasers, "
+"set to 'Unlimited'. Note that this setting will only affect new or updated "
+"content and will not affect existing teasers."
+msgstr ""
+"A törzs kezdetéből előállított bevezető maximális hossza karakterben. A "
+"bevezető a címlapon és az XML csatornáknál is felhasználásra kerül. "
+"Kikapcsolásához a „korlátlan” hosszt kell választani. A beállítás "
+"változtatása nem lesz hatással a már beküldött tartalmakra, csak az ezután "
+"felvett vagy szerkesztett szövegekre."
+
+#: modules/node/node.module:994
+msgid "Preview post"
+msgstr "Előnézet"
+
+#: modules/node/node.module:995
+msgid "Must users preview posts before submitting?"
+msgstr "Beküldés előtt kötelező-e az előnézet megtekintése?"
+
+#: modules/node/node.module:1014
+msgid "Are you sure you want to rebuild node permissions on the site?"
+msgstr "Biztos, hogy a tartalmak jogosultságának frissítése szükséges?"
+
+#: modules/node/node.module:1015
+msgid ""
+"This will wipe all current node permissions and rebuild them based on "
+"current settings. Rebuilding the permissions may take a while so please be "
+"patient. This action cannot be undone."
+msgstr ""
+"A jogosultság gyorsítótár törlése és az aktuális beállítások szerinti "
+"újraépítése. A frissítés hosszabb időt vehet igénybe. A művelet nem "
+"visszavonható."
+
+#: modules/node/node.module:1023
+msgid "The node access table has been rebuilt."
+msgstr "A jogosultság gyorsítótár frissült."
+
+#: modules/node/node.module:1047
+msgid "Read more"
+msgstr "Tovább"
+
+#: modules/node/node.module:1049
+msgid "Read the rest of this posting."
+msgstr "A tartalom további része."
+
+#: modules/node/node.module:1064
+msgid "Content management"
+msgstr "Tartalom kezelés"
+
+#: modules/node/node.module:1065
+msgid "Manage your site's content."
+msgstr "A webhely tartalmainak kezelése."
+
+#: modules/node/node.module:1075
+msgid "View, edit, and delete your site's content."
+msgstr "Tartalmak megtekintése, szerkesztése és törlése."
+
+#: modules/node/node.module:1084
+msgid "Search content"
+msgstr "Tartalmak keresése"
+
+#: modules/node/node.module:1085
+msgid "Search content by keyword."
+msgstr "Tartalmak keresése kulcsszavak szerint."
+
+#: modules/node/node.module:1093
+msgid "Post settings"
+msgstr "Tartalmak beállításai"
+
+#: modules/node/node.module:1094
+msgid ""
+"Control posting behavior, such as teaser length, requiring previews before "
+"posting, and the number of posts on the front page."
+msgstr ""
+"A tartalmak kezelésének beállításai, mint a bevezető hossza, előnézetek "
+"kötelezővé tétele, és a címlapon megjelenített tartalmak száma."
+
+#: modules/node/node.module:1101
+msgid "rebuild permissions"
+msgstr "jogosultság gyorsítótár frissítése"
+
+#: modules/node/node.module:1109
+msgid "Content types"
+msgstr "Tartalom típusok"
+
+#: modules/node/node.module:1110
+msgid ""
+"Manage posts by content type, including default status, front page "
+"promotion, etc."
+msgstr ""
+"A tartalmak kezelése típusok szerint, mint az alapértelmezett állapot, "
+"címlapra kerülés stb."
+
+#: modules/node/node.module:1122
+msgid "Add content type"
+msgstr "Tartalom típus hozzáadása"
+
+#: modules/node/node.module:1133;2214
+msgid "Create content"
+msgstr "Tartalom beküldése"
+
+#: modules/node/node.module:1198
+msgid "Revisions"
+msgstr "Verziók"
+
+#: modules/node/node.module:1251
+msgid "Publish"
+msgstr "Közzététel"
+
+#: modules/node/node.module:1255
+msgid "Unpublish"
+msgstr "Elrejtés"
+
+#: modules/node/node.module:1259
+msgid "Promote to front page"
+msgstr "Címlapra kerül"
+
+#: modules/node/node.module:1263
+msgid "Demote from front page"
+msgstr "Nem kerül címlapra"
+
+#: modules/node/node.module:1267
+msgid "Make sticky"
+msgstr "Kiemelt"
+
+#: modules/node/node.module:1271
+msgid "Remove stickiness"
+msgstr "Kiemeltség megszüntetése"
+
+#: modules/node/node.module:1329;1558
+msgid "published"
+msgstr "közzétett"
+
+#: modules/node/node.module:1329;1558
+msgid "not published"
+msgstr "rejtett"
+
+#: modules/node/node.module:1330
+msgid "promoted"
+msgstr "címlapon"
+
+#: modules/node/node.module:1330
+msgid "not promoted"
+msgstr "nincs címlapon"
+
+#: modules/node/node.module:1331
+msgid "sticky"
+msgstr "kiemelt"
+
+#: modules/node/node.module:1331
+msgid "not sticky"
+msgstr "nem kiemelt"
+
+#: modules/node/node.module:1332
+msgid "type"
+msgstr "típus"
+
+#: modules/node/node.module:1335
+msgid "category"
+msgstr "kategória"
+
+#: modules/node/node.module:1383
+msgid "Show only items where"
+msgstr "Csak azok mutatása, melyek"
+
+#: modules/node/node.module:1515
+msgid "No items selected."
+msgstr "Nincs kiválasztott elem."
+
+#: modules/node/node.module:1613
+msgid "Are you sure you want to delete these items?"
+msgstr "Biztos, hogy ezek a tartalmak törölhetőek?"
+
+#: modules/node/node.module:1623
+msgid "The items have been deleted."
+msgstr "Tartalmak törölve."
+
+#: modules/node/node.module:1632
+msgid "Revisions for %title"
+msgstr "%title verziói"
+
+#: modules/node/node.module:1634
+msgid "Revision"
+msgstr "Verziók"
+
+#: modules/node/node.module:1652;1658
+msgid "!date by !username"
+msgstr "!date, !username"
+
+#: modules/node/node.module:1655
+msgid "current revision"
+msgstr "aktuális verzió"
+
+#: modules/node/node.module:1661
+msgid "revert"
+msgstr "visszaállítás"
+
+#: modules/node/node.module:1685
+msgid "Copy of the revision from %date."
+msgstr "%date napon készült verzió másolata."
+
+#: modules/node/node.module:1692
+msgid "%title has been reverted back to the revision from %revision-date"
+msgstr "%title visszaállítva %revision-date dátumú verziójára"
+
+#: modules/node/node.module:1693
+msgid "@type: reverted %title revision %revision."
+msgstr "@type: %title %revision. verziója visszaállítva."
+
+#: modules/node/node.module:1696
+msgid "You tried to revert to an invalid revision."
+msgstr "Érvénytelen verzióra nem lehet visszaállítani."
+
+#: modules/node/node.module:1717
+msgid "Deleted %title revision %revision."
+msgstr "%title %revision. verziója törölve."
+
+#: modules/node/node.module:1718
+msgid "@type: deleted %title revision %revision."
+msgstr "@type: %title %revision. verziója törölve."
+
+#: modules/node/node.module:1722
+msgid "Deletion failed. You tried to delete the current revision."
+msgstr "A törlés sikertelen. Nem lehet törölni az aktuális verziót."
+
+#: modules/node/node.module:1758;1762
+msgid "Syndicate"
+msgstr "Tartalom megosztás"
+
+#: modules/node/node.module:1920
+msgid "The body of your @type is too short. You need at least %words words."
+msgstr ""
+"A beküldött @type szövegtörzse túl rövid. Legalább %words szóból kell állnia."
+
+#: modules/node/node.module:1924
+msgid ""
+"This content has been modified by another user, changes cannot be saved."
+msgstr ""
+"Más felhasználó már módosította ezt a tartalmat, ezért a változások nem "
+"menthetőek."
+
+#: modules/node/node.module:1933
+msgid "The username %name does not exist."
+msgstr "%name nevű felhasználó nem létezik."
+
+#: modules/node/node.module:2018
+msgid ""
+"An explanation of the additions or updates being made to help other authors "
+"understand your motivations."
+msgstr ""
+"A hozzáadott részek és módosítások magyarázata, hogy más szerkesztők is "
+"könnyebben érthessék a változtatás célját."
+
+#: modules/node/node.module:2026
+msgid "Authoring information"
+msgstr "Szerzői információk"
+
+#: modules/node/node.module:2031
+msgid "Leave blank for %anonymous."
+msgstr "Üresen hagyandó ha %anonymous."
+
+#: modules/node/node.module:2032
+msgid "Format: %time. Leave blank to use the time of form submission."
+msgstr "Formátum: %time. Üresen hagyva a beküldés ideje kerül felhasználásra."
+
+#: modules/node/node.module:2042
+msgid "Publishing options"
+msgstr "Közzétételi beállítások"
+
+#: modules/node/node.module:2144;2214
+msgid "Submit @name"
+msgstr "@name beküldése"
+
+#: modules/node/node.module:2152
+msgid "Add a new @s."
+msgstr "Új @s hozzáadása."
+
+#: modules/node/node.module:2161
+msgid "Choose the appropriate item from the list:"
+msgstr "A megfelelő tartalom típus kiválasztása a listából:"
+
+#: modules/node/node.module:2229
+msgid ""
+"The trimmed version of your post shows what your post looks like when "
+"promoted to the main page or when exported for syndication. You can insert "
+"the delimiter \"&lt;!--break--&gt;\" (without the quotes) to fine-tune where "
+"your post gets split."
+msgstr ""
+"A tartalom bevezetőjének előnézete mutatja, hogy miként jelenik meg a "
+"címlapon, áttekintő oldalakon vagy megosztáskor. A &lt;!--break--&gt; "
+"elválasztó használható arra, hogy pontosan meghatározzuk, hol kell a "
+"bevezetőt levágni."
+
+#: modules/node/node.module:2230
+msgid "Preview trimmed version"
+msgstr "Bevezető előnézete"
+
+#: modules/node/node.module:2232
+msgid "Preview full version"
+msgstr "Teljes tartalom előnézete"
+
+#: modules/node/node.module:2244
+msgid "Log"
+msgstr "Napló"
+
+#: modules/node/node.module:2256
+msgid "@type: updated %title."
+msgstr "@type: %title frissítve."
+
+#: modules/node/node.module:2257
+msgid "The %post has been updated."
+msgstr "%post frissítve."
+
+#: modules/node/node.module:2261
+msgid "@type: added %title."
+msgstr "@type: %title hozzáadva."
+
+#: modules/node/node.module:2262
+msgid "Your %post has been created."
+msgstr "%post létrejött."
+
+#: modules/node/node.module:2283
+msgid "Are you sure you want to delete %title?"
+msgstr "„%title” biztosan törölhető?"
+
+#: modules/node/node.module:2322
+msgid "%title has been deleted."
+msgstr "%title törölve."
+
+#: modules/node/node.module:2323
+msgid "@type: deleted %title."
+msgstr "@type: %title törölve."
+
+#: modules/node/node.module:2346
+msgid "Revision of %title from %date"
+msgstr "%title %date dátumú verziója"
+
+#: modules/node/node.module:2374
+msgid "RSS"
+msgstr "RSS"
+
+#: modules/node/node.module:2386
+msgid ""
+"<h1 class=\"title\">Welcome to your new Drupal website!</h1><p>Please follow "
+"these steps to set up and start using your website:</p>"
+msgstr ""
+"<h1 class=\"title\">Üdvözlet a frissen telepített Drupal alapú webhelyen!</"
+"h1><p>A telepítés befejezéséhez és a használat megkezdéséhez az alábbi "
+"lépéseket kell még megtenni:</p>"
+
+#: modules/node/node.module:2390
+msgid ""
+"<strong>Create your administrator account</strong> To begin, <a href="
+"\"@register\">create the first account</a>. This account will have full "
+"administration rights and will allow you to configure your website."
+msgstr ""
+"<strong>Az adminisztrátori azonosító létrehozása</strong> Ehhez először <a "
+"href=\"@register\">létre kell hozni az első felhasználót</a>. Ez az "
+"azonosító minden jogosultsággal rendelkezni fog, hogy a webhely "
+"adminisztrációját el lehessen vele végezni."
+
+#: modules/node/node.module:2392
+msgid ""
+"<strong>Configure your website</strong> Once logged in, visit the <a href="
+"\"@admin\">administration section</a>, where you can <a href=\"@config"
+"\">customize and configure</a> all aspects of your website."
+msgstr ""
+"<strong>A webhely beállítása</strong> Belépés után az <a href=\"@admin"
+"\">adminisztrációs részből</a> érhető el a webhely <a href=\"@config"
+"\">összes általános beállítása</a>."
+
+#: modules/node/node.module:2393
+msgid ""
+"<strong>Enable additional functionality</strong> Next, visit the <a href="
+"\"@modules\">module list</a> and enable features which suit your specific "
+"needs. You can find additional modules in the <a href=\"@download_modules"
+"\">Drupal modules download section</a>."
+msgstr ""
+"<strong>További funkciók bekapcsolása</strong> Következő lépésként érdemes "
+"áttekinteni a <a href=\"@modules\">modulok listáját</a> és engedélyezni "
+"azokat, amelyekre szükség van. Továbbiak a <a href=\"@download_modules"
+"\">Drupal modulok letöltése oldalon</a> találhatóak."
+
+#: modules/node/node.module:2394
+msgid ""
+"<strong>Customize your website design</strong> To change the \"look and feel"
+"\" of your website, visit the <a href=\"@themes\">themes section</a>. You "
+"may choose from one of the included themes or download additional themes "
+"from the <a href=\"@download_themes\">Drupal themes download section</a>."
+msgstr ""
+"<strong>A megjelenés megváltoztatása</strong> A webhely kinézetének "
+"megváltoztatását a <a href=\"@themes\">smink beállító részben</a> lehet "
+"megtenni. Számos beépített smink választható, de újat is le lehet tölteni a "
+"<a href=\"@download_themes\">Drupal sminkek letöltése oldalon</a>."
+
+#: modules/node/node.module:2395
+msgid ""
+"<strong>Start posting content</strong> Finally, you can <a href=\"@content"
+"\">create content</a> for your website. This message will disappear once you "
+"have promoted a post to the front page."
+msgstr ""
+"<strong>Tartalom feltöltése</strong> Végül megkezdhető a <a href=\"@content"
+"\">tartalmak beküldése</a>. Ez az üzenet az első címlapra is kerülő tartalom "
+"beküldése után eltűnik."
+
+#: modules/node/node.module:2397
+msgid ""
+"For more information, please refer to the <a href=\"@help\">help section</"
+"a>, or the <a href=\"@handbook\">online Drupal handbooks</a>. You may also "
+"post at the <a href=\"@forum\">Drupal forum</a>, or view the wide range of "
+"<a href=\"@support\">other support options</a> available."
+msgstr ""
+"Az ismerkedést javasolt az adminisztráció menü alapos áttanulmányozásával, a "
+"Drupal kínálta számtalan lehetőség felfedezésével kezdeni. Ebben <a href="
+"\"@help\">a Drupal beépített súgója</a> is segíthet. További információért "
+"érdemes felkeresni a <a href=\"http://drupal.hu/kezikonyv\">magyar nyelvű</"
+"a> vagy az <a href=\"@handbook\">angol nyelvű</a> Drupal kézikönyvet. A "
+"felmerült kérdéseket a magyar nyelvű <a href=\"http://drupal.hu/"
+"levelezolistak\">levelezési listákon</a> és <a href=\"http://drupal.hu/forum"
+"\">fórumon</a> érdemes feltenni.</p>"
+
+#: modules/node/node.module:2492;2544
+msgid "Advanced search"
+msgstr "Részletes keresés"
+
+#: modules/node/node.module:2503
+msgid "Containing any of the words"
+msgstr "Tartalmazza ezen szavak bármelyikét"
+
+#: modules/node/node.module:2509
+msgid "Containing the phrase"
+msgstr "Tartalmazza pontosan ezt a kifejezést"
+
+#: modules/node/node.module:2515
+msgid "Containing none of the words"
+msgstr "Ne tartalmazza ezeket a szavakat"
+
+#: modules/node/node.module:2524
+msgid "Only in the category(s)"
+msgstr "Csak az ilyen kategóriában"
+
+#: modules/node/node.module:2537
+msgid "Only of the type(s)"
+msgstr "Csak az ilyen tartalmakban"
+
+#: modules/node/node.module:777
+msgid "administer content types"
+msgstr "tartalom típusok adminisztrációja"
+
+#: modules/node/node.module:777
+msgid "administer nodes"
+msgstr "tartalmak adminisztrációja"
+
+#: modules/node/node.module:777
+msgid "access content"
+msgstr "tartalmak hozzáférése"
+
+#: modules/node/node.module:777
+msgid "view revisions"
+msgstr "verziók megtekintése"
+
+#: modules/node/node.module:777
+msgid "revert revisions"
+msgstr "visszatérés korábbi verzióra"

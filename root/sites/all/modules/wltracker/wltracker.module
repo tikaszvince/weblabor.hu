@@ -1,0 +1,148 @@
+<?php
+
+/**
+ * Implementation of hook_menu().
+ */
+function wltracker_menu() {
+  $items = array();
+  
+  $items['koveto'] = array(
+    'title' => 'Friss tartalom',
+    'page callback' => 'wltracker_page',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['koveto/mind'] = array(
+    'title' => 'Minden friss tartalom',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'access callback' => TRUE,
+    'weight' => 1,
+  );
+  $items['koveto/%user_uid_optional'] = array(
+    'title' => 'Saját friss tartalmaim',
+    'page arguments' => array(1),
+    'access callback' => '_wltracker_myrecent_access',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 10,
+  );
+
+  // Itt a webcímeket nem tudjuk lefordítani, mert a stat
+  // modullal illeszkedni kell fülek miatt!
+  $items['user/%user/track'] = array(
+    'title' => 'Követés',
+    'page callback' => 'wltracker_track_user',
+    'page arguments' => array(1),
+    'access callback' => '_wltracker_user_access',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK
+  );
+  $items['user/%user/track/posts'] = array(
+    'title' => 'Tartalmak követése',
+    'page arguments' => array(1),
+    'access callback' => '_wltracker_user_access',
+    'access arguments' => array(1),
+    'type' => MENU_DEFAULT_LOCAL_TASK
+  );
+  
+  return $items;
+}
+
+/**
+ * Access callback for tracker/%user_uid_optional
+ */
+function _wltracker_myrecent_access($account) {
+  // This path is only allowed for authenticated users looking at their own posts.
+  return $account->uid && ($GLOBALS['user']->uid == $account->uid) && user_access('access content');
+}
+
+/**
+ * Access callback for user/%user/track
+ */
+function _wltracker_user_access($account) {
+  return user_view_access($account) && user_access('access content');
+}
+
+/**
+ * Felhasználói tracker.
+ */
+function wltracker_track_user($account = NULL) {
+  if (isset($account)) {
+    drupal_set_title(check_plain($account->name));
+    return wltracker_page($account);
+  }
+}
+
+/**
+ * Felhasználói vagy webhely szintű tracker.
+ */
+function wltracker_page($account = NULL) {
+  global $user;
+
+  drupal_add_feed(url("rss", array('absolute' => TRUE)), 'Weblabor RSS');
+
+  // Itt meg valamiert nincs betoltve a smink.
+  include_once 'sites/all/themes/wl/template.php';
+
+  $output = '';
+
+  if (isset($account)) {
+    $sql = 'SELECT DISTINCT(n.nid), n.title, n.type, n.changed, n.uid, u.name, GREATEST(l.last_comment_timestamp, n.created) AS last_post, l.comment_count FROM {node} n INNER JOIN {node_comment_statistics} l ON n.nid = l.nid INNER JOIN {users} u ON n.uid = u.uid LEFT JOIN {comments} c ON n.nid = c.nid AND (c.status = 0 OR c.status IS NULL) WHERE n.status = 1 AND (n.uid = %d OR c.uid = %d) ORDER BY last_post DESC';
+    $sql = db_rewrite_sql($sql);
+    $sql_count = 'SELECT COUNT(DISTINCT(n.nid)) FROM {node} n LEFT JOIN {comments} c ON n.nid = c.nid AND (c.status = 0 OR c.status IS NULL) WHERE n.status = 1 AND (n.uid = %d OR c.uid = %d)';
+    $sql_count = db_rewrite_sql($sql_count);
+    $result = pager_query($sql, 20, 0, $sql_count, $account->uid, $account->uid);
+  }
+  else {
+    $sql = 'SELECT DISTINCT(n.nid), n.title, n.type, n.changed, n.uid, u.name, GREATEST(l.last_comment_timestamp, n.created) AS last_post, l.comment_count FROM {node} n INNER JOIN {users} u ON n.uid = u.uid INNER JOIN {node_comment_statistics} l ON n.nid = l.nid WHERE n.status = 1 ORDER BY last_post DESC';
+    $sql = db_rewrite_sql($sql);
+    $sql_count = 'SELECT COUNT(n.nid) FROM {node} n WHERE n.status = 1';
+    $sql_count = db_rewrite_sql($sql_count);
+    $result = pager_query($sql, 20, 0, $sql_count);
+  }
+
+  while ($node = db_fetch_object($result)) {
+    // Determine the comments:
+    $cresult = db_query("SELECT c.*, u.name FROM {comments} c INNER JOIN {users} u ON c.uid = u.uid WHERE c.nid = %d AND c.status = 0 ORDER BY c.cid DESC", $node->nid);
+    $comments = array();
+    $firstread = -1;
+    while ($comment = db_fetch_object($cresult)) {
+      $mark = (node_mark($comment->nid, $comment->timestamp) == MARK_READ ? MARK_READ : MARK_NEW);
+      $firstread = (($firstread > -1) ? $firstread : ($mark == MARK_READ ? count($comments) : $firstread));
+      $comments[] = '<li>'. theme('mark', $mark, TRUE) .' '. l($comment->subject, 'node/'. $node->nid, array('fragment' => 'comment-'. $comment->cid)) .' &ndash; '.  theme('username', $comment) ."</li>\n";
+    }
+    if ($comments) {
+      // Tul sok olvasott komment listazas elkerulese
+      if (($firstread > -1) && (($cmr = count($comments) - $firstread) > 10) && $user->uid) {
+        $comments = array_slice($comments, 0, $firstread + 10);
+        $comments[count($comments)-1] = preg_replace(
+          '!^.+(<a[^>]+>).+$!U',
+          '<li class="moreread collapsed">\\1További '. ($cmr - 9) .' olvasott</a></li>',
+          $comments[count($comments)-1]
+        );
+      }
+      $comments = "<ul>". implode("\n", $comments) ."</ul>";
+    }
+    else {
+      $comments = "";
+    }
+
+    $fragment = ($mark == MARK_READ && $firstread > 0) ? "new" : "";
+    $rows[] = array(
+      // Sminket közvetlenül hívjuk, így nem kell registry-t kamuzni neki.
+      array('class' => 'icon', 'data' => wl_type_marker($node->type)),
+      theme('mark', node_mark($node->nid, $node->changed)) .' '. l($node->title, 'node/'. $node->nid, array('attributes' => array('id' => 'node-title-'. $node->nid, 'class' => 'node-title-editable'), 'fragment' => $fragment)) . $comments,
+      theme('username', $node),
+      format_interval(time() - $node->last_post)
+    );
+  }
+
+  $header = array(array('colspan' => 2, 'data' => 'Tartalom'), 'Szerző', 'Utolsó beküldés');
+
+  $output .= '<div id="tracker">';
+  $output .= theme('table', $header, $rows);
+  $output .= theme('pager', NULL, 20, 0);
+  $output .= '</div>';
+
+  return $output;
+}

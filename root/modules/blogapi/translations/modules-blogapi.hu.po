@@ -1,0 +1,219 @@
+# $Id: modules-blogapi.po,v 1.1.2.10 2008/02/08 23:53:36 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-blogapi)
+# Copyright 2007 Hungarian Translation Team
+# Generated from file: blogapi.module,v 1.115.2.1 2008/02/07 20:11:02 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-02-09 00:39+0100\n"
+"PO-Revision-Date: 2008-02-09 00:47+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: modules/blogapi/blogapi.module:15
+msgid ""
+"The Blog API module allows your site's users to access and post to their "
+"blogs from external blogging clients. External blogging clients are "
+"available for a wide range of desktop operating systems, and generally "
+"provide a feature-rich graphical environment for creating and editing posts."
+msgstr ""
+"A Blog API modul lehetővé teszi a webhely felhasználóinak, hogy a blogjaikat "
+"külső kliens programokkal elérhessék és szerkeszthessék. Ilyen külső blog "
+"kliensek számos platformra elérhetőek, kényelmes felületet biztosítva "
+"tartalmak beküldéséhez és szerkesztéséhez."
+
+#: modules/blogapi/blogapi.module:16
+msgid ""
+"<a href=\"@ecto-link\">Ecto</a>, a blogging client available for both Mac OS "
+"X and Microsoft Windows, can be used with Blog API. Blog API also supports "
+"<a href=\"@blogger-api\">Blogger API</a>, <a href=\"@metaweblog-api"
+"\">MetaWeblog API</a>, and most of the <a href=\"@movabletype-api\">Movable "
+"Type API</a>. Blogging clients and other services (e.g. <a href=\"@flickr"
+"\">Flickr's</a> \"post to blog\") that support these APIs may also be "
+"compatible."
+msgstr ""
+"Ajánljuk az <a href=\"@ecto-link\">Ecto</a> klienst, mely mind Mac OS X, "
+"mind Microsoft Windows rendszerre elérhető. A Blog API számos blog "
+"szerkesztési felületet támogat: a <a href=\"@blogger-api\">Blogger API</a>-"
+"t, a <a href=\"@metaweblog-api\">MetaWeblog API</a>-t és a <a href="
+"\"@movabletype-api\">Movable Type API</a> legnagyobb részét. Minden olyan "
+"alkalmazás és szolgáltatás (például a <a href=\"@flickr\">Flickr</a> "
+"„blogbejegyzés beküldése”) amely támogatja az említett felületeket, működni "
+"fog ezzel a webhellyel is."
+
+#: modules/blogapi/blogapi.module:17
+msgid ""
+"Select the content types available to external clients on the <a href="
+"\"@blogapi-settings\">Blog API settings page</a>. If supported and "
+"available, each content type will be displayed as a separate \"blog\" by the "
+"external client."
+msgstr ""
+"A külső kliensek számára elérhető tartalom típusok a <a href=\"@blogapi-"
+"settings\">Blog API beállítás oldalon</a> adhatóak meg. Ha a kliens "
+"támogatja, akkkor minden tartalom típus külön blogként jelenik majd meg."
+
+#: modules/blogapi/blogapi.module:18
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@blogapi"
+"\">Blog API module</a>."
+msgstr ""
+"További információ az online kézikönyv <a href=\"@blogapi\">blog API "
+"modulról szóló oldalán</a> található."
+
+#: modules/blogapi/blogapi.module:39
+msgid "Returns a list of blogs to which an author has posting privileges."
+msgstr ""
+"Azoknak a blogoknak a listájával tér vissza, amelyekbe a szerző "
+"bejegyzéseket küldhet."
+
+#: modules/blogapi/blogapi.module:44
+msgid "Returns information about an author in the system."
+msgstr "Visszatér a rendszerben lévő szerző adataival."
+
+#: modules/blogapi/blogapi.module:49;74
+msgid "Creates a new post, and optionally publishes it."
+msgstr "Létrehoz egy új bejegyzést, akár azonnali közzététellel."
+
+#: modules/blogapi/blogapi.module:54
+msgid "Updates the information about an existing post."
+msgstr "Frissíti egy meglévő tartalom adatait."
+
+#: modules/blogapi/blogapi.module:59;84
+msgid "Returns information about a specific post."
+msgstr "Visszatér egy adott bejegyzés adataival."
+
+#: modules/blogapi/blogapi.module:64
+msgid "Deletes a post."
+msgstr "Töröl egy bejegyzést."
+
+#: modules/blogapi/blogapi.module:69;99
+msgid "Returns a list of the most recent posts in the system."
+msgstr "Visszatér a friss bejegyzések listájával."
+
+#: modules/blogapi/blogapi.module:79
+msgid "Updates information about an existing post."
+msgstr "Frissíti egy már meglévő bejegyzés adatait."
+
+#: modules/blogapi/blogapi.module:89
+msgid "Uploads a file to your webserver."
+msgstr "Feltölt egy fájlt a webkiszolgálóra."
+
+#: modules/blogapi/blogapi.module:94;114
+msgid "Returns a list of all categories to which the post is assigned."
+msgstr "Visszatér a bejegyzéshez rendelt kategóriákkal."
+
+#: modules/blogapi/blogapi.module:104
+msgid ""
+"Returns a bandwidth-friendly list of the most recent posts in the system."
+msgstr "Kis sávszélességet foglaló listát ad a rendszer friss bejegyzéseiről."
+
+#: modules/blogapi/blogapi.module:109
+msgid "Returns a list of all categories defined in the blog."
+msgstr "A blog összes kategóriájának listájával tér vissza."
+
+#: modules/blogapi/blogapi.module:119
+msgid "Sets the categories for a post."
+msgstr "Kategóriához rendel egy bejegyzést."
+
+#: modules/blogapi/blogapi.module:124
+msgid "Retrieve information about the XML-RPC methods supported by the server."
+msgstr "Lekérdezi a kiszolgáló által nyújtott XML-RPC metódusokat."
+
+#: modules/blogapi/blogapi.module:129
+msgid ""
+"Retrieve information about the text formatting plugins supported by the "
+"server."
+msgstr "Lekérdezi a kiszolgáló által támogatott szövegformázási lehetőségeket."
+
+#: modules/blogapi/blogapi.module:134
+msgid ""
+"Publish (rebuild) all of the static files related to an entry from your "
+"blog. Equivalent to saving an entry in the system (but without the ping)."
+msgstr ""
+"Megjelenteti (újraépíti) az összes statikus fájlt, amely a blog valamely "
+"bejegyzésével összefügg. Ez a művelet a pingelést kihagyva megegyezik a "
+"bejegyzés mentésével."
+
+#: modules/blogapi/blogapi.module:216
+msgid "You do not have permission to create this type of post."
+msgstr "Nincs engedély ilyen típusú bejegyzés létrehozására."
+
+#: modules/blogapi/blogapi.module:238;293
+msgid "Error storing post."
+msgstr "Hiba a bejegyzés mentésekor."
+
+#: modules/blogapi/blogapi.module:260;502
+msgid "You do not have permission to update this post."
+msgstr "Nincs engedély a bejegyzés frissítéséhez."
+
+#: modules/blogapi/blogapi.module:378
+msgid "No file sent."
+msgstr "Nem érkezett fájl."
+
+#: modules/blogapi/blogapi.module:382
+msgid "Error storing file."
+msgstr "Hiba a fájl mentésekor."
+
+#: modules/blogapi/blogapi.module:497
+msgid "Invalid post."
+msgstr "Érvénytelen bejegyzés."
+
+#: modules/blogapi/blogapi.module:537
+msgid "You do not have permission to edit this blog."
+msgstr "Nincs engedély a blog szerkesztéséhez."
+
+#: modules/blogapi/blogapi.module:541
+msgid "Wrong username or password."
+msgstr "Hibás felhasználói név vagy jelszó."
+
+#: modules/blogapi/blogapi.module:564
+msgid "Enable for external blogging clients"
+msgstr "Külső blogkezelő alkalamzásokhoz engedélyezendő"
+
+#: modules/blogapi/blogapi.module:568
+msgid ""
+"Select the content types available to external blogging clients via Blog "
+"API. If supported, each enabled content type will be displayed as a separate "
+"\"blog\" by the external client."
+msgstr ""
+"A külső kliensek számára elérhető tartalom típusok itt adhatóak meg. Ha a "
+"kliens támogatja, akkkor minden tartalom típus külön blogként jelenik majd "
+"meg."
+
+#: modules/blogapi/blogapi.module:597;576
+msgid "RSD"
+msgstr "RSD"
+
+#: modules/blogapi/blogapi.module:715
+msgid ""
+"Blog API module is not configured to support the %type content type, or you "
+"don't have sufficient permissions to post this type of content."
+msgstr ""
+"A Blog API nincs beállítva %type típusú tartalom kezelésére, vagy nincs "
+"megfelelő jogosultság ilyen típusú tartalmak beküldésére."
+
+#: modules/blogapi/blogapi.module:233
+msgid "@type: added %title using blog API."
+msgstr "@type: %title hozzáadva a blog API használatával."
+
+#: modules/blogapi/blogapi.module:289
+msgid "@type: updated %title using Blog API."
+msgstr "@type: %title módosítva blog API használatával."
+
+#: modules/blogapi/blogapi.module:27
+msgid "administer content with blog api"
+msgstr "tartalmak kezelése blog api-val"
+
+#: modules/blogapi/blogapi.module:583
+msgid "Configure the content types available to external blogging clients."
+msgstr "A külső programok által használható tartalom típusok beállítása."
+
+#: modules/blogapi/blogapi.module:0
+msgid "blogapi"
+msgstr "blogapi"

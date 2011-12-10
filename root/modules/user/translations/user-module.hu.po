@@ -1,0 +1,1490 @@
+# $Id: user-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/user/user.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: user.module,v 1.745 2007/01/11 08:52:45 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-16 11:35+0100\n"
+"PO-Revision-Date: 2007-01-11 00:06+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/user/user.module:242
+msgid "You must enter a username."
+msgstr "Meg kell adni egy felhasználónevet."
+
+#: modules/user/user.module:243
+msgid "The username cannot begin with a space."
+msgstr "A felhasználói név nem kezdődhet szóközzel."
+
+#: modules/user/user.module:244
+msgid "The username cannot end with a space."
+msgstr "A felhasználói név nem végződhet szóközzel."
+
+#: modules/user/user.module:245
+msgid "The username cannot contain multiple spaces in a row."
+msgstr "A felhasználói név nem tartalmazhat több egymás utáni szóközt."
+
+#: modules/user/user.module:246;257
+msgid "The username contains an illegal character."
+msgstr "A felhasználói név nem engedélyezett karaktert tartalmaz."
+
+#: modules/user/user.module:259
+msgid "The username is not a valid authentication ID."
+msgstr "A felhasználói név hibás azonosító."
+
+#: modules/user/user.module:260
+msgid "The username %name is too long: it must be %max characters or less."
+msgstr ""
+"A felhasználói név („%name”) túl hosszú, legfeljebb %max karakteres lehet."
+
+#: modules/user/user.module:264
+msgid "You must enter an e-mail address."
+msgstr "Meg kell adni egy email címet."
+
+#: modules/user/user.module:266
+msgid "The e-mail address %mail is not valid."
+msgstr "Az email cím („%mail”) hibás."
+
+#: modules/user/user.module:281
+msgid "The uploaded file was not an image."
+msgstr "A feltöltött fájl nem kép."
+
+#: modules/user/user.module:287
+msgid "The uploaded image is too large; the maximum file size is %size kB."
+msgstr ""
+"A feltöltött kép túl nagy, a legnagyobb engedélyezett fájlméret %size kB."
+
+#: modules/user/user.module:290
+msgid ""
+"The uploaded image is too large; the maximum dimensions are %dimensions "
+"pixels."
+msgstr "A feltöltött kép túl nagy, legfeljebb %dimensions képpont lehet."
+
+#: modules/user/user.module:298
+msgid ""
+"Failed to upload the picture image; the %directory directory doesn't exist."
+msgstr "A kép feltöltése sikertelen, „%directory” könyvtár nem létezik."
+
+#: modules/user/user.module:430;724
+msgid "Users"
+msgstr "Felhasználók"
+
+#: modules/user/user.module:451;1998;2066
+msgid "Member for"
+msgstr "Ennyi ideje regisztrált felhasználó"
+
+#: modules/user/user.module:471
+msgid "Account settings"
+msgstr "Felhasználói beállítások"
+
+#: modules/user/user.module:482;895;1298;1559;1705;1995;2063
+msgid "Username"
+msgstr "Felhasználói név"
+
+#: modules/user/user.module:494;704;913;1121
+msgid "Log in"
+msgstr "Belépés"
+
+#: modules/user/user.module:498;707;1197;2327
+msgid "Create new account"
+msgstr "Felhasználó létrehozása"
+
+#: modules/user/user.module:498
+msgid "Create a new user account."
+msgstr "Új felhasználó regisztrációja."
+
+#: modules/user/user.module:500;709
+msgid "Request new password"
+msgstr "Elfelejtett jelszó"
+
+#: modules/user/user.module:500
+msgid "Request new password via e-mail."
+msgstr "Új jelszó igénylése emailben."
+
+#: modules/user/user.module:512;550
+msgid "User login"
+msgstr "Belépés"
+
+#: modules/user/user.module:514;571
+msgid "Who's new"
+msgstr "Új felhasználók"
+
+#: modules/user/user.module:515;607
+msgid "Who's online"
+msgstr "Online felhasználók"
+
+#: modules/user/user.module:522
+msgid "Number of users to display"
+msgstr "Megjelenített felhasználók száma"
+
+#: modules/user/user.module:530
+msgid "User activity"
+msgstr "Felhasználói aktivitás"
+
+#: modules/user/user.module:530
+msgid ""
+"A user is considered online for this long after they have last viewed a page."
+msgstr ""
+"Meghatározza, hogy mennyi ideig kell egy felhasználót a webhelyen lévőnek "
+"tekinteni, miután egy oldalt megtekintett."
+
+#: modules/user/user.module:531
+msgid "User list length"
+msgstr "Felhasználói lista hossza"
+
+#: modules/user/user.module:531
+msgid "Maximum number of currently online users to display."
+msgstr "Legfeljebb ennyi felhasználó jelenhet meg a listában."
+
+#: modules/user/user.module:589
+msgid "There is currently %members and %visitors online."
+msgstr "Jelenleg %members és %visitors van a webhelyen."
+
+#: modules/user/user.module:592
+msgid "There are currently %members and %visitors online."
+msgstr "Jelenleg %members és %visitors van a webhelyen."
+
+#: modules/user/user.module:604
+msgid "Online users"
+msgstr "Aktív felhasználók"
+
+#: modules/user/user.module:625
+msgid "@user's picture"
+msgstr "@user képe"
+
+#: modules/user/user.module:696
+msgid "User account"
+msgstr "Felhasználói adatok"
+
+#: modules/user/user.module:700
+msgid "User autocomplete"
+msgstr "Felhasználói adatok automatikus kiegészítése"
+
+#: modules/user/user.module:711
+msgid "Reset password"
+msgstr "Jelszó alapbeállítás"
+
+#: modules/user/user.module:718
+msgid "User management"
+msgstr "Felhasználó kezelés"
+
+#: modules/user/user.module:719
+msgid "Manage your site's users, groups and access to site features."
+msgstr "A webhely felhasználóinak, csoportjainak és jogosultságainak kezelése."
+
+#: modules/user/user.module:725
+msgid "List, add, and edit users."
+msgstr "Felhasználók listája, szerkesztése és hozzáadása."
+
+#: modules/user/user.module:729
+msgid "Add user"
+msgstr "Felhasználó hozzáadása"
+
+#: modules/user/user.module:732
+msgid "User settings"
+msgstr "Felhasználó beállítások"
+
+#: modules/user/user.module:733
+msgid ""
+"Configure default behavior of users, including registration requirements, e-"
+"mails, and user pictures."
+msgstr ""
+"Felhasználói beállítások, mint a regisztráció követelménye, email szövegek "
+"és felhasználói képek."
+
+#: modules/user/user.module:737
+msgid "Access control"
+msgstr "Hozzáférés szabályozás"
+
+#: modules/user/user.module:738
+msgid "Determine access to features by selecting permissions for roles."
+msgstr "Szolgáltatások elérhetőségének beállítása csoportok szerint."
+
+#: modules/user/user.module:741
+msgid "List, edit, or add user roles."
+msgstr "Csoportok listája, szerkesztése és hozzáadása."
+
+#: modules/user/user.module:744
+msgid "Edit role"
+msgstr "Csoport szerkesztése"
+
+#: modules/user/user.module:747
+msgid "Access rules"
+msgstr "Elérési szabályok"
+
+#: modules/user/user.module:748
+msgid ""
+"List and create rules to disallow usernames, e-mail addresses, and IP "
+"addresses."
+msgstr ""
+"Felhasználói nevek, email címek és IP címek tiltási szabályainak beállítása."
+
+#: modules/user/user.module:752;1651
+msgid "Add rule"
+msgstr "Szabály hozzáadása"
+
+#: modules/user/user.module:755
+msgid "Check rules"
+msgstr "Szabályok ellenőrzése"
+
+#: modules/user/user.module:758
+msgid "Edit rule"
+msgstr "Szabály szerkesztése"
+
+#: modules/user/user.module:761
+msgid "Delete rule"
+msgstr "Szabály törlése"
+
+#: modules/user/user.module:766
+msgid "Search users"
+msgstr "Felhasználó keresése"
+
+#: modules/user/user.module:767
+msgid "Search users by name."
+msgstr "Felhasználó keresése név szerint."
+
+#: modules/user/user.module:774
+msgid "My account"
+msgstr "Saját adatok"
+
+#: modules/user/user.module:779
+msgid "Log out"
+msgstr "Kilépés"
+
+#: modules/user/user.module:902
+msgid "Enter your @s username, or an ID from one of our affiliates: !a."
+msgstr ""
+"A webhelyen regisztrált felhasználói név, vagy egyik partnerünknél szerzett "
+"azonosító. Partnereink: !a."
+
+#: modules/user/user.module:905
+msgid "Enter your @s username."
+msgstr "A webhelyen regisztrált felhasználói név."
+
+#: modules/user/user.module:909
+msgid "Enter the password that accompanies your username."
+msgstr "A felhasználói névhez tartozó jelszó."
+
+#: modules/user/user.module:922
+msgid "The username %name has not been activated or is blocked."
+msgstr "„%name” felhasználó hozzáférése blokkolt vagy még nincs aktiválva."
+
+#: modules/user/user.module:926
+msgid "The name %name is a reserved username."
+msgstr "„%name” fenntartott felhasználói név."
+
+#: modules/user/user.module:932
+msgid ""
+"Sorry, unrecognized username or password. <a href=\"@password\">Have you "
+"forgotten your password?</a>"
+msgstr ""
+"Nem megfelelő felhasználói név vagy jelszó. <a href=\"@password"
+"\">Elfelejtette a jelszavát?</a>"
+
+#: modules/user/user.module:933
+msgid "Login attempt failed for %user."
+msgstr "„%user” bejelentkezése sikertelen."
+
+#: modules/user/user.module:945
+msgid "Session opened for %name."
+msgstr "„%name” felhasználó bejelentkezett."
+
+#: modules/user/user.module:982
+msgid "External load by %user using module %module."
+msgstr "„%user” külső felhasználó %module modul segítségével belépett."
+
+#: modules/user/user.module:1001
+msgid "New external user: %user using module %module."
+msgstr "„%user” új külső felhasználó %module modullal."
+
+#: modules/user/user.module:1016
+msgid "Session closed for %name."
+msgstr "„%name” felhasználó kijelentkezett."
+
+#: modules/user/user.module:1032
+msgid "Username or e-mail address"
+msgstr "Felhasználói név vagy email cím"
+
+#: modules/user/user.module:1038
+msgid "E-mail new password"
+msgstr "Új jelszó küldése"
+
+#: modules/user/user.module:1054
+msgid "Sorry, %name is not recognized as a user name or an email address."
+msgstr "%name nem felismerhető felhasználói név vagy email cím."
+
+#: modules/user/user.module:1071
+msgid "Password reset instructions mailed to %name at %email."
+msgstr "„%name” részére, %email címre a jelszó el lett küldve."
+
+#: modules/user/user.module:1072
+msgid "Further instructions have been sent to your e-mail address."
+msgstr "A további teendők leírása emailben érkezik majd meg."
+
+#: modules/user/user.module:1075
+msgid "Error mailing password reset instructions to %name at %email."
+msgstr ""
+"„%name” részére, %email címre a jelszó alapbeállítási lépések elküldésekor "
+"hiba történt."
+
+#: modules/user/user.module:1076
+msgid "Unable to send mail. Please contact the site admin."
+msgstr ""
+"Nem sikerült elküldeni a levelet. Érdemes felvenni a kapcsolatot a webhely "
+"gazdájával."
+
+#: modules/user/user.module:1089
+msgid ""
+"You have already used this one-time login link. It is not necessary to use "
+"this link to login anymore. You are already logged in."
+msgstr ""
+"Ezt az egyszeri belépési linket már elhasználták. Többé nincs szükség rá a "
+"belépéshez, a bejelentkezés már megtörtént."
+
+#: modules/user/user.module:1100
+msgid ""
+"You have tried to use a one-time login link that has expired. Please request "
+"a new one using the form below."
+msgstr ""
+"A használni próbált egyszer használatos belépési link lejárt. A lenti "
+"űrlapon kérhető új."
+
+#: modules/user/user.module:1106
+msgid "User %name used one-time login link at time %timestamp."
+msgstr ""
+"„%name” felhasználó egyszer alkalmazható beléptető linket használt (%"
+"timestamp)."
+
+#: modules/user/user.module:1115
+msgid ""
+"You have just used your one-time login link. It is no longer necessary to "
+"use this link to login. Please change your password."
+msgstr ""
+"Erre az egyszeri belépési linkre többé nincs szükség a későbbi "
+"bejelentkezésekhez. Érdemes ugyanakkor megváltoztatni a jelszót."
+
+#: modules/user/user.module:1119
+msgid ""
+"<p>This is a one-time login for %user_name and will expire on %"
+"expiration_date</p><p>Click on this button to login to the site and change "
+"your password.</p>"
+msgstr ""
+"<p>Ez az egyszer használatos belépési mód %user_name részére és %"
+"expiration_date időpontban fog lejárni.</p><p>Az alábbi gombra kattintva "
+"lehet a webhelyre bejelentkezni és a jelszót megváltoztatni. Onnantól kezdve "
+"a megadott új jelszóval lehet a webhelyre belépni.</p>"
+
+#: modules/user/user.module:1120
+msgid "This login can be used only once."
+msgstr "Ez a belépési mód csak egyszer használható."
+
+#: modules/user/user.module:1127
+msgid ""
+"You have tried to use a one-time login link which has either been used or is "
+"no longer valid. Please request a new one using the form below."
+msgstr ""
+"Ezt az egyszeri belépési linket már valaki használta vagy érvényessége "
+"lejárt. A lenti űrlapon lehet újat kérni."
+
+#: modules/user/user.module:1167
+msgid ""
+"Note: if you have an account with one of our affiliates (!s), you may <a "
+"href=\"@login_uri\">login now</a> instead of registering."
+msgstr ""
+"Aki valamelyik partnerünknél (!s) már rendelkezik regisztrált "
+"felhasználóval, az külön regisztráció nélkül is <a href=\"@login_uri"
+"\">beléphet</a>."
+
+#: modules/user/user.module:1174
+msgid "Notify user of new account"
+msgstr "Értesítő email küldése az új felhasználónak"
+
+#: modules/user/user.module:1225;1471;2190
+msgid "Detected malicious attempt to alter protected user fields."
+msgstr "Szándékos kísérlet történt egy védett felhasználói mező módosítására."
+
+#: modules/user/user.module:1237
+msgid "New user: %name %email."
+msgstr "Új felhasználó: „%name” %email."
+
+#: modules/user/user.module:1243
+msgid "Drupal user account details for !s"
+msgstr "!s felhasználói adatai"
+
+#: modules/user/user.module:1243
+msgid ""
+"!username,\n"
+"\n"
+"You may now login to !uri using the following username and password:\n"
+"\n"
+"  username: !username\n"
+"  password: !password\n"
+"\n"
+"!edit_uri\n"
+"\n"
+"--drupal"
+msgstr ""
+"Kedves !username!\n"
+"\n"
+"Mostantól be tud lépni a !uri webhelyen a következő névvel és jelszóval:\n"
+"\n"
+"  felhasználói név: !username\n"
+"  jelszó: !password\n"
+"\n"
+"!edit_uri"
+
+#: modules/user/user.module:1244
+msgid ""
+"<p>Welcome to Drupal. You are user #1, which gives you full and immediate "
+"access. All future registrants will receive their passwords via e-mail, so "
+"please make sure your website e-mail address is set properly under the "
+"general settings on the <a href=\"@settings\">site information settings "
+"page</a>.</p><p> Your password is <strong>%pass</strong>. You may change "
+"your password below.</p>"
+msgstr ""
+"<p>Üdvözli a Drupal. Mint az első számú felhasználó, teljes körű "
+"jogosultságokkal és azonnali hozzáféréssel rendelkezik. Minden további "
+"felhasználó emailben kapja jelszavát, ezért fontos, hogy a webhely email "
+"címe helyesen legyen megadva az általános beállítások között a <a href="
+"\"@settings\">beállítások</a> oldalon.</p><p>A jelszava <strong>%pass</"
+"strong>, melyet alább lehet megváltoztatni.</p>"
+
+#: modules/user/user.module:1251
+msgid "Created a new user account. No e-mail has been sent."
+msgstr "Az új felhasználó létrehozva. Email küldés nem történt."
+
+#: modules/user/user.module:1269
+msgid ""
+"Password and further instructions have been e-mailed to the new user %user."
+msgstr ""
+"%user jelszava és a további teendők leírása a megadott email címre elküldve."
+
+#: modules/user/user.module:1272
+msgid ""
+"Your password and further instructions have been sent to your e-mail address."
+msgstr ""
+"Az új jelszó és a további teendők leírása nemsokára megérkezik a megadott "
+"email címre."
+
+#: modules/user/user.module:1282
+msgid ""
+"!username has applied for an account.\n"
+"\n"
+"!edit_uri"
+msgstr ""
+"!username felhasználói azonosítót igényelt.\n"
+"\n"
+"!edit_uri"
+
+#: modules/user/user.module:1283
+msgid ""
+"Thank you for applying for an account. Your account is currently pending "
+"approval by the site administrator.<br />In the meantime, your password and "
+"further instructions have been sent to your e-mail address."
+msgstr ""
+"Köszönjük, hogy felhasználói névért folyamodott webhelyünkön. Regisztrációja "
+"jelenleg az adminisztrátorok elfogadására vár.<br />A jelszó és a további "
+"teendők leírása hamarosan megérkezik a megadott email címre."
+
+#: modules/user/user.module:1294
+msgid "Account information"
+msgstr "Felhasználói adatok"
+
+#: modules/user/user.module:1301
+msgid ""
+"Your preferred username; punctuation is not allowed except for periods, "
+"hyphens, and underscores."
+msgstr ""
+"Az igényelt felhasználói név. Írásjelek a pont, kötőjel és aláhúzás "
+"kivételével nem megengedettek."
+
+#: modules/user/user.module:1309
+msgid ""
+"A valid e-mail address. All e-mails from the system will be sent to this "
+"address. The e-mail address is not made public and will only be used if you "
+"wish to receive a new password or wish to receive certain news or "
+"notifications by e-mail."
+msgstr ""
+"Egy működő email cím. A rendszer minden levelet erre a címre fog küldeni. Ez "
+"az email cím nem jelenik meg nyilvánosan, és csak új jelszó kérésnél, "
+"illetve feliratkozást igénylő szolgáltatásoknál kerül felhasználásra."
+
+#: modules/user/user.module:1314
+msgid ""
+"To change the current user password, enter the new password in both fields."
+msgstr "A jelszó megváltoztatásához az új jelszót mindkét mezőbe be kell írni."
+
+#: modules/user/user.module:1321
+msgid "Provide a password for the new account in both fields."
+msgstr "Jelszó az új felhasználó számára, kétszer megadva."
+
+#: modules/user/user.module:1327
+msgid "Blocked"
+msgstr "Zárolva"
+
+#: modules/user/user.module:1333
+msgid ""
+"The user receives the combined permissions of the %au role, and all roles "
+"selected here."
+msgstr ""
+"A felhasználó megkapja az %au csoport jogait, valamint az itt megjelölt "
+"összes egyéb csoport jogosultságait. "
+
+#: modules/user/user.module:1333
+msgid "authenticated user"
+msgstr "azonosított felhasználó"
+
+#: modules/user/user.module:1339
+msgid "Picture"
+msgstr "Kép"
+
+#: modules/user/user.module:1343
+msgid "Delete picture"
+msgstr "Kép törlése"
+
+#: modules/user/user.module:1343
+msgid "Check this box to delete your current picture."
+msgstr "A jelenlegi kép törlése."
+
+#: modules/user/user.module:1348
+msgid "Upload picture"
+msgstr "Kép feltöltése"
+
+#: modules/user/user.module:1348
+msgid ""
+"Your virtual face or picture. Maximum dimensions are %dimensions and the "
+"maximum size is %size kB."
+msgstr ""
+"A webhelyen megjelenő virtuális arc. Maximálisan %dimensions dimenziójú, és %"
+"size kB méretű lehet."
+
+#: modules/user/user.module:1362
+msgid "The name %name is already taken."
+msgstr "„%name” felhasználói név már foglalt."
+
+#: modules/user/user.module:1365
+msgid "The name %name has been denied access."
+msgstr "„%name” felhasználó számára a hozzáférés megtagadva."
+
+#: modules/user/user.module:1374
+msgid ""
+"The e-mail address %email is already registered. <a href=\"@password\">Have "
+"you forgotten your password?</a>"
+msgstr ""
+"%email email címet már egy regisztrált felhasználó megadta. <a href="
+"\"@password\">Elfelejtette a jelszavát?</a>"
+
+#: modules/user/user.module:1377
+msgid "The e-mail address %email has been denied access."
+msgstr "„%email” cím hozzáférési lehetősége megtagadva."
+
+#: modules/user/user.module:1405
+msgid "The account does not exist or has already been deleted."
+msgstr "A felhasználó nem található. Lehetséges, hogy már le lett törölve."
+
+#: modules/user/user.module:1443
+msgid "Are you sure you want to delete the account %name?"
+msgstr "„%name” felhasználó biztosan törölhető?"
+
+#: modules/user/user.module:1445
+msgid ""
+"All submissions made by this user will be attributed to the anonymous "
+"account. This action cannot be undone."
+msgstr ""
+"A felhasználó törlésével minden hozzá tartozó tartalom anonim beküldésűként "
+"lesz megjelenítve. A művelet nem vonható vissza."
+
+#: modules/user/user.module:1462
+msgid "Deleted user: %name %email."
+msgstr "Törölt felhasználó: „%name” %email."
+
+#: modules/user/user.module:1463
+msgid "%name has been deleted."
+msgstr "%name törölve."
+
+#: modules/user/user.module:1491;1878
+msgid "The changes have been saved."
+msgstr "A változtatások mentése megtörtént."
+
+#: modules/user/user.module:1539
+msgid "Account details for !username at !site"
+msgstr "!username felhasználói adatai (!site)"
+
+#: modules/user/user.module:1541
+msgid ""
+"!username,\n"
+"\n"
+"Thank you for registering at !site. You may now log in to !login_uri using "
+"the following username and password:\n"
+"\n"
+"username: !username\n"
+"password: !password\n"
+"\n"
+"You may also log in by clicking on this link or copying and pasting it in "
+"your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once.\n"
+"\n"
+"After logging in, you will be redirected to !edit_uri so you can change your "
+"password.\n"
+"\n"
+"\n"
+"--  !site team"
+msgstr ""
+"Kedves !username!\n"
+"\n"
+"Köszönjük, hogy !site webhelyhez felhasználóként csatlakozott. A !login_uri "
+"címen tud belépni a következő névvel és jelszóval:\n"
+"\n"
+"felhasználói név: !username\n"
+"jelszó: !password\n"
+"\n"
+"Egy alkalommal az alábbi linkre kattintva, vagy azt böngészőjének címsorába "
+"másolva is beléphet:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Miután belépett, a webhely !edit_uri oldalára kerül, ahol a jelszavát meg "
+"tudja változtatni.\n"
+"\n"
+"\n"
+"-- !site csapat"
+
+#: modules/user/user.module:1543
+msgid "An administrator created an account for you at !site"
+msgstr "!site webhely adminisztrátora új felhasználóként felvette"
+
+#: modules/user/user.module:1545
+msgid ""
+"!username,\n"
+"\n"
+"A site administrator at !site has created an account for you. You may now "
+"log in to !login_uri using the following username and password:\n"
+"\n"
+"username: !username\n"
+"password: !password\n"
+"\n"
+"You may also log in by clicking on this link or copying and pasting it in "
+"your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once.\n"
+"\n"
+"After logging in, you will be redirected to !edit_uri so you can change your "
+"password.\n"
+"\n"
+"\n"
+"--  !site team"
+msgstr ""
+"Kedves !username!\n"
+"\n"
+"!site webhely adminisztrátora egy új felhasználót hoztak létre Önnek. A !"
+"login_uri címen tud belépni a következő névvel és jelszóval:\n"
+"\n"
+"felhasználói név: !username\n"
+"jelszó: !password\n"
+"\n"
+"Egy alkalommal az alábbi linkre kattintva, vagy azt böngészőjének címsorába "
+"másolva is beléphet:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Miután belépett, a webhely !edit_uri oldalára kerül, ahol a jelszavát meg "
+"tudja változtatni.\n"
+"\n"
+"\n"
+"-- !site csapat"
+
+#: modules/user/user.module:1547
+msgid "Account details for !username at !site (pending admin approval)"
+msgstr "!username felhasználói adatok - elfogadásra várva (!site)"
+
+#: modules/user/user.module:1549
+msgid ""
+"!username,\n"
+"\n"
+"Thank you for registering at !site. Your application for an account is "
+"currently pending approval. Once it has been granted, you may log in to !"
+"login_uri using the following username and password:\n"
+"\n"
+"username: !username\n"
+"password: !password\n"
+"\n"
+"You may also log in by clicking on this link or copying and pasting it in "
+"your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once.\n"
+"\n"
+"After logging in, you may wish to change your password at !edit_uri\n"
+"\n"
+"\n"
+"--  !site team"
+msgstr ""
+"Kedves !username!\n"
+"\n"
+"Köszönjük, hogy felhasználóként csatlakozási szándékát fejezte ki !site "
+"webhelyen. A kérés még elfogadásra vár, de amint jóváhagyásra kerül, a !"
+"login_uri címen tud majd belépni a következő névvel és jelszóval:\n"
+"\n"
+"felhasználói név: !username\n"
+"jelszó: !password\n"
+"\n"
+"Egy alkalommal az alábbi linkre kattintva, vagy azt böngészőjének címsorába "
+"másolva is beléphet:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Miután belépett, a webhely !edit_uri oldalára kerül, ahol a jelszavát meg "
+"tudja változtatni.\n"
+"\n"
+"\n"
+"-- !site csapat"
+
+#: modules/user/user.module:1551
+msgid "Replacement login information for !username at !site"
+msgstr "!username jelszó változás (!site)"
+
+#: modules/user/user.module:1553
+msgid ""
+"!username,\n"
+"\n"
+"A request to reset the password for your account has been made at !site.\n"
+"\n"
+"You may now log in to !uri_brief clicking on this link or copying and "
+"pasting it in your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once. It expires after one "
+"day and nothing will happen if it's not used.\n"
+"\n"
+"After logging in, you will be redirected to !edit_uri so you can change your "
+"password."
+msgstr ""
+"Kedves !username!\n"
+"\n"
+"!site webhelyen Ön új jelszó iránti igényt nyújtott be.\n"
+"\n"
+"!uri_brief webhelyre az alábbi linkre kattintva, vagy azt böngészőjének "
+"címsorába másolva léphet be:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Ez egy egyszer használható belépési mód. Egy nap után érvényessége lejár, és "
+"semmi nem történik, ha nem használják fel.\n"
+"\n"
+"Miután belépett, a webhely !edit_uri oldalára kerül, ahol a jelszavát meg "
+"tudja változtatni.\n"
+"\n"
+"\n"
+"-- !site csapat"
+
+#: modules/user/user.module:1560
+msgid "Enter a username to check if it will be denied or allowed."
+msgstr "Az ellenőrzendő felhasználói név."
+
+#: modules/user/user.module:1562
+msgid "Check username"
+msgstr "Felhasználói név ellenőrzése"
+
+#: modules/user/user.module:1569
+msgid "Enter an e-mail address to check if it will be denied or allowed."
+msgstr "Az ellenőrzendő email cím."
+
+#: modules/user/user.module:1571
+msgid "Check e-mail"
+msgstr "Email cím ellenőrzése"
+
+#: modules/user/user.module:1578
+msgid ""
+"Enter a hostname or IP address to check if it will be denied or allowed."
+msgstr ""
+"A hosztnév vagy IP cím megadásával ellenőrizhető, hogy a cím tiltott vagy "
+"engedélyezett."
+
+#: modules/user/user.module:1580
+msgid "Check hostname"
+msgstr "Hosztnév ellenőrzése"
+
+#: modules/user/user.module:1597
+msgid "No value entered. Please enter a test string and try again."
+msgstr "Nincs megadott érték. Az érték megadása után lehet újra próbálkozni."
+
+#: modules/user/user.module:1605
+msgid "The username %name is not allowed."
+msgstr "„%name” felhasználói név nem engedélyezett."
+
+#: modules/user/user.module:1608
+msgid "The username %name is allowed."
+msgstr "„%name” felhasználói név engedélyezett."
+
+#: modules/user/user.module:1613
+msgid "The e-mail address %mail is not allowed."
+msgstr "„%mail” email cím nem engedélyezett."
+
+#: modules/user/user.module:1616
+msgid "The e-mail address %mail is allowed."
+msgstr "„%mail” email cím engedélyezett."
+
+#: modules/user/user.module:1621
+msgid "The hostname %host is not allowed."
+msgstr "„%host” hoszt nem engedélyezett."
+
+#: modules/user/user.module:1624
+msgid "The hostname %host is allowed."
+msgstr "„%host” hoszt engedélyezett."
+
+#: modules/user/user.module:1638;1684
+msgid "You must enter a mask."
+msgstr "Meg kell adni egy maszkot."
+
+#: modules/user/user.module:1643
+msgid "The access rule has been added."
+msgstr "Szabály hozzáadva."
+
+#: modules/user/user.module:1658;1732
+msgid "username"
+msgstr "felhasználói név"
+
+#: modules/user/user.module:1658;1732
+msgid "e-mail"
+msgstr "email"
+
+#: modules/user/user.module:1658;1732
+msgid "host"
+msgstr "hoszt"
+
+#: modules/user/user.module:1664
+msgid "Are you sure you want to delete the @type rule for %rule?"
+msgstr "Biztos, hogy a szabály (@type: %rule) törölhető?"
+
+#: modules/user/user.module:1674
+msgid "The access rule has been deleted."
+msgstr "Szabály törölve."
+
+#: modules/user/user.module:1688
+msgid "The access rule has been saved."
+msgstr "Szabály elmentve."
+
+#: modules/user/user.module:1695
+msgid "Save rule"
+msgstr "Szabály mentése"
+
+#: modules/user/user.module:1701;1730
+msgid "Access type"
+msgstr "Hozzáférési típus"
+
+#: modules/user/user.module:1703
+msgid "Allow"
+msgstr "Engedélyezett"
+
+#: modules/user/user.module:1703
+msgid "Deny"
+msgstr "Tiltott"
+
+#: modules/user/user.module:1705
+msgid "Host"
+msgstr "Hoszt"
+
+#: modules/user/user.module:1708;1730
+msgid "Rule type"
+msgstr "Szabály típus"
+
+#: modules/user/user.module:1714;1730
+msgid "Mask"
+msgstr "Maszk"
+
+#: modules/user/user.module:1718
+msgid "Matches any number of characters, even zero characters"
+msgstr "Tetszőleges számú (akár nulla) karakterre illeszkedik."
+
+#: modules/user/user.module:1718
+msgid "Matches exactly one character."
+msgstr "Pontosan egy karakterre illeszkedik."
+
+#: modules/user/user.module:1735
+msgid "allow"
+msgstr "engedélyezett"
+
+#: modules/user/user.module:1735
+msgid "deny"
+msgstr "tiltott"
+
+#: modules/user/user.module:1738
+msgid "There are currently no access rules."
+msgstr "Jelenleg egy hozzáférési szabály sincs beállítva."
+
+#: modules/user/user.module:1827
+msgid "Save permissions"
+msgstr "Jogosultságok mentése"
+
+#: modules/user/user.module:1839
+msgid "@module module"
+msgstr "@module modul"
+
+#: modules/user/user.module:1852
+msgid "Permission"
+msgstr "Jogosultság"
+
+#: modules/user/user.module:1898
+msgid "Role name"
+msgstr "Csoport neve"
+
+#: modules/user/user.module:1903
+msgid ""
+"The name for this role. Example: \"moderator\", \"editorial board\", \"site "
+"architect\"."
+msgstr ""
+"A felhasználói csoport elnevezése, például „moderátor”, „szerkesztő”, "
+"„webhely építő”."
+
+#: modules/user/user.module:1911;1935;1952
+msgid "Save role"
+msgstr "Csoport mentése"
+
+#: modules/user/user.module:1915;1956
+msgid "Delete role"
+msgstr "Csoport törlése"
+
+#: modules/user/user.module:1926;1940;1964
+msgid "Add role"
+msgstr "Csoport hozzáadása"
+
+#: modules/user/user.module:1937;1942
+msgid "The role name %name already exists. Please choose another role name."
+msgstr "%name nevű csoport már létezik. Másik nevet kell választani."
+
+#: modules/user/user.module:1947
+msgid "You must specify a valid role name."
+msgstr "Legalább egy csoportot ki kell választani."
+
+#: modules/user/user.module:1954
+msgid "The role has been renamed."
+msgstr "Csoport átnevezve."
+
+#: modules/user/user.module:1962
+msgid "The role has been deleted."
+msgstr "Csoport törölve."
+
+#: modules/user/user.module:1966
+msgid "The role has been added."
+msgstr "Csoport hozzáadva."
+
+#: modules/user/user.module:1974
+msgid "edit permissions"
+msgstr "jogosultságok szerkesztése"
+
+#: modules/user/user.module:1976
+msgid "edit role"
+msgstr "csoport szerkesztése"
+
+#: modules/user/user.module:1999;2067
+msgid "Last access"
+msgstr "Utolsó aktivitás"
+
+#: modules/user/user.module:2029;2492
+msgid "blocked"
+msgstr "zárolt"
+
+#: modules/user/user.module:2029;2492
+msgid "active"
+msgstr "aktív"
+
+#: modules/user/user.module:2086
+msgid "No users available."
+msgstr "Nincs elérhető felhasználó"
+
+#: modules/user/user.module:2125
+msgid "No users selected."
+msgstr "Nincs kiválasztott felhasználó."
+
+#: modules/user/user.module:2137
+msgid "Unblock the selected users"
+msgstr "Kiválasztott felhasználók blokkolásának megszüntetése"
+
+#: modules/user/user.module:2141
+msgid "Block the selected users"
+msgstr "Kiválasztott felhasználók blokkolása"
+
+#: modules/user/user.module:2145
+msgid "Delete the selected users"
+msgstr "Kiválasztott felhasználók törlése"
+
+#: modules/user/user.module:2165
+msgid "Add a role to the selected users"
+msgstr "Kiválasztott felhasználók csoporthoz rendelése"
+
+#: modules/user/user.module:2168
+msgid "Remove a role from the selected users"
+msgstr "Kiválasztott felhasználók eltávolítása egy csoportból"
+
+#: modules/user/user.module:2269
+msgid "Are you sure you want to delete these users?"
+msgstr "Ezek a felhasználók biztosan törölhetők?"
+
+#: modules/user/user.module:2279
+msgid "The users have been deleted."
+msgstr "Felhasználók törölve."
+
+#: modules/user/user.module:2286
+msgid "User registration settings"
+msgstr "Regisztrációs beállítások"
+
+#: modules/user/user.module:2287
+msgid "Public registrations"
+msgstr "Nyilvános regisztráció"
+
+#: modules/user/user.module:2287
+msgid "Only site administrators can create new user accounts."
+msgstr "Csak a webhely karbantartói hozhatnak létre új felhasználót."
+
+#: modules/user/user.module:2287
+msgid "Visitors can create accounts and no administrator approval is required."
+msgstr ""
+"A látogatók új felhasználót regisztrálhatnak adminisztrátori elfogadás "
+"nélkül."
+
+#: modules/user/user.module:2287
+msgid "Visitors can create accounts but administrator approval is required."
+msgstr ""
+"A látogatók regisztrálhatnak új felhasználót, de csak adminisztrátori "
+"elfogadással."
+
+#: modules/user/user.module:2288
+msgid "Require e-mail verification when a visitor creates an account"
+msgstr "Email cím ellenőrzés szükséges új felhasználó regisztrációjakor"
+
+#: modules/user/user.module:2288
+msgid ""
+"If this box is checked, new users will be required to validate their e-mail "
+"address prior to logging into to the site, and will be assigned a system-"
+"generated password. With it unchecked, users will be logged in immediately "
+"upon registering, and may select their own passwords during registration."
+msgstr ""
+"A belépés előtt szükséges legyen-e a felhasználói email cím ellenőrzés a "
+"megadott címre küldött automatikusan generált jelszóval. Ha nincs "
+"bekapcsolva, akkor a regisztrációkor a felhasználó maga választhatja meg "
+"jelszavát, és azonnal beléphet."
+
+#: modules/user/user.module:2289
+msgid "User registration guidelines"
+msgstr "Felhasználói regisztrációs irányelvek"
+
+#: modules/user/user.module:2289
+msgid ""
+"This text is displayed at the top of the user registration form. It's useful "
+"for helping or instructing your users."
+msgstr ""
+"Ez a szöveg jelenik meg a felhasználói regisztrációs űrlap felett. "
+"Felhasználható irányelvek leírására, adatvédelmi információk biztosítására "
+"használható."
+
+#: modules/user/user.module:2292
+msgid "User e-mail settings"
+msgstr "Email beállítások"
+
+#: modules/user/user.module:2293
+msgid "Subject of welcome e-mail"
+msgstr "Az üdvözlő levél tárgya"
+
+#: modules/user/user.module:2293
+msgid ""
+"Customize the subject of your welcome e-mail, which is sent to new members "
+"upon registering."
+msgstr "Az új felhasználóknak küldött levél tárgya."
+
+#: modules/user/user.module:2293;2294;2295;2296;2297;2298;2299;2300
+msgid "Available variables are:"
+msgstr "Használható változók:"
+
+#: modules/user/user.module:2294
+msgid "Body of welcome e-mail"
+msgstr "Üdvözlő email törzse"
+
+#: modules/user/user.module:2294
+msgid ""
+"Customize the body of the welcome e-mail, which is sent to new members upon "
+"registering."
+msgstr "Az új felhasználóknak küldött levél törzse."
+
+#: modules/user/user.module:2295
+msgid "Subject of welcome e-mail (user created by administrator)"
+msgstr "Üdvözlő email tárgya (adminisztrátor általi létrehozáskor)"
+
+#: modules/user/user.module:2295
+msgid ""
+"Customize the subject of your welcome e-mail, which is sent to new member "
+"accounts created by an administrator."
+msgstr ""
+"Az adminisztrátor által létrehozott új felhasználóknak küldött levél tárgya."
+
+#: modules/user/user.module:2296
+msgid "Body of welcome e-mail (user created by administrator)"
+msgstr "Üdvözlő email törzse (adminisztrátor általi létrehozáskor)"
+
+#: modules/user/user.module:2296
+msgid ""
+"Customize the body of the welcome e-mail, which is sent to new member "
+"accounts created by an administrator."
+msgstr ""
+"Az adminisztrátor által létrehozott új felhasználóknak küldött levél törzse."
+
+#: modules/user/user.module:2297
+msgid "Subject of welcome e-mail (awaiting admin approval)"
+msgstr "Üdvözlő email tárgya (adminisztrátori megerősítésre várva)"
+
+#: modules/user/user.module:2297
+msgid ""
+"Customize the subject of your awaiting approval welcome e-mail, which is "
+"sent to new members upon registering."
+msgstr ""
+"Az új adminisztrátori megerősítésre váró felhasználóknak küldött levél "
+"tárgya."
+
+#: modules/user/user.module:2298
+msgid "Body of welcome e-mail (awaiting admin approval)"
+msgstr "Üdvözlő email törzse (adminisztrátori megerősítésre várva)"
+
+#: modules/user/user.module:2298
+msgid ""
+"Customize the body of the awaiting approval welcome e-mail, which is sent to "
+"new members upon registering."
+msgstr ""
+"Az új adminisztrátori megerősítésre váró felhasználóknak küldött levél "
+"törzse."
+
+#: modules/user/user.module:2299
+msgid "Subject of password recovery e-mail"
+msgstr "Új jelszót küldő email tárgya"
+
+#: modules/user/user.module:2299
+msgid "Customize the subject of your forgotten password e-mail."
+msgstr "Az új jelszót tartalmazó levél tárgya."
+
+#: modules/user/user.module:2300
+msgid "Body of password recovery e-mail"
+msgstr "Új jelszót küldő levél törzse"
+
+#: modules/user/user.module:2300
+msgid "Customize the body of the forgotten password e-mail."
+msgstr "Az új jelszót küldő levél törzse."
+
+#: modules/user/user.module:2308
+msgid "Pictures"
+msgstr "Képek"
+
+#: modules/user/user.module:2309
+msgid "Picture support"
+msgstr "Kép támogatás"
+
+#: modules/user/user.module:2309
+msgid "Enable picture support."
+msgstr "Kép támogatás engedélyezése."
+
+#: modules/user/user.module:2310
+msgid "Picture image path"
+msgstr "A képek útvonala"
+
+#: modules/user/user.module:2310
+msgid "Subdirectory in the directory %dir where pictures will be stored."
+msgstr ""
+"„%dir” könyvtár egy alkönyvtára, ahol a felhasználói képek tárolódnak majd."
+
+#: modules/user/user.module:2311
+msgid "Default picture"
+msgstr "Alapértelmezett kép"
+
+#: modules/user/user.module:2311
+msgid ""
+"URL of picture to display for users with no custom picture selected. Leave "
+"blank for none."
+msgstr "Az alapértelmezett felhasználói kép webcíme. Üresen is hagyható."
+
+#: modules/user/user.module:2312
+msgid "Picture maximum dimensions"
+msgstr "A kép maximális mérete"
+
+#: modules/user/user.module:2312
+msgid "Maximum dimensions for pictures, in pixels."
+msgstr "A képek maximális dimenziója, képpontban."
+
+#: modules/user/user.module:2313
+msgid "Picture maximum file size"
+msgstr "A kép maximális fájlmérete"
+
+#: modules/user/user.module:2313
+msgid "Maximum file size for pictures, in kB."
+msgstr "A képek maximális mérete (kB)."
+
+#: modules/user/user.module:2314
+msgid "Picture guidelines"
+msgstr "Útmutató a képekhez"
+
+#: modules/user/user.module:2314
+msgid ""
+"This text is displayed at the picture upload form in addition to the default "
+"guidelines. It's useful for helping or instructing your users."
+msgstr ""
+"Ez a szöveg jelenik meg a kép feltöltő űrlap felett. Felhasználható segítség "
+"nyújtásra és irányelvek leírására."
+
+#: modules/user/user.module:2351
+msgid ""
+"The user module allows users to register, login, and log out. Users benefit "
+"from being able to sign on because it associates content they create with "
+"their account and allows various permissions to be set for their roles. The "
+"user module supports user roles which can setup fine grained permissions "
+"allowing each role to do only what the administrator wants them to. Each "
+"user is assigned to one or more roles. By default there are two roles "
+"<em>anonymous</em> - a user who has not logged in, and <em>authenticated</"
+"em> a user who has signed up and who has been authorized."
+msgstr ""
+"A felhasználókat kezelő modul teszi lehetővé a webhelyen történő "
+"regisztrációt, belépést illetve kilépést. A felhasználók regisztrációja után "
+"az általuk készített tartalmak virtuális személyiségükhöz lesznek rendelve, "
+"továbbá felhasználói csoportok tagjaiként különböző jogosultságokkal "
+"rendelkezhetnek. A modul támogatja a felhasználói csoportok kezelését, "
+"amelyek keretein belül az adminisztrátorok pontosan körülhatárolhatják, hogy "
+"adott csoportok tagjai mire jogosultak. Minden felhasználó tagja legalább "
+"egy csoportnak. Kezdetben két csoport van a rendszerben, az <em>anonymous</"
+"em> minden be nem jelentkezett látogató esetén értelmezett, az "
+"<em>authenticated</em> pedig a regisztrált és bejelentkezett felhasználók "
+"alapértelmezett csoportja."
+
+#: modules/user/user.module:2352
+msgid ""
+"Users can use their own name or handle and can fine tune some personal "
+"configuration settings through their individual my account page. Registered "
+"users need to authenticate by supplying either a local username and "
+"password, or a remote username and password such as DelphiForums ID, or one "
+"from a Drupal powered website. A visitor accessing your website is assigned "
+"an unique ID, the so-called session ID, which is stored in a cookie. For "
+"security's sake, the cookie does not contain personal information but acts "
+"as a key to retrieve the information stored on your server."
+msgstr ""
+"A felhasználók saját nevüket vagy becenevüket használhatják, és különböző "
+"személyes beállításokat eszközölhetnek a saját adataikat módosítva. A "
+"regisztrált felhasználók vagy a helyi, vagy egy másik Drupal rendszerű "
+"webhelyen érvényes felhasználónevük és jelszavuk megadásával azonosíthatják "
+"magukat. A webhely látogatói egyedi, úgynevezett munkamenet azonosítót "
+"kapnak, amit a rendszer egy sütiben (cookie) tárol. Biztonsági okokból a "
+"süti nem tartalmaz személyes információt, hanem kulcsként működik a "
+"kiszolgálón található adatokhoz."
+
+#: modules/user/user.module:2353
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@user\">User page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@user"
+"\">felhasználó kezelésről szóló oldalán</a> olvasható."
+
+#: modules/user/user.module:2356
+msgid ""
+"Drupal allows users to register, login, log out, maintain user profiles, "
+"etc. Users of the site may not use their own names to post content until "
+"they have signed up for a user account."
+msgstr ""
+"A Drupal lehetővé teszi a látogatóknak, hogy felhasználóként regisztráljanak "
+"az oldalon, belépjenek, kilépjenek, karbantarthassák a profiljukat stb. Egy "
+"látogató sem küldhet be tartalmat a saját nevével, amíg nincs saját "
+"azonosítója."
+
+#: modules/user/user.module:2359
+msgid ""
+"This web page allows the administrators to register a new users by hand. "
+"Note that you cannot have a user where either the e-mail address or the "
+"username match another user in the system."
+msgstr ""
+"Ezen a weboldalon az adminisztrátorok hozhatnak létre új felhasználót. A "
+"meglévő felhasználói nevek és email címek nem használhatóak újra."
+
+#: modules/user/user.module:2361
+msgid ""
+"Set up username and e-mail address access rules for new <em>and</em> "
+"existing accounts (currently logged in accounts will not be logged out). If "
+"a username or e-mail address for an account matches any deny rule, but not "
+"an allow rule, then the account will not be allowed to be created or to log "
+"in. A host rule is effective for every page view, not just registrations."
+msgstr ""
+"Ezen az oldalon a felhasználói név és email cím hozzáférési szabályok "
+"állíthatóak be új <em>és</em> már regisztrált felhasználók számára. Ha egy "
+"név vagy email cím bármely tiltó szabályra illeszkedik, de egyetlen "
+"engedélyező szabálynak sem felel meg, akkor az új azonosító nem hozható "
+"létre, vagy a már létező felhasználóval nem lehet belépni. Az új szabályok a "
+"belépett felhasználókra csak kijelentkezésük után vonatkoznak. A hosztokra "
+"vonatkozó szabályok ellenőrzése minden oldal letöltéskor megtörténik, nem "
+"csak a regisztráció során."
+
+#: modules/user/user.module:2363
+msgid ""
+"Permissions let you control what users can do on your site. Each user role "
+"(defined on the <a href=\"@role\">user roles page</a>) has its own set of "
+"permissions. For example, you could give users classified as \"Administrators"
+"\" permission to \"administer nodes\" but deny this power to ordinary, "
+"\"authenticated\" users. You can use permissions to reveal new features to "
+"privileged users (those with subscriptions, for example). Permissions also "
+"allow trusted users to share the administrative burden of running a busy "
+"site."
+msgstr ""
+"A jogosultságok segítségével határozható meg, hogy melyik felhasználó mit "
+"tehet a webhelyen. Minden felhasználói csoport (amelyeket a <a href=\"@role"
+"\">csoportok</a> oldalon lehet létrehozni) egyedi jogosultságokkal "
+"rendelkezik. Például az „adminisztrátorok” csoportba tartozó felhasználóknak "
+"meg lehet adni a „tartalmak adminisztrációja” jogot, de ugyanezt a "
+"jogosultságot az átlagos „authenticated” felhasználó nem kapja meg. A "
+"jogosultságok lehetővé teszik, hogy kiemelt felhasználók (például "
+"előfizetők) több szolgáltatást érhessenek el. Segítségükkel ráadásul "
+"megoszthatjuk forgalmas webhelyünk üzemeltetésének terheit annak megbízható "
+"felhasználóival."
+
+#: modules/user/user.module:2365
+msgid ""
+"<p>Roles allow you to fine tune the security and administration of Drupal. A "
+"role defines a group of users that have certain privileges as defined in <a "
+"href=\"@permissions\">user permissions</a>. Examples of roles include: "
+"anonymous user, authenticated user, moderator, administrator and so on. In "
+"this area you will define the <em>role names</em> of the various roles. To "
+"delete a role choose \"edit\".</p><p>By default, Drupal comes with two user "
+"roles:</p>\n"
+"      <ul>\n"
+"      <li>Anonymous user: this role is used for users that don't have a user "
+"account or that are not authenticated.</li>\n"
+"      <li>Authenticated user: this role is automatically granted to all "
+"logged in users.</li>\n"
+"      </ul>"
+msgstr ""
+"<p>A felhasználói csoportok lehetőséget adnak a biztonsági beállítások "
+"finomhangolására. A csoportok lehetővé teszik egyazon <a href=\"@permissions"
+"\">jogosultsági körrel</a> rendelkező felhasználók együttes kezelését. "
+"Csoport lehet például: anonim felhasználók, azonosított felhasználók, "
+"moderátorok, adminisztrátorok stb. Ezen az oldalon a csoportok "
+"<strong>neveit</strong> lehet meghatározni, a „csoport szerkesztése” oldalon "
+"lehet átnevezni és törölni egy csoportot.</p><p>Alapértelmezésben két "
+"csoport létezik a Drupalban, melyek nem törölhetők:</p>\n"
+"      <ul>\n"
+"      <li>Anonim felhasználók: nem regisztrált, illetve nem belépett "
+"felhasználók, vagy más néven látogatók.</li>\n"
+"      <li>Azonosított felhasználók: ebbe a csoportba kerül automatikusan "
+"minden regisztrált felhasználó.</li>\n"
+"      </ul>"
+
+#: modules/user/user.module:2371
+msgid ""
+"Enter a simple pattern (\"*\" may be used as a wildcard match) to search for "
+"a username. For example, one may search for \"br\" and Drupal might return "
+"\"brian\", \"brad\", and \"brenda\"."
+msgstr ""
+"Egy egyszerű minta megadásával kereshetők a felhasználók. A „*” alkalmazható "
+"univerzális illesztésre. A „Gy” mintára illeszkednek a „Gyula”, „Győző”, "
+"„Gyurma” nevű felhasználók, ha vannak ilyenek."
+
+#: modules/user/user.module:2380
+msgid "one of our affiliates"
+msgstr "valamely partner"
+
+#: modules/user/user.module:2383
+msgid ""
+"\n"
+"      <h3>Distributed authentication<a id=\"da\"></a></h3>\n"
+"      <p>One of the more tedious moments in visiting a new website is "
+"filling out the registration form. Here at @site, you do not have to fill "
+"out a registration form if you are already a member of !affiliate-info. This "
+"capability is called <em>distributed authentication</em>, and <a href="
+"\"@drupal\">Drupal</a>, the software which powers @site, fully supports it.</"
+"p>\n"
+"      <p>Distributed authentication enables a new user to input a username "
+"and password into the login box, and immediately be recognized, even if that "
+"user never registered at @site. This works because Drupal knows how to "
+"communicate with external registration databases. For example, lets say that "
+"new user 'Joe' is already a registered member of <a href=\"@delphi-forums"
+"\">Delphi Forums</a>. Drupal informs Joe on registration and login screens "
+"that he may login with his Delphi ID instead of registering with @site. Joe "
+"likes that idea, and logs in with a username of joe@remote.delphiforums.com "
+"and his usual Delphi password. Drupal then contacts the <em>remote."
+"delphiforums.com</em> server behind the scenes (usually using <a href=\"@xml"
+"\">XML-RPC</a>, <a href=\"@http-post\">HTTP POST</a>, or <a href=\"@soap"
+"\">SOAP</a>) and asks: \"Is the password for user Joe correct?\". If Delphi "
+"replies yes, then we create a new @site account for Joe and log him into it. "
+"Joe may keep on logging into @site in the same manner, and he will always be "
+"logged into the same account.</p>"
+msgstr ""
+"\n"
+"      <h3>Elosztott azonosítás<a id=\"da\"></a></h3>\n"
+"      <p>Az egyik legkényelmetlenebb feladat, ha meglátogatunk egy új "
+"weboldalt, hogy ki kell töltenünk egy regisztrációs űrlapot. Itt nincs erre "
+"szükség, amennyiben !affiliate-info segítségével már regisztráltunk. Ezt a "
+"lehetőséget <em>elosztott azonosításnak</em> nevezik, és az egyik "
+"sajátossága a <a href=\"@drupal\">Drupal</a> nevű tartalomkezelő "
+"szoftvernek, ami webhelyünket működteti.</p>\n"
+"      <p>Az elosztott azonosítás lehetővé teszi, hogy a felhasználó anélkül "
+"adja meg az azonosítóját és a jelszavát, hogy valaha is regisztrálta volna "
+"magát a weboldalon. Ez azért lehetséges, mert a Drupal külső regisztrációs "
+"adatbázisokkal is képes kommunikálni. Tételezzük fel, hogy Jani regisztrált "
+"felhasználó a <a href=\"@delphi-forums\">Delphi fórumon</a>. A Drupal jelzi "
+"Jani számára a regisztrációkor, hogy a Delphi fórumon kapott azonosítóját is "
+"használhatja ahelyett, hogy regisztrálná magát a weboldalon. Janinak tetszik "
+"az ötlet és bejelentkezik a jani@remote.delphiforums.com felhasználói névvel "
+"és a megszokott Delphi fórumos jelszavával. A Drupal felveszi a kapcsolatot "
+"a <em>remote.delphiforums.com</em> kiszolgálóval (általában <a href=\"@xml"
+"\">XML-RPC</a>, <a href=\"@http-post\">HTTP POST</a> vagy <a href=\"@soap"
+"\">SOAP</a> kapcsolaton keresztül) és megkérdezi: „Ez Jani helyes jelszava?”."
+"Ha a Delphi fórum válasza igen, akkor automatikusan létrejön egy "
+"felhasználói fiók Jani számára, mely lehetővé teszi számára a "
+"bejelentkezést. Jani a weboldalunkra a továbbiakban ugyanazzal az "
+"azonosítóval tud bejelentkezni.</p>"
+
+#: modules/user/user.module:2467
+msgid "role"
+msgstr "csoport"
+
+#: modules/user/user.module:2474
+msgid "module"
+msgstr "modul"
+
+#: modules/user/user.module:2484
+msgid "permission"
+msgstr "jogosultság"
+
+#: modules/user/user.module:2540
+msgid "Show only users where"
+msgstr "Felhasználók, akik"
+
+#: modules/user/user.module:933;950;982;1001;1016;1071;1075;1106;1237;1462;0
+msgid "user"
+msgstr "felhasználó"
+
+#: modules/user/user.module:589;592
+msgid "1 guest"
+msgid_plural "@count guests"
+msgstr[0] "1 vendég"
+msgstr[1] "@count vendég"
+
+#: modules/user/user.module:408
+msgid "administer access control"
+msgstr "hozzáférés szabályozás adminisztrációja"
+
+#: modules/user/user.module:408
+msgid "administer users"
+msgstr "felhasználók adminisztrációja"
+
+#: modules/user/user.module:408
+msgid "access user profiles"
+msgstr "felhasználói profilok hozzáférése"
+
+#: modules/user/user.module:408
+msgid "change own username"
+msgstr "felhasználói név megváltoztatása"

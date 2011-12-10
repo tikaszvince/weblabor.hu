@@ -1,0 +1,175 @@
+# $Id: modules-throttle.po,v 1.1.2.6 2008/01/18 01:13:16 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-throttle)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  throttle.admin.inc,v 1.2 2008/01/08 10:35:43 goba
+#  throttle.module,v 1.83 2007/12/14 18:08:49 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2007-12-20 11:52+0100\n"
+"PO-Revision-Date: 2007-12-24 14:29+0100\n"
+"Last-Translator: Hungarian <Drupal.hu Fordítási Csapat <forditas [at] drupal."
+"hu>\n"
+"Language-Team: Hungarian <Drupal.hu Fordítási Csapat <forditas [at] drupal."
+"hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: modules/throttle/throttle.admin.inc:21
+msgid "Auto-throttle on anonymous users"
+msgstr "Anonim látogatókon alapuló automatikus visszafogás"
+
+#: modules/throttle/throttle.admin.inc:25
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of anonymous users currently visiting your site exceeds the specified "
+"threshold. For example, to start the throttle when your site has 250 "
+"anonymous users online at once, enter '250' in this field. Leave this value "
+"blank or set to \"0\" if you do not wish to auto-throttle on anonymous "
+"users. You can inspect the current number of anonymous users using the "
+"\"Who's online\" block."
+msgstr ""
+"A visszafogó automatikusan bekapcsol, ha a webhelyet olvasó anonim látogatók "
+"száma túllépi a megadott értéket. Üresen hagyható, vagy nullára állítható, "
+"ha az anonim látogatókra nem szükséges korlátozást tenni. Az „Online "
+"felhasználók” blokk ad lehetőséget a webhelyen tartózkodó anonim látogatók "
+"számának felderítésére."
+
+#: modules/throttle/throttle.admin.inc:29
+msgid "Auto-throttle on authenticated users"
+msgstr "Azonosított felhasználókon alapuló automatikus visszafogás"
+
+#: modules/throttle/throttle.admin.inc:33
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of authenticated users currently visiting your site exceeds the specified "
+"threshold. For example, to start the throttle when your site has 50 "
+"registered users online at once, enter '50' in this field. Leave this value "
+"blank or set to \"0\" if you do not wish to auto-throttle on authenticated "
+"users. You can inspect the current number of authenticated users using the "
+"\"Who's online\" block."
+msgstr ""
+"A visszafogó automatikusan bekapcsol, ha a webhelyet látogató azonosított "
+"felhasználók száma túllépi a megadott értéket. Üresen hagyható, vagy nullára "
+"állítható, ha az azonosított felhasználókra nem szükséges korlátozást tenni. "
+"Az „Online felhasználók” blokk ad lehetőséget a webhelyen tartózkodó "
+"azonosított felhasználók számának felderítésére."
+
+#: modules/throttle/throttle.admin.inc:37
+msgid "Auto-throttle probability limiter"
+msgstr "Visszafogási szint állítás valószínűsége"
+
+#: modules/throttle/throttle.admin.inc:40
+msgid ""
+"The auto-throttle probability limiter is an efficiency mechanism to "
+"statistically reduce the overhead of the auto-throttle. The limiter is "
+"expressed as a percentage of page views, so for example if set to the "
+"default of 10% we only perform the extra database queries to update the "
+"throttle status 1 out of every 10 page views. The busier your site, the "
+"lower you should set the limiter value."
+msgstr ""
+"A visszafogás változtatásának valószínűsége azt adja meg, hogy az oldal "
+"lekérések körülbelül milyen százalékában fusson le a visszafogás "
+"szükségességét ellenőrző algoritmus. Az alapértelmezett 10% esetén nagyjából "
+"minden tizedik oldal előállításánál lefut az ellenőrzés (mivel "
+"valószínűségről van szó, ez pontosan nem meghatározható). Terhelt oldalak "
+"esetén célszerű alacsony értéket megadni."
+
+#: modules/throttle/throttle.admin.inc:50;53
+msgid ""
+"%value is not a valid auto-throttle setting. Please enter a positive numeric "
+"value."
+msgstr ""
+"„%value” nem érvényes automatikus visszafogási beállítás. Pozitív egész "
+"számot kell megadni."
+
+#: modules/throttle/throttle.module:121
+msgid ""
+"The throttle module provides a congestion control mechanism that "
+"automatically adjusts to a surge in incoming traffic. If your site is "
+"referenced by a popular website, or experiences a \"Denial of Service"
+"\" (DoS) attack, your webserver might become overwhelmed. The throttle "
+"mechanism is utilized by modules to temporarily disable CPU-intensive "
+"functionality, increasing performance. For instance, via the throttle "
+"module, modules may choose to disable resource-intensive blocks or the code "
+"within the site theme may temporarily disable user pictures in posts."
+msgstr ""
+"A visszafogó modul olyan torlódásvédelmi funkcióval ruházza fel a webhelyet, "
+"amely automatikusan észreveszi a bejövő forgalom ugrásszerű növekedését. Ha "
+"a webhelyre linket helyez el egy másik népszerű weblap, vagy „szolgáltatás "
+"ellehetetlenítési” (Denial of Service &ndash; DoS) támadás alatt áll, a "
+"webkiszolgáló túlterhelődhet. A visszafogó által alkalmazott módszerrel "
+"automatikusan optimalizálható a többi modul teljesítménye, a webszervert "
+"jelentősebben terhelő funkciók kikapcsolásával. Például, a webhely "
+"sminkjében letiltható a képek megjelenítése (az átviteli sebesség növelése "
+"érdekében) vagy a modulokban ki lehet kapcsolni néhány összetett megoldást "
+"(a processzor-terhelés csökkentésére)."
+
+#: modules/throttle/throttle.module:122
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of anonymous or authenticated users currently visiting the site exceeds a "
+"specified threshold."
+msgstr ""
+"A visszafogó automatikusan bekapcsol, ha a webhelyet olvasó anonim látogatók "
+"száma vagy a bejelentkezett felhasználók száma túllépi a beállított értéket."
+
+#: modules/throttle/throttle.module:123
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@throttle"
+"\">Throttle module</a>."
+msgstr ""
+"További információ az online kézikönyv <a href=\"@throttle\">visszafogóról "
+"szóló oldalán</a> olvasható."
+
+#: modules/throttle/throttle.module:126
+msgid ""
+"The throttle module provides a congestion control mechanism that "
+"automatically adjusts to a surge in incoming traffic. If your site is "
+"referenced by a popular website, or experiences a \"Denial of Service"
+"\" (DoS) attack, your webserver might become overwhelmed. The throttle "
+"mechanism is utilized by modules to temporarily disable CPU-intensive "
+"functionality, increasing performance."
+msgstr ""
+"A visszafogó modul olyan torlódásvédelmi funkcióval ruházza fel a webhelyet, "
+"amely automatikusan észreveszi a bejövő forgalom ugrásszerű növekedését. Ha "
+"a webhelyre linket helyez el egy másik népszerű weblap, vagy „szolgáltatás-"
+"ellehetetlenítési” (Denial of Service &ndash; DoS) támadás alatt áll, a "
+"webkiszolgáló túlterhelődhet. A visszafogó által alkalmazott módszerrel "
+"megnövekedett terhelésnél automatikusan kiiktathatóak a nagy erőforrást "
+"igénylő funkciók."
+
+#: modules/throttle/throttle.module:110;0
+msgid "throttle"
+msgstr "visszafogó"
+
+#: modules/throttle/throttle.module:110
+msgid "Throttle: %message"
+msgstr "Visszafogó: %message"
+
+#: modules/throttle/throttle.module:87
+msgid "1 user accessing site; throttle enabled."
+msgid_plural "@count users accessing site; throttle enabled."
+msgstr[0] "1 felhasználó olvassa a webhelyet; a visszafogás bekapcsolt."
+msgstr[1] "@count felhasználó olvassa a webhelyet; a visszafogás bekapcsolt."
+
+#: modules/throttle/throttle.module:95
+msgid "1 guest accessing site; throttle enabled."
+msgid_plural "@count guests accessing site; throttle enabled."
+msgstr[0] "1 látogató olvassa a webhelyet; a visszafogás bekapcsolt."
+msgstr[1] "@count látogató olvassa a webhelyet; a visszafogás bekapcsolt."
+
+#: modules/throttle/throttle.module:105
+msgid "1 guest accessing site; throttle disabled"
+msgid_plural "@count guests accessing site; throttle disabled"
+msgstr[0] "1 látogató olvassa a webhelyet; a visszafogás kikapcsolt."
+msgstr[1] "@count látogató olvassa a webhelyet; a visszafogás kikapcsolt."
+
+#: modules/throttle/throttle.module:12
+msgid "Control how your site cuts out content during heavy load."
+msgstr "A webhely nagy terhelés esetén mutatott viselkedésének beállítása."

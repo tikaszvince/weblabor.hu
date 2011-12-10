@@ -1,0 +1,497 @@
+# $Id: modules-profile.po,v 1.1.2.6 2008/02/04 12:50:34 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-profile)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  profile.admin.inc,v 1.8 2008/01/21 15:20:43 goba
+#  profile.module,v 1.236 2008/02/03 19:36:46 goba
+#  profile.pages.inc,v 1.2 2007/12/08 14:06:22 goba
+#  profile.install,v 1.12 2007/12/18 12:59:22 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-01-11 00:39+0100\n"
+"PO-Revision-Date: 2008-02-02 13:29+0100\n"
+"Last-Translator: Edith Illyes <info@oriola.info>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/profile/profile.admin.inc:55
+msgid "Add new field"
+msgstr "Új mező hozzáadása"
+
+#: modules/profile/profile.admin.inc:82
+msgid "Profile fields have been updated."
+msgstr "A profilmezők frissítése megtörtént."
+
+#: modules/profile/profile.admin.inc:115
+msgid ""
+"No fields in this category. If this category remains empty when saved, it "
+"will be removed."
+msgstr ""
+"Nincs mező ebben a kategóriában. Ha mentéskor nincs ide sorolt mező, a "
+"kategória törlésre kerül."
+
+#: modules/profile/profile.admin.inc:144
+msgid "No fields available."
+msgstr "Nincs definiált mező."
+
+#: modules/profile/profile.admin.inc:178
+msgid "edit %title"
+msgstr "%title szerkesztése"
+
+#: modules/profile/profile.admin.inc:196
+msgid "add new %type"
+msgstr "új %type hozzáadása"
+
+#: modules/profile/profile.admin.inc:211
+msgid "Field settings"
+msgstr "Mező beállítások"
+
+#: modules/profile/profile.admin.inc:217
+msgid ""
+"The category the new field should be part of. Categories are used to group "
+"fields logically. An example category is \"Personal information\"."
+msgstr ""
+"A kategória, amelyhez az új mező tartozik. A kategóriák a mezők logikai "
+"csoportosítására szolgálnak. Például: „Személyes információk”."
+
+#: modules/profile/profile.admin.inc:223
+msgid ""
+"The title of the new field. The title will be shown to the user. An example "
+"title is \"Favorite color\"."
+msgstr ""
+"Az új mező címe, melyet a felhasználó látni fog. Például: „Kedvenc szín”."
+
+#: modules/profile/profile.admin.inc:227
+msgid "Form name"
+msgstr "Űrlapmező neve"
+
+#: modules/profile/profile.admin.inc:229
+msgid ""
+"The name of the field. The form name is not shown to the user but used "
+"internally in the HTML code and URLs.\n"
+"Unless you know what you are doing, it is highly recommended that you prefix "
+"the form name with <code>profile_</code> to avoid name clashes with other "
+"fields. Spaces or any other special characters except dash (-) and "
+"underscore (_) are not allowed. An example name is \"profile_favorite_color"
+"\" or perhaps just \"profile_color\"."
+msgstr ""
+"Az űrlapmező neve. Ez a név a felhasználók számára nem látható, csak a HTML "
+"kódban és a webcímekben szerepel.\n"
+"A névütközések elkerülése érdekében ajánlott a <code>profile_</code> előtag "
+"használata a mezőnevek előtt. Kötőjel (-) és aláhúzás (_) kivételével "
+"speciális karakterek használata nem engedélyezett, szóközöket sem szabad "
+"alkalmazni. Például: „profile_favorite_color”, vagy egyszerűen "
+"„profile_color”."
+
+#: modules/profile/profile.admin.inc:234
+msgid "Explanation"
+msgstr "Magyarázat"
+
+#: modules/profile/profile.admin.inc:236
+msgid ""
+"An optional explanation to go with the new field. The explanation will be "
+"shown to the user."
+msgstr ""
+"A mezőhöz tartozó, a felhasználók számára megjelenő magyarázat. Ha a mező "
+"kitöltése egyértelmű, akkor nem szükséges megadni."
+
+#: modules/profile/profile.admin.inc:240
+msgid "Selection options"
+msgstr "Választási lehetőségek"
+
+#: modules/profile/profile.admin.inc:242
+msgid ""
+"A list of all options. Put each option on a separate line. Example options "
+"are \"red\", \"blue\", \"green\", etc."
+msgstr ""
+"Választási lehetőségek listája. Minden elemet új sorba kell írni. Például: "
+"„piros”, „kék”, „zöld”, stb."
+
+#: modules/profile/profile.admin.inc:246
+msgid "Visibility"
+msgstr "Láthatóság"
+
+#: modules/profile/profile.admin.inc:248
+msgid ""
+"Hidden profile field, only accessible by administrators, modules and themes."
+msgstr ""
+"Rejtett profilmező, tartalma csak az adminisztrátor által olvasható, illetve "
+"modulok és sminkek számára elérhető."
+
+#: modules/profile/profile.admin.inc:248
+msgid "Private field, content only available to privileged users."
+msgstr ""
+"Személyes mező, tartalma csak arra jogosult felhasználók számára "
+"hozzáférhető."
+
+#: modules/profile/profile.admin.inc:248
+msgid ""
+"Public field, content shown on profile page but not used on member list "
+"pages."
+msgstr ""
+"Nyilvános mező, megjelenik a profiloldalon, de nem szerepel a tagokat "
+"listázó áttekintő oldalakon."
+
+#: modules/profile/profile.admin.inc:248
+msgid "Public field, content shown on profile page and on member list pages."
+msgstr ""
+"Nyilvános mező, megjelenik a profiloldalon és a tagokat listázó áttekintő "
+"oldalakon is."
+
+#: modules/profile/profile.admin.inc:252;259
+msgid "Page title"
+msgstr "Oldal címe"
+
+#: modules/profile/profile.admin.inc:254
+msgid ""
+"To enable browsing this field by value, enter a title for the resulting "
+"page. The word <code>%value</code> will be substituted with the "
+"corresponding value. An example page title is \"People whose favorite color "
+"is %value\". This is only applicable for a public field."
+msgstr ""
+"Az ebben a mezőben azonos értéket megadó felhasználók listájának címe. A "
+"címben a <code>%value</code> kifejezést a megfelelő érték helyettesíti. "
+"Például: „Azon felhasználóink, akiknek kedvenc színe %value”. Csak akkor van "
+"értelme beállítani, ha a mező nyilvános."
+
+#: modules/profile/profile.admin.inc:261
+msgid ""
+"To enable browsing this field by value, enter a title for the resulting "
+"page. An example page title is \"People who are employed\". This is only "
+"applicable for a public field."
+msgstr ""
+"Az ebben a mezőben azonos értéket megadó felhasználók listájának címe. "
+"Például: „Sportszerető felhasználók”. Csak akkor van értelme beállítani, ha "
+"a mező nyilvános."
+
+#: modules/profile/profile.admin.inc:267
+msgid ""
+"The weights define the order in which the form fields are shown. Lighter "
+"fields \"float up\" towards the top of the category."
+msgstr ""
+"A súly határozza meg a mezők kategórián belüli megjelenésének sorrendjét. A "
+"könnyebb mezők „felemelkednek” a kategória teteje felé, a nehezebbek "
+"„lesűllyednek”."
+
+#: modules/profile/profile.admin.inc:270
+msgid "Form will auto-complete while user is typing."
+msgstr "A mező értéke gépelés közben automatikusan kiegészül."
+
+#: modules/profile/profile.admin.inc:274
+msgid "The user must enter a value."
+msgstr "A felhasználónak meg kell adnia egy értéket."
+
+#: modules/profile/profile.admin.inc:278
+msgid "Visible in user registration form."
+msgstr "Látható a felhasználói regisztrációs űrlapon."
+
+#: modules/profile/profile.admin.inc:282
+msgid "Save field"
+msgstr "Mező mentése"
+
+#: modules/profile/profile.admin.inc:293
+msgid ""
+"The specified form name contains one or more illegal characters. Spaces or "
+"any other special characters except dash (-) and underscore (_) are not "
+"allowed."
+msgstr ""
+"A megadott mezőnév egy vagy több érvénytelen karaktert tartalmaz. Kötőjel "
+"(-) és aláhúzás (_) kivételével speciális karakterek használata nem "
+"engedélyezett, szóköz sem adható meg."
+
+#: modules/profile/profile.admin.inc:297
+msgid "The specified form name is reserved for use by Drupal."
+msgstr "A megadott mezőnév már foglalt a Drupal rendszerben."
+
+#: modules/profile/profile.admin.inc:304
+msgid "The specified category name is reserved for use by Drupal."
+msgstr "A megadott kategórianév már foglalt a Drupal rendszerben."
+
+#: modules/profile/profile.admin.inc:316
+msgid "The specified title is already in use."
+msgstr "A megadott cím már foglalt."
+
+#: modules/profile/profile.admin.inc:319
+msgid "The specified name is already in use."
+msgstr "A megadott név már foglalt."
+
+#: modules/profile/profile.admin.inc:323
+msgid "A hidden field cannot be required."
+msgstr "Rejtett mező kitöltése nem tehető kötelezővé."
+
+#: modules/profile/profile.admin.inc:326
+msgid "A hidden field cannot be set to visible on the user registration form."
+msgstr "Rejtett mezőt nem lehet láthatóvá tenni a regisztrációs űrlapon."
+
+#: modules/profile/profile.admin.inc:344
+msgid "The field has been created."
+msgstr "A mező létrejött."
+
+#: modules/profile/profile.admin.inc:350
+msgid "The field has been updated."
+msgstr "A mező frissült."
+
+#: modules/profile/profile.admin.inc:372
+msgid "Are you sure you want to delete the field %field?"
+msgstr "„%field” mező valóban törlendő?"
+
+#: modules/profile/profile.admin.inc:373
+msgid ""
+"This action cannot be undone. If users have entered values into this field "
+"in their profile, these entries will also be deleted. If you want to keep "
+"the user-entered data, instead of deleting the field you may wish to <a href="
+"\"@edit-field\">edit this field</a> and change it to a hidden profile field "
+"so that it may only be accessed by administrators."
+msgstr ""
+"Ez a művelet nem vonható vissza. Ha a felhasználók ezt a mezőt kitöltötték, "
+"akkor az általuk megadott értékek is törlődnek. A <a href=\"@edit-field"
+"\">mező elrejtésével</a> a bevitt adatok törlése elkerülhető. A rejtett mező "
+"tartalmát csak a webhely adminisztrátora tudja olvasni."
+
+#: modules/profile/profile.admin.inc:386
+msgid "The field %field has been deleted."
+msgstr "„%field” mező törölve."
+
+#: modules/profile/profile.admin.inc:345;387 modules/profile/profile.module:0
+msgid "profile"
+msgstr "profil"
+
+#: modules/profile/profile.admin.inc:345
+msgid "Profile field %field added under category %category."
+msgstr "„%field” profilmező hozzáadva ehhez a kategóriához: „%category”."
+
+#: modules/profile/profile.admin.inc:387
+msgid "Profile field %field deleted."
+msgstr "„%field” profilmező törölve."
+
+#: modules/profile/profile.pages.inc:102 modules/profile/profile.module:80
+msgid "User list"
+msgstr "Felhasználói lista"
+
+#: modules/profile/profile.module:35
+msgid ""
+"The profile module allows custom fields (such as country, full name, or age) "
+"to be defined and displayed in the <em>My Account</em> section. This permits "
+"users of a site to share more information about themselves, and can help "
+"community-based sites organize users around specific information."
+msgstr ""
+"A profil modul segítségével a felhasználói profiloldal egyedi mezőkkel "
+"(például ország, teljes név, életkor stb.) bővíthető. A mezők segítségével a "
+"webhely felhasználói információkat tehetnek közzé magukról, és lehetővé "
+"válik a közösségi webhelyek hasonló profilú felhasználóinak szerveződése."
+
+#: modules/profile/profile.module:36
+msgid "The following types of fields can be added to a user profile:"
+msgstr "A felhasználói profil a következő típusú mezőkkel egészíthető ki:"
+
+#: modules/profile/profile.module:37;541
+msgid "single-line textfield"
+msgstr "egysoros szövegmező"
+
+#: modules/profile/profile.module:38;542
+msgid "multi-line textfield"
+msgstr "többsoros szövegmező"
+
+#: modules/profile/profile.module:39;543
+msgid "checkbox"
+msgstr "jelölőnégyzet"
+
+#: modules/profile/profile.module:40;544
+msgid "list selection"
+msgstr "választólista"
+
+#: modules/profile/profile.module:41;545
+msgid "freeform list"
+msgstr "szabad formátumú lista"
+
+#: modules/profile/profile.module:43;547
+msgid "date"
+msgstr "dátum"
+
+#: modules/profile/profile.module:44
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@profile"
+"\">Profile module</a>."
+msgstr ""
+"További információ a kézikönyv <a href=\"@profile\">felhasználói profilokról "
+"szóló oldalán</a> található."
+
+#: modules/profile/profile.module:47
+msgid ""
+"This page displays a list of the existing custom profile fields to be "
+"displayed on a user's <em>My Account</em> page. To provide structure, "
+"similar or related fields may be placed inside a category. To add a new "
+"category (or edit an existing one), edit a profile field and provide a new "
+"category name. To change the category of a field or the order of fields "
+"within a category, grab a drag-and-drop handle under the Title column and "
+"drag the field to a new location in the list. (Grab a handle by clicking and "
+"holding the mouse while hovering over a handle icon.) Remember that your "
+"changes will not be saved until you click the <em>Save configuration</em> "
+"button at the bottom of the page."
+msgstr ""
+"Ezen az oldalon látható a <em>Saját adatok</em> című oldalon megjelenő "
+"egyéni profilmezők listája. A hasonló vagy kapcsolódó mezőket közös "
+"kategória alá rendelve az oldal rendezettebbé tehető. Új kategória "
+"létrehozása (vagy meglévő szerkesztése) egy profilmező szerkesztésével és új "
+"kategórianév hozzáadásával történik. Egy mező kategória-besorolásának "
+"megváltoztatása, vagy a kategórián belül a mezők újrarendezése „fogd és "
+"vidd” módszerrel történik: a bal egérgombbal a Cím oszlopban látható ikonra "
+"kattintva és a gombot lenyomvatartva a mező áthúzható az új helyre. A "
+"változtatások elmentéséhez a Mentés gombra kell kattintani a lap alján."
+
+#: modules/profile/profile.module:137
+msgid "Author information"
+msgstr "A szerző adatai"
+
+#: modules/profile/profile.module:148
+msgid "Link to full user profile"
+msgstr "Link a teljes felhasználói profilra"
+
+#: modules/profile/profile.module:150
+msgid "Profile fields to display"
+msgstr "Megjelenítendő profilmezők"
+
+#: modules/profile/profile.module:153
+msgid ""
+"Select which profile fields you wish to display in the block. Only fields "
+"designated as public in the <a href=\"@profile-admin\">profile field "
+"configuration</a> are available."
+msgstr ""
+"Megadható, hogy mely profilmezők jelenjenek meg a blokkban. Csak azok közül "
+"lehet választani, amelyek a <a href=\"@profile-admin\">profilmező-"
+"beállítások</a> oldalon nyilvános mezőként szepelnek."
+
+#: modules/profile/profile.module:185
+msgid "View full user profile"
+msgstr "A teljes felhasználói profil megtekintése"
+
+#: modules/profile/profile.module:190
+msgid "About %name"
+msgstr "%name adatai"
+
+#: modules/profile/profile.module:333
+msgid ""
+"Put each item on a separate line or separate them by commas. No HTML allowed."
+msgstr ""
+"Az elemeket külön sorba, vagy vesszővel elválasztva kell beírni. HTML kód "
+"használata nem engedélyezett."
+
+#: modules/profile/profile.module:435
+msgid "The value provided for %field is not a valid URL."
+msgstr "„%field”: a megadott webcím hibás."
+
+#: modules/profile/profile.module:440
+msgid "The field %field is required."
+msgstr "„%field”: a mező kitöltése kötelező."
+
+#: modules/profile/profile.module:87
+msgid "Profiles"
+msgstr "Profilok"
+
+#: modules/profile/profile.module:88
+msgid "Create customizable fields for your users."
+msgstr "Egyedi felhasználói profilmezők létrehozása."
+
+#: modules/profile/profile.module:95
+msgid "Add field"
+msgstr "Mező hozzáadása"
+
+#: modules/profile/profile.module:102
+msgid "Profile category autocomplete"
+msgstr "Profil kategória automatikus kiegészítése"
+
+#: modules/profile/profile.module:108
+msgid "Edit field"
+msgstr "Mező szerkesztése"
+
+#: modules/profile/profile.module:115
+msgid "Delete field"
+msgstr "Mező törlése"
+
+#: modules/profile/profile.module:122
+msgid "Profile autocomplete"
+msgstr "Profil automatikus kiegészítése"
+
+#: modules/profile/profile.install:27
+msgid "Stores profile field information."
+msgstr "Profilmezők értékének tárolása."
+
+#: modules/profile/profile.install:32
+msgid "Primary Key: Unique profile field ID."
+msgstr "Elsődleges kulcs: egyedi profilmező-azonosító."
+
+#: modules/profile/profile.install:38
+msgid "Title of the field shown to the end user."
+msgstr "A mező címe, ahogyan az a felhasználók számára megjelenik."
+
+#: modules/profile/profile.install:45
+msgid "Internal name of the field used in the form HTML and URLs."
+msgstr "A mező HTML űrlapokon és webcímekben használható neve."
+
+#: modules/profile/profile.install:50
+msgid "Explanation of the field to end users."
+msgstr "A felhasználókat tájékoztató leírás a mezőről."
+
+#: modules/profile/profile.install:56
+msgid "Profile category that the field will be grouped under."
+msgstr "A profil kategória, amelyhez a mező tartozik."
+
+#: modules/profile/profile.install:62
+msgid "Title of page used for browsing by the field's value"
+msgstr "A mezőhöz tartozó önálló oldal címe"
+
+#: modules/profile/profile.install:68
+msgid "Type of form field."
+msgstr "Űrlapmező típusa."
+
+#: modules/profile/profile.install:75
+msgid "Weight of field in relation to other profile fields."
+msgstr "A mező súlya a többi profilmezőhöz viszonyítva."
+
+#: modules/profile/profile.install:82
+msgid "Whether the user is required to enter a value. (0 = no, 1 = yes)"
+msgstr "Kötelező-e a mező kitöltése? (0=nem, 1=igen)"
+
+#: modules/profile/profile.install:89
+msgid ""
+"Whether the field is visible in the user registration form. (1 = yes, 0 = no)"
+msgstr "Látható-e a mező a felhasználói regisztrációs űrlapon? (1=igen, 0=nem)"
+
+#: modules/profile/profile.install:96
+msgid ""
+"The level of visibility for the field. (0 = hidden, 1 = private, 2 = public "
+"on profile but not member list pages, 3 = public on profile and list pages)"
+msgstr ""
+"A mező láthatóságának szintje (0=rejtett, 1=privát, 2=nyilvános a "
+"profiloldalon, de rejtett a felhasználókat listázó oldalakon, 3=nyilvános "
+"mind a profiloldalon, mind a listázó oldalakon)."
+
+#: modules/profile/profile.install:103
+msgid "Whether form auto-completion is enabled. (0 = disabled, 1 = enabled)"
+msgstr "Automatikus kiegészítés (0=kikapcsolva, 1=bekapcsolva)."
+
+#: modules/profile/profile.install:108
+msgid "List of options to be used in a list selection field."
+msgstr "Választólista-mező lehetséges értékei."
+
+#: modules/profile/profile.install:117
+msgid "Stores values for profile fields."
+msgstr "Profilmezők értékének tárolása."
+
+#: modules/profile/profile.install:124
+msgid "The {profile_fields}.fid of the field."
+msgstr "A mezőhöz tartozó {profile_fields}.fid érték."
+
+#: modules/profile/profile.install:131
+msgid "The {users}.uid of the profile user."
+msgstr "A felhasználóhoz tartozó {users}.uid érték."
+
+#: modules/profile/profile.install:136
+msgid "The value for the field."
+msgstr "A mező értéke."

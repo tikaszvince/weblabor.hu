@@ -1,0 +1,5 @@
+name = "Weblabor szűrő"
+description = "BBcode kiegészítések, colorer, táblázatok, csatolmányok, sorozatok"
+package = "Weblabor"
+core = 6.x
+version = 6.x-1.0

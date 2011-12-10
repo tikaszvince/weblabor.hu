@@ -1,0 +1,5 @@
+name = "Weblabor Twitter widget"
+description = "#weblabor címkéjű csiripek doboza"
+package = Weblabor
+version = 6.x-1.0
+core = 6.x

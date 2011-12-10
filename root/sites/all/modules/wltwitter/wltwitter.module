@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * A Weblabor Twitter megjeleneset tamogato funkciok.
+ */
+
+/**
+ * Implementation of hook_block().
+ */
+function wltwitter_block($op = 'list', $delta = 0) {
+  switch ($op) {
+    case 'list':
+      return array(
+        0 => array('info' => '#weblabor Twitter widget'),
+      );
+      break;
+
+    case 'view':
+      switch ($delta) {
+        case 0:
+          return array(
+            'subject' => 'Friss csiripek',
+            'content' => '<div class="hfeed" id="block-wltwitter-list"><em>Csiripek betöltése&hellip;</em></div><div class="more-link"><a rel="external" href="http://search.twitter.com/search?q=%23weblabor">további csiripek&raquo;</a></div>'
+          );
+      }
+      break;
+  }
+}
+
+/**
+ * Implementation of hook_footer().
+ *
+ * Az oldal alján hívjuk meg a Twitter API-t, hogy minél kevésbé akadjon meg az
+ * oldal betöltése.
+ */
+function wltwitter_footer($main = 0) {
+  return '<script type="text/javascript" src="/misc/wltwitter.js"></script><script type="text/javascript" src="http://search.twitter.com/search.json?q=%23weblabor&amp;rpp=5&amp;callback=Drupal.twitterWidget"></script>';
+}
+
+/**
+ * Implementation of hook_link().
+ *
+ * Retweet link minden szerkesztett tartalomhoz.
+ */
+function wltwitter_link($type, $object, $teaser = FALSE) {
+  $links = array();
+  $url = 'http://weblabor.hu/' . $object->path . '?utm_source=wlretweet&utm_medium=twitter&utm_campaign=' . $object->nid;
+  if ($object->type !== NULL) { // hozzaszolasok kiszurese
+    $links['retweet'] = array(
+      'title' => t('csirip'),
+      'href' => 'http://twitter.com/home/',
+      'query' => 'status=' . urlencode($object->title . ' ' . wltwitter_shorten_url($url) . ' via @weblaborhu'),
+      'attributes' => array('title' => 'Beküldöm a Twitterre.')
+    );
+  }
+  return $links;
+}
+
+/**
+ * Implementation of hook_link_alter().
+ *
+ * Retweet link kerüljön mindig legelőre.
+ */
+function wltwitter_link_alter(&$links, $node) {
+  $retweet = $links['retweet'];
+  unset($links['retweet']);
+  $links = array('retweet' => $retweet) + $links;
+}
+
+
+/**
+ * Linkrovidito a TinyURL REST API-jara epitve.
+ */
+function wltwitter_shorten_url($url) {
+  $cached = cache_get($url);
+  if ($cached->data && !empty($cached->data)) {
+    return $cached->data;
+  }
+  $c = curl_init();
+  curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($c, CURLOPT_CONNECTTIMEOUT, 5);
+  curl_setopt($c, CURLOPT_URL, 'http://e2.tinyurl.com/api-create.php?url=' . urlencode($url));
+  $contents = curl_exec($c);
+  curl_close($c);
+  if ($contents === FALSE) {
+      return $url;
+  }
+  cache_set($url, $contents, 'cache');
+  return $contents;
+}

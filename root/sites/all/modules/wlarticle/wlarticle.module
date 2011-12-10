@@ -1,0 +1,55 @@
+<?php
+
+/***********************************************************
+ * Hook implementations
+ ***********************************************************/
+
+/***********************************************************
+ * Blocks and forms
+ ***********************************************************/
+ 
+/**
+ * Implementation of hook_block
+ */
+function wlarticle_block($op = 'list', $delta = 0, $edit = array()) {
+  switch ($op) {
+    case 'list':
+      return array(
+        0 => array('info' => 'Véletlenszerű cikkajánló'),
+      );
+      break;
+    case 'configure':
+      break;
+    case 'save':
+      break;
+    case 'view':
+      switch ($delta) {
+        case 0:
+          return array(
+            'subject' => 'Cikkajánló',
+            'content' => _wlarticle_block()
+          );
+      }
+      break;
+  }
+}
+
+function _wlarticle_block($withteaser = FALSE) {
+  $res = db_query("SELECT nid FROM {node} WHERE type = 'article' AND status = 1 ORDER BY RAND() LIMIT 3");
+  $links = array();
+  while (($nid = db_fetch_array($res)) && ($node = node_load($nid))) {
+    $img = "";
+    if (count($node->files)) {
+      foreach($node->files as $file) {
+        if ($file->list === "1") {
+            $img = '<img src="/' . $file->filepath . '" alt="' . check_plain($node->title) . '" /><br/>';
+          break;
+        }
+      }
+    }
+    $author = (!empty($node->name)) ? $node->name : t('Anonymous');
+    $links[] = $img . $author . ':<br/>' . l($node->title, $node->path, array());
+  }
+  $content = theme('item_list', $links);
+  return  $content;
+}

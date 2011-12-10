@@ -1,0 +1,65 @@
+# $Id: form-inc.pot,v 1.1.2.1 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (includes/form.inc)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: form.inc,v 1.174 2007/01/15 04:09:40 unconed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-16 11:35+0100\n"
+"PO-Revision-Date: 2007-01-10 23:15+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: includes/form.inc:396
+msgid ""
+"Validation error, please try again. If this error persists, please contact "
+"the site administrator."
+msgstr ""
+"Helyesség ellenőrzési hiba. Kérjük próbálkozzon újra! Amennyiben a hiba "
+"továbbra is fennáll, javasolt felvenni a kapcsolatot a webhely gazdájával."
+
+#: includes/form.inc:521
+msgid "!name field is required."
+msgstr "„!name” mező szükséges."
+
+#: includes/form.inc:526
+msgid ""
+"!name cannot be longer than %max characters but is currently %length "
+"characters long."
+msgstr ""
+"„!name” értéke nem lehet hosszabb, mint %max karakter, a jelenlegi hossza "
+"viszont %length karakter."
+
+#: includes/form.inc:542
+msgid "Illegal choice %choice in !name element."
+msgstr "„!name” mezőben érvénytelen kiválasztott érték (%choice)."
+
+#: includes/form.inc:1099
+msgid "Confirm password"
+msgstr "Jelszó megerősítése"
+
+#: includes/form.inc:1120
+msgid "The specified passwords do not match."
+msgstr "A megadott jelszavak nem egyeznek meg."
+
+#: includes/form.inc:1124
+msgid "Password field is required."
+msgstr "A jelszó mező szükséges."
+
+#: includes/form.inc:1202
+msgid "The specified date is invalid."
+msgstr "A megadott dátum érvénytelen."
+
+#: includes/form.inc:1518
+msgid "This field is required."
+msgstr "Szükséges mező."
+
+#: includes/form.inc:1523;1526
+msgid "!title: !required"
+msgstr "!title: !required"

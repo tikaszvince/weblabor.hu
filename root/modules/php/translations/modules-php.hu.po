@@ -1,0 +1,257 @@
+# translation of modules-php.po to Hungarian
+# $Id: modules-php.po,v 1.1.2.8 2008/02/08 23:43:30 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-php)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  php.module,v 1.8.2.1 2008/02/05 09:29:50 goba
+#  php.install,v 1.1 2007/04/24 10:54:34 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: modules-php\n"
+"POT-Creation-Date: 2007-12-20 11:52+0100\n"
+"PO-Revision-Date: 2007-12-28 10:15+0100\n"
+"Last-Translator: FEHÉR János (http://mindworks.hu) <feher.janos _at- "
+"mindworks.hu>\n"
+"Language-Team: Drupal.hu Fordítási Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: modules/php/php.module:16
+msgid ""
+"The PHP filter adds the ability to include PHP code in posts. PHP is a "
+"general-purpose scripting language widely-used for web development; the "
+"content management system used by this website has been developed using PHP."
+msgstr ""
+"A PHP szűrő lehetővé teszi a PHP programozási nyelven írt kódok használatát "
+"tartalom bevitelkor. A PHP egy általános célú szkript nyelv, amelyet széles "
+"körben használnak webfejlesztésre. A webhelyet működtető rendszer is PHP-ben "
+"íródott."
+
+#: modules/php/php.module:17
+msgid ""
+"Through the PHP filter, users with the proper permission may include custom "
+"PHP code within a page of the site. While this is a powerful and flexible "
+"feature if used by a trusted user with PHP experience, it is a significant "
+"and dangerous security risk in the hands of a malicious user. Even a trusted "
+"user may accidentally compromise the site by entering malformed or incorrect "
+"PHP code. Only the most trusted users should be granted permission to use "
+"the PHP filter, and all PHP code added through the PHP filter should be "
+"carefully examined before use."
+msgstr ""
+"A PHP szűrőt használva megfelelő jogosultsággal rendelkező felhasználók "
+"egyedi PHP kódokat adhatnak meg tartalom bevitelkor. Bár ez rendkívül sok "
+"lehetőséget biztosít egy megbízható, hozzáértő felhasználó kezében, ha "
+"rosszindulatú vagy tapasztalatlan felhasználó is élhet vele, komoly "
+"veszélyeket rejt. A legnagyobb jószándékkal, akár véletlenül is tönkre lehet "
+"tenni a webhelyet hibás PHP kód beírásával. Csak a legmegbízhatóbb "
+"felhasználók számára szabad jogosultságot adni azon beviteli formákra, "
+"melyekben ez a szűrő szerepel. Célszerű a beírandó PHP kódot beküldés előtt "
+"alaposan átvizsgálni."
+
+#: modules/php/php.module:18;61
+msgid ""
+"<a href=\"@drupal\">Drupal.org</a> offers <a href=\"@php-snippets\">some "
+"example PHP snippets</a>, or you can create your own with some PHP "
+"experience and knowledge of the Drupal system."
+msgstr ""
+"A <a href=\"@drupal\">Drupal.org-ról</a> elérhető <a href=\"@php-snippets"
+"\">néhány minta PHP kód</a>, de bárki írhat saját kódokat a PHP nyelv és a "
+"Drupal rendszer működésének ismeretében."
+
+#: modules/php/php.module:19
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@php\">PHP "
+"module</a>."
+msgstr ""
+"További információért az online kézikönyv <a href=\"@php\">PHP modul</a> "
+"részét érdemes megtekinteni."
+
+#: modules/php/php.module:32
+msgid "You may post PHP code. You should include &lt;?php ?&gt; tags."
+msgstr "&lt;?php ?&gt; elemek között PHP kód is megadható."
+
+#: modules/php/php.module:34
+msgid "Using custom PHP code"
+msgstr "Saját PHP kód használata"
+
+#: modules/php/php.module:35
+msgid ""
+"Custom PHP code may be embedded in some types of site content, including "
+"posts and blocks. While embedding PHP code inside a post or block is a "
+"powerful and flexible feature when used by a trusted user with PHP "
+"experience, it is a significant and dangerous security risk when used "
+"improperly. Even a small mistake when posting PHP code may accidentally "
+"compromise your site."
+msgstr ""
+"Egyedi PHP kód ágyazható be bizonyos weboldal tartalom típusokba, ideértve a "
+"beküldéseket és a blokkokat is. Ugyan a tartalmakba vagy blokkokba "
+"beágyazott PHP kód erőteljes és rugalmas lehetőség, amikor egy megbízható "
+"felhasználó alkalmazza jó PHP tudással, de fontos és veszélyes biztonsági "
+"kockázat jelent a helytelen használat."
+
+#: modules/php/php.module:36
+msgid ""
+"If you are unfamiliar with PHP, SQL, or Drupal, avoid using custom PHP code "
+"within posts. Experimenting with PHP may corrupt your database, render your "
+"site inoperable, or significantly compromise security."
+msgstr ""
+"Ezért az, aki nem járatos a PHP, az SQL és a működtető motor használatában "
+"az jobban teszi, ha mellőzi a PHP kódok használatát. Kísérletezés a PHP-val "
+"az adatbázis sérüléséhez, a webhely működésképtelenségéhez, vagy jelentős "
+"biztonsági veszélyekhez vezethet."
+
+#: modules/php/php.module:37
+msgid "Notes:"
+msgstr "Megjegyzések:"
+
+#: modules/php/php.module:38
+msgid ""
+"Remember to double-check each line for syntax and logic errors "
+"<strong>before</strong> saving."
+msgstr ""
+"Érdemes duplán ellenőrizni minden sor szintaktikáját és logikáját mentés "
+"<strong>előtt</strong>."
+
+#: modules/php/php.module:39
+msgid "Statements must be correctly terminated with semicolons."
+msgstr "Kifejezéseket korrektül le kell zárni pontosvesszővel."
+
+#: modules/php/php.module:40
+msgid ""
+"Global variables used within your PHP code retain their values after your "
+"script executes."
+msgstr ""
+"Használhatók globális változók is a PHP kódban érdemes ezek tartalmát "
+"változatlanul hagyni a kód végrehajtását követően."
+
+#: modules/php/php.module:41
+msgid ""
+"<code>register_globals</code> is <strong>turned off</strong>. If you need to "
+"use forms, understand and use the functions in <a href=\"@formapi\">the "
+"Drupal Form API</a>."
+msgstr ""
+"<code>register_globals</code> beállítást <strong>kikapcsolatnak</strong> "
+"kell feltételezni. Amennyiben űrlapok használata szükséges, úgy érdemes "
+"tanulmányozni <a href=\"@formapi\">a Drupal Form API</a> függvényeit."
+
+#: modules/php/php.module:42
+msgid ""
+"Use a <code>print</code> or <code>return</code> statement in your code to "
+"output content."
+msgstr ""
+"<code>print</code>, mind a <code>return</code> parancsok használhatóak a "
+"tartalom megjelenítéséhez."
+
+#: modules/php/php.module:43
+msgid ""
+"Develop and test your PHP code using a separate test script and sample "
+"database before deploying on a production site."
+msgstr ""
+"A PHP kód éles webhelyre telepítése előtt, a fejlesztéshez és a teszteléshez "
+"különálló teszt kódot és próbaadatbázist érdemes használni."
+
+#: modules/php/php.module:44
+msgid ""
+"Consider including your custom PHP code within a site-specific module or "
+"<code>template.php</code> file rather than embedding it directly into a post "
+"or block."
+msgstr ""
+"Inkább érdemes az egyedi PHP kódot egy webhelyhez kapcsolódó modulba, vagy a "
+"<code>template.php</code> fájlba helyezni, mint közvetlenül a tartalomba, "
+"vagy blokkba tenni."
+
+#: modules/php/php.module:45
+msgid ""
+"Be aware that the ability to embed PHP code within content is provided by "
+"the PHP Filter module. If this module is disabled or deleted, then blocks "
+"and posts with embedded PHP may display, rather than execute, the PHP code."
+msgstr ""
+"Jó tudni, hogy a beágyazott PHP kód képességét a PHP Filter modul adja. "
+"Amennyiben a modul tiltott, vagy törölt a blokk vagy közzététel tartalmaként "
+"a PHP fog megjelenni, ahelyett hogy a végrehajtás eredménye."
+
+#: modules/php/php.module:46
+msgid ""
+"A basic example: <em>Creating a \"Welcome\" block that greets visitors with "
+"a simple message.</em>"
+msgstr ""
+"Egy egyszerű példa: <em> „Üdvözlő” blokk készítése, amely köszönti a "
+"látogatót egy egyszerű szöveggel.</em>"
+
+#: modules/php/php.module:47
+msgid ""
+"<p>Add a custom block to your site, named \"Welcome\". With its input format "
+"set to \"PHP code\" (or another format supporting PHP input), add the "
+"following in the Block body:</p>\n"
+"<pre>\n"
+"print t('Welcome visitor! Thank you for visiting.');\n"
+"</pre>"
+msgstr ""
+"<p>Adjunk egy egyedi blokkot a weboldalhoz, „Üdvözlet” címmel. A beviteli "
+"formát „PHP code”-ra kell állítani (vagy bármely más olyan formára, amely "
+"támogatja a PHP bevitelt) és adjuk hozzá a blokk törzséhez az alábbiakat: </"
+"p>\n"
+"<pre>\n"
+"print t('Légy üdvözölve, látogató! Köszönjük a látogatást!');\n"
+"</pre>"
+
+#: modules/php/php.module:51
+msgid ""
+"<p>To display the name of a registered user, use this instead:</p>\n"
+"<pre>\n"
+"global $user;\n"
+"if ($user->uid) {\n"
+"  print t('Welcome @name! Thank you for visiting.', array('@name' => $user-"
+">name));\n"
+"}\n"
+"else {\n"
+"  print t('Welcome visitor! Thank you for visiting.');\n"
+"}\n"
+"</pre>"
+msgstr ""
+"<p>A felhasználó nevének megjelenítéséhez inkább ez használható:</p>\n"
+"<pre>\n"
+"global $user;\n"
+"if ($user->uid) {\n"
+"  print t('Welcome @name! Thank you for visiting.', array('@name' => $user-"
+">name));\n"
+"}\n"
+"else {\n"
+"  print t('Welcome visitor! Thank you for visiting.');\n"
+"}\n"
+"</pre>"
+
+#: modules/php/php.module:75
+msgid "PHP evaluator"
+msgstr "PHP kiértékelő"
+
+#: modules/php/php.module:80
+msgid ""
+"Executes a piece of PHP code. The usage of this filter should be restricted "
+"to administrators only!"
+msgstr ""
+"PHP kódok futtatását teszi lehetővé. Bármely ezt használó beviteli "
+"formátumot célszerű csak az adminisztrátorok számára engedélyezni!"
+
+#: modules/php/php.install:20
+msgid "A !php-code input format has been created."
+msgstr "!php-code beviteli forma létrehozva."
+
+#: modules/php/php.install:28
+msgid ""
+"The PHP module has been disabled. Please note that any existing content that "
+"was using the PHP filter will now be visible in plain text. This might pose "
+"a security risk by exposing sensitive information, if any, used in the PHP "
+"code."
+msgstr ""
+"A PHP szűrő modul kikapcsolásával minden olyan tartalom, mely ezt a szűrőt "
+"használva futtatott PHP kódot, az alapértelmezett beviteli forma "
+"használatára lett állítva. Előfordulhat, hogy ez a beviteli forma "
+"megjeleníti a PHP kódokat, így azok mostantól bárki számára láthatóak, "
+"nyilvánossá téve esetlegesen privát adatokat. Ez biztonsági kockázatokat "
+"jelent a webhely számára."

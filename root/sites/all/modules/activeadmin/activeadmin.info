@@ -1,0 +1,5 @@
+name = Aktív adminisztráció
+description = Aktív adminisztrációs elemek a Weblabor számára
+package = Weblabor
+version = 6.x-1.0
+core = 6.x

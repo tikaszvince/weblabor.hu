@@ -1,0 +1,341 @@
+# $Id: upload-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/upload/upload.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: upload.module,v 1.148 2007/01/15 11:22:34 unconed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-11 00:04+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/upload/upload.module:16
+msgid ""
+"The upload module allows users to upload files to the site. The ability to "
+"upload files to a site is important for members of a community who want to "
+"share work. It is also useful to administrators who want to keep uploaded "
+"files connected to a node or page."
+msgstr ""
+"A feltöltés modul segítségével fájlok csatolhatók a webhelyen megjelenő "
+"tartalmakhoz. A fájl feltöltés lehetősége fontos egy olyan közösség számára, "
+"ahol a tagok meg szeretnék osztani egymással munkájukat, de egy szerkesztő "
+"számára is, aki a szövegekhez csatolt képeket és más fájlokat szeretne adni "
+"a rendszerhez."
+
+#: modules/upload/upload.module:17
+msgid ""
+"Users with the upload files permission can upload attachments. You can "
+"choose which post types can take attachments on the content types settings "
+"page. Each user role can be customized for the file size of uploads, and the "
+"dimension of image files."
+msgstr ""
+"A „fájlok feltöltése” joggal rendelkező felhasználók tölthetnek fel "
+"csatolmányokat. Beállítható, hogy mely tartalom típusokhoz lehet "
+"csatolmányokat rendelni, és a különböző csoportokba tartozó felhasználók "
+"mekkora méretű fájlokat illetve képeket tölthetnek fel."
+
+#: modules/upload/upload.module:18
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@upload\">Upload page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@upload"
+"\">feltöltésekről szóló oldalán</a> található."
+
+#: modules/upload/upload.module:21
+msgid ""
+"Users with the <a href=\"@permissions\">upload files permission</a> can "
+"upload attachments. Users with the <a href=\"@permissions\">view uploaded "
+"files permission</a> can view uploaded attachments. You can choose which "
+"post types can take attachments on the <a href=\"@types\">content types "
+"settings</a> page."
+msgstr ""
+"A <a href=\"@permissions\">fájlok feltöltése joggal</a> joggal rendelkező "
+"felhasználók tölthetnek fel csatolmányokat, a <a href=\"@permissions"
+"\">feltöltött fájlok megtekintése joggal</a> rendelkező felhasználók pedig "
+"megtekinthetik ezeket. A <a href=\"@types\">tartalom típusok</a> "
+"testreszabási oldalán megadható, hogy mely tartalom típusokhoz lehet "
+"csatolmányokat rendelni."
+
+#: modules/upload/upload.module:50
+msgid "Read full article to view attachments."
+msgstr "A teljes tartalom olvasásakor tekinthetőek meg a csatolások."
+
+#: modules/upload/upload.module:73
+msgid "File uploads"
+msgstr "Fájl feltöltések"
+
+#: modules/upload/upload.module:74
+msgid "Control how files may be attached to content."
+msgstr "A tartalmakhoz rendelhető csatolmányok beállítása."
+
+#: modules/upload/upload.module:113
+msgid ""
+"The maximum allowed image size expressed as WIDTHxHEIGHT (e.g. 640x480). Set "
+"to 0 for no restriction."
+msgstr ""
+"A maximálisan engedélyezett kép felbontás SZÉLESSÉGxMAGASSÁG formában (pl. "
+"640x480). Nullára állítva semmilyen korlátozás nem lép életbe."
+
+#: modules/upload/upload.module:120
+msgid "Your PHP settings limit the maximum file size per upload to %size MB."
+msgstr ""
+"A PHP beállítások %size MB-ra korlátozzák a feltöltésenkénti maximális "
+"fájlméretét."
+
+#: modules/upload/upload.module:121
+msgid ""
+"Depending on your sever environment, these settings may be changed in the "
+"system-wide php.ini file, a php.ini file in your Drupal root directory, in "
+"your Drupal site's settings.php file, or in the .htaccess file in your "
+"Drupal root directory."
+msgstr ""
+"A kiszolgáló-környezet függvényében a beállítások a rendszerszintű php.ini "
+"fájlban, a Drupal könyvtárában lévő php.ini fájlban, a Drupal settings.php "
+"fájljában vagy a Drupal gyökerében lévő .htaccess fájlban módosíthatóak ezek "
+"a beállítások."
+
+#: modules/upload/upload.module:124;127;142;145
+msgid "The %role file size limit must be a number and greater than zero."
+msgstr "%role fájl méret limitnek pozitív számnak kell lennie."
+
+#: modules/upload/upload.module:124;127;134
+msgid "default"
+msgstr "alapértelmezés"
+
+#: modules/upload/upload.module:134;152
+msgid ""
+"The %role maximum file size per upload is greater than the total file size "
+"allowed per user"
+msgstr ""
+"%role feltöltésenkénti maximális fájl mérete nagyobb, mint a megengedett "
+"összesített fájl méret felhasználónként."
+
+#: modules/upload/upload.module:167
+msgid "General settings"
+msgstr "Általános beállítások"
+
+#: modules/upload/upload.module:172
+msgid "Maximum resolution for uploaded images"
+msgstr "Feltöltött képek maximális felbontása"
+
+#: modules/upload/upload.module:176
+msgid ""
+"The maximum allowed image size (e.g. 640x480). Set to 0 for no restriction."
+msgstr ""
+"A maximálisan engedélyezett kép felbontás (pl. 640x480). Nullára állítva "
+"semmilyen korlátozás nem lép életbe."
+
+#: modules/upload/upload.module:177
+msgid "WIDTHxHEIGHT"
+msgstr "SZÉLESSÉGxMAGASSÁG"
+
+#: modules/upload/upload.module:181
+msgid "List files by default"
+msgstr "Fájlok megjelenítése alapértelmezésben"
+
+#: modules/upload/upload.module:184
+msgid ""
+"Set whether files attached to nodes are listed or not in the node view by "
+"default."
+msgstr ""
+"Egy tartalomhoz csatolt fájlok jelenjenek-e meg a látogató számára "
+"alapértelmezés szerint egy listában."
+
+#: modules/upload/upload.module:189
+msgid "Default permitted file extensions"
+msgstr "Alapértelmezésben engedélyezett fájl kiterjesztések"
+
+#: modules/upload/upload.module:192
+msgid ""
+"Default extensions that users can upload. Separate extensions with a space "
+"and do not include the leading dot."
+msgstr ""
+"Azok az alapértelmezett kiterjesztések, amelyeket használva a felhasználók "
+"fájlokat tölthetnek fel. A kiterjesztéseket szóközzel kell elválasztani, és "
+"nem szabad kiírni a kezdő pontot."
+
+#: modules/upload/upload.module:196
+msgid "Default maximum file size per upload"
+msgstr "Egy feltöltés maximális mérete alapértelmezés szerint"
+
+#: modules/upload/upload.module:200
+msgid "The default maximum file size a user can upload."
+msgstr ""
+"Egyszerre legfeljebb ekkora fájlt tölthet fel egy felhasználó "
+"alapértelmezésben."
+
+#: modules/upload/upload.module:205
+msgid "Default total file size per user"
+msgstr "Az összesített fájlméretek alapértelmezett maximuma felhasználónként"
+
+#: modules/upload/upload.module:209
+msgid "The default maximum size of all files a user can have on the site."
+msgstr ""
+"Az összesített fájlméret alapértelmezett maximuma. Összesen ennyit tölthet "
+"fel egy felhasználó."
+
+#: modules/upload/upload.module:213
+msgid "Your PHP settings limit the maximum file size per upload to %size."
+msgstr ""
+"A PHP beállítások %size méretre korlátozzák a feltöltésenkénti maximális "
+"fájlméretét."
+
+#: modules/upload/upload.module:221
+msgid "Settings for @role"
+msgstr "@role csoporthoz tartozó beállítások"
+
+#: modules/upload/upload.module:227
+msgid "Permitted file extensions"
+msgstr "Engedélyezett fájl kiterjesztések"
+
+#: modules/upload/upload.module:230
+msgid ""
+"Extensions that users in this role can upload. Separate extensions with a "
+"space and do not include the leading dot."
+msgstr ""
+"Azok a kiterjesztések, amelyeket használva az ebben a csoportban lévő "
+"felhasználók fájlokat tölthetnek fel. A kiterjesztéseket szóközzel kell "
+"elválasztani, és nem szabad kiírni a kezdő pontot."
+
+#: modules/upload/upload.module:234
+msgid "Maximum file size per upload"
+msgstr "Egy feltöltés maximális mérete"
+
+#: modules/upload/upload.module:238
+msgid "The maximum size of a file a user can upload (in megabytes)."
+msgstr "Egy felhasználó által feltölthető fájl maximális mérete (megabájtban)."
+
+#: modules/upload/upload.module:242
+msgid "Total file size per user"
+msgstr "Az összesített fájlméretek maximuma felhasználónként"
+
+#: modules/upload/upload.module:246
+msgid ""
+"The maximum size of all files a user can have on the site (in megabytes)."
+msgstr ""
+"Az összesített fájlméret maximuma. Összesen ennyi megabájtnyi fájlt tölthet "
+"fel egy felhasználó."
+
+#: modules/upload/upload.module:345
+msgid "Attachments"
+msgstr "Csatolmányok"
+
+#: modules/upload/upload.module:361
+msgid "File attachments"
+msgstr "Csatolmányok"
+
+#: modules/upload/upload.module:364
+msgid ""
+"Changes made to the attachments are not permanent until you save this post. "
+"The first \"listed\" file will be included in RSS feeds."
+msgstr ""
+"A változások nem maradnak tartósak, csak a tartalom rögzítése után! Az első "
+"olyan fájl, mely a tartalom végén listában is megjelenik, az RSS csatornába "
+"is bekerül."
+
+#: modules/upload/upload.module:382
+msgid ""
+"File attachments are disabled. The file directories have not been properly "
+"configured."
+msgstr ""
+"Fájlok csatolása nem engedélyezett, mivel a feltöltésre használt könyvtárak "
+"nincsenek megfelelően beállítva."
+
+#: modules/upload/upload.module:384
+msgid ""
+"Please visit the <a href=\"@admin-file-system\">file system configuration "
+"page</a>."
+msgstr ""
+"Módosítási lehetőség a <a href=\"@admin-file-system\">fájlrendszer "
+"beállítási oldalon</a>."
+
+#: modules/upload/upload.module:387
+msgid "Please contact the site administrator."
+msgstr "Érdemes kapcsolatba lépni a webhely adminisztrátorával."
+
+#: modules/upload/upload.module:446
+msgid ""
+"The selected file %name can not be attached to this post, because it is only "
+"possible to attach files with the following extensions: %files-allowed."
+msgstr ""
+"A kiválasztott fájl (%name) nem csatolható ehhez a tartalomhoz, mert nem az "
+"engedélyezett kiterjesztések (%files-allowed) valamelyikét használja."
+
+#: modules/upload/upload.module:450
+msgid ""
+"The selected file %name can not be attached to this post, because it "
+"exceeded the maximum filesize of %maxsize."
+msgstr ""
+"A kiválasztott fájl (%name) nem csatolható ehhez a tartalomhoz, mert a "
+"mérete meghaladja az engedélyezettet (%maxsize)."
+
+#: modules/upload/upload.module:454
+msgid ""
+"The selected file %name can not be attached to this post, because the disk "
+"quota of %quota has been reached."
+msgstr ""
+"A kiválasztott fájl (%name) nem csatolható ehhez a tartalomhoz, mert a "
+"fájlok számára fenntartott %quota méretű terület betelt."
+
+#: modules/upload/upload.module:458
+msgid ""
+"The selected file %name can not be attached to this post, because the "
+"filename is too long."
+msgstr ""
+"A kiválasztott fájl (%name) nem csatolható ehhez a tartalomhoz, mert a fájl "
+"neve túl hosszú."
+
+#: modules/upload/upload.module:582
+msgid "Attachment"
+msgstr "Csatolmány"
+
+#: modules/upload/upload.module:582;815
+msgid "Size"
+msgstr "Méret"
+
+#: modules/upload/upload.module:664
+msgid "Your filename has been renamed to conform to site policy."
+msgstr ""
+"A fájl a webhely irányelveinek megfelelően módosított névvel lett elmentve."
+
+#: modules/upload/upload.module:800
+msgid "Attach new file"
+msgstr "Új fájl csatolása"
+
+#: modules/upload/upload.module:801
+msgid "Attach"
+msgstr "Csatol"
+
+#: modules/upload/upload.module:865
+msgid ""
+"The image was resized to fit within the maximum allowed resolution of %"
+"resolution pixels."
+msgstr ""
+"A képet át kellett méretezni, hogy az engedélyezett %resolution méreten "
+"belül maradjon."
+
+#: modules/upload/upload.module:48;549
+msgid "1 attachment"
+msgid_plural "@count attachments"
+msgstr[0] "1 csatolmány"
+msgstr[1] "@count csatolmány"
+
+#: modules/upload/upload.module:29
+msgid "upload files"
+msgstr "fájlok feltöltése"
+
+#: modules/upload/upload.module:29
+msgid "view uploaded files"
+msgstr "feltöltött fájlok megtekintése"
+
+#: modules/upload/upload.module:0
+msgid "upload"
+msgstr "feltöltés"

@@ -1,0 +1,338 @@
+# $Id: statistics-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/statistics/statistics.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: statistics.module,v 1.249 2007/01/10 15:17:51 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-10 23:52+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: modules/statistics/statistics.module:15
+msgid ""
+"The statistics module keeps track of numerous statistics of site usage. It "
+"counts how many times, and from where each of your posts is viewed. The "
+"statistics module can be used to learn many useful things about how users "
+"are interacting with each other and with your site."
+msgstr ""
+"Az olvasottság mérő modul a webhely használatával kapcsolatos egyszerű "
+"statisztikák követésére szolgál. Számontartja hogy egy adott tartalom "
+"hányszor és honnan került megtekintésre. A modullal sok hasznos dolog "
+"áttekinthető a látogatók egymás közti kapcsolatairól, valamint a weblapok és "
+"a látogatók viszonyáról."
+
+#: modules/statistics/statistics.module:16
+msgid ""
+"<p>Statistics module features</p>\n"
+"<ul>\n"
+"<li>Logs show statistics for how many times your site and specific content "
+"on your site has been accessed.</li>\n"
+"<li>Referrers tells you from where visitors came from (referrer URL).</li>\n"
+"<li>Top pages shows you what's hot, what is the most popular content on your "
+"site.</li>\n"
+"<li>Top users shows you the most active users for your site.</li>\n"
+"<li>Recent hits displays information about the latest activity on your site."
+"</li>\n"
+"<li>Node count displays the number of times a node has been accessed in the "
+"node's link section next to <em># comments</em>.</li>\n"
+"<li>Popular content block creates a block that can display the day's top "
+"viewed content, the all time top viewed content, and the last content viewed."
+"</li>\n"
+"</ul>\n"
+msgstr ""
+"<p>Az olvasottság mérő modul lehetőségei:</p>\n"
+"<ul>\n"
+"<li>A naplók megmutatják, hogy a webhelyet és azon belül egy adott tartalmat "
+"hányszor tekintettek meg.</li>\n"
+"<li>A hivatkozók listája információt ad arról, hogy a látogatók honnan "
+"érkeztek a webhelyre.</li>\n"
+"<li>A látogatott oldalak listája segítségével a legnépszerűbb tartalmakat "
+"tekinthetjük át.</li>\n"
+"<li>Az aktív látogatók listája megmutatja a webhelyet legtöbbször megtekintő "
+"látogatókat.</li>\n"
+"<li>Az utolsó találatok listája a webhelyen történt legutóbbi eseményeket "
+"jeleníti meg.</li>\n"
+"<li>A tartalom olvasottság számláló megjeleníti egy tartalom letöltéseinek "
+"számát a hozzászólásainak száma mellett.</li>\n"
+"<li>A népszerű tartalmak blokk az aznapi legolvasottabb, az összesítetten "
+"legnépszerűbb és a legutóbb olvasott tartalmakat sorolja fel.</li>\n"
+"</ul>\n"
+
+#: modules/statistics/statistics.module:27
+msgid ""
+"<p>Configuring the statistics module</p>\n"
+"<ul>\n"
+"<li>Enable access log allows you to turn the access log on and off. This log "
+"is used to store data about every page accessed, such as the remote host's "
+"IP address, where they came from (referrer), what node they've viewed, and "
+"their user name. Enabling the log adds one database call per page displayed "
+"by Drupal.</li>\n"
+"<li>Discard access logs older than allows you to configure how long an "
+"access log entry is saved, after which time it is deleted from the database "
+"table. To use this you need to run <em>cron.php</em></li>\n"
+"<li>Enable node view counter allows you to turn on and off the node-counting "
+"functionality of this module. If it is turned on, an extra database query is "
+"added for each node displayed, which increments a counter.</li>\n"
+"</ul>\n"
+msgstr ""
+"<p>Az olvasottság mérő modul beállítása:</p>\n"
+"<ul>\n"
+"<li>A hozzáférési napló engedélyezésével ki- illetve bekapcsolható a "
+"hozzáférési napló. Ebben a naplóban szerepelnek az oldal lekérések adatai, "
+"mint a távoli hoszt IP címe, a hivatkozó oldal címe, a megjelenített "
+"tartalom, és a felhasználó neve. A napló engedélyezésével minden egyes "
+"Drupal által megjelenített oldal esetén plusz egy adatbázis művelet történik."
+"</li>\n"
+"<li>A <em>Hozzáférési napló elemeinek élettartalma</em> beállítás lehetővé "
+"teszi, hogy meghatározzuk a napló elemeinek megőrzési idejét, tehát hogy "
+"mennyi idő múlva törlődjenek az adatbázisból. Használatához az időzítő "
+"(cron) rendszeres futtatása szükséges.</li>\n"
+"<li>A <em>Tartalmak olvasottságának mérésének</em> engedélyezése ad "
+"lehetőséget a funkció  be- illetve kikapcsolására. Bekapcsolt állapotban "
+"minden egyes tartalom megjelenítésekor egy többlet adatbázis lekérdezés "
+"történik, mely megnöveli a számlálót.</li>\n"
+"</ul>\n"
+
+#: modules/statistics/statistics.module:34
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@statistics\">Statistics page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href="
+"\"@statistics\">olvasottság mérésről szóló oldalán</a> található."
+
+#: modules/statistics/statistics.module:37
+msgid ""
+"Settings for the statistical information that Drupal will keep about the "
+"site. See <a href=\"@statistics\">site statistics</a> for the actual "
+"information."
+msgstr ""
+"A webhely olvasottsági információinak kezeléséhez kapcsolódó Drupal "
+"beállítások. Az aktuális statisztikák a <a href=\"@statistics\">legutóbbi "
+"megtekintések</a> oldalán találhatók."
+
+#: modules/statistics/statistics.module:39
+msgid "This page shows you the most recent hits."
+msgstr "A legutóbbi oldal megtekintések listája."
+
+#: modules/statistics/statistics.module:41
+msgid ""
+"This page shows you all external referrers. These are links pointing to your "
+"web site from outside your web site."
+msgstr ""
+"A külső hivatkozások áttekintése, azaz olyan oldalaké, melyekről a webhelyre "
+"érkeztek látogatók."
+
+#: modules/statistics/statistics.module:43
+msgid ""
+"When you ban a visitor, you prevent the visitor's IP address from accessing "
+"your site. Unlike blocking a user, banning a visitor works even for "
+"anonymous users. The most common use for this is to block bots/web crawlers "
+"that are consuming too many resources."
+msgstr ""
+"Egy látogató kitiltásával elkerülhető, hogy az IP címéről a webhely elérhető "
+"legyen. A felhasználó kitiltással ellentétben ez látogatókra is érvényes. "
+"Leggyakoribb alkalmazási módja azon kereső robotok kitiltása, melyek túl sok "
+"erőforrást kötnek le."
+
+#: modules/statistics/statistics.module:109
+msgid "Recent hits"
+msgstr "Legutóbbi megtekintések"
+
+#: modules/statistics/statistics.module:110
+msgid "View pages that have recently been visited."
+msgstr "A legutóbb megtekintett oldalak áttekintése."
+
+#: modules/statistics/statistics.module:115
+msgid "Top pages"
+msgstr "Népszerű oldalak"
+
+#: modules/statistics/statistics.module:116
+msgid "View pages that have been hit frequently."
+msgstr "A legtöbbet megtekintett oldalak áttekintése."
+
+#: modules/statistics/statistics.module:122
+msgid "Top visitors"
+msgstr "Gyakori látogatók"
+
+#: modules/statistics/statistics.module:123
+msgid "View visitors that hit many pages."
+msgstr "A legtöbbet megtekintő látogatók áttekintése."
+
+#: modules/statistics/statistics.module:129
+msgid "Top referrers"
+msgstr "Legjobb hivatkozók"
+
+#: modules/statistics/statistics.module:130
+msgid "View top referrers."
+msgstr "A legtöbb forgalmat hozó hivatkozók áttekintése."
+
+#: modules/statistics/statistics.module:136
+msgid "View access log."
+msgstr "Hozzáférési napló megtekintése."
+
+#: modules/statistics/statistics.module:142;367
+msgid "Access log settings"
+msgstr "Hozzáférési napló beállítások"
+
+#: modules/statistics/statistics.module:143
+msgid "Control details about what and how your site logs."
+msgstr "Mit és hogyan kell naplózni a webhelyen."
+
+#: modules/statistics/statistics.module:154
+msgid "Track page visits"
+msgstr "Oldal látogatások követése"
+
+#: modules/statistics/statistics.module:216;242;274
+msgid "details"
+msgstr "részletek"
+
+#: modules/statistics/statistics.module:233;260
+msgid "Timestamp"
+msgstr "Időpont"
+
+#: modules/statistics/statistics.module:290;314;345
+msgid "Hits"
+msgstr "Megtekintések"
+
+#: modules/statistics/statistics.module:292
+msgid "Average page generation time"
+msgstr "Átlagos oldal generálási idő"
+
+#: modules/statistics/statistics.module:293;316
+msgid "Total page generation time"
+msgstr "Az oldal generálására fordított idő összesen"
+
+#: modules/statistics/statistics.module:299
+msgid "%time ms"
+msgstr "%time ms"
+
+#: modules/statistics/statistics.module:302
+msgid "Top pages in the past %interval"
+msgstr "A legnépszerűbb oldalak az utóbbi időszakban (%interval)"
+
+#: modules/statistics/statistics.module:326
+msgid "unban"
+msgstr "visszaengedés"
+
+#: modules/statistics/statistics.module:326
+msgid "ban"
+msgstr "kitiltás"
+
+#: modules/statistics/statistics.module:330
+msgid "Top visitors in the past %interval"
+msgstr "A leggyakoribb látogatók az utóbbi időszakban (%interval)"
+
+#: modules/statistics/statistics.module:342
+msgid "Top referrers in the past %interval"
+msgstr "A leggyakoribb hivatkozók az utóbbi időszakban (%interval)"
+
+#: modules/statistics/statistics.module:346
+msgid "Url"
+msgstr "Webcím"
+
+#: modules/statistics/statistics.module:347
+msgid "Last visit"
+msgstr "Utolsó látogatás"
+
+#: modules/statistics/statistics.module:370
+msgid "Enable access log"
+msgstr "Hozzáférési napló engedélyezése"
+
+#: modules/statistics/statistics.module:373
+msgid "Log each page access. Required for referrer statistics."
+msgstr ""
+"Minden oldal megtekintésének naplózása. Szükséges a hivatkozók rögzítéséhez."
+
+#: modules/statistics/statistics.module:377
+msgid "Discard access logs older than"
+msgstr "Hozzáférési napló elemeinek élettartalma"
+
+#: modules/statistics/statistics.module:380
+msgid ""
+"Older access log entries (including referrer statistics) will be "
+"automatically discarded. Requires crontab."
+msgstr ""
+"Minden ennél az időnél öregebb naplóbejegyzés (a hivatkozók adatai is) "
+"automatikusan törlődik. Időzítő (cron) támogatást igényel."
+
+#: modules/statistics/statistics.module:385
+msgid "Content viewing counter settings"
+msgstr "Olvasottság számláló beállítások"
+
+#: modules/statistics/statistics.module:388
+msgid "Count content views"
+msgstr "Tartalmak olvasottságának mérése"
+
+#: modules/statistics/statistics.module:391
+msgid "Increment a counter each time content is viewed."
+msgstr "Számláló hozzárendelése a webhely tartalmi elemeihez."
+
+#: modules/statistics/statistics.module:463;502
+msgid "Popular content"
+msgstr "Népszerű tartalmak"
+
+#: modules/statistics/statistics.module:470
+msgid "Number of day's top views to display"
+msgstr "Napi népszerű tartalmak listájának hossza"
+
+#: modules/statistics/statistics.module:470
+msgid "How many content items to display in \"day\" list."
+msgstr "Mennyi eleme legyen a napi népszerű tartalmakat megjelenítő listának?"
+
+#: modules/statistics/statistics.module:471
+msgid "Number of all time views to display"
+msgstr "Minden idők legnépszerűbbjei listájának hossza"
+
+#: modules/statistics/statistics.module:471
+msgid "How many content items to display in \"all time\" list."
+msgstr ""
+"Mennyi eleme legyen a minden idők legnépszerűbb tartalmait megjelenítő "
+"listának?"
+
+#: modules/statistics/statistics.module:472
+msgid "Number of most recent views to display"
+msgstr "Legutóbbi megjelenítések listájának hossza"
+
+#: modules/statistics/statistics.module:472
+msgid "How many content items to display in \"recently viewed\" list."
+msgstr ""
+"Mennyi eleme legyen a legutóbb olvasott tartalmakat felsoroló listának?"
+
+#: modules/statistics/statistics.module:487
+msgid "Today's:"
+msgstr "Mai:"
+
+#: modules/statistics/statistics.module:492
+msgid "All time:"
+msgstr "Összesített:"
+
+#: modules/statistics/statistics.module:497
+msgid "Last viewed:"
+msgstr "Legutóbb olvasott:"
+
+#: modules/statistics/statistics.module:92
+msgid "1 read"
+msgid_plural "@count reads"
+msgstr[0] "1 olvasás"
+msgstr[1] "@count olvasás"
+
+#: modules/statistics/statistics.module:79
+msgid "access statistics"
+msgstr "olvasottsági adatok hozzáférése"
+
+#: modules/statistics/statistics.module:79
+msgid "view post access counter"
+msgstr "olvasottság mérő megtekintése"
+
+#: modules/statistics/statistics.module:0
+msgid "statistics"
+msgstr "olvasottság mérő"

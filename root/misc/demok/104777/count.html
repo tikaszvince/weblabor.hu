@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>worker demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script language="javascript" src="jQuery.js"></script>
+	<script language="javascript" src="countPrimes.js"></script>
+	<style>
+		#animateDemo {
+			position: relative;
+			width: 2em;
+			height: 2em;
+			background-color: #33f;
+		}
+		#results td {
+			height: 1em;
+			width: 1em;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			var moveRight = function() {
+				$('#animateDemo').animate({
+					left: 330
+				}, 1000, moveLeft);
+			};
+			var moveLeft = function() {
+				$('#animateDemo').animate({
+					left: 30
+				}, 1000, moveRight);
+			};
+			moveRight();
+		});
+		$(function() {
+			var from = 1;
+			var to = 1000000;
+			var showResult = function( i, text ) {
+				$('#results td').eq(i).css('background-color','#6f6');
+			};
+			var worker;
+			
+			if ( typeof Worker != 'undefined' ) {
+				worker = new Worker('workerdemo.js');
+				worker.onmessage = function( event ) {
+					var a = event.data.split(',');
+					showResult( a[0], a[1] );
+				};
+			} else {
+				worker = { 
+					postMessage: function() {
+						showResult('Worker isn’t supported in your browser');
+					}
+				};
+			}
+
+			function run( type ) {
+				var from = parseInt($('#from').val(),10);
+				var to = parseInt($('#to').val(),10);
+				var count = parseInt($('#times').val(),10);;
+				$('#results tr').html('');
+				for ( var i = 0; i < count; i++ ) {
+					$('#results tr').append($('<td>&nbsp;</td>'));
+				}
+				$('#results td').css('background-color','#f33');
+				if ( type == 'classic') 
+					for ( var i = 0; i < count; i++ ) 
+						showResult( i, countPrimes( from, to ) );
+				else
+					for ( var i = 0; i < count; i++ ) 
+						worker.postMessage( i + ',' + from + ',' + to );
+			}
+			
+			$('#runClassic').click(function(){
+				run('classic');
+			});
+			$('#runWorker').click(function(){
+				run('worker');
+			});
+			
+			
+		});
+	</script>
+</head>
+<body>
+	<div id="animateDemo">&nbsp;</div>
+	It counts prime numbers from <input id="from" value="1" /> to <input id="to" value="100000" />, <input id="times" value="30" /> times.<br/>
+	<button type="button" id="runClassic" value="Classic">Classic</button>
+	<button type="button" id="runWorker" value="Worker">Worker</button>
+	<table id="results"><tr></tr></table>
+</body>
+</html>

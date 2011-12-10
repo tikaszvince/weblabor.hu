@@ -1,0 +1,217 @@
+# $Id: poll-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/poll/poll.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: poll.module,v 1.222 2006/12/25 09:48:42 drumm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-10 23:50+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/poll/poll.module:16
+msgid ""
+"The poll module can be used to create simple polls for site users. A poll is "
+"a simple multiple choice questionnaire which displays the cumulative results "
+"of the answers to the poll. Having polls on the site is a good way to get "
+"instant feedback from community members."
+msgstr ""
+"A szavazás modul segítségével egyszerűen készíthetőek szavazások. Egy "
+"szavazás nem más, mint egy választási lehetőségekből álló kérdőív. A leadott "
+"szavazatok összegzésével adódik ki a szavazás eredménye."
+
+#: modules/poll/poll.module:17
+msgid ""
+"Users can create a poll. The title of the poll should be the question, then "
+"enter the answers and the \"base\" vote counts. You can also choose the time "
+"period over which the vote will run.The <a href=\"@poll\">poll</a> item in "
+"the navigation menu will take you to a page where you can see all the "
+"current polls, vote on them (if you haven't already) and view the results."
+msgstr ""
+"Az erre jogosult felhasználók indíthatnak szavazásokat. A szavazás címe egy "
+"kérdés, mely után a lehetséges válaszokat és a már leadott voksok számát "
+"kell megadni, amennyiben nem nulláról indul minden érték. Megadható a "
+"szavazás nyitottságának időszaka, mely után több szavazatot nem fogad el a "
+"rendszer. A <a href=\"@poll\">szavazás</a> menüpont vezet az összes szavazás "
+"listájához, ahol megtekinthetők az eredmények, illetve szavazni is lehet."
+
+#: modules/poll/poll.module:18
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@poll\">Poll page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@poll"
+"\">szavazás modulról szóló oldalán</a> található."
+
+#: modules/poll/poll.module:40
+msgid "Most recent poll"
+msgstr "Legutóbbi szavazás"
+
+#: modules/poll/poll.module:105
+msgid "Negative values are not allowed."
+msgstr "Negatív értékek megadása nem engedélyezett."
+
+#: modules/poll/poll.module:110
+msgid "You must fill in at least two choices."
+msgstr "Legalább két lehetőséget meg kell adni."
+
+#: modules/poll/poll.module:147
+msgid "Choices"
+msgstr "Lehetőségek"
+
+#: modules/poll/poll.module:159
+msgid "Need more choices"
+msgstr "Több válaszlehetőségre van szükség"
+
+#: modules/poll/poll.module:161
+msgid ""
+"If the amount of boxes above isn't enough, check this box and click the "
+"Preview button below to add some more."
+msgstr ""
+"Ha a fenti mennyiségű lehetőség nem elegendő, ezzel a jelölőnégyzettel "
+"kérhető több a következő előnézet oldalra."
+
+#: modules/poll/poll.module:168
+msgid "Choice @n"
+msgstr "@n. lehetőség"
+
+#: modules/poll/poll.module:175
+msgid "Votes for choice @n"
+msgstr "@n. lehetőség szavazatai"
+
+#: modules/poll/poll.module:184
+msgid "Closed"
+msgstr "Lezárt"
+
+#: modules/poll/poll.module:191
+msgid "Poll status"
+msgstr "Szavazás állapota"
+
+#: modules/poll/poll.module:194
+msgid "When a poll is closed, visitors can no longer vote for it."
+msgstr ""
+"Ha egy szavazás lezárt, a látogatók nem voksolhatnak egy lehetőségére sem "
+"tovább."
+
+#: modules/poll/poll.module:199
+msgid "Poll duration"
+msgstr "Szavazás időtartama"
+
+#: modules/poll/poll.module:202
+msgid "After this period, the poll will be closed automatically."
+msgstr "Ezt követően a szavazás automatikusan lezárul."
+
+#: modules/poll/poll.module:234
+msgid "Polls"
+msgstr "Szavazások"
+
+#: modules/poll/poll.module:240;380;488;609
+msgid "Vote"
+msgstr "Szavazás"
+
+#: modules/poll/poll.module:260
+msgid "Votes"
+msgstr "Szavazatok"
+
+#: modules/poll/poll.module:268;602
+msgid "Results"
+msgstr "Eredmények"
+
+#: modules/poll/poll.module:322
+msgid "A poll is a multiple-choice question which visitors can vote on."
+msgstr "A szavazások választási lehetőségeire voksolhatnak a látogatók."
+
+#: modules/poll/poll.module:323
+msgid "Question"
+msgstr "Kérdés"
+
+#: modules/poll/poll.module:336
+msgid "open"
+msgstr "nyitott"
+
+#: modules/poll/poll.module:336
+msgid "closed"
+msgstr "lezárt"
+
+#: modules/poll/poll.module:428;435
+msgid "Total votes: %votes"
+msgstr "Összes szavazat: %votes"
+
+#: modules/poll/poll.module:447
+msgid "Cancel your vote"
+msgstr "Szavazat törlése"
+
+#: modules/poll/poll.module:485
+msgid ""
+"This table lists all the recorded votes for this poll.  If anonymous users "
+"are allowed to vote, they will be identified by the IP address of the "
+"computer they used when they voted."
+msgstr ""
+"Az alábbi táblázat a szavazáson rögzített voksokat mutatja. Ha az anonim "
+"felhasználók szavazásra jogosultak, akkor a szavazásra használt IP címük "
+"jelenik itt meg."
+
+#: modules/poll/poll.module:534
+msgid "Your vote was recorded."
+msgstr "A szavazat rögzítve."
+
+#: modules/poll/poll.module:537
+msgid "You are not allowed to vote on this poll."
+msgstr "Nem lehet erre a szavazásra új voksot leadni."
+
+#: modules/poll/poll.module:541
+msgid "You did not specify a valid poll choice."
+msgstr "Érvénytelen szavazási lehetőség."
+
+#: modules/poll/poll.module:571
+msgid "Your vote was canceled."
+msgstr "A szavazat törölve."
+
+#: modules/poll/poll.module:574
+msgid "You are not allowed to cancel an invalid poll choice."
+msgstr "Érvénytelen törlendő szavazat."
+
+#: modules/poll/poll.module:600
+msgid "Older polls"
+msgstr "Korábbi szavazások"
+
+#: modules/poll/poll.module:600
+msgid "View the list of polls on this site."
+msgstr "A webhelyen indított szavazások."
+
+#: modules/poll/poll.module:602
+msgid "View the current poll results."
+msgstr "Eredmények megtekintése."
+
+#: modules/poll/poll.module:336;414
+msgid "1 vote"
+msgid_plural "@count votes"
+msgstr[0] "1 szavazat"
+msgstr[1] "@count szavazat"
+
+#: modules/poll/poll.module:347
+msgid "create polls"
+msgstr "szavazások létrehozása"
+
+#: modules/poll/poll.module:347
+msgid "vote on polls"
+msgstr "szavazás"
+
+#: modules/poll/poll.module:347
+msgid "cancel own vote"
+msgstr "saját szavazat törlése"
+
+#: modules/poll/poll.module:347
+msgid "inspect all votes"
+msgstr "szavazatok adatainak megtekintése"
+
+#: modules/poll/poll.module:0
+msgid "poll"
+msgstr "szavazás"

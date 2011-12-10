@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * Implementation of hook_menu().
+ */
+function hirlevel_menu() {
+  $items = array();
+  $items['hirlevel'] = array(
+    'title' => 'Hírlevelek',
+    'page callback' => 'hirlevel_page',
+    'file' => 'hirlevel.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['koveto/hirlevel'] = array(
+    'title' => 'Hírlevelek',
+    'page callback' => 'hirlevel_page',
+    'file' => 'hirlevel.inc',
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 20,
+  );
+  $items['hirlevel/napi/friss'] = array(
+    'title' => 'Friss napi hírlevél',
+    'page callback' => 'hirlevel_friss',
+    'page arguments' => array('napi'),
+    'file' => 'hirlevel.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['hirlevel/heti/friss'] = array(
+    'title' => 'Friss heti hírlevél',
+    'page callback' => 'hirlevel_friss',
+    'page arguments' => array('heti'),
+    'file' => 'hirlevel.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Implementation of hook_user().
+ */
+function hirlevel_user($op, &$edit, &$user, $category = NULL) {
+  if ($op == 'categories') {
+    return array(
+      array('name' => 'hirlevel', 'title' => 'Hírlevél', 'weight' => 100)
+    );
+  }
+  elseif ($op == 'form' && $category == 'hirlevel') {
+    $form['hirlevel'] = array(
+      '#type' => 'fieldset',
+      '#title' => 'Hírlevél',
+      '#collapsible' => FALSE
+    ); 
+    $form['hirlevel']['wl_hirlevel_napi'] = array(
+      '#type' => 'checkbox',
+      '#title' => 'Napi hírlevelet kérek',
+      '#default_value' => $user->wl_hirlevel_napi,
+    );
+    $form['hirlevel']['wl_hirlevel_heti'] = array(
+      '#type' => 'checkbox',
+      '#title' => 'Heti hírlevelet kérek',
+      '#default_value' => $user->wl_hirlevel_heti,
+    );
+    $form['hirlevel']['moreinfo'] = array(
+      '#type' => 'markup',
+      '#value' => '<p class="description">Részletesebb adatokat a két hírlevélről azok <a href="/hirlevel">információs oldalán</a> kaphatsz.</p>'
+    );
+    return $form;
+  }
+}

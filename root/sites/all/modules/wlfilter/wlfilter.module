@@ -1,0 +1,111 @@
+<?php
+
+/**
+ * Implmentation of hook_menu().
+ */
+function wlfilter_menu() {
+  $items = array();
+  $items['bekuldes/tippek'] = array(
+    'title' => 'Szerkesztési tippek',
+    'page callback' => 'wlfilter_tips_page',
+    'file' => 'formathelp.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Implmentation of hook_nodeapi().
+ */
+function wlfilter_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  switch ($op) {
+    // TODO: bug kihasználása (hogy lent nem a view OP-ot használjuk)!
+    case 'rss item':
+      include_once 'wlfilter.inc';
+      _wlfilter_nodeapi($node, TRUE, $a3);
+      break;
+    // TODO: bug kihasználása (hogy ez nem hívódik meg rss-nél)!
+    case 'alter':
+      include_once 'wlfilter.inc';
+      _wlfilter_nodeapi($node, FALSE, $a3);
+      break;
+  }
+}
+
+/**
+ * Implementation of hook_filter().
+ */
+function wlfilter_filter($op, $delta = 0, $format = -1, $text = '') {
+  switch ($op) {
+    case 'list':
+      return array(0 => 'Weblabor szűrő');
+    case 'no cache':
+      return TRUE;
+    case 'description':
+      return 'BBcode, colorer, táblázatok, csatolmányok szűrője';
+    case 'process':
+      include_once 'wlfilter.inc';
+      return _wlfilter_process($text);
+    default:
+      return $text;
+  }
+}
+
+/**
+ * Implementation of hook_user().
+ */
+function wlfilter_user($type, &$edit, &$user, $category = NULL) {
+  if ($type == 'form' && $category == 'account') {
+    $form['bbeditor'] = array(
+      '#type' => 'fieldset',
+      '#title' => 'BBCode szerkesztő',
+      '#collapsible' => FALSE,
+      '#weight' => 10
+    );
+    $form['bbeditor']['bbeditordisable'] = array(
+      '#type' => 'checkbox',
+      '#title' => 'BBCode szerkesztő kikapcsolása',
+      '#description' => 'A szövegmezők szerkesztési funkcióit segítő funkció kikapcsolása.',
+      '#default_value' => $user->bbeditordisable
+    );
+    return $form;
+  }
+}
+
+/**
+ * Implmentation of hook_form_alter().
+ */
+function wlfilter_form_alter(&$form, $form_state, $form_id) {
+  $tips = '<strong>A szerkesztőség fenntartja a <a href="/weblabor/segitseg#forumok">moderálás</a> jogát.</strong> BBCode formázás használható. Például: <strong>[b]</strong>vastag[/b], <strong>[i]</strong>dőlt[/i], <strong>[url=http://...]</strong>link[/url], <strong>[quote]</strong>idézet[/quote], <strong>[colorer=css]</strong>css kód[/colorer]. <a href="/bekuldes/tippek">További lehetőségek</a>';
+  if ($form_id == "comment_form") {
+    // Saját tippek hozzáadása.
+    $form['comment_filter']['comment']['#description'] .= $tips;
+    // Saját elnevezések.
+    $form['subject']['#title'] = 'A hozzászólás tárgya';
+    $form['comment_filter']['comment']['#title'] = 'A hozzászólás szövege';
+    // Alap beviteli tippek eltüntetése.
+    unset($form['comment_filter']['format']['format']);
+    unset($form['comment_filter']['format'][2]);
+  }
+  if ($form['#id'] == "node-form") {
+    // Saját tippek hozzáadása.
+    $form['body_field']['body']['#description'] .= $tips;
+    // Alap beviteli tippek eltüntetése.
+    unset($form['body_field']['format']['format']);
+    unset($form['body_field']['format'][2]);
+  }
+}
+
+/**
+ * Nofollow beállító.
+ *
+ * @todo Ez még nincs meghívva.
+ */
+function _wlfilter_set_nofollow($switch = NULL) {
+  static $_switch = TRUE;
+  if (isset($switch)) {
+    $_switch = $switch;
+  }
+  return $_switch;
+}

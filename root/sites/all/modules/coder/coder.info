@@ -1,0 +1,5 @@
+; $Id: coder.info,v 1.9 2007/06/18 22:53:34 dww Exp $
+name = Coder
+description = Developer Module that assists with code review and version upgrade
+package = Development
+core = "6.x"

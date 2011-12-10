@@ -1,0 +1,6 @@
+name = "Kiterjesztett követő"
+description = "A Drupal 4.5-ös időkben használt követő megjelenés"
+package = Weblabor
+dependencies[] = comment
+version = 6.x-1.0
+core = 6.x

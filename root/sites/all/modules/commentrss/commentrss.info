@@ -1,0 +1,5 @@
+; $Id: commentrss.info,v 1.1.2.2.2.1 2008/04/28 22:51:43 goba Exp $
+name = Comment RSS
+description = Provides RSS feeds for comments
+core = 6.x
+dependencies[] = comment

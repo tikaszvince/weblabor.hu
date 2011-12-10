@@ -1,0 +1,164 @@
+<?php
+
+/**
+ * Implementation of hook_menu()
+ */
+function levlistak_menu() {
+  $items = array();
+  $items['levlistak'] = array(
+    'title' => 'Levelezőlisták',
+    'page callback' => 'levlistak_index',
+    'file' => 'levlistak-static.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['levlistak/illemszabaly'] = array(
+    'title' => 'Levelezőlisták',
+    'page callback' => 'levlistak_illem',
+    'file' => 'levlistak-static.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['levlistak/%levlistak_list'] = array(
+    'title' => 'Levelezőlisták',
+    'page callback' => 'levlistak_archive_index',
+    'page arguments' => array(1),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['levlistak/%levlistak_list/%levlistak_year/%levlistak_month'] = array(
+    'title' => 'Levelezőlisták',
+    'page callback' => 'levlistak_archive_page',
+    'page arguments' => array(1, 2, 3, 'thread'),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['levlistak/%levlistak_list/%levlistak_year/%levlistak_month/szal'] = array(
+    'title' => 'Szálak',
+    'page callback' => 'levlistak_archive_page',
+    'page arguments' => array(1, 2, 3, 'thread'),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );
+  $items['levlistak/%levlistak_list/%levlistak_year/%levlistak_month/tema'] = array(
+    'title' => 'Témák',
+    'page callback' => 'levlistak_archive_page',
+    'page arguments' => array(1, 2, 3, 'subject'),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'weight' => -5,
+  );
+  $items['levlistak/%levlistak_list/%levlistak_year/%levlistak_month/szerzo'] = array(
+    'title' => 'Szerzők',
+    'page callback' => 'levlistak_archive_page',
+    'page arguments' => array(1, 2, 3, 'author'),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'weight' => -3,
+  );
+  $items['levlistak/%levlistak_list/%levlistak_year/%levlistak_month/datum'] = array(
+    'title' => 'Dátum',
+    'page callback' => 'levlistak_archive_page',
+    'page arguments' => array(1, 2, 3, 'date'),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'weight' => -2,
+  );
+  $items['levlistak/%levlistak_list/%levlistak_year/%levlistak_month/letoltes'] = array(
+    'title' => 'Letöltés',
+    'page callback' => 'levlistak_archive_download',
+    'page arguments' => array(1, 2, 3),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'weight' => -1,
+  );
+  $items['levlistak/%levlistak_list/%levlistak_year/%levlistak_month/%levlistak_id'] = array(
+    'title' => 'Levelezőlisták',
+    'page callback' => 'levlistak_archive_message',
+    'page arguments' => array(1, 2, 3, 4),
+    'file' => 'levlistak-dynamic.inc',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Menu load függvény egy érvényes levlista azonosítására.
+ */
+function levlistak_list_load($value) {
+  if (in_array($value, levlistak_list_names())) {
+    return $value;
+  }
+  return FALSE;
+}
+
+/**
+ * Menu load függvény egy érvényes évszám azonosítására.
+ */
+function levlistak_year_load($value) {
+  $value = intval($value);
+  if ($value >= 2000 && $value <= date('Y', time())) {
+    return $value;
+  }
+  return FALSE;
+}
+
+/**
+ * Menu load függvény egy érvényes hónapszám azonosítására.
+ */
+function levlistak_month_load($value) {
+  $value = intval($value);
+  if ($value >= 1 && $value <= 12) {
+    return $value;
+  }
+  return FALSE;
+}
+
+/**
+ * Menu load függvény egy érvényes szám azonosítására.
+ */
+function levlistak_id_load($value) {
+  if (intval($value) == $value) {
+    return $value;
+  }
+  return FALSE;
+}
+
+/**
+ * A kezelt levlisták nevei.
+ */
+function levlistak_list_names() {
+  return array(
+    'wl-phplista', 'wl-levlista', 'wl-csharplista', 'wl-designlista',
+    'wl-flashlista', 'wl-prmglista', 'wl-offlista', 'wl-flamelista'
+  );
+}
+
+/**
+ * Hónap név lefordítása vagy visszafordítása.
+ */
+function levlistak_translate_month($value, $translate = FALSE) {
+  $months = array(1 => 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+  
+  if (is_numeric($value)) {
+    if ($translate) {
+      return str_replace('!long-month-name ', '', t('!long-month-name '. $months[(int)$value]));
+    }
+    else {
+      return $months[(int)$value];
+    }
+  }
+  else {
+    return sprintf('%02d', array_search($value, $months));
+  }
+}

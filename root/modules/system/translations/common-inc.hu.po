@@ -1,0 +1,123 @@
+# $Id: common-inc.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (includes/common.inc)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: common.inc,v 1.611 2007/01/10 23:30:07 unconed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-11 00:24+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: includes/common.inc:324
+msgid "Site off-line"
+msgstr "Karbantartás miatt zárva"
+
+#: includes/common.inc:353
+msgid "Page not found"
+msgstr "Az oldal nem található"
+
+#: includes/common.inc:382
+msgid "Access denied"
+msgstr "Hozzáférés megtagadva"
+
+#: includes/common.inc:383
+msgid "You are not authorized to access this page."
+msgstr "Nincs megfelelő jogosultság a lap megtekintéséhez."
+
+#: includes/common.inc:555
+msgid "%message in %file on line %line."
+msgstr "%message - %file - %line. sor."
+
+#: includes/common.inc:997
+msgid "KB"
+msgstr "KB"
+
+#: includes/common.inc:1002
+msgid "@size @suffix"
+msgstr "@size @suffix"
+
+#: includes/common.inc:1031
+msgid "0 sec"
+msgstr "0 másodperc"
+
+#: includes/common.inc:1992
+msgid "Cron has been running for more than an hour and is most likely stuck."
+msgstr ""
+"Az időzített feladatok futtatása több mint egy órát vett már igénybe, "
+"feltehetően valamilyen hiba miatt."
+
+#: includes/common.inc:1999
+msgid "Attempting to re-run cron while it is already running."
+msgstr "Az időzített feladatok futtatásának kísérlete, miközben ezek futnak."
+
+#: includes/common.inc:2014
+msgid "Cron run completed."
+msgstr "Az időzített feladatok futtatása befejeződött."
+
+#: includes/common.inc:2030
+msgid "Cron run exceeded the time limit and was aborted."
+msgstr ""
+"Az időzített feladatok futtatása a rendelkezésre álló időkereten túllépett, "
+"ezért leállt."
+
+#: includes/common.inc:335
+msgid "page not found"
+msgstr "az oldal nem található"
+
+#: includes/common.inc:364
+msgid "access denied"
+msgstr "hozzáférés megtagadva"
+
+#: includes/common.inc:1992;1999;2014;2030
+msgid "cron"
+msgstr "időzítő"
+
+#: includes/common.inc:993
+msgid "1 byte"
+msgid_plural "@count bytes"
+msgstr[0] "1 byte"
+msgstr[1] "@count byte"
+
+#: includes/common.inc:0
+msgid "1 year"
+msgid_plural "@count years"
+msgstr[0] "1 év"
+msgstr[1] "@count év"
+
+#: includes/common.inc:0
+msgid "1 week"
+msgid_plural "@count weeks"
+msgstr[0] "1 hét"
+msgstr[1] "@count hét"
+
+#: includes/common.inc:0
+msgid "1 day"
+msgid_plural "@count days"
+msgstr[0] "1 nap"
+msgstr[1] "@count nap"
+
+#: includes/common.inc:0
+msgid "1 hour"
+msgid_plural "@count hours"
+msgstr[0] "1 óra"
+msgstr[1] "@count óra"
+
+#: includes/common.inc:0
+msgid "1 min"
+msgid_plural "@count min"
+msgstr[0] "1 perc"
+msgstr[1] "@count perc"
+
+#: includes/common.inc:0
+msgid "1 sec"
+msgid_plural "@count sec"
+msgstr[0] "1 másodperc"
+msgstr[1] "@count másodperc"

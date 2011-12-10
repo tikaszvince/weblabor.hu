@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>hello world</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var worker = new Worker("hello.js");
+
+		worker.onmessage = function(event) {
+			alert('Message: '+event.data);
+		};
+
+		worker.onerror = function( event ) {
+			alert('Error: ' + event.message );
+		};
+
+		worker.postMessage("world");
+	</script>
+</body>
+</html>

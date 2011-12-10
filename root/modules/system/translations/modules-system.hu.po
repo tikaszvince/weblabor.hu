@@ -1,0 +1,2789 @@
+# $Id: modules-system.po,v 1.1.2.18 2008/02/15 12:58:05 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-system)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  system.admin.inc,v 1.63 2008/02/04 12:35:48 goba
+#  system.module,v 1.585.2.7 2008/02/13 15:39:27 goba
+#  system.js,v 1.14.2.1 2008/02/07 18:23:30 goba
+#  system.install,v 1.238.2.1 2008/02/08 17:07:55 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-02-09 00:39+0100\n"
+"PO-Revision-Date: 2008-02-06 09:43+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/system/system.admin.inc:22
+msgid ""
+"One or more problems were detected with your Drupal installation. Check the "
+"<a href=\"@status\">status report</a> for more information."
+msgstr ""
+"A rendszer problémát észlelt a Drupal környezetével kapcsolatban. Az <a href="
+"\"@status\">állapot jelentés</a> további információval szolgál."
+
+#: modules/system/system.admin.inc:58;79
+msgid "You do not have any administrative items."
+msgstr "Nincs adminisztrációs menüpont."
+
+#: modules/system/system.admin.inc:118
+msgid "Get help"
+msgstr "Súgó"
+
+#: modules/system/system.admin.inc:158
+msgid "System default"
+msgstr "Rendszer alapértelmezés"
+
+#: modules/system/system.admin.inc:166 modules/system/system.module:258
+msgid "Administration theme"
+msgstr "Adminisztrációs smink"
+
+#: modules/system/system.admin.inc:167
+msgid ""
+"Choose which theme the administration pages should display in. If you choose "
+"\"System default\" the administration pages will use the same theme as the "
+"rest of the site."
+msgstr ""
+"Az adminisztrációs oldalak megjelentetéséhez használt smink. A „rendszer "
+"alapértelmezés” kiválasztása esetén a webhely más részein használt smink "
+"lesz az adminisztrációs oldalak megjelenítője is."
+
+#: modules/system/system.admin.inc:173
+msgid "Use administration theme for content editing"
+msgstr "Az adminisztrációs smink használata tartalom szerkesztéshez"
+
+#: modules/system/system.admin.inc:174
+msgid ""
+"Use the administration theme when editing existing posts or creating new "
+"ones."
+msgstr ""
+"Új tartalmak beviteléhez és meglévő tartalmak szerkesztéséhez is a "
+"kiválasztott adminisztrációs smink használata."
+
+#: modules/system/system.admin.inc:209 modules/system/system.module:704
+msgid "Screenshot for %theme theme"
+msgstr "„%theme” smink képernyőképe"
+
+#: modules/system/system.admin.inc:209 modules/system/system.module:704
+msgid "no screenshot"
+msgstr "nincs képernyőkép"
+
+#: modules/system/system.admin.inc:288
+msgid ""
+"Please note that the <a href=\"!admin_theme_page\">administration theme</a> "
+"is still set to the %admin_theme theme; consequently, the theme on this page "
+"remains unchanged. All non-administrative sections of the site, however, "
+"will show the selected %selected_theme theme by default."
+msgstr ""
+"Mivel %admin_theme a kiválasztott <a href=\"!admin_theme_page"
+"\">adminisztrációs smink</a>, ezért a webhely smink módosítása az "
+"adminisztrációs oldalakat nem érinti. Minden nem adminisztratív oldal a "
+"kiválasztott %selected_theme sminkkel fog megjelenni alapértelmezésben."
+
+#: modules/system/system.admin.inc:306;555;933
+#: modules/system/system.module:1054
+msgid "The configuration options have been saved."
+msgstr "A beállítások elmentve."
+
+#: modules/system/system.admin.inc:377
+msgid "Logo"
+msgstr "Logó"
+
+#: modules/system/system.admin.inc:378
+msgid "Site name"
+msgstr "A weboldal neve"
+
+#: modules/system/system.admin.inc:379
+msgid "Site slogan"
+msgstr "Jelmondat"
+
+#: modules/system/system.admin.inc:380
+msgid "Mission statement"
+msgstr "Misszió"
+
+#: modules/system/system.admin.inc:381
+msgid "User pictures in posts"
+msgstr "Felhasználó képe a tartalmai mellett"
+
+#: modules/system/system.admin.inc:382
+msgid "User pictures in comments"
+msgstr "Felhasználó képe a hozzászólásai mellett"
+
+#: modules/system/system.admin.inc:383
+msgid "Search box"
+msgstr "Keresés doboz"
+
+#: modules/system/system.admin.inc:384
+msgid "Shortcut icon"
+msgstr "Webhely ikon"
+
+#: modules/system/system.admin.inc:401
+msgid "Toggle display"
+msgstr "Megjelenés választó"
+
+#: modules/system/system.admin.inc:402
+msgid "Enable or disable the display of certain page elements."
+msgstr "Egyes összetevők megjelenésének engedélyezése."
+
+#: modules/system/system.admin.inc:427
+msgid "Display post information on"
+msgstr "Beküldési információk kijelzése"
+
+#: modules/system/system.admin.inc:428
+msgid ""
+"Enable or disable the <em>submitted by Username on date</em> text when "
+"displaying posts of the following type."
+msgstr ""
+"Engedélyezi a „Kovács József, 2008. március 11.” formában megjelenő "
+"beküldésre vonatkozó információ kijelzését a választott tartalom típusokra."
+
+#: modules/system/system.admin.inc:447
+msgid "Logo image settings"
+msgstr "Logó beállítások"
+
+#: modules/system/system.admin.inc:448
+msgid "If toggled on, the following logo will be displayed."
+msgstr "A smink által megjelenített logó kiválasztása."
+
+#: modules/system/system.admin.inc:453
+msgid "Use the default logo"
+msgstr "Alapértelmezett logó használata"
+
+#: modules/system/system.admin.inc:456
+msgid "Check here if you want the theme to use the logo supplied with it."
+msgstr ""
+"Akkor kell bejelölni, ha a smink alapértelmezett logóját kívánjuk használni."
+
+#: modules/system/system.admin.inc:460
+msgid "Path to custom logo"
+msgstr "Saját logó elérési útvonala"
+
+#: modules/system/system.admin.inc:462
+msgid ""
+"The path to the file you would like to use as your logo file instead of the "
+"default logo."
+msgstr ""
+"Az alapértelmezett logó helyett használni kívánt saját fájl elérési útvonala."
+
+#: modules/system/system.admin.inc:466
+msgid "Upload logo image"
+msgstr "Logó kép feltöltése"
+
+#: modules/system/system.admin.inc:468
+msgid ""
+"If you don't have direct file access to the server, use this field to upload "
+"your logo."
+msgstr ""
+"A kiszolgáló közvetlen hozzáférése hiányában itt lehet feltölteni a logót."
+
+#: modules/system/system.admin.inc:475
+msgid "Shortcut icon settings"
+msgstr "Webhely ikon beállítások"
+
+#: modules/system/system.admin.inc:476
+msgid ""
+"Your shortcut icon, or 'favicon', is displayed in the address bar and "
+"bookmarks of most browsers."
+msgstr ""
+"A webhely ikon vagy „favicon” a címsorban, a füles böngészők fülein és a "
+"könyvjelzők mellett jelenik meg."
+
+#: modules/system/system.admin.inc:480
+msgid "Use the default shortcut icon."
+msgstr "Alapértelmezett webhely ikon használata"
+
+#: modules/system/system.admin.inc:482
+msgid "Check here if you want the theme to use the default shortcut icon."
+msgstr ""
+"Akkor kell bejelölni, ha a smink alapértelmezett webhely ikonját kívánjuk "
+"használni."
+
+#: modules/system/system.admin.inc:486
+msgid "Path to custom icon"
+msgstr "Saját ikon elérési útvonala"
+
+#: modules/system/system.admin.inc:488
+msgid ""
+"The path to the image file you would like to use as your custom shortcut "
+"icon."
+msgstr ""
+"Az alapértelmezett webhely ikon helyett használni kívánt saját fájl elérési "
+"útvonala."
+
+#: modules/system/system.admin.inc:493
+msgid "Upload icon image"
+msgstr "Webhely ikon feltöltése"
+
+#: modules/system/system.admin.inc:494
+msgid ""
+"If you don't have direct file access to the server, use this field to upload "
+"your shortcut icon."
+msgstr ""
+"A kiszolgáló közvetlen hozzáférése hiányában itt lehet feltölteni az ikont."
+
+#: modules/system/system.admin.inc:515
+msgid "Theme-engine-specific settings"
+msgstr "Smink motortól függő beállítások"
+
+#: modules/system/system.admin.inc:515
+msgid ""
+"These settings only exist for all the templates and styles based on the %"
+"engine theme engine."
+msgstr "„%theme” motorra és az arra épülő sminkek esetén érvényes beállítások."
+
+#: modules/system/system.admin.inc:527
+msgid "Theme-specific settings"
+msgstr "Smink beállítások"
+
+#: modules/system/system.admin.inc:527
+msgid ""
+"These settings only exist for the %theme theme and all the styles based on "
+"it."
+msgstr ""
+"„%theme” sminkre és az arra épülő stílusok esetén érvényes beállítások."
+
+#: modules/system/system.admin.inc:549 modules/system/system.module:1051
+msgid "The configuration options have been reset to their default values."
+msgstr "A beállítások alapértelmezett értéküket kapták."
+
+#: modules/system/system.admin.inc:683;715
+msgid " (<span class=\"admin-disabled\">disabled</span>)"
+msgstr " (<span class=\"admin-disabled\">tiltott</span>)"
+
+#: modules/system/system.admin.inc:686
+msgid " (<span class=\"admin-missing\">missing</span>)"
+msgstr " (<span class=\"admin-missing\">hiányzó</span>)"
+
+#: modules/system/system.admin.inc:692;710
+msgid " (<span class=\"admin-enabled\">enabled</span>)"
+msgstr " (<span class=\"admin-enabled\">engedélyezett</span>)"
+
+#: modules/system/system.admin.inc:699
+msgid "Depends on: !dependencies"
+msgstr "!dependencies szükséges a bekapcsolásához"
+
+#: modules/system/system.admin.inc:722
+msgid "Required by: !required"
+msgstr "!required használja"
+
+#: modules/system/system.admin.inc:841
+msgid "Some required modules must be enabled"
+msgstr "A szükséges modulokat engedélyezni kell"
+
+#: modules/system/system.admin.inc:843
+msgid "Would you like to continue with enabling the above?"
+msgstr "Folytatható a folyamat a fentiek engedélyezésével?"
+
+#: modules/system/system.admin.inc:844
+msgid "Continue"
+msgstr "Folytatás"
+
+#: modules/system/system.admin.inc:1036;1081;2106
+#: modules/system/system.module:322;327
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+#: modules/system/system.admin.inc:1075
+msgid ""
+"The following modules will be completely uninstalled from your site, and "
+"<em>all data from these modules will be lost</em>!"
+msgstr ""
+"Az alábbi modulok teljes eltávolítása után <em>minden adat amelyet ezek a "
+"modulok kezeltek, visszafordíthatatlanul elvész</em>!"
+
+#: modules/system/system.admin.inc:1078
+msgid "Confirm uninstall"
+msgstr "Eltávolítás megerősítése"
+
+#: modules/system/system.admin.inc:1080
+msgid "Would you like to continue with uninstalling the above?"
+msgstr "Biztos, hogy a fentiek eltávolítása folytatható?"
+
+#: modules/system/system.admin.inc:1093
+msgid "No modules selected."
+msgstr "Nincs kiválasztott modul."
+
+#: modules/system/system.admin.inc:1110
+msgid "The selected modules have been uninstalled."
+msgstr "A kiválasztott modulok eltávolítása megtörtént."
+
+#: modules/system/system.admin.inc:1131
+msgid "The name of this website."
+msgstr "A webhely neve."
+
+#: modules/system/system.admin.inc:1138
+msgid ""
+"The <em>From</em> address in automated e-mails sent during registration and "
+"new password requests, and other notifications. (Use an address ending in "
+"your site's domain to help prevent this e-mail being flagged as spam.)"
+msgstr ""
+"Regisztráció, új jelszó igénylése és más értesítések során automatikusan "
+"küldött emailek <em>Feladójának</em> címe. (Ajánlott a webhely domainjére "
+"végződő címet megadni. Ez segít megelőzni, hogy a küldött emaileket spamnek "
+"tekintsék.)"
+
+#: modules/system/system.admin.inc:1143
+msgid "Slogan"
+msgstr "Jelmondat"
+
+#: modules/system/system.admin.inc:1145
+msgid ""
+"Your site's motto, tag line, or catchphrase (often displayed alongside the "
+"title of the site)."
+msgstr ""
+"A webhely mottója, jelmondata (gyakran a webhely címe mellett jelenik meg)."
+
+#: modules/system/system.admin.inc:1149
+msgid "Mission"
+msgstr "Küldetés"
+
+#: modules/system/system.admin.inc:1151
+msgid ""
+"Your site's mission or focus statement (often prominently displayed on the "
+"front page)."
+msgstr "A webhely küldetése (gyakran a honlapon kiemelten jelenik meg)."
+
+#: modules/system/system.admin.inc:1155
+msgid "Footer message"
+msgstr "Lábléc üzenet"
+
+#: modules/system/system.admin.inc:1157
+msgid ""
+"This text will be displayed at the bottom of each page. Useful for adding a "
+"copyright notice to your pages."
+msgstr ""
+"Bizonyos sminkek megjelenítik ezt a szöveget az oldal alján. Itt lehet "
+"elhelyezni például a copyright megjegyzéseket is."
+
+#: modules/system/system.admin.inc:1161
+msgid "Anonymous user"
+msgstr "Névtelen felhasználó"
+
+#: modules/system/system.admin.inc:1163
+msgid "The name used to indicate anonymous users."
+msgstr "A látogatók (és be nem lépett felhasználók) megnevezése."
+
+#: modules/system/system.admin.inc:1168
+msgid "Default front page"
+msgstr "Alapértelmezett címlap"
+
+#: modules/system/system.admin.inc:1171
+msgid ""
+"The home page displays content from this relative URL. If unsure, specify "
+"\"node\"."
+msgstr ""
+"A címlapon ehhez a Drupal útvonalhoz tartozó kimenet jelenik majd meg. "
+"Alapértelmezett értéke a „node”."
+
+#: modules/system/system.admin.inc:1196
+msgid "The path '@path' is either invalid or you do not have access to it."
+msgstr "@path útvonal vagy nem érvényes vagy nincs jogosultság az eléréséhez."
+
+#: modules/system/system.admin.inc:1210
+msgid "Default 403 (access denied) page"
+msgstr "Alapértelmezett 403 (tiltott hozzáférést jelző) oldal"
+
+#: modules/system/system.admin.inc:1213
+msgid ""
+"This page is displayed when the requested document is denied to the current "
+"user. If unsure, specify nothing."
+msgstr ""
+"Ehhez a Drupal útvonalhoz tartozó kimenet jelenik meg, ha a kért webcím "
+"hozzáférése az aktuális felhasználó számára tiltott. Alapértelmezésben üres, "
+"mely esetben a Drupal maga biztosít egy rövid üzenetet."
+
+#: modules/system/system.admin.inc:1219
+msgid "Default 404 (not found) page"
+msgstr "Alapértelmezett 404 (nem található) oldal"
+
+#: modules/system/system.admin.inc:1222
+msgid ""
+"This page is displayed when no other content matches the requested document. "
+"If unsure, specify nothing."
+msgstr ""
+"Ehhez a Drupal útvonalhoz tartozó kimenet jelenik meg, ha a kért oldal nem "
+"található. Alapértelmezésben üres, mely esetben a Drupal maga biztosít egy "
+"rövid üzenetet."
+
+#: modules/system/system.admin.inc:1227 modules/system/system.module:374
+msgid "Error reporting"
+msgstr "Hibajelentés"
+
+#: modules/system/system.admin.inc:1228
+msgid "Write errors to the log"
+msgstr "A hibák eseménynaplóba írása"
+
+#: modules/system/system.admin.inc:1228
+msgid "Write errors to the log and to the screen"
+msgstr "A hibák eseménynaplóba és képernyőre írása"
+
+#: modules/system/system.admin.inc:1229
+msgid ""
+"Specify where Drupal, PHP and SQL errors are logged. While it is recommended "
+"that a site running in a production environment write errors to the log "
+"only, in a development or testing environment it may be helpful to write "
+"errors both to the log and to the screen."
+msgstr ""
+"A Drupal, a PHP és az SQL hibaüzenetek naplózásának helye. Éles környezetben "
+"ajánlott a hibákat csak az eseménynaplóba írni. Fejlesztői kiszolgáló esetén "
+"nagy segítséget jelenthet, ha a hibaüzenetek a képernyőn is megjelennek."
+
+#: modules/system/system.admin.inc:1255
+msgid ""
+"The normal cache mode is suitable for most sites and does not cause any side "
+"effects. The aggressive cache mode causes Drupal to skip the loading (boot) "
+"and unloading (exit) of enabled modules when serving a cached page. This "
+"results in an additional performance boost but can cause unwanted side "
+"effects."
+msgstr ""
+"A normál gyorstárazási mód a legtöbb webhely számára megfelelő, és nem okoz "
+"semmilyen mellékhatást. Az agresszív gyorstárazás a Drupal modulok init és "
+"exit lépéseit kihagyja gyorstárazott oldal kiszolgálása esetén. Ez jobb "
+"teljesítményt eredményez, de nem várt mellékhatásokat is okozhat."
+
+#: modules/system/system.admin.inc:1261
+msgid ""
+"<strong class=\"error\">The following enabled modules are incompatible with "
+"aggressive mode caching and will not function properly: %modules</strong>"
+msgstr ""
+"<strong class=\"error\">A következő modulok nem tudnak együttműködni az "
+"agresszív gyorstárazással, és ezért nem fognak helyesen működni: %modules</"
+"strong>"
+
+#: modules/system/system.admin.inc:1264
+msgid ""
+"<strong class=\"ok\">Currently, all enabled modules are compatible with the "
+"aggressive caching policy.</strong> Please note, if you use aggressive "
+"caching and enable new modules, you will need to check this page again to "
+"ensure compatibility."
+msgstr ""
+"<strong class=\"ok\">Jelenleg minden bekapcsolt modul együtt tud működni az "
+"agresszív gyorstárazással.</strong> Érdemes ezt az oldalt egy újabb modul "
+"bekapcsolása után ellenőrizni az együttműködés ellenőrzése érdekében."
+
+#: modules/system/system.admin.inc:1268
+msgid "Page cache"
+msgstr "Oldal gyorstár"
+
+#: modules/system/system.admin.inc:1269
+msgid ""
+"Enabling the page cache will offer a significant performance boost. Drupal "
+"can store and send compressed cached pages requested by <em>anonymous</em> "
+"users. By caching a web page, Drupal does not have to construct the page "
+"each time it is viewed."
+msgstr ""
+"A gyorstár bekapcsolása jelentős teljesítmény javulást eredményezhet. A "
+"Drupal képes az anonim felhasználók (látogatók) által kért webcímeket illető "
+"tömörített gyorstárazott oldalak tárolására és küldésére. A gyorstárazás "
+"használatával a Drupal-nak nem kell minden oldallekérésnél előállítania a "
+"weblapot."
+
+#: modules/system/system.admin.inc:1274
+msgid "Caching mode"
+msgstr "Gyorstárazási mód"
+
+#: modules/system/system.admin.inc:1276
+msgid "Normal (recommended for production sites, no side effects)"
+msgstr "Normál (javasolt, nincsenek mellékhatásai)"
+
+#: modules/system/system.admin.inc:1276
+msgid "Aggressive (experts only, possible side effects)"
+msgstr "Agresszív (csak haladóknak, mellékhatások lehetségesek)"
+
+#: modules/system/system.admin.inc:1284
+msgid "Minimum cache lifetime"
+msgstr "Minimális gyorstár élettartam"
+
+#: modules/system/system.admin.inc:1287
+msgid ""
+"On high-traffic sites, it may be necessary to enforce a minimum cache "
+"lifetime. The minimum cache lifetime is the minimum amount of time that will "
+"elapse before the cache is emptied and recreated, and is applied to both "
+"page and block caches. A larger minimum cache lifetime offers better "
+"performance, but users will not see new content for a longer period of time."
+msgstr ""
+"Nagy forgalmú webhelyek esetén szükséges lehet a gyorstár élettartamának "
+"minimális értéket adni. A gyorstár minimális élettartama az az idő, aminek "
+"el kell telnie azelőtt, hogy a gyorstár kiürítésre majd újra feltöltésre "
+"kerülne. A hosszabb minimális gyorstár élettartam jobb teljesítményt nyújt, "
+"azonban a felhasználók hosszabb ideig nem látják majd a legfrissebb "
+"tartalmakat."
+
+#: modules/system/system.admin.inc:1291
+msgid "Page compression"
+msgstr "Oldal tömörítés"
+
+#: modules/system/system.admin.inc:1294
+msgid ""
+"By default, Drupal compresses the pages it caches in order to save bandwidth "
+"and improve download times. This option should be disabled when using a "
+"webserver that performs compression."
+msgstr ""
+"Alapértelmezésben a Drupal a gyorstárazott oldalakat tömöríti a sávszélesség "
+"megtakarítása érdekében, javítva a letöltési időt. Ki kell kapcsolni, ha a "
+"webszerver önmagában is biztosít tömörítést."
+
+#: modules/system/system.admin.inc:1299;1305
+msgid "Block cache"
+msgstr "Blokk gyorstár"
+
+#: modules/system/system.admin.inc:1300
+msgid ""
+"Enabling the block cache can offer a performance increase for all users by "
+"preventing blocks from being reconstructed on each page load. If the page "
+"cache is also enabled, performance increases from enabling the block cache "
+"will mainly benefit authenticated users."
+msgstr ""
+"A blokk gyorstár minden felhasználó számára teljesítmény javulást okozhat, "
+"elkerülve a blokkok minden oldalletöltés során történő előállítását. Ha az "
+"oldalak gyorstárazása is be van kapcsolva, a blokk gyorstár elsősorban a "
+"belépett felhasználók számára jelent majd teljesítmény növekedést."
+
+#: modules/system/system.admin.inc:1307
+msgid "Enabled (recommended)"
+msgstr "Bekapcsolva (ajánlott)"
+
+#: modules/system/system.admin.inc:1309
+msgid ""
+"Note that block caching is inactive when modules defining content access "
+"restrictions are enabled."
+msgstr ""
+"A blokkok gyorstárazása nem működik, ha tartalom elérést szabályozó modulok "
+"vannak bekapcsolva."
+
+#: modules/system/system.admin.inc:1314
+msgid "Bandwidth optimizations"
+msgstr "Sávszélesség optimalizálás"
+
+#: modules/system/system.admin.inc:1315
+msgid ""
+"<p>Drupal can automatically optimize external resources like CSS and "
+"JavaScript, which can reduce both the size and number of requests made to "
+"your website. CSS files can be aggregated and compressed into a single file, "
+"while JavaScript files are aggregated (but not compressed). These optional "
+"optimizations may reduce server load, bandwidth requirements, and page "
+"loading times.</p><p>These options are disabled if you have not set up your "
+"files directory, or if your download method is set to private.</p>"
+msgstr ""
+"<p>A Drupal automatikusan optimalizálni tudja a külső erőforrásokat is, mint "
+"a CSS és JavaScript fájlok. Ez a webszerver felé irányuló kérések számát is "
+"csökkenti a kiszolgált fájlok mérete mellett. A CSS fájlok összevonása és "
+"tömörítése is lehetséges, míg a JavaScript fájloknál csak összevonás "
+"történik (tömörítés nem). Ezek a beállítások javíthatják a szerver "
+"terhelhetőségét, csökkenthetik a használt sávszélességet és növelhetik az "
+"oldalak letöltési sebességét.</p><p>Nem kapcsolhatóak be ez a lehetőség, ha "
+"a fájlok könyvtára nincs beállítva, vagy ha privát letöltési módot használ a "
+"webhely.</p>"
+
+#: modules/system/system.admin.inc:1322
+msgid "Optimize CSS files"
+msgstr "CSS fájlok optimalizálása"
+
+#: modules/system/system.admin.inc:1326
+msgid ""
+"This option can interfere with theme development and should only be enabled "
+"in a production environment."
+msgstr ""
+"Csak éles webhelyen javasolt a bekapcsolása. Sminkek kialakítása közben "
+"nehezítheti a munkát az idejétmúlt CSS másolatok megtartása miatt."
+
+#: modules/system/system.admin.inc:1330
+msgid "Optimize JavaScript files"
+msgstr "JavaScript fájlok optimalizálása"
+
+#: modules/system/system.admin.inc:1334
+msgid ""
+"This option can interfere with module development and should only be enabled "
+"in a production environment."
+msgstr ""
+"Csak éles webhelyen javasolt a bekapcsolása. Modulok fejlesztése közben "
+"nehezítheti a munkát az idejétmúlt JavaScript másolatok megtartása miatt."
+
+#: modules/system/system.admin.inc:1339;1345
+msgid "Clear cached data"
+msgstr "Gyorstár törlése"
+
+#: modules/system/system.admin.inc:1340
+msgid ""
+"Caching data improves performance, but may cause problems while "
+"troubleshooting new modules, themes, or translations, if outdated "
+"information has been cached. To refresh all cached data on your site, click "
+"the button below. <em>Warning: high-traffic sites will experience "
+"performance slowdowns while cached data is rebuilt.</em>"
+msgstr ""
+"A gyorstár javítja a teljesítményt, de problémát okozhat, ha egy új modul, "
+"smink vagy fordítás telepítése kapcsán felmerült hibákat próbáljuk "
+"felderíteni, és idejétmúlt információk vannak a gyorstárban. Ezzel a gombbal "
+"minden gyorstár adat törölhető. <em>Figyelmeztetés: nagy forgalmú "
+"webhelyeken a gyorstár adatok újraépítése teljesítmény romlást eredményez</"
+"em>."
+
+#: modules/system/system.admin.inc:1375
+msgid "File system path"
+msgstr "Fájlrendszer könyvtára"
+
+#: modules/system/system.admin.inc:1378
+msgid ""
+"A file system path where the files will be stored. This directory must exist "
+"and be writable by Drupal. If the download method is set to public, this "
+"directory must be relative to the Drupal installation directory and be "
+"accessible over the web. If the download method is set to private, this "
+"directory should not be accessible over the web. Changing this location will "
+"modify all download paths and may cause unexpected problems on an existing "
+"site."
+msgstr ""
+"A rendszer által kezelt fájlok tárolási helyének könyvtára a szerver "
+"fájlrendszerében. A megadott könyvtárnak létezni kell és írhatónak kell "
+"lennie a Drupal számára. Nyilvános letöltési mód esetén a Drupal telepítési "
+"könyvtárához képest relatív útvonalat kell megadni, azaz elérhetőnek kell "
+"lennie a könyvtárnak a weben keresztül. Privát letöltési mód esetén éppen "
+"ellenkezőleg a megadott könyvtárnak nem szabad elérhetőnek lennie a weben. "
+"Az itt megadott érték megváltoztatása az összes fájl letöltési webcímet "
+"módosítja, így a webhely használata közben problémákat okozhat. Ezért csak "
+"akkor szabad megváltoztatni, ha előzőleg meggyőződtünk a módosítás várható "
+"következményeiről."
+
+#: modules/system/system.admin.inc:1384
+msgid "Temporary directory"
+msgstr "Ideiglenes fájlok könyvtára"
+
+#: modules/system/system.admin.inc:1387
+msgid "A file system path where uploaded files will be stored during previews."
+msgstr ""
+"A fájlrendszer azon könyvtára, ahol a feltöltött fájlok előnézetek idején "
+"tárolódnak majd."
+
+#: modules/system/system.admin.inc:1393
+msgid "Download method"
+msgstr "Letöltési mód"
+
+#: modules/system/system.admin.inc:1395
+msgid "Public - files are available using HTTP directly."
+msgstr "Nyilvános - a fájlok közvetlenül elérhetőek a weben"
+
+#: modules/system/system.admin.inc:1395
+msgid "Private - files are transferred by Drupal."
+msgstr "Privát - a fájlok a Drupal rendszeren keresztül érhetőek el"
+
+#: modules/system/system.admin.inc:1396
+msgid ""
+"Choose the <em>Public download</em> method unless you wish to enforce fine-"
+"grained access controls over file downloads. Changing the download method "
+"will modify all download paths and may cause unexpected problems on an "
+"existing site."
+msgstr ""
+"A <em>Nyilvános</em> letöltési mód választása javasolt, hacsak nem kell "
+"jogosultságokat rendelni a fájlok letöltéséhez. A letöltési mód "
+"megváltoztatása az összes fájl webcímet módosítja, így egy meglévő webhelyen "
+"váratlan problémákhoz vezethet."
+
+#: modules/system/system.admin.inc:1413
+msgid "Select an image processing toolkit"
+msgstr "Képkezelő eszközkészlet kiválasztása"
+
+#: modules/system/system.admin.inc:1437
+msgid "Number of items in each feed"
+msgstr "Az elemek száma hírcsatornánként"
+
+#: modules/system/system.admin.inc:1440
+msgid "Default number of items to include in each feed."
+msgstr "A hírcsatornánkénti hírek alapértelmezett száma."
+
+#: modules/system/system.admin.inc:1444
+msgid "Feed content"
+msgstr "Hírcsatorna tartalom"
+
+#: modules/system/system.admin.inc:1446
+msgid "Titles only"
+msgstr "Csak címek"
+
+#: modules/system/system.admin.inc:1446
+msgid "Titles plus teaser"
+msgstr "Cím és bevezető"
+
+#: modules/system/system.admin.inc:1446
+msgid "Full text"
+msgstr "Teljes szöveg"
+
+#: modules/system/system.admin.inc:1447
+msgid "Global setting for the default display of content items in each feed."
+msgstr ""
+"A tartalmak alapértelmezett megjelenése a rendszer által létrehozott "
+"hírcsatornákban."
+
+#: modules/system/system.admin.inc:1490
+msgid "Custom format"
+msgstr "Egyéni formátum"
+
+#: modules/system/system.admin.inc:1494 modules/system/system.module:550
+msgid "Locale settings"
+msgstr "Nyelvi beállítások"
+
+#: modules/system/system.admin.inc:1499
+msgid "Default time zone"
+msgstr "Alapértelmezett időzóna"
+
+#: modules/system/system.admin.inc:1502
+msgid "Select the default site time zone."
+msgstr "Az alapértelmezett időzóna beállítása."
+
+#: modules/system/system.admin.inc:1507
+msgid "User-configurable time zones"
+msgstr "Beállítható időzónák"
+
+#: modules/system/system.admin.inc:1510
+msgid ""
+"When enabled, users can set their own time zone and dates will be displayed "
+"accordingly."
+msgstr ""
+"Ha engedélyezett, a felhasználók a saját beállított időzónájuk szerint "
+"látják majd a dátumokat."
+
+#: modules/system/system.admin.inc:1515
+msgid "First day of week"
+msgstr "A hét első napja"
+
+#: modules/system/system.admin.inc:1518
+msgid "The first day of the week for calendar views."
+msgstr "A hét első napja naptár nézetben."
+
+#: modules/system/system.admin.inc:1523
+msgid "Formatting"
+msgstr "Formázás"
+
+#: modules/system/system.admin.inc:1531
+msgid "Short date format"
+msgstr "Rövid dátumforma"
+
+#: modules/system/system.admin.inc:1535
+msgid "The short format of date display."
+msgstr "A dátumok megjelenítésének rövid formája."
+
+#: modules/system/system.admin.inc:1543
+msgid "Custom short date format"
+msgstr "Egyéni rövid dátumforma"
+
+#: modules/system/system.admin.inc:1546
+msgid ""
+"A user-defined short date format. See the <a href=\"@url\">PHP manual</a> "
+"for available options. This format is currently set to display as <span>%"
+"date</span>."
+msgstr ""
+"Egyedileg megadott rövid dátumforma. A <a href=\"@url\">PHP kézikönyv</a> "
+"leírja a használható lehetőségeket. Az aktuális beállítás eredményeképpen "
+"megjelenő dátum: <span>%date</span>."
+
+#: modules/system/system.admin.inc:1554
+msgid "Medium date format"
+msgstr "Közepes dátumforma"
+
+#: modules/system/system.admin.inc:1558
+msgid "The medium sized date display."
+msgstr "A dátumok megjelenítésének közepes hosszúságú formája."
+
+#: modules/system/system.admin.inc:1566
+msgid "Custom medium date format"
+msgstr "Egyéni közepes dátumforma"
+
+#: modules/system/system.admin.inc:1569
+msgid ""
+"A user-defined medium date format. See the <a href=\"@url\">PHP manual</a> "
+"for available options. This format is currently set to display as <span>%"
+"date</span>."
+msgstr ""
+"Egyedileg megadott közepes dátumforma. A <a href=\"@url\">PHP kézikönyv</a> "
+"leírja a használható lehetőségeket. Az aktuális beállítás eredményeképpen "
+"megjelenő dátum: <span>%date</span>."
+
+#: modules/system/system.admin.inc:1577
+msgid "Long date format"
+msgstr "Hosszú dátumforma"
+
+#: modules/system/system.admin.inc:1581
+msgid "Longer date format used for detailed display."
+msgstr "A részletes dátum megjelenítés hosszú formátuma."
+
+#: modules/system/system.admin.inc:1589
+msgid "Custom long date format"
+msgstr "Egyéni hosszú dátumforma"
+
+#: modules/system/system.admin.inc:1592
+msgid ""
+"A user-defined long date format. See the <a href=\"@url\">PHP manual</a> for "
+"available options. This format is currently set to display as <span>%date</"
+"span>."
+msgstr ""
+"Egyedileg megadott hosszú dátumforma. A <a href=\"@url\">PHP kézikönyv</a> "
+"leírja a használható lehetőségeket. Az aktuális beállítás eredményeképpen "
+"megjelenő dátum: <span>%date</span>."
+
+#: modules/system/system.admin.inc:1636
+msgid "Site status"
+msgstr "Webhely állapota"
+
+#: modules/system/system.admin.inc:1638
+msgid "Online"
+msgstr "Online"
+
+#: modules/system/system.admin.inc:1638
+msgid "Off-line"
+msgstr "Offline"
+
+#: modules/system/system.admin.inc:1639
+msgid ""
+"When set to \"Online\", all visitors will be able to browse your site "
+"normally. When set to \"Off-line\", only users with the \"administer site "
+"configuration\" permission will be able to access your site to perform "
+"maintenance; all other visitors will see the site off-line message "
+"configured below. Authorized users can log in during \"Off-line\" mode "
+"directly via the <a href=\"@user-login\">user login</a> page."
+msgstr ""
+"„Online” beállítás esetén a látogatók a megszokott módon böngészhetik a "
+"webhelyet. „Offline” beállítás esetén csak a „webhely beállítások "
+"adminisztrációja” jogosultsággal rendelkezők érhetik el a webhelyet "
+"karbantartás céljából, minden más látogató az alább megadott offline "
+"üzenetet látja majd. Az erre jogosult felhasználók „offline” módban is "
+"beléphetnek a <a href=\"@user-login\">felhasználó beléptetés oldalon</a>."
+
+#: modules/system/system.admin.inc:1644
+msgid "Site off-line message"
+msgstr "Webhely üzemen kívüli állapotát jelző üzenet"
+
+#: modules/system/system.admin.inc:1646
+msgid "Message to show visitors when the site is in off-line mode."
+msgstr ""
+"A látogatóknak megjelenítendő üzenet, ha a webhely karbantartás miatt üzemen "
+"kívül van."
+
+#: modules/system/system.admin.inc:1661 modules/system/system.module:443
+msgid "Clean URLs"
+msgstr "Rövid webcímek"
+
+#: modules/system/system.admin.inc:1664
+msgid ""
+"This option makes Drupal emit \"clean\" URLs (i.e. without <code>?q=</code> "
+"in the URL)."
+msgstr ""
+"Ezzel a beállítással lehetőség van rövid webcímek használatára, azaz a "
+"<code>?q=</code> webcím résztől való megszabadulásra."
+
+#: modules/system/system.admin.inc:1671
+msgid ""
+"Before enabling clean URLs, you must perform a test to determine if your "
+"server is properly configured. If you are able to see this page again after "
+"clicking the \"Run the clean URL test\" link, the test has succeeded and the "
+"radio buttons above will be available. If instead you are directed to a "
+"\"Page not found\" error, you will need to change the configuration of your "
+"server. The <a href=\"@handbook\">handbook page on Clean URLs</a> has "
+"additional troubleshooting information."
+msgstr ""
+"A rövid webcímek bekapcsolása előtt egy kis ellenőrzést kell futtatni annak "
+"érdekében, hogy a kiszolgáló megfelelő beállítását a rendszer ellenőrizze. "
+"Ha a „Rövid webcím ellenőrzés futtatása” linkre kattintva újra ez az oldal "
+"jelenik meg, a fenti lehetőségek átállíthatóak lesznek. Ha azonban egy „Az "
+"oldal nem található” üzenet jelenik meg, a kiszolgáló beállítását módosítani "
+"kell. A <a href=\"@handbook\">rövid webcímek dokumentációja (angol)</a> "
+"további segítséget ad a beállításhoz."
+
+#: modules/system/system.admin.inc:1675
+msgid "<a href=\"@clean_url\">Run the clean url test</a>."
+msgstr "<a href=\"@clean_url\">Rövid webcím ellenőrzés futtatása</a>."
+
+#: modules/system/system.admin.inc:1678 modules/system/system.js:0
+msgid "Your server has been successfully tested to support this feature."
+msgstr "A lefutott ellenőrzés szerint a webszerver támogatja ezt a funkciót."
+
+#: modules/system/system.admin.inc:1716
+msgid "Cron ran successfully."
+msgstr "Az időzített feladatok sikeresen lefutottak."
+
+#: modules/system/system.admin.inc:1719
+msgid "Cron run failed."
+msgstr "Az időzített feladatok futása nem sikerült."
+
+#: modules/system/system.admin.inc:1751
+msgid "Variable"
+msgstr "Változó"
+
+#: modules/system/system.admin.inc:1751
+msgid "Value"
+msgstr "Érték"
+
+#: modules/system/system.admin.inc:1766
+msgid "Command counters"
+msgstr "Parancs számlálók"
+
+#: modules/system/system.admin.inc:1768
+msgid "The number of <code>SELECT</code>-statements."
+msgstr "A <code>SELECT</code> parancsok száma."
+
+#: modules/system/system.admin.inc:1769
+msgid "The number of <code>INSERT</code>-statements."
+msgstr "Az <code>INSERT</code> parancsok száma."
+
+#: modules/system/system.admin.inc:1770
+msgid "The number of <code>UPDATE</code>-statements."
+msgstr "Az <code>UPDATE</code> parancsok száma."
+
+#: modules/system/system.admin.inc:1771
+msgid "The number of <code>DELETE</code>-statements."
+msgstr "A <code>DELETE</code> parancsok száma."
+
+#: modules/system/system.admin.inc:1772
+msgid "The number of table locks."
+msgstr "A tábla zárolások száma."
+
+#: modules/system/system.admin.inc:1773
+msgid "The number of table unlocks."
+msgstr "A tábla zárolás feloldások száma"
+
+#: modules/system/system.admin.inc:1776
+msgid "Query performance"
+msgstr "Lekérdezések teljesítmény"
+
+#: modules/system/system.admin.inc:1778
+msgid "The number of joins without an index; should be zero."
+msgstr ""
+"Az indexet nem használó adatbázis join-ok száma. Nullának kellene lennie."
+
+#: modules/system/system.admin.inc:1779
+msgid ""
+"The number of joins without keys that check for key usage after each row; "
+"should be zero."
+msgstr ""
+"A kulcsok használatát minden sor után ellenőrző, kulcsokat nem használó "
+"adatbázis join-ok száma. Nullának kellene lennie."
+
+#: modules/system/system.admin.inc:1780
+msgid "The number of sorts done without using an index; should be zero."
+msgstr "Az indexet nem használó sorrendezések száma. Nullának kellene lennie."
+
+#: modules/system/system.admin.inc:1781
+msgid "The number of times a lock could be acquired immediately."
+msgstr "Az azonnal végrehajtható tábla zárolások száma."
+
+#: modules/system/system.admin.inc:1782
+msgid "The number of times the server had to wait for a lock."
+msgstr "A csak várakozással végrehajtható tábla zárolások száma."
+
+#: modules/system/system.admin.inc:1785
+msgid "Query cache information"
+msgstr "Lekérdezés gyorstár információ"
+
+#: modules/system/system.admin.inc:1786
+msgid ""
+"The MySQL query cache can improve performance of your site by storing the "
+"result of queries. Then, if an identical query is received later, the MySQL "
+"server retrieves the result from the query cache rather than parsing and "
+"executing the statement again."
+msgstr ""
+"A MySQL lekérdezés gyorstár javíthat a webhely teljesítményén a lekérdezések "
+"eredményének tárolásával. Ilyenkor egy későbbi megegyező SQL lekérdezés "
+"futtatásakor a MySQL a gyorstárból tudja elővenni az eredményt a lekérdezés "
+"feldolgozása és végrehajtása helyett."
+
+#: modules/system/system.admin.inc:1788
+msgid "The number of queries in the query cache."
+msgstr "A lekérdezés gyorstárban lévő lekérdezések száma."
+
+#: modules/system/system.admin.inc:1789
+msgid "The number of times MySQL found previous results in the cache."
+msgstr "Mennyiszer talált korábbi eredményt a gyorstárban a MySQL."
+
+#: modules/system/system.admin.inc:1790
+msgid "The number of times MySQL added a query to the cache (misses)."
+msgstr "Mennyiszer adott hozzá eredményt a gyorstárhoz a MySQL."
+
+#: modules/system/system.admin.inc:1791
+msgid ""
+"The number of times MySQL had to remove queries from the cache because it "
+"ran out of memory. Ideally should be zero."
+msgstr ""
+"Mennyiszer kellett a MySQL-nek a gyorstárból törölnie elemeket a korlátos "
+"memóriára tekintettel. Ideális esetben nullának kellene lennie."
+
+#: modules/system/system.admin.inc:1904
+msgid "Show descriptions"
+msgstr "Leírások megmutatása"
+
+#: modules/system/system.admin.inc:1904
+msgid "Expand layout to include descriptions."
+msgstr "Bővített megjelenítés a leírások megmutatásával."
+
+#: modules/system/system.admin.inc:1907
+msgid "Hide descriptions"
+msgstr "Leírások elrejtése"
+
+#: modules/system/system.admin.inc:1907
+msgid "Compress layout by hiding descriptions."
+msgstr "Kompaktabb megjelenítés a leírások elrejtésével."
+
+#: modules/system/system.admin.inc:2023;2207
+msgid "Version"
+msgstr "Verzió"
+
+#: modules/system/system.admin.inc:2030
+msgid "Other"
+msgstr "Egyéb"
+
+#: modules/system/system.admin.inc:2045;2050;2175;2180
+msgid "incompatible"
+msgstr "nem kompatibilis"
+
+#: modules/system/system.admin.inc:2045;2175
+msgid "Incompatible with this version of Drupal core"
+msgstr "Nem kompatiblis a Drupal alaprendszer ezen verziójával"
+
+#: modules/system/system.admin.inc:2046;2176
+msgid ""
+"This version is incompatible with the !core_version version of Drupal core."
+msgstr "Ez a kiadás nem kompatibilis a Drupal !core_version verziójával."
+
+#: modules/system/system.admin.inc:2050;2180
+msgid "Incompatible with this version of PHP"
+msgstr "Nem kompatibilis a PHP ezen verziójával"
+
+#: modules/system/system.admin.inc:2055
+msgid ""
+"This module requires PHP version @php_required and is incompatible with PHP "
+"version !php_version."
+msgstr ""
+"Ez a modul a PHP @php_required verzióját idényli, és nem kompatibilis a PHP !"
+"php_version verzióval."
+
+#: modules/system/system.admin.inc:2123
+msgid "No modules are available to uninstall."
+msgstr "Nincs eltávolítható modul."
+
+#: modules/system/system.admin.inc:2149;2207
+msgid "Screenshot"
+msgstr "Képernyőkép"
+
+#: modules/system/system.admin.inc:2185
+msgid ""
+"This theme requires PHP version @php_required and is incompatible with PHP "
+"version !php_version."
+msgstr ""
+"Ez a smink a PHP @php_required verzióját idényli, és nem kompatibilis a PHP !"
+"php_version verzióval."
+
+#: modules/system/system.admin.inc:833
+msgid "You must enable the @dependencies module to install @module."
+msgid_plural "You must enable the @dependencies modules to install @module."
+msgstr[0] "@module telepítéséhez engedélyezni kell @dependencies modult."
+msgstr[1] "@module telepítéséhez engedélyezni kell @dependencies modulokat."
+
+#: modules/system/system.module:52
+msgid ""
+"The system module is at the foundation of your Drupal website, and provides "
+"basic but extensible functionality for use by other modules and themes. Some "
+"integral elements of Drupal are contained in and managed by the system "
+"module, including caching, enabling or disabling of modules and themes, "
+"preparing and displaying the administrative page, and configuring "
+"fundamental site settings. A number of key system maintenance operations are "
+"also part of the system module."
+msgstr ""
+"A rendszer modul a Drupal webhely alapja, alapvető de kiterjeszthető "
+"funkciókat biztosítva más modulok és sminkek számára. Néhány alapvető "
+"fontosságú Drupal elem a rendszer modulban található, mint például a "
+"gyorstárazás, modulok és sminkek bekapcsolása és kikapcsolása, az "
+"adminisztrációs oldal összeállítása és megjelenítése valamint alapvető "
+"webhely beállítások módosítása. Jónéhány alapvető karbantartási szolgáltatás "
+"szintén a rendszer modul része."
+
+#: modules/system/system.module:53
+msgid "The system module provides:"
+msgstr "A rendszer modul szolgáltatásai:"
+
+#: modules/system/system.module:54
+msgid ""
+"support for enabling and disabling <a href=\"@modules\">modules</a>. Drupal "
+"comes packaged with a number of core modules; each module provides a "
+"discrete set of features and may be enabled depending on the needs of your "
+"site. A wide array of additional modules contributed by members of the "
+"Drupal community are available for download at the <a href=\"@drupal-modules"
+"\">Drupal.org module page</a>."
+msgstr ""
+"<a href=\"@modules\">modulok</a> bekapcsolása és kikapcsolása. A Drupal "
+"jónéhány beépített modullal csomagolva érkezik. Minden modul jól "
+"meghatározott funkciókat lát el, és bekapcsolható a webhely igényeinek "
+"megfelelően. A Drupal közösség által fejlesztett további kiegészítők is "
+"letölthetőek és telepíthetőek a <a href=\"@drupal-modules\">Drupal.org "
+"modulok oldaláról indulva</a>."
+
+#: modules/system/system.module:55
+msgid ""
+"support for enabling and disabling <a href=\"@themes\">themes</a>, which "
+"determine the design and presentation of your site. Drupal comes packaged "
+"with several core themes and additional contributed themes are available at "
+"the <a href=\"@drupal-themes\">Drupal.org theme page</a>."
+msgstr ""
+"<a href=\"@themes\">sminkek</a> bekapcsolása és kikapcsolása, melyek a "
+"webhely megjelenését befolyásolják. A Drupal néhány beépített sminkkel "
+"csomagolva érkezik, de számos további smink letölthető és telepíthető a <a "
+"href=\"@drupal-themes\">Drupal.org sminkek oldaláról indulva</a>."
+
+#: modules/system/system.module:56
+msgid ""
+"a robust <a href=\"@cache-settings\">caching system</a> that allows the "
+"efficient re-use of previously-constructed web pages and web page "
+"components. Drupal stores the pages requested by anonymous users in a "
+"compressed format; depending on your site configuration and the amount of "
+"your web traffic tied to anonymous visitors, Drupal's caching system may "
+"significantly increase the speed of your site."
+msgstr ""
+"<a href=\"@cache-settings\">gyorstárazási rendszer</a>, mely lehetővé teszi "
+"a korábban előállított weboldalak és weboldal elemek újrahasznosítását. A "
+"Drupal az anoním felhasználók által kért weboldalkat tömörítve tárolhatja. A "
+"webhely beállításától és a forgalomtól függően a gyorstárazási rendszer "
+"jelentősen növelheti a webhely sebességét."
+
+#: modules/system/system.module:57
+msgid ""
+"a set of routine administrative operations that rely on a correctly-"
+"configured <a href=\"@cron\">cron maintenance task</a> to run automatically. "
+"A number of other modules, including the feed aggregator, ping module and "
+"search also rely on <a href=\"@cron\">cron maintenance tasks</a>. For more "
+"information, see the online handbook entry for <a href=\"@handbook"
+"\">configuring cron jobs</a>."
+msgstr ""
+"rendszeres karbantartási feladatok, melyek egy helyesen beállított <a href="
+"\"@cron\">időzítő</a> segítségével futnak automatikusan. Számos modul, "
+"többek között a hírolvasó, a ping modul, a kereső erre építve futtatja "
+"rendszeres teendőit. További információ az <a href=\"@handbook\">időzített "
+"feladatok angol kézikönyv lapján</a> olvasható."
+
+#: modules/system/system.module:58
+msgid ""
+"basic configuration options for your site, including <a href=\"@date-settings"
+"\">date and time settings</a>, <a href=\"@file-system\">file system "
+"settings</a>, <a href=\"@clean-url\">clean URL support</a>, <a href=\"@site-"
+"info\">site name and other information</a>, and a <a href=\"@site-maintenance"
+"\">site maintenance</a> function for taking your site temporarily off-line."
+msgstr ""
+"alapvető webhely beállítási lehetőségek, beleértve a <a href=\"@date-settings"
+"\">dátum és idő beállításokat</a>, <a href=\"@file-system\">fájlrendszer "
+"beállításokat</a>, <a href=\"@clean-url\">rövid webcím támogatást</a>, <a "
+"href=\"@site-info\">webhely név és más adatok beállítását</a> és a <a href="
+"\"@site-maintenance\">webhely karbantartásió módjának lehetőségét</a>, mely "
+"segítségével a webhely működése a látogatók számára ideiglenesen "
+"kikapcsolható."
+
+#: modules/system/system.module:59
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@system"
+"\">System module</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@system"
+"\">rendszer modulról szóló oldalán</a> található."
+
+#: modules/system/system.module:62
+msgid ""
+"Welcome to the administration section. Here you may control how your site "
+"functions."
+msgstr ""
+"Üdvözlet az adminisztrációs oldalon. A webhely működése itt befolyásolható."
+
+#: modules/system/system.module:64
+msgid "This page shows you all available administration tasks for each module."
+msgstr "Az alábbiak az egyes modulok beállítási lehetőségei."
+
+#: modules/system/system.module:66
+msgid ""
+"Select which themes are available to your users and specify the default "
+"theme. To configure site-wide display settings, click the \"configure\" task "
+"above. Alternatively, to override these settings in a specific theme, click "
+"the \"configure\" link for that theme. Note that different themes may have "
+"different regions available for displaying content; for consistency in "
+"presentation, you may wish to enable only one theme."
+msgstr ""
+"Itt lehet beállítani a felhasználók számára elérhető és az alapértelmezett "
+"sminkeket. Az összes sminkre érvényes lehetőségekhez a fenti „beállítások” "
+"fülre kell kattintani. Az általános beállításokat egyes sminkekre nézve a "
+"mellettük található „beállítások” hivatkozásnál lehet felülbírálni. "
+"Különböző sminkek eltérő régiókkal rendelkezhetnek a blokkok "
+"megjelenítéséhez. A webhely egységes felülete egy kizárólagos smink "
+"alkalmazásával biztosítható."
+
+#: modules/system/system.module:67
+msgid ""
+"To change the appearance of your site, a number of <a href=\"@themes"
+"\">contributed themes</a> are available."
+msgstr ""
+"A webhely megjelenésének megváltoztatásában számos <a href=\"@themes"
+"\">közösség által közzétett smink</a> érhető el."
+
+#: modules/system/system.module:72
+msgid ""
+"These options control the display settings for the <code>%template</code> "
+"theme. When your site is displayed using this theme, these settings will be "
+"used. By clicking \"Reset to defaults,\" you can choose to use the <a href="
+"\"@global\">global settings</a> for this theme."
+msgstr ""
+"„%template” smink beállításai, melyek csak ennek a sminknek a használatakor "
+"érvényesek. A „visszaállítás az alapértelmezettre” gombra kattintva "
+"állhatunk vissza az <a href=\"%global\">általános beállítások</a> oldalon "
+"beállított értékekre."
+
+#: modules/system/system.module:74
+msgid ""
+"These options control the default display settings for your entire site, "
+"across all themes. Unless they have been overridden by a specific theme, "
+"these settings will be used."
+msgstr ""
+"Az itt beállított értékek az egész weboldalra, minden smink esetén "
+"érvényesek mindaddig, amíg az adott smink beállításánál azt felül nem "
+"bíráljuk."
+
+#: modules/system/system.module:76
+msgid ""
+"Modules are plugins that extend Drupal's core functionality. Enable modules "
+"by selecting the <em>Enabled</em> checkboxes below and clicking the <em>Save "
+"configuration</em> button. Once a module is enabled, new <a href="
+"\"@permissions\">permissions</a> may be available. To reduce server load, "
+"modules with their <em>Throttle</em> checkbox selected are temporarily "
+"disabled when your site becomes extremely busy. (Note that the <em>Throttle</"
+"em> checkbox is only available if the Throttle module is enabled.)"
+msgstr ""
+"A modulok olyan Drupal kiegészítők, amik az alaprendszer funkcionalitását "
+"bővítik ki. Egy modul bekapcsolható az <em>Engedélyezett</em> jelölőnégyzet "
+"megjelölésével majd a <em>Beállítások elmentése</em> gombra kattintással. "
+"Egy új modul beállításakor új <a href=\"@permissions\">jogosultságok</a> is "
+"elérhetővé válhatnak. A webszerver terhelésének csökkentése érdekében a "
+"visszafogó modul bekapcsolása után a <em>Visszafogó</em> jelölőnégyzet "
+"bekapcsolásával bizonyos modulok kikapcsolásra jelölhetőek nagyobb forgalom "
+"esetén."
+
+#: modules/system/system.module:78
+msgid ""
+"The auto-throttle functionality must be enabled on the <a href=\"@throttle"
+"\">throttle configuration page</a> after having enabled the throttle module."
+msgstr ""
+"A visszafogó funkció a <a href=\"@throttle\">visszafogás beállítás oldalon</"
+"a> szabályozható a visszafogó modul bekapcsolása után."
+
+#: modules/system/system.module:81
+msgid ""
+"It is important that <a href=\"@update-php\">update.php</a> is run every "
+"time a module is updated to a newer version."
+msgstr ""
+"Az <a href=\"@update-php\">update.php</a> fájlt minden modul frissítés után "
+"futtatni kell."
+
+#: modules/system/system.module:82
+msgid ""
+"You can find all administration tasks belonging to a particular module on "
+"the <a href=\"@by-module\">administration by module page</a>."
+msgstr ""
+"Minden egy-egy modulhoz tartozó adminisztrációs oldalt listáz a <a href="
+"\"@by-module\">modulonkénti adminisztrációs oldal</a>."
+
+#: modules/system/system.module:83
+msgid ""
+"To extend the functionality of your site, a number of <a href=\"@modules"
+"\">contributed modules</a> are available."
+msgstr ""
+"A webhely képességeinek növelése számos a <a href=\"@modules\">közösség "
+"által közzétett modullal</a> lehetséges."
+
+#: modules/system/system.module:86
+msgid ""
+"The uninstall process removes all data related to a module. To uninstall a "
+"module, you must first disable it. Not all modules support this feature."
+msgstr ""
+"Az eltávolítási folyamat során a modulhoz kapcsolódó minden adat törlődik. "
+"Egy modul eltávolításához először le kell tiltani azt. Nem minden modul "
+"támogatja az eltávolíthatóságot."
+
+#: modules/system/system.module:89
+msgid ""
+"The <em>Powered by Drupal</em> block is an optional link to the home page of "
+"the Drupal project. While there is absolutely no requirement that sites "
+"feature this link, it may be used to show support for Drupal."
+msgstr ""
+"Az opcionális <em>Powered by Drupal</em> blokk a Drupal honlapjára mutató "
+"linket jelenít meg. Habár ennek a blokknak a megjelenítése nem kötelező, a "
+"Drupal támogtása érdekében elhelyezhető a weboldalon."
+
+#: modules/system/system.module:94
+msgid ""
+"Actions are individual tasks that the system can do, such as unpublishing a "
+"piece of content or banning a user. Modules, such as the trigger module, can "
+"fire these actions when certain system events happen; for example, when a "
+"new post is added or when a user logs in. Modules may also provide "
+"additional actions."
+msgstr ""
+"Az akciók olyan egyedülálló feladatok, melyeket a rendszer le tud futtatni, "
+"mint például egy tartalom elrejtése vagy egy felhasználó kitiltása. Olyan "
+"modulok, mint a trigger modul ezeket az akciókat tudják eseményekhez "
+"rendelni, például ha egy új tartalmat küldenek be vagy egy felhasználó "
+"belép. A modulok további akciókat biztosíthatnak."
+
+#: modules/system/system.module:95
+msgid ""
+"There are two types of actions: simple and advanced. Simple actions do not "
+"require any additional configuration, and are listed here automatically. "
+"Advanced actions can do more than simple actions; for example, send an e-"
+"mail to a specified address, or check for certain words within a piece of "
+"content. These actions need to be created and configured first before they "
+"may be used. To create an advanced action, select the action from the drop-"
+"down below and click the <em>Create</em> button."
+msgstr ""
+"Az akcióknak két típusa van: egyszerű és konfigurálható. Az egyszerű akciók "
+"nem igényelnek további beállítást így automatikusan elérhetőek. A "
+"konfigurálható akciók azonban többet tudnak, például egy megadott email "
+"címre küldenek egy sablon szerinti levelet vagy megadott szavakat keresnek "
+"egy szövegben. Ezeket az akciókat létre kell hozni a kívánt beállításokkal "
+"mielőtt felhasználhatók lennének. Egy konfigurálható akció beállítására a "
+"lenyíló menüből való választás után a <em>Létrehozás</em> gombra kattintva "
+"nyílik lehetőség."
+
+#: modules/system/system.module:97
+msgid ""
+"You may proceed to the <a href=\"@url\">Triggers</a> page to assign these "
+"actions to system events."
+msgstr ""
+"A <a href=\"@url\">triggerek oldalán</a> rendelkhetők az akciók különböző "
+"rendszer eseményekhez."
+
+#: modules/system/system.module:101
+msgid ""
+"An advanced action offers additional configuration options which may be "
+"filled out below. Changing the <em>Description</em> field is recommended, in "
+"order to better identify the precise action taking place. This description "
+"will be displayed in modules such as the trigger module when assigning "
+"actions to system events, so it is best if it is as descriptive as possible "
+"(for example, \"Send e-mail to Moderation Team\" rather than simply \"Send e-"
+"mail\")."
+msgstr ""
+"A konfigurálható akciók beállítási lehetőségeket adnak, melyeket ki kell "
+"tölteni. A <em>Leírás</em> mező megváltoztatása javasolt, hogy a konkrét "
+"akció funkcióját jobban leíró nevet kapjon. A trigger modul ezt a leírást "
+"jeleníti meg például a rendszer események akciókhoz rendelésekor, ezért "
+"érdemes a lehető leginkább beszédes nevet választani, például „Email küldés "
+"a moderátor csapatnak” az egyszerű „Email küldés” helyett."
+
+#: modules/system/system.module:103
+msgid ""
+"Here you can find a short overview of your site's parameters as well as any "
+"problems detected with your installation. It may be useful to copy and paste "
+"this information into support requests filed on drupal.org's support forums "
+"and project issue queues."
+msgstr ""
+"A Drupal webhely környezetéről és az esetleges problémákról itt lehet "
+"tájékozódni. Közösségi támogatás vagy a tárhely szolgáltatóval való "
+"egyeztetés esetén érdemes ezt az információt a támogatást kérő levélbe "
+"illetve fórum témába másolni."
+
+#: modules/system/system.module:544
+msgid "Selecting a different theme will change the look and feel of the site."
+msgstr "Másik smink választása esetén a webhely megjelenése módosulni fog."
+
+#: modules/system/system.module:556
+msgid "Time zone"
+msgstr "Időzóna"
+
+#: modules/system/system.module:559
+msgid ""
+"Select your current local time. Dates and times throughout this site will be "
+"displayed using this time zone."
+msgstr ""
+"Helyi időzóna beállítása. A dátum és időértékek az egész weboldalon ezen "
+"időzóna szerint jelennek majd meg."
+
+#: modules/system/system.module:576
+msgid "Powered by Drupal"
+msgstr "Powered by Drupal"
+
+#: modules/system/system.module:586
+msgid "Badge color"
+msgstr "Jelvény színe"
+
+#: modules/system/system.module:588
+msgid "Black"
+msgstr "Fekete"
+
+#: modules/system/system.module:588
+msgid "Blue"
+msgstr "Kék"
+
+#: modules/system/system.module:588
+msgid "Gray"
+msgstr "Szürke"
+
+#: modules/system/system.module:592
+msgid "Badge size"
+msgstr "Jelvény mérete"
+
+#: modules/system/system.module:594
+msgid "Small"
+msgstr "Kicsi"
+
+#: modules/system/system.module:594
+msgid "Large"
+msgstr "Nagy"
+
+#: modules/system/system.module:684
+msgid "Theme configuration"
+msgstr "Sminkek beállítása"
+
+#: modules/system/system.module:707
+msgid "(site default theme)"
+msgstr "(alapértelmezett smink)"
+
+#: modules/system/system.module:1020
+msgid "The settings have not been saved because of the errors."
+msgstr "Hiba miatt a beállítások elmentése sikertelen."
+
+#: modules/system/system.module:1191
+msgid "Configure permissions"
+msgstr "Jogosultságok beállítások"
+
+#: modules/system/system.module:1240
+msgid "When cron runs"
+msgstr "Amikor az időzítő lefut"
+
+#: modules/system/system.module:1254
+msgid "Display a message to the user"
+msgstr "Üzenet megjelenítése a felhasználó számára"
+
+#: modules/system/system.module:1275
+msgid "Redirect to URL"
+msgstr "Átirányítás egy webcímre"
+
+#: modules/system/system.module:1295
+msgid "Choose an advanced action"
+msgstr "Konfigurálható akció választása"
+
+#: modules/system/system.module:1310
+msgid "Action type"
+msgstr "Akció típus"
+
+#: modules/system/system.module:1330
+msgid "Actions available to Drupal:"
+msgstr "Elérhető akciók:"
+
+#: modules/system/system.module:1356
+msgid "Make a new advanced action available"
+msgstr "Új konfigurálható akció beállítása"
+
+#: modules/system/system.module:1368
+msgid "Create"
+msgstr "Létrehozás"
+
+#: modules/system/system.module:1435
+msgid ""
+"A unique description for this advanced action. This description will be "
+"displayed in the interface of modules that integrate with actions, such as "
+"Trigger module."
+msgstr ""
+"A konfigurálható akció egyedi leírása. Az akciókat használó modulok, mint "
+"például a trigger modul ezt jelenítik majd meg."
+
+#: modules/system/system.module:1491
+msgid "The action has been successfully saved."
+msgstr "Az akció sikeresen elmentve."
+
+#: modules/system/system.module:1509
+msgid "Are you sure you want to delete the action %action?"
+msgstr "Biztos, hogy %action akció törlendő?"
+
+#: modules/system/system.module:1511
+msgid "This cannot be undone."
+msgstr "A művelet nem vonható vissza."
+
+#: modules/system/system.module:1527
+msgid "Action %action was deleted"
+msgstr "%action akció törölve"
+
+#: modules/system/system.module:1539
+msgid "Deleted orphaned action (%action)."
+msgstr "Árva akció törölve: %action"
+
+#: modules/system/system.module:1575
+msgid "Recipient"
+msgstr "Címzett"
+
+#: modules/system/system.module:1578
+msgid ""
+"The email address to which the message should be sent OR enter %author if "
+"you would like to send an e-mail to the author of the original post."
+msgstr ""
+"Az üzenet címzett email címe, vagy %author írandó be, ha az eredeti tartalom "
+"beküldőjének kell küldeni a levelet."
+
+#: modules/system/system.module:1585
+msgid "The subject of the message."
+msgstr "Az üzenet tárgya"
+
+#: modules/system/system.module:1593
+msgid ""
+"The message that should be sent. You may include the following variables: %"
+"site_name, %username, %node_url, %node_type, %title, %teaser, %body. Not all "
+"variables will be available in all contexts."
+msgstr ""
+"Az elküldendő üzenet szövege. A következő változók használhatóak: %"
+"site_name, %username, %node_url, %node_type, %title, %teaser, %body. Nem "
+"minden változó tartalmaz majd értéket minden környezetben."
+
+#: modules/system/system.module:1606
+msgid "Please enter a valid email address or %author."
+msgstr "Adjon meg egy érvényes email címet vagy %author-t."
+
+#: modules/system/system.module:1739
+msgid ""
+"The message to be displayed to the current user. You may include the "
+"following variables: %site_name, %username, %node_url, %node_type, %title, %"
+"teaser, %body. Not all variables will be available in all contexts."
+msgstr ""
+"Az aktuális felhasználónak megjelenítendő üzenet. A következő változók "
+"használhatóak: %site_name, %username, %node_url, %node_type, %title, %"
+"teaser, %body. Nem minden változó tartalmaz majd értéket minden környezetben."
+
+#: modules/system/system.module:1812
+msgid ""
+"The URL to which the user should be redirected. This can be an internal URL "
+"like node/1234 or an external URL like http://drupal.org."
+msgstr ""
+"Az a webcím, amelyre a felhasználót át kell irányítani. Lehet belső útvonal, "
+"mint például node/1234 vagy külső webcím, mint például http://drupal.org/."
+
+#: modules/system/system.module:1875;1875
+msgid "Powered by Drupal, an open source content management system"
+msgstr "A webhelyet a Drupal - egy nyílt tartalomkezelő rendszer - működteti"
+
+#: modules/system/system.module:1224
+msgid "Could not delete temporary file \"%path\" during garbage collection"
+msgstr "\"%path\" ideiglenes fájl nem törölhető a szemét takarítás közben"
+
+#: modules/system/system.module:1526
+msgid "Deleted action %aid (%action)"
+msgstr "Törölt müvelet %aid (%action)"
+
+#: modules/system/system.module:1653
+msgid "Cannot use %author token in this context."
+msgstr "Ebben a környezetben nem használható az %author token."
+
+#: modules/system/system.module:1684
+msgid "Sent email to %recipient"
+msgstr "Email elküldve %recipient számára"
+
+#: modules/system/system.module:1687
+msgid "Unable to send email to %recipient"
+msgstr "%recipient számára nem lehet emailt küldeni"
+
+#: modules/system/system.module:158
+msgid "administer site configuration"
+msgstr "webhely beállítások adminisztrációja"
+
+#: modules/system/system.module:158
+msgid "access administration pages"
+msgstr "adminisztrációs oldalak hozzáférése"
+
+#: modules/system/system.module:158
+msgid "administer actions"
+msgstr "akciók adminisztrációja"
+
+#: modules/system/system.module:158
+msgid "access site reports"
+msgstr "webhely jelentések hozzáférése"
+
+#: modules/system/system.module:158
+msgid "select different theme"
+msgstr "más smink választása"
+
+#: modules/system/system.module:158
+msgid "administer files"
+msgstr "fájlok adminisztrációja"
+
+#: modules/system/system.module:200
+msgid "File download"
+msgstr "Fájl letöltés"
+
+#: modules/system/system.module:206
+msgid "Administer"
+msgstr "Adminisztráció"
+
+#: modules/system/system.module:213
+msgid "Compact mode"
+msgstr "Kompakt mód"
+
+#: modules/system/system.module:219
+msgid "By task"
+msgstr "Feladatonként"
+
+#: modules/system/system.module:225
+msgid "By module"
+msgstr "Modulonként"
+
+#: modules/system/system.module:232
+msgid "Content management"
+msgstr "Tartalom kezelés"
+
+#: modules/system/system.module:233
+msgid "Manage your site's content."
+msgstr "A webhely tartalmainak kezelése."
+
+#: modules/system/system.module:242
+msgid "Site configuration"
+msgstr "Webhely beállítása"
+
+#: modules/system/system.module:243
+msgid "Adjust basic site configuration options."
+msgstr "Alapvető webhely beállítási lehetőségek."
+
+#: modules/system/system.module:250
+msgid "Site building"
+msgstr "Webhely építés"
+
+#: modules/system/system.module:251
+msgid "Control how your site looks and feels."
+msgstr "A webhely megjelenésének beállítása."
+
+#: modules/system/system.module:259
+msgid "Settings for how your administrative pages should look."
+msgstr "Az adminisztrációs oldalak megjelenésének beállítása."
+
+#: modules/system/system.module:270
+msgid "Change which theme your site uses or allows users to set."
+msgstr "A használt illetve a felhasználók által választható sminkek."
+
+#: modules/system/system.module:278
+msgid "Select the default theme."
+msgstr "Az alapértelmezett smink beállítása."
+
+#: modules/system/system.module:289
+msgid "Global settings"
+msgstr "Általános beállítások"
+
+#: modules/system/system.module:307
+msgid "Enable or disable add-on modules for your site."
+msgstr "Kiegészítő modulok ki- illetve bekapcsolása."
+
+#: modules/system/system.module:333
+msgid "Actions"
+msgstr "Akciók"
+
+#: modules/system/system.module:334;340
+msgid "Manage the actions defined for your site."
+msgstr "A webhelyen meghatározott akciók kezelése."
+
+#: modules/system/system.module:339
+msgid "Manage actions"
+msgstr "Akciók kezelése"
+
+#: modules/system/system.module:346
+msgid "Configure an advanced action"
+msgstr "Konfigurálható akció beállítása"
+
+#: modules/system/system.module:352
+msgid "Delete action"
+msgstr "Akció törlése"
+
+#: modules/system/system.module:353
+msgid "Delete an action."
+msgstr "Egy akció törlése."
+
+#: modules/system/system.module:359
+msgid "Remove orphans"
+msgstr "Árva akciók törlése"
+
+#: modules/system/system.module:366
+msgid "Site information"
+msgstr "Webhely információk"
+
+#: modules/system/system.module:367
+msgid ""
+"Change basic site information, such as the site name, slogan, e-mail "
+"address, mission, front page and more."
+msgstr ""
+"Alapvető webhely adatok (webhely neve, email címe, missziója, az "
+"alapértelmezett honlap stb) beállítása."
+
+#: modules/system/system.module:375
+msgid ""
+"Control how Drupal deals with errors including 403/404 errors as well as PHP "
+"error reporting."
+msgstr ""
+"A Drupal 403/404-es illetve PHP hibák kezelésével kapcsolatos beállításai."
+
+#: modules/system/system.module:382
+msgid "Logging and alerts"
+msgstr "Naplózás és figyelmeztetések"
+
+#: modules/system/system.module:383
+msgid ""
+"Settings for logging and alerts modules. Various modules can route Drupal's "
+"system events to different destination, such as syslog, database, email, ..."
+"etc."
+msgstr ""
+"A naplózó és figyelmeztetéseket kezelő modulok beállításai. Számos modul "
+"kezelheti a Drupal rendszer eseményeit, különböző célpontok felé irányítva "
+"az információkat: rendszer naplóba, adatbázisba, emailben stb."
+
+#: modules/system/system.module:389
+msgid "Performance"
+msgstr "Teljesítmény"
+
+#: modules/system/system.module:390
+msgid ""
+"Enable or disable page caching for anonymous users and set CSS and JS "
+"bandwidth optimization options."
+msgstr ""
+"Weboldal gyorstárazás ki- illetve bekapcsolása anonim felhasználók számára, "
+"valamint a CSS és JS sávszélesség optimalizálás engedélyezése."
+
+#: (duplicate) modules/system/system.module:397
+#: modules/system/system.install:184
+msgid "File system"
+msgstr "Fájlrendszer"
+
+#: modules/system/system.module:398
+msgid "Tell Drupal where to store uploaded files and how they are accessed."
+msgstr "A fájlok tárolására használt hely illetve a kezelési mód beállítása."
+
+#: modules/system/system.module:405
+msgid "Image toolkit"
+msgstr "Képkezelő eszközkészlet"
+
+#: modules/system/system.module:406
+msgid ""
+"Choose which image toolkit to use if you have installed optional toolkits."
+msgstr "Képkezelő eszközkészlet beállítása."
+
+#: modules/system/system.module:413
+msgid "RSS publishing"
+msgstr "RSS közzététel"
+
+#: modules/system/system.module:414
+msgid ""
+"Configure the number of items per feed and whether feeds should be titles/"
+"teasers/full-text."
+msgstr "A hírcsatornákban közzétett elemek számának és formájának beállítása."
+
+#: modules/system/system.module:421
+msgid "Date and time"
+msgstr "Dátum és idő"
+
+#: modules/system/system.module:422
+msgid ""
+"Settings for how Drupal displays date and time, as well as the system's "
+"default timezone."
+msgstr ""
+"A dátum és idő megjelenítésével kapcsolatos beállítások, valamint a rendszer "
+"alapértelmezett időzónája."
+
+#: modules/system/system.module:429
+msgid "Date and time lookup"
+msgstr "Dátum és idő ellenőrzés"
+
+#: modules/system/system.module:435
+msgid "Site maintenance"
+msgstr "Webhely karbantartás"
+
+#: modules/system/system.module:436
+msgid "Take the site off-line for maintenance or bring it back online."
+msgstr "Karbantartási mód engedélyezése vagy kikapcsolása."
+
+#: modules/system/system.module:444
+msgid "Enable or disable clean URLs for your site."
+msgstr "Rövid webcímek bekapcsolása vagy kikapcsolása."
+
+#: modules/system/system.module:451
+msgid "Clean URL check"
+msgstr "Rövid webcímek ellenőrzése"
+
+#: modules/system/system.module:460
+msgid "Request test"
+msgstr "Lekérdezés ellenőrzés"
+
+#: modules/system/system.module:469
+msgid "Reports"
+msgstr "Jelentések"
+
+#: modules/system/system.module:470
+msgid "View reports from system logs and other status information."
+msgstr "Rendszer eseménynaplók és más állapot adatok megtekintése."
+
+#: modules/system/system.module:478
+msgid "Status report"
+msgstr "Állapot jelentés"
+
+#: modules/system/system.module:479
+msgid ""
+"Get a status report about your site's operation and any detected problems."
+msgstr "A webhely állapot jelentés és az azonosított problémák megtekintése."
+
+#: modules/system/system.module:486
+msgid "Run cron"
+msgstr "Időzített feladatok futtatása"
+
+#: (duplicate) modules/system/system.module:492
+#: modules/system/system.install:36
+msgid "PHP"
+msgstr "PHP"
+
+#: modules/system/system.module:498
+msgid "SQL"
+msgstr "SQL"
+
+#: modules/system/system.module:0
+msgid "system"
+msgstr "rendszer"
+
+#: modules/system/system.module:0
+msgid "Footer"
+msgstr "Lábléc"
+
+#: modules/system/system.install:417
+msgid ""
+"Named variable/value pairs created by Drupal core or any other module or "
+"theme. All variables are cached in memory at the start of every Drupal "
+"request so developers should not be careless about what is stored here."
+msgstr ""
+"Megnevezett név/érték párok, melyeket a Drupal alaprendszer és bármely modul "
+"vagy smink használ. Minden változó memóriába töltődik az oldalak "
+"kiszolgálása előtt, ezért oda kell figyelni, hogy mit tárolunk a változók "
+"között."
+
+#: modules/system/system.install:420
+msgid "The name of the variable."
+msgstr "A változó neve."
+
+#: modules/system/system.install:426
+msgid "The value of the variable."
+msgstr "A változó értéke."
+
+#: modules/system/system.install:435
+msgid "Stores action information."
+msgstr "Akciók adatai."
+
+#: modules/system/system.install:438;474
+msgid "Primary Key: Unique actions ID."
+msgstr "Elsődleges kulcs: egyedi akció azonosító."
+
+#: modules/system/system.install:444
+msgid ""
+"The object that that action acts on (node, user, comment, system or custom "
+"types.)"
+msgstr ""
+"Az akció által kezelt objektum (node, user, comment, system vagy egyedi "
+"típus)."
+
+#: modules/system/system.install:450
+msgid "The callback function that executes when the action runs."
+msgstr "Az akciót futtató callback függyvény."
+
+#: modules/system/system.install:456
+msgid "Parameters to be passed to the callback function."
+msgstr "A callback függvénynek átadandó paraméterek."
+
+#: modules/system/system.install:461
+msgid "Description of the action."
+msgstr "Az akció leírása."
+
+#: modules/system/system.install:471
+msgid "Stores action IDs for non-default actions."
+msgstr "Nem alapértelmezett akciók azonosítóit tárolja."
+
+#: modules/system/system.install:483
+msgid ""
+"Stores details about batches (processes that run in multiple HTTP requests)."
+msgstr "Kötegek (több HTTP kérésben futó feladatok) adatait tárolja."
+
+#: modules/system/system.install:486
+msgid "Primary Key: Unique batch ID."
+msgstr "Elsődleges kulcs: egyedi köteg azonosító."
+
+#: modules/system/system.install:491
+msgid ""
+"A string token generated against the current user's session id and the batch "
+"id, used to ensure that only the user who submitted the batch can "
+"effectively access it."
+msgstr ""
+"Karaktersorozat token, mely az aktuális felhasználói munkamenet azonosító és "
+"a köteg azonosító alapján jön létre, biztosítva, hogy a felhasználó "
+"elérhessen minden elindított köteget."
+
+#: modules/system/system.install:496
+msgid ""
+"A Unix timestamp indicating when this batch was submitted for processing. "
+"Stale batches are purged at cron time."
+msgstr ""
+"Unix időbélyeg, mely a köteg elindításának idejét jelzi. Bent ragadt kötegek "
+"időzítő futáskor törlődnek."
+
+#: modules/system/system.install:500
+msgid "A serialized array containing the processing data for the batch."
+msgstr "A köteg feldolgozásához szükséges adatok sorosított tömbje."
+
+#: modules/system/system.install:510
+msgid ""
+"Generic cache table for caching things not separated out into their own "
+"tables. Contributed modules may also use this to store cached items."
+msgstr ""
+"Általános gyorstárazásra szolgáló tábla olyan tartalmak számára, melyek nem "
+"rendelkeznek saját táblával. Kiegészítő modulok is használhatják "
+"gyorstárazásra."
+
+#: modules/system/system.install:513
+msgid "Primary Key: Unique cache ID."
+msgstr "Elsődleges kulcs: egyedi cache azonosító."
+
+#: modules/system/system.install:519
+msgid "A collection of data to cache."
+msgstr "A gyorstárazott adat."
+
+#: modules/system/system.install:524
+msgid ""
+"A Unix timestamp indicating when the cache entry should expire, or 0 for "
+"never."
+msgstr ""
+"Unix időbélyeg, mely a bejegyzés lejárati idejét jelöli, 0 ha nem jár le."
+
+#: modules/system/system.install:529
+msgid "A Unix timestamp indicating when the cache entry was created."
+msgstr "Unix időbélyeg, mely a bejegyzés lértehozását jelöli."
+
+#: modules/system/system.install:534
+msgid "Any custom HTTP headers to be added to cached data."
+msgstr "Egyedi HTTP fejlécek, amelyeket a gyorstárazott adathoz kell adni."
+
+#: modules/system/system.install:538
+msgid "A flag to indicate whether content is serialized (1) or not (0)."
+msgstr "1, ha a tartalom sorosított, 0 egyébként."
+
+#: modules/system/system.install:549
+msgid ""
+"Cache table for the form system to store recently built forms and their "
+"storage data, to be used in subsequent page requests."
+msgstr ""
+"Az űrlap alrendszer gyorstárazási táblája, mely az űrlapokat és az adataikat "
+"tartalmazza, további lekérésekbeli felhasználás céljára."
+
+#: modules/system/system.install:551
+msgid ""
+"Cache table used to store compressed pages for anonymous users, if page "
+"caching is enabled."
+msgstr ""
+"Oldal gyorstárazás bekapcsolása esetén anoním felhasználók számára tárolt "
+"gyorstárazott oldalak táblája."
+
+#: modules/system/system.install:553
+msgid ""
+"Cache table for the menu system to store router information as well as "
+"generated link trees for various menu/page/user combinations."
+msgstr ""
+"A menürendszer gyorstárazási táblája mely router információkat és előre "
+"generált menü fákat tartalmaz különböző menü/oldal/felhasználó "
+"kombinációkhoz."
+
+#: modules/system/system.install:556
+msgid "Stores information for uploaded files."
+msgstr "Feltöltött fájlok adatai."
+
+#: modules/system/system.install:559
+msgid "Primary Key: Unique files ID."
+msgstr "Elsődleges kulcs: egyedi fájl azonosító."
+
+#: modules/system/system.install:564
+msgid "The {users}.uid of the user who is associated with the file."
+msgstr "A feltöltött fájlhoz kapcsolódó {users}.uid érték."
+
+#: modules/system/system.install:570
+msgid "Name of the file."
+msgstr "A fájl neve."
+
+#: modules/system/system.install:576
+msgid "Path of the file relative to Drupal root."
+msgstr "A fájl elérési útja a Drupal gyökerétől."
+
+#: modules/system/system.install:582
+msgid "The file MIME type."
+msgstr "A fájl MIME típusa."
+
+#: modules/system/system.install:588
+msgid "The size of the file in bytes."
+msgstr "A fájl mérete bájtokban."
+
+#: modules/system/system.install:594
+msgid "A flag indicating whether file is temporary (1) or permanent (0)."
+msgstr "1, ha a fájl ideiglenes, 0 egyébként."
+
+#: modules/system/system.install:599
+msgid "UNIX timestamp for when the file was added."
+msgstr "Unix időbélyeg, mely a fájl feltöltésének idejét jelöli."
+
+#: modules/system/system.install:614
+msgid ""
+"Flood controls the threshold of events, such as the number of contact "
+"attempts."
+msgstr ""
+"Korlátozásokat tesz lehetővé különböző funkciókhoz, például a kapcsolat "
+"űrlapok használatára nézve."
+
+#: modules/system/system.install:617
+msgid "Unique flood event ID."
+msgstr "Egyedi esemény azonosító."
+
+#: modules/system/system.install:621
+msgid "Name of event (e.g. contact)."
+msgstr "Esemény neve (pl. contact)."
+
+#: modules/system/system.install:627
+msgid "Hostname of the visitor."
+msgstr "A látogató hoszt neve."
+
+#: modules/system/system.install:633
+msgid "Timestamp of the event."
+msgstr "Az esemény időbélyege."
+
+#: modules/system/system.install:645
+msgid "A record of which {users} have read which {node}s."
+msgstr "Rögzíti, hogy mely felhasználók olvastak mely tartalmakat."
+
+#: modules/system/system.install:648
+msgid "The {users}.uid that read the {node} nid."
+msgstr "A {users}.uid aki a {node}.nid tartalmat olvasta."
+
+#: modules/system/system.install:653
+msgid "The {node}.nid that was read."
+msgstr "A tartalom {node}.nid értéke."
+
+#: modules/system/system.install:658
+msgid "The Unix timestamp at which the read occurred."
+msgstr "Unix időbélyeg, mely az olvasás idejét jelzi."
+
+#: modules/system/system.install:669
+msgid "Maps paths to various callbacks (access, page and title)"
+msgstr "Útvonalakat (access, page és title) callback-ekhez rendel"
+
+#: modules/system/system.install:672
+msgid "Primary Key: the Drupal path this entry describes"
+msgstr "Elsődleges kulcs: a Drupal útvonal, amit e bejegyzés leír"
+
+#: modules/system/system.install:678
+msgid ""
+"A serialized array of function names (like node_load) to be called to load "
+"an object corresponding to a part of the current path."
+msgstr ""
+"Függvény nevek (pl. node_load) sorosított tömbje, melyeket az útvonal adott "
+"elemének alapján történő betöltéshez használni kell."
+
+#: modules/system/system.install:684
+msgid ""
+"A serialized array of function names (like user_current_to_arg) to be called "
+"to replace a part of the router path with another string."
+msgstr ""
+"Függvény nevek (pl. user_current_to_arg) sorosított tömbje, melyeket az "
+"útvonal adott elemének más karaktersorozattal való helyettesítésére kell "
+"használni."
+
+#: modules/system/system.install:690
+msgid ""
+"The callback which determines the access to this router path. Defaults to "
+"user_access."
+msgstr ""
+"A hozzáférési jogosultságot meghatározó callback függvény neve. "
+"Alapértelmezésben user_access."
+
+#: modules/system/system.install:696
+msgid "A serialized array of arguments for the access callback."
+msgstr ""
+"A hozzáférés meghatározó függvénynek átadott paraméterek sorosított tömbje."
+
+#: modules/system/system.install:700
+msgid "The name of the function that renders the page."
+msgstr "Az oldal előállítását végző függvény neve."
+
+#: modules/system/system.install:706
+msgid "A serialized array of arguments for the page callback."
+msgstr "Az oldal előállítását végző függvény paramétereinek sorosított tömbje."
+
+#: modules/system/system.install:710
+msgid "A numeric representation of how specific the path is."
+msgstr "Az útvonal spefikáltságának számszerű értéke (gyors keresésekhez)."
+
+#: modules/system/system.install:715
+msgid "Number of parts in this router path."
+msgstr "Ebben az elérési útban található elemek száma."
+
+#: modules/system/system.install:721
+msgid ""
+"Only for local tasks (tabs) - the router path of the parent page (which may "
+"also be a local task)."
+msgstr ""
+"Csak helyi feladatok (fülek) számára - a szülő oldal útvonala (ami lehet "
+"szintén fül)."
+
+#: modules/system/system.install:727
+msgid ""
+"Router path of the closest non-tab parent page. For pages that are not local "
+"tasks, this will be the same as the path."
+msgstr ""
+"A legközelebbi nem fül felmenő útvonala. Nem fül útvonalak esetén megegyezik "
+"magával az útvonallal."
+
+#: modules/system/system.install:733
+msgid ""
+"The title for the current page, or the title for the tab if this is a local "
+"task."
+msgstr "Az aktuális oldal címfelirata vagy a fül felirata ha helyi feladat."
+
+#: modules/system/system.install:739
+msgid "A function which will alter the title. Defaults to t()"
+msgstr "A címet megváltoztató függvény neve. Alapértelmezésben t()."
+
+#: modules/system/system.install:745
+msgid ""
+"A serialized array of arguments for the title callback. If empty, the title "
+"will be used as the sole argument for the title callback."
+msgstr ""
+"A címet változtató függvénynek átadott paraméterek sorosított tömbje. Ha "
+"üres, a címfelirat lesz az egyetlen paramétere a függvénynek."
+
+#: modules/system/system.install:751
+msgid ""
+"Numeric representation of the type of the menu item, like MENU_LOCAL_TASK."
+msgstr "A menü elem típusának számszerű formája, például MENU_LOCAL_TASK."
+
+#: modules/system/system.install:756
+msgid ""
+"Name of a function used to render the block on the system administration "
+"page for this item."
+msgstr "Az elemhez tartozó adminisztrációs blokkot előállító függvény neve."
+
+#: modules/system/system.install:762
+msgid "A description of this item."
+msgstr "A menü elem leírása."
+
+#: modules/system/system.install:766
+msgid ""
+"The position of the block (left or right) on the system administration page "
+"for this item."
+msgstr "Az elemhez tartozó adminisztrációs blokk helye (left vagy right)."
+
+#: modules/system/system.install:772
+msgid ""
+"Weight of the element. Lighter weights are higher up, heavier weights go "
+"down."
+msgstr ""
+"Az elem súlya. Könyebb elemek a listában előbb jelennek meg, nehezebbek "
+"később."
+
+#: modules/system/system.install:777
+msgid ""
+"The file to include for this element, usually the page callback function "
+"lives in this file."
+msgstr ""
+"Az elemhez betöltendő fájl. Jellemzően ebben a fájlban található az oldalt "
+"előállító függvény."
+
+#: modules/system/system.install:789
+msgid "Contains the individual links within a menu."
+msgstr "A menükben található linkeket tárolja."
+
+#: modules/system/system.install:792
+msgid ""
+"The menu name. All links with the same menu name (such as 'navigation') are "
+"part of the same menu."
+msgstr ""
+"A menü neve. Az azonos menü nevekkel (pl. 'navigation') felvett linkek "
+"azonos menühöz tartoznak."
+
+#: modules/system/system.install:798
+msgid "The menu link ID (mlid) is the integer primary key."
+msgstr "Elsődleges kulcs: A menü link azonosító (mlid), egész szám."
+
+#: modules/system/system.install:803
+msgid ""
+"The parent link ID (plid) is the mlid of the link above in the hierarchy, or "
+"zero if the link is at the top level in its menu."
+msgstr ""
+"A szülő link azonosító (plid), a hierarchiában található szülő mlid értéke, "
+"vagy nulla, ha a link az első szinten van a menüben."
+
+#: modules/system/system.install:809
+msgid "The Drupal path or external path this link points to."
+msgstr "A belső elérési útvonal vagy külső webcím, ahova a link mutat."
+
+#: modules/system/system.install:815
+msgid ""
+"For links corresponding to a Drupal path (external = 0), this connects the "
+"link to a {menu_router}.path for joins."
+msgstr ""
+"Belső linkeknél (external = 0), ez az érték kapcsolja a táblát a "
+"{menu_router}.path értékhez."
+
+#: modules/system/system.install:821
+msgid ""
+"The text displayed for the link, which may be modified by a title callback "
+"stored in {menu_router}."
+msgstr ""
+"A link címfelirataként megjelenő szöveg, amelyet a {menu_router} táblában "
+"tárolt cím módosító függvény megváltoztathat."
+
+#: modules/system/system.install:827
+msgid ""
+"A serialized array of options to be passed to the url() or l() function, "
+"such as a query string or HTML attributes."
+msgstr ""
+"Az url() vagy l() függvénynek átadandó paraméterek sorosított tömbje, "
+"például webcím paraméterek (query string) vagy HTML attribútumok."
+
+#: modules/system/system.install:831
+msgid "The name of the module that generated this link."
+msgstr "A linket létrehozó modul neve."
+
+#: modules/system/system.install:837
+msgid ""
+"A flag for whether the link should be rendered in menus. (1 = a disabled "
+"menu item that may be shown on admin screens, -1 = a menu callback, 0 = a "
+"normal, visible link)"
+msgstr ""
+"A menüben való megjelenést jelző érték. Ha 1, akkor olyan menü elem, ami "
+"csak a menü adminisztrációs oldalakon jelenik meg (kikapcsolt link), ha -1, "
+"akkor csak callback, ha 0, akkor normál, látható link."
+
+#: modules/system/system.install:843
+msgid ""
+"A flag to indicate if the link points to a full URL starting with a "
+"protocol, like http:// (1 = external, 0 = internal)."
+msgstr ""
+"Külső és belső linkeket megkülönböztető számérték. Ha 0, akkor belső "
+"útvonal, ha 1, akkor külső (protokollal, mint például http:// kezdődő) link."
+
+#: modules/system/system.install:849
+msgid ""
+"Flag indicating whether any links have this link as a parent (1 = children "
+"exist, 0 = no children)."
+msgstr ""
+"A gyermek linkek létezését jelző számérték. 1, ha van gyermeke, 0 ha nincs."
+
+#: modules/system/system.install:855
+msgid ""
+"Flag for whether this link should be rendered as expanded in menus - "
+"expanded links always have their child links displayed, instead of only when "
+"the link is in the active trail (1 = expanded, 0 = not expanded)"
+msgstr ""
+"Kibontott megjelenítést jelző számérték. Ha 1, akkor kibontott, azaz mindig "
+"megjelennek a gyermekei, nem csak akkor ha az aktív útvonalon van. Egyébként "
+"0."
+
+#: modules/system/system.install:861
+msgid "Link weight among links in the same menu at the same depth."
+msgstr ""
+"A link súlya a többi azonos menüben, azonos szinten lévő linkek között."
+
+#: modules/system/system.install:866
+msgid ""
+"The depth relative to the top level. A link with plid == 0 will have depth "
+"== 1."
+msgstr ""
+"A felső szinthez képesti mélység. Ha plid értéke 0 (nincs szülő), akkor a "
+"mélység 1."
+
+#: modules/system/system.install:872
+msgid ""
+"A flag to indicate that the user has manually created or edited the link (1 "
+"= customized, 0 = not customized)."
+msgstr ""
+"Számérték mely azt jelzi, hogy a felhasználó szerkesztette-e a linket. Ha 1, "
+"akkor szerkesztett link, ha 0, akkor nem."
+
+#: modules/system/system.install:878
+msgid ""
+"The first mlid in the materialized path. If N = depth, then pN must equal "
+"the mlid. If depth > 1 then p(N-1) must equal the plid. All pX where X > "
+"depth must equal zero. The columns p1 .. p9 are also called the parents."
+msgstr ""
+"Az útvonal első mlid-je. Ha N a mélység, akkor pN értéke mlid. Ha a mélység "
+"egynél nagyobb, akkor p(N-1) értéke a plid. Minden pX, ahol X nagyobb mint a "
+"mélység nulla kell, hogy legyen. A p1 ... p9 oszlopokat szülőknek is "
+"nevezhetjük (ezek gyors elérését teszik lehetővé)."
+
+#: modules/system/system.install:884
+msgid "The second mlid in the materialized path. See p1."
+msgstr "Az útvonal második mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:890
+msgid "The third mlid in the materialized path. See p1."
+msgstr "Az útvonal harmadik mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:896
+msgid "The fourth mlid in the materialized path. See p1."
+msgstr "Az útvonal negyedik mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:902
+msgid "The fifth mlid in the materialized path. See p1."
+msgstr "Az útvonal ötödik mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:908
+msgid "The sixth mlid in the materialized path. See p1."
+msgstr "Az útvonal hatodik mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:914
+msgid "The seventh mlid in the materialized path. See p1."
+msgstr "Az útvonal hetedik mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:920
+msgid "The eighth mlid in the materialized path. See p1."
+msgstr "Az útvonal nyolcadik mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:926
+msgid "The ninth mlid in the materialized path. See p1."
+msgstr "Az útvonal kilencedik mlid-je. Lásd a p1 leírását."
+
+#: modules/system/system.install:932
+msgid ""
+"Flag that indicates that this link was generated during the update from "
+"Drupal 5."
+msgstr "Azt jelzi, hogy a link egy Drupal 5-ről frissítés során jött-e létre."
+
+#: modules/system/system.install:950
+msgid ""
+"Drupal's session handlers read and write into the sessions table. Each "
+"record represents a user session, either anonymous or authenticated."
+msgstr ""
+"A Drupal munkamenet kezelői a session táblát használják adatok olvasására és "
+"írására. Minden rekor egy felhasználói munkamenetet jelöl, akár anoním, akár "
+"azonosított felhasználóról van szó."
+
+#: modules/system/system.install:953
+msgid "The {users}.uid corresponding to a session, or 0 for anonymous user."
+msgstr "A munkamenet {users}.uid értéke, 0, ha anoním felhasználóról van szó."
+
+#: modules/system/system.install:958
+msgid "Primary key: A session ID. The value is generated by PHP's Session API."
+msgstr ""
+"Elsődleges kulcs: A munkamenet azonosító. Az értéket a PHP munkamenet "
+"rendszere állítja elő."
+
+#: modules/system/system.install:964
+msgid "The IP address that last used this session ID (sid)."
+msgstr "Ezt a munkemenet azonosítót legutóbb használó IP cím."
+
+#: modules/system/system.install:970
+msgid ""
+"The Unix timestamp when this session last requested a page. Old records are "
+"purged by PHP automatically."
+msgstr ""
+"Unix időbélyeg, mely a munkamenetben legutóbb végrehajtott oldallekérés "
+"idejét mutatja. Ennek alapján a PHP automatikusan törli a régi "
+"munkameneteket."
+
+#: modules/system/system.install:975
+msgid ""
+"The time of this user's last post. This is used when the site has specified "
+"a minimum_cache_lifetime. See cache_get()."
+msgstr ""
+"A felhasználó legutóbbi tartalom beküldése. Akkor használatos, ha a "
+"webhelyen minimum_cache_lifetime van beállítva. Lásd cache_get()."
+
+#: modules/system/system.install:980
+msgid ""
+"The serialized contents of $_SESSION, an array of name/value pairs that "
+"persists across page requests by this session ID. Drupal loads $_SESSION "
+"from here at the start of each request and saves it at the end."
+msgstr ""
+"A $_SESSION tömb sorosított tartalma, azaz egy név-érték párokból álló tömb, "
+"ami az oldallekérések között megmarad a munkamenet azonosítóhoz rendelve. A "
+"Drupal a $_SESSION tömböt innen tölti be minden oldal kérés kiszolgálás "
+"előtt, és a változásokat ide menti le."
+
+#: modules/system/system.install:993
+msgid ""
+"A list of all modules, themes, and theme engines that are or have been "
+"installed in Drupal's file system."
+msgstr ""
+"A modulok, sminkek és smink motorok listája, melyek most vagy korábban a "
+"Drupal fájl rendszerében telepítve voltak."
+
+#: modules/system/system.install:996
+msgid ""
+"The path of the primary file for this item, relative to the Drupal root; e."
+"g. modules/node/node.module."
+msgstr ""
+"Az elemhez kapcsolódó elsődleges fájl elérési útja, a Drupal gyökeréből "
+"nézve. Például modules/node/node.module."
+
+#: modules/system/system.install:1002
+msgid "The name of the item; e.g. node."
+msgstr "Az elem neve, mint például node."
+
+#: modules/system/system.install:1008
+msgid "The type of the item, either module, theme, or theme_engine."
+msgstr "Az elem típusa: module, theme vagy theme_engine."
+
+#: modules/system/system.install:1014
+msgid "A theme's 'parent'. Can be either a theme or an engine."
+msgstr "Sminkek esetén a smink szülője. Egy másik smink vagy egy smink motor."
+
+#: modules/system/system.install:1020
+msgid "Boolean indicating whether or not this item is enabled."
+msgstr "0, ha nincs bekapcsolva ez az elem, 1 egyébként."
+
+#: modules/system/system.install:1025
+msgid ""
+"Boolean indicating whether this item is disabled when the throttle.module "
+"disables throttleable items."
+msgstr ""
+"1, ha ez az elem ki van kapcsolva, ha magas a terhelés (a throttle modul "
+"segítségével), 0 egyébként."
+
+#: modules/system/system.install:1031
+msgid ""
+"Boolean indicating whether this module is loaded during Drupal's early "
+"bootstrapping phase (e.g. even before the page cache is consulted)."
+msgstr ""
+"1, ha a modult a Drupal korai indítási szakaszában be kell tölteni (még "
+"mielőtt az oldal gyorstárakat megvizsgálja a rendszer), 0 egyébként."
+
+#: modules/system/system.install:1036
+msgid ""
+"The module's database schema version number. -1 if the module is not "
+"installed (its tables do not exist); 0 or the largest N of the module's "
+"hook_update_N() function that has either been run or existed when the module "
+"was first installed."
+msgstr ""
+"A modul adatbázis séma verziószáma. -1, ha a modul még nem volt telepítve "
+"(azaz a táblái nincsenek meg az adatbázisban), egyébként 0, vagy a "
+"legnagyobb N érték a modul hook_update_N() függvényeit tekintve, amely "
+"lefutott, vagy már létezett, amikor a modult telepítették."
+
+#: modules/system/system.install:1042
+msgid ""
+"The order in which this module's hooks should be invoked relative to other "
+"modules. Equal-weighted modules are ordered by name."
+msgstr ""
+"A többi modulhoz képesti hurok futtatási sorrendet meghatározó súly érték. "
+"Az azonos súlyú modulok név szerinti sorrendben lesznek futtatva."
+
+#: modules/system/system.install:1047
+msgid ""
+"A serialized array containing information from the module's .info file; keys "
+"can include name, description, package, version, core, dependencies, "
+"dependents, and php."
+msgstr ""
+"Az .info fájl alapján előállított sorosított tömb. A kulcsok többek között: "
+"name, description, package, version, core, dependencies, dependents és php."
+
+#: modules/system/system.install:1060
+msgid ""
+"A list of URL aliases for Drupal paths; a user may visit either the source "
+"or destination path."
+msgstr ""
+"Webcím álnevek különböző Drupal elérési útvonalakhoz. A felhasználó az "
+"eredeti vagy az álnév által biztosított útvonalon is elérheti az oldalakat."
+
+#: modules/system/system.install:1063
+msgid "A unique path alias identifier."
+msgstr "Egyedi útvonal álnév azonosító."
+
+#: modules/system/system.install:1068
+msgid "The Drupal path this alias is for; e.g. node/12."
+msgstr "A forrás útvonal, amihez az álnév tartozik, például node/12."
+
+#: modules/system/system.install:1074
+msgid "The alias for this path; e.g. title-of-the-story."
+msgstr "A forráshoz tartozó álnév, például a-tortenet-cime."
+
+#: modules/system/system.install:1080
+msgid ""
+"The language this alias is for; if blank, the alias will be used for unknown "
+"languages. Each Drupal path can have an alias for each supported language."
+msgstr ""
+"Az álnév ezen a nyelven érvényes. Ha üres, akkor minden nyelven használatos "
+"lesz az álnév, különben csak az adott nyelven. Minden Drupal útvonalhoz "
+"nyelvenként eltérő álnév tartozhat."
+
+#: (duplicate) modules/system/system.install:20
+msgid "Drupal"
+msgstr "Drupal"
+
+#: (duplicate) modules/system/system.install:30
+msgid "Web server"
+msgstr "Webszerver"
+
+#: (duplicate) modules/system/system.install:40
+msgid ""
+"Your PHP installation is too old. Drupal requires at least PHP %version."
+msgstr ""
+"A telepített PHP nagyon régi verziójú. A Drupal működéséhez PHP %version "
+"szükséges."
+
+#: (duplicate) modules/system/system.install:46
+msgid "PHP register globals"
+msgstr "PHP register globals"
+
+#: (duplicate) modules/system/system.install:55
+msgid ""
+"<em>register_globals</em> is enabled. Drupal requires this configuration "
+"directive to be disabled. Your site may not be secure when "
+"<em>register_globals</em> is enabled. The PHP manual has instructions for <a "
+"href=\"http://php.net/configuration.changes\">how to change configuration "
+"settings</a>."
+msgstr ""
+"A <em>register_globals</em> beállítás be van kapcsolva, de a Drupal ennek "
+"kikapcsolását igényli. A webhely nem futattható biztonságosan ha a "
+"<em>register_globals</em> be van kapcsolva. A PHP kézikönyv leírja, hogy <a "
+"href=\"http://php.net/hu/configuration.changes\">miként kell megváltoztatni "
+"a beállításokat</a>."
+
+#: (duplicate) modules/system/system.install:57
+msgid "Enabled ('@value')"
+msgstr "Bekapcsolva ('@value')"
+
+#: (duplicate) modules/system/system.install:66
+msgid "PHP memory limit"
+msgstr "PHP memória korlátozás"
+
+#: (duplicate) modules/system/system.install:73
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the installation process."
+msgstr ""
+"Javasolt a PHP memória korlátjának megemelése %memory_minimum_limit értékre, "
+"hogy a telepítés során fellépő esetleges memóriahiány elkerülhető legyen."
+
+#: (duplicate) modules/system/system.install:76
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the update process."
+msgstr ""
+"Javasolt a PHP memória korlátjának megemelése %memory_minimum_limit értékre, "
+"hogy a frissítés során fellépő esetleges memóriahiány elkerülhető legyen."
+
+#: (duplicate) modules/system/system.install:79
+msgid ""
+"Depending on your configuration, Drupal can run with a %memory_limit PHP "
+"memory limit. However, a %memory_minimum_limit PHP memory limit or above is "
+"recommended, especially if your site uses additional custom or contributed "
+"modules."
+msgstr ""
+"A beállításoktól függően a Drupal %memory_limit PHP memória korlátozással is "
+"képes lehet futni, a %memory_minimum_limit korlát használata javasolt "
+"azonban, különösen ha kiegészítő vagy saját fejlesztésű modulok is a "
+"rendszerben vannak."
+
+#: (duplicate) modules/system/system.install:84
+msgid ""
+"Increase the memory limit by editing the memory_limit parameter in the file %"
+"configuration-file and then restart your web server (or contact your system "
+"administrator or hosting provider for assistance)."
+msgstr ""
+"A PHP memória korlát a %configuration_file memory_limit nevű értékének "
+"módosításával és a web szerver újraindításával változtatható. Ebben a "
+"rendszergazda vagy hoszting szolgáltató is segítséget adhat."
+
+#: (duplicate) modules/system/system.install:87
+msgid ""
+"Contact your system administrator or hosting provider for assistance with "
+"increasing your PHP memory limit."
+msgstr ""
+"A rendszergazda vagy hoszting szolgáltató adhat segítséget a PHP memória "
+"korlát növeléséhez."
+
+#: (duplicate) modules/system/system.install:90
+msgid "See the <a href=\"@url\">Drupal requirements</a> for more information."
+msgstr ""
+"További információ a <a href=\"@url\">Drupal rendszerkövetelményeit</a> "
+"leíró oldalon."
+
+#: (duplicate) modules/system/system.install:107 ;254
+msgid "Not protected"
+msgstr "Nem védett"
+
+#: (duplicate) modules/system/system.install:112
+msgid ""
+"The directory %file is not protected from modifications and poses a security "
+"risk. You must change the directory's permissions to be non-writable. "
+msgstr ""
+"%file módosítások ellen nem védett, ami biztonsági kockázatot jelent. Az "
+"írási jogot vissza kell vonni erről a könyvtárról."
+
+#: (duplicate) modules/system/system.install:115
+msgid ""
+"The file %file is not protected from modifications and poses a security "
+"risk. You must change the file's permissions to be non-writable."
+msgstr ""
+"%file módosítások ellen nem védett, ami biztonsági kockázatot jelent. Nem "
+"szabad írási jogot adni erre a fájlra."
+
+#: (duplicate) modules/system/system.install:120 ;261
+msgid "Protected"
+msgstr "Védett"
+
+#: (duplicate) modules/system/system.install:123
+msgid "Configuration file"
+msgstr "Konfigurációs fájl"
+
+#: (duplicate) modules/system/system.install:133
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@cron-"
+"handbook\">configuring cron jobs</a>."
+msgstr ""
+"További információ található a kézikönyv <a href=\"@cron-handbook"
+"\">időzített faladatok beállítása</a> oldalán."
+
+#: (duplicate) modules/system/system.install:157
+msgid ""
+"Cron has not run. Please visit the <a href=\"@status\">status report</a> for "
+"more information."
+msgstr ""
+"A cron nem futott.  Az <a href=\"@status\">állapot jelentés</a> további "
+"információval szolgál."
+
+#: (duplicate) modules/system/system.install:162
+msgid "Never run"
+msgstr "Soha nem futott le"
+
+#: (duplicate) modules/system/system.install:163
+msgid "Cron has not run."
+msgstr "A cron nem futott."
+
+#: (duplicate) modules/system/system.install:166
+msgid "Last run !time ago"
+msgstr "Legutóbbi futás ideje: !time"
+
+#: (duplicate) modules/system/system.install:169
+msgid "Cron has not run recently."
+msgstr "A cron jelenleg nem fut."
+
+#: (duplicate) modules/system/system.install:174
+msgid "Cron maintenance tasks"
+msgstr "Időzített feladatok"
+
+#: (duplicate) modules/system/system.install:177
+msgid "You can <a href=\"@cron\">run cron manually</a>."
+msgstr "Az <a href=\"@cron\">időzítő böngészőből is futtatható</a>."
+
+#: (duplicate) modules/system/system.install:196
+msgid "Not writable"
+msgstr "Nem írható"
+
+#: (duplicate) modules/system/system.install:201
+msgid "The directory %directory is not writable."
+msgstr "%directory könyvtár nem írható."
+
+#: (duplicate) modules/system/system.install:205
+msgid ""
+"You may need to set the correct directory at the <a href=\"@admin-file-system"
+"\">file system settings page</a> or change the current directory's "
+"permissions so that it is writable."
+msgstr ""
+"Be kell állítani a megfelelő könyvtárat a <a href=\"@admin-file-system"
+"\">fájl rendszer beállítások oldalán</a>, vagy a jelenleg beállított "
+"könyvtárra nézve írási jogosultságot kell adni."
+
+#: (duplicate) modules/system/system.install:210
+msgid ""
+"An automated attempt to create this directory failed, possibly due to a "
+"permissions problem. To proceed with the installation, either create the "
+"directory and modify its permissions manually, or ensure that the installer "
+"has the permissions to create it automatically. For more information, please "
+"see INSTALL.txt or the <a href=\"@handbook_url\">on-line handbook</a>."
+msgstr ""
+"A könyvtár létrehozására tett kísérletek nem vezettek sikerre, feltehetően "
+"jogosultság problémák miatt. A telepítés folytatása érdekében a könyvtárat "
+"létre kell hozni, a jogosultságokat pedig megfelelően be kell állítani, vagy "
+"gondoskodni kell arról, hogy a telepítő létre tudja hozni a könyvtárat "
+"automatikusan. További információ az INSTALL.txt-ben és az (angol nyelvű) <a "
+"href=\"@handbook_url\">online kézikönyvben találhatóak</a>. "
+
+#: (duplicate) modules/system/system.install:220
+msgid "Writable (<em>public</em> download method)"
+msgstr "Írható (<em>nyilvános</em> letöltési mód)"
+
+#: (duplicate) modules/system/system.install:223
+msgid "Writable (<em>private</em> download method)"
+msgstr "Írható (<em>privát</em> letöltési mód)"
+
+#: (duplicate) modules/system/system.install:230
+msgid "Database updates"
+msgstr "Adatbázis frissítések"
+
+#: (duplicate) modules/system/system.install:243
+msgid ""
+"Some modules have database schema updates to install. You should run the <a "
+"href=\"@update\">database update script</a> immediately."
+msgstr ""
+"Néhány modul adatbázis séma frissítéseket igényel. Az <a href=\"@update"
+"\">adatbázis frissítést</a> azonnal le kell futtatni."
+
+#: (duplicate) modules/system/system.install:256
+msgid ""
+"The update.php script is accessible to everyone without authentication "
+"check, which is a security risk. You must change the $update_free_access "
+"value in your settings.php back to FALSE."
+msgstr ""
+"Az update.php szkript elérhető mindenki számára, jogosultsági ellenőrzés "
+"nélkül. Ez komoly biztonsági kockázatot jelent. FALSE értékűre kell "
+"változtatni az $update_free_access beállítást a settings.php állományban."
+
+#: (duplicate) modules/system/system.install:264
+msgid "Access to update.php"
+msgstr "Hozzáférés az update.php fájlhoz"
+
+#: (duplicate) modules/system/system.install:275
+msgid "Not enabled"
+msgstr "Nincs bekapcsolva"
+
+#: (duplicate) modules/system/system.install:277
+msgid ""
+"Update notifications are not enabled. It is <strong>highly recommended</"
+"strong> that you enable the update status module from the <a href=\"@module"
+"\">module administration page</a> in order to stay up-to-date on new "
+"releases. For more information please read the <a href=\"@update\">Update "
+"status handbook page</a>."
+msgstr ""
+"A frissítési figyelmeztetések funkciója nincs bekapcsolva. <strong>Erősen "
+"javasolt</strong>, a frissítési figyelmeztetéseket biztosító modul "
+"bekapcsolása a <a href=\"@module\">modul adminisztrációs oldalon</a>. Bővebb "
+"információ <a href=\"@update\">a modul kézikönyv lapján</a> található."
+
+#: (duplicate) modules/system/system.install:286
+msgid "HTTP request status"
+msgstr "HTTP kérés állapota"
+
+#: (duplicate) modules/system/system.install:287
+msgid "Fails"
+msgstr "Nem sikerült"
+
+#: (duplicate) modules/system/system.install:289
+msgid ""
+"Your system or network configuration does not allow Drupal to access web "
+"pages, resulting in reduced functionality. This could be due to your "
+"webserver configuration or PHP settings, and should be resolved in order to "
+"download information about available updates, fetch aggregator feeds, sign "
+"in via OpenID, or use other network-dependent services."
+msgstr ""
+"A rendszer vagy a hálózat beállításai nem teszik lehetővé hogy a Drupal "
+"weboldalakat érjen el, ami csökkentett működést eredményez. A hiba oka "
+"webszerver vagy PHP beállítás lehet és javasolt kijavítani, hogy működjön a "
+"rendelkezésre álló frissítési információk letöltése, hírcsatornák betöltése, "
+"OpenID felhasználásával történő belépés vagy más hálózat függő szolgáltatás."
+
+#: (duplicate) modules/system/system.install:293
+msgid "Update notifications"
+msgstr "Frissítési emlékeztetők"
+
+#: modules/system/system.js:0
+msgid "Testing clean URLs..."
+msgstr "Rövid webcímek ellenőrzése..."
+
+#: modules/system/system.js:0
+msgid ""
+"Your system configuration does not currently support this feature. The <a "
+"href=\"http://drupal.org/node/15365\">handbook page on Clean URLs</a> has "
+"additional troubleshooting information."
+msgstr ""
+"A rendszer jelenlegi konfigurációja nem támogatja ezt a funkciót. A <a href="
+"\"http://drupal.org/node/15365\">rövid webcímek kézikönyv lapja</a> további "
+"információkkal szolgál (angolul)."

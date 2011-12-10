@@ -1,0 +1,6 @@
+; $Id: image_captcha.info,v 1.5 2008/02/17 12:49:24 soxofaan Exp $
+name = "Image CAPTCHA"
+description = "Provides an image based CAPTCHA."
+package = "Spam control"
+dependencies[] = captcha
+core = 6.x

@@ -1,0 +1,5 @@
+name = "Weblabor oldalak"
+description = "Statikus és kvázi-statikus oldalak"
+package = Weblabor
+version = 6.x-1.0
+core = 6.x

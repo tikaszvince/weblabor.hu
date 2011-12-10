@@ -1,0 +1,111 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ *   Adminisztrációt segítő funkciók a Drupal.hu számára.
+ */
+
+/**
+ * hook_menu() megvalósítás.
+ */
+function publishboard_menu() {
+  $items['publishboard/%'] = array(
+    'title'            => 'Beküldött tartalmak',
+    'page callback'    => 'publishboard_page',
+    'page arguments'   => array(1),
+    'access arguments' => array('access administration pages'),
+    'type'             => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * hook_block() megvalósítás.
+ */
+function publishboard_block($op = 'list', $delta = 0, $edit = array()) {
+  if ($op == 'list') {
+    return array(0 => array('info' => 'Beküldött tartalmak',
+      'weight' => -100, 'enabled' => 1, 'region' => 'right'));
+  }
+  elseif ($op == 'view' && user_access("access administration pages")) {
+    $items = array();
+    $names = node_get_types('names');
+    list($types, $changed, $unchanged) = publishboard_unread_counters();
+    foreach ($types as $type) {
+      $title = '';
+      if (isset($unchanged[$type]) || isset($changed[$type])) {
+        if (isset($unchanged[$type])) {
+          $title .= $unchanged[$type] .' régi'. (isset($changed[$type]) ? ', ' : ' ');
+        }
+        if (isset($changed[$type])) {
+          $title .= $changed[$type] .' új ';
+        }
+        $items[] = @l($title . $names[$type], 'publishboard/'. $type);
+      }
+    }
+    if (count($items)) {
+      return array(
+        'subject' => 'Beküldött tartalmak',
+        'content' => theme('item_list', $items),
+      );
+    }
+  }
+}
+
+function publishboard_page($type) {
+  $_SESSION['node_overview_filter'] = array(
+    array('status', 'status-0'),
+    array('type', $type),
+  );
+  drupal_goto('admin/content/node');
+}
+
+/**
+ * A nem olvasott tartalmak számának összesítése.
+ */
+function publishboard_unread_counters() {
+  global $user;
+
+  $unchanged = $changed = $list = $types = array();
+
+  $result = db_query('SELECT nid, type, changed FROM {node} WHERE status = 0');
+  while ($node = db_fetch_object($result)) {
+    $list[$node->nid] = $node;
+    if (!in_array($node->type, $types)) {
+      $types[] = $node->type;
+    }
+  }
+
+  if (count($types)) {
+    // Nézzük, hogy az éppen látogató user melyeket látta már ezekből legutóbbi
+    // módosításuk óta (melyek így tényleg újak a számára).
+    $part = join(", ", array_keys($list));
+    $result = db_query("SELECT nid, timestamp FROM {history} WHERE uid = %d AND nid IN ($part)", $user->uid);
+    while ($history = db_fetch_object($result)) {
+      if ($list[$history->nid]->changed > $history->timestamp) {
+        // Van róla adatunk, és régebben látta, mint amikor legutóbb változott.
+        @$changed[$list[$history->nid]->type]++;
+      }
+      else {
+        // Volt róla adat, de a változás régebbi, mint a látogatás.
+        @$unchanged[$list[$history->nid]->type]++;
+      }
+      // Kezeltük a history tábla alapján.
+      unset($list[$history->nid]);
+    }
+  }
+  
+  // Ezeket nem találtuk meg a history táblában, azaz soha nem látta a user,
+  // vagy nagyon régen látta. Csak a limitet tudjuk alapul venni.
+  foreach ($list as $node) {
+    if ($list[$node->nid]->changed > NODE_NEW_LIMIT) {
+      @$changed[$node->type]++;
+    }
+    else {
+      @$unchanged[$node->type]++;
+    }
+  }
+  
+  return array($types, $changed, $unchanged);
+}

@@ -1,0 +1,5 @@
+name = "Hírlevél kezelés"
+description = "Weblabor.hu napi és heti hírlevél kezelő"
+package = Weblabor
+version = 6.x-1.0
+core = 6.x

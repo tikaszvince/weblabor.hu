@@ -1,0 +1,263 @@
+# $Id: search-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/search/search.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: search.module,v 1.209 2007/01/13 11:02:30 unconed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-16 11:35+0100\n"
+"PO-Revision-Date: 2007-01-10 23:51+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/search/search.module:99
+msgid ""
+"The search module adds the ability to search for content by keywords. Search "
+"is often the only practical way to find content on a large site. Search is "
+"useful for finding users and posts by searching on keywords."
+msgstr ""
+"A kereső modul kulcsszavak kereshetőségével ruházza fel a rendszert. Egy "
+"nagy webhelyen a kereső használata gyakran az egyetlen módja egy tartalom "
+"megtalálásának. A kereső segítségével felhasználók és tartalmak egyaránt "
+"megtalálhatóak kulcszavak alapján."
+
+#: modules/search/search.module:100
+msgid ""
+"The search engine works by maintaining an index of the words in your site's "
+"content. It indexes the posts and users. You can adjust the settings to "
+"tweak the indexing behaviour. Note that the search requires cron to be set "
+"up correctly. The index percentage sets the maximum amount of items that "
+"will be indexed in one cron run. Set this number lower if your cron is "
+"timing out or if PHP is running out of memory."
+msgstr ""
+"A keresőmotor a webhelyen közzétett tartalmak és felhasználói adatok alapján "
+"felépített index segítségével működik. A modul beállításaival szabályozható "
+"az index feltöltésének módja. Az időzítő (cron) beállítása és rendszeres "
+"futtatása szükséges a kereső működéséhez. Az index százaléka adja meg az "
+"időzítő egyszeri lefutásakor leindexelendő tartalmak számát. Az érték "
+"alacsonyra állításával elkerülhető, hogy az időzítő túllépje a maximális "
+"futási időt vagy kifogyjon a rendelkezésre álló memóriából."
+
+#: modules/search/search.module:101
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@search\">Search page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@search"
+"\">keresőről szóló oldalán</a> található."
+
+#: modules/search/search.module:104
+msgid ""
+"The search engine works by maintaining an index of the words in your site's "
+"content. You can adjust the settings below to tweak the indexing behaviour. "
+"Note that the search requires cron to be set up correctly."
+msgstr ""
+"A keresőmotor a webhelyen közzétett tartalmak és felhasználói adatok alapján "
+"felépített index segítségével működik. A modul beállításaival szabályozható "
+"az index feltöltésének módja. Az időzítő (cron) beállítása és rendszeres "
+"futtatása szükséges a kereső működéséhez."
+
+#: modules/search/search.module:106
+msgid ""
+"<ul>\n"
+"<li>Check if your spelling is correct.</li>\n"
+"<li>Remove quotes around phrases to match each word individually: <em>\"blue "
+"smurf\"</em> will match less than <em>blue smurf</em>.</li>\n"
+"<li>Consider loosening your query with <em>OR</em>: <em>blue smurf</em> will "
+"match less than <em>blue OR smurf</em>.</li>\n"
+"</ul>"
+msgstr ""
+"<ul>\n"
+"<li>Érdemes ellenőrizni a helyesírást.</li>\n"
+"<li>Az idézőjelek elhagyásával több találat kapható. A <em>\"kék törpe\"</"
+"em> kevesebb találathoz vezethet, mint a <em>kék törpe</em>.</li>\n"
+"<li>Az alapértelmezett <em>AND</em> (és) kapcsolat helyett az <em>OR</em> "
+"(vagy) használata jobb eredményre vezethet. A <em>kék törpe</em> kevesebb "
+"szövegre illeszkedik, mint a <em>kék OR törpe</em>.</li>\n"
+"</ul>"
+
+#: modules/search/search.module:126
+msgid "Search form"
+msgstr "Keresés űrlap"
+
+#: modules/search/search.module:150
+msgid "Search settings"
+msgstr "Keresés beállításai"
+
+#: modules/search/search.module:151
+msgid "Configure relevance settings for search and other indexing options"
+msgstr "Keresési relevancia és más indexelési beállítások"
+
+#: modules/search/search.module:157
+msgid "Clear index"
+msgstr "Index törlése"
+
+#: modules/search/search.module:162
+msgid "Top search phrases"
+msgstr "Legnépszerűbb keresések"
+
+#: modules/search/search.module:163
+msgid "View most popular search phrases."
+msgstr "A legnépszerűbb keresések megtekintése."
+
+#: modules/search/search.module:192;222;246
+msgid "Re-index site"
+msgstr "Webhely újraindexelése"
+
+#: modules/search/search.module:198;255
+msgid "The index will be rebuilt."
+msgstr "Az index újra fog épülni."
+
+#: modules/search/search.module:219
+msgid "%percentage of the site has been indexed."
+msgstr "A webhely %percentage része indexelve."
+
+#: modules/search/search.module:220
+msgid "Indexing status"
+msgstr "Az indexelés állapota"
+
+#: modules/search/search.module:227
+msgid "Indexing throttle"
+msgstr "Indexelés visszafogó"
+
+#: modules/search/search.module:228
+msgid "Items to index per cron run"
+msgstr "Időzítő (cron) futásonként indexelt tartalmak száma"
+
+#: modules/search/search.module:228
+msgid ""
+"The maximum amount of items that will be indexed in one cron run. Set this "
+"number lower if your cron is timing out or if PHP is running out of memory."
+msgstr ""
+"Legfeljebb ennyi tartalmat indexel le a modul egy időzített futás során. "
+"Alacsony értékre érdemes állítani, különben az időzített folyamatok "
+"kifuthatnak a maximális végrehajtási időből vagy elfogyhat a rendelkezésre "
+"álló memória."
+
+#: modules/search/search.module:230
+msgid "Indexing settings"
+msgstr "Az indexelés beállításai"
+
+#: modules/search/search.module:231
+msgid ""
+"<p>Changing the settings below will cause the site index to be rebuilt. The "
+"search index is not cleared but systematically updated to reflect the new "
+"settings. Searching will continue to work but new content won't be indexed "
+"until all existing content has been re-indexed.</p><p>The default settings "
+"should be appropriate for the majority of sites.</p>"
+msgstr ""
+"<p>A beállítások megváltoztatása a webhely keresési indexének újraépítését "
+"teszi szükségessé. Az kereső indexe nem törlődik, de fokozatosan frissül az "
+"új beállítások figyelembevételével. A keresés továbbra is működni fog, de az "
+"új tartalmak nem lesznek indexelve addig, amíg a már meglévők újraindexelése "
+"be nem fejeződött.</p><p>Az alapértelmezett beállítások a legtöbb webhely "
+"számára megfelelőek.</p>"
+
+#: modules/search/search.module:232
+msgid "Minimum word length to index"
+msgstr "Az indexbe kerülő szavak minimális hossza"
+
+#: modules/search/search.module:232
+msgid ""
+"The number of characters a word has to be to be indexed. A lower setting "
+"means better search result ranking, but also a larger database. Each search "
+"query must contain at least one keyword that is this size (or longer)."
+msgstr ""
+"Az a karakterszám, amellyel megegyező hosszúságú vagy hosszabb szavak az "
+"indexbe kerülnek. A kisebb érték jobb keresési eredményt nyújt nagyobb "
+"adatbázisméret mellett. Minden keresési feltételnek legalább egy olyan "
+"kifejezést kell tartalmaznia, amely legalább ennyi karakterből áll."
+
+#: modules/search/search.module:233
+msgid "Simple CJK handling"
+msgstr "Egyszerű KJK kezelés"
+
+#: modules/search/search.module:233
+msgid ""
+"Whether to apply a simple Chinese/Japanese/Korean tokenizer based on "
+"overlapping sequences. Turn this off if you want to use an external "
+"preprocessor for this instead. Does not affect other languages."
+msgstr ""
+"Alkalmazni kell-e az egyszerű kínai/japán/koreai felismerő algoritmust az "
+"egymást átfedő sorozatokon? Külső előfeldolgozó használata esetén ezt a "
+"lehetőséget ki kell kapcsolni. A többi nyelvet ez a beállítás nem érinti."
+
+#: modules/search/search.module:245
+msgid "Are you sure you want to re-index the site?"
+msgstr "A webhely biztosan újraindexelhető?"
+
+#: modules/search/search.module:246
+msgid ""
+" The search index is not cleared but systematically updated to reflect the "
+"new settings. Searching will continue to work but new content won't be "
+"indexed until all existing content has been re-indexed. This action cannot "
+"be undone."
+msgstr ""
+"Az kereső indexe nem törlődik, de fokozatosan frissül az új beállítások "
+"figyelembevételével. A keresés továbbra is működni fog, de az új tartalmak "
+"nem lesznek indexelve addig, amíg a már meglévők újraindexelése be nem "
+"fejeződött. Ez a művelet nem visszavonható."
+
+#: modules/search/search.module:846
+msgid ""
+"You must include at least one positive keyword with @count characters or "
+"more."
+msgstr ""
+"Legalább egy keresett kulcsszót meg kell adni, mely @count vagy több "
+"karakterből áll."
+
+#: modules/search/search.module:912
+msgid "%keys (@type)."
+msgstr "%keys (@type)."
+
+#: modules/search/search.module:912
+msgid "results"
+msgstr "találatok"
+
+#: modules/search/search.module:918
+msgid "Search results"
+msgstr "Találatok"
+
+#: modules/search/search.module:921
+msgid "Your search yielded no results"
+msgstr "Nincs találat."
+
+#: modules/search/search.module:983
+msgid "Enter your keywords"
+msgstr "A keresendő kulcsszavak"
+
+#: modules/search/search.module:1024
+msgid "Please enter some keywords."
+msgstr "A kulcsszavakat itt kell megadni."
+
+#: modules/search/search.module:1041
+msgid "Enter the terms you wish to search for."
+msgstr "A keresendő kulcsszavak."
+
+#: modules/search/search.module:912;0
+msgid "search"
+msgstr "keresés"
+
+#: modules/search/search.module:217
+msgid "There is 1 item left to index."
+msgid_plural "There are @count items left to index."
+msgstr[0] "Egy elemet kell még indexelni."
+msgstr[1] "@count elemet kell még indexelni."
+
+#: modules/search/search.module:118
+msgid "search content"
+msgstr "tartalmak keresése"
+
+#: modules/search/search.module:118
+msgid "use advanced search"
+msgstr "haladó kereső használata"
+
+#: modules/search/search.module:118
+msgid "administer search"
+msgstr "keresés adminisztrációja"

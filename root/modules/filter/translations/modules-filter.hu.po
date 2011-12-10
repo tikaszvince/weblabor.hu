@@ -1,0 +1,816 @@
+# $Id: modules-filter.po,v 1.1.2.9 2008/02/15 12:58:05 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-filter)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  filter.admin.inc,v 1.8.2.1 2008/02/12 14:25:34 goba
+#  filter.module,v 1.204 2008/01/21 15:08:24 goba
+#  filter.pages.inc,v 1.2 2007/11/10 17:41:18 dries
+#  filter.install,v 1.5 2007/12/18 12:59:21 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-01-22 19:24+0100\n"
+"PO-Revision-Date: 2008-02-02 16:31+0100\n"
+"Last-Translator: Edith Illyes <info@oriola.info>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/filter/filter.admin.inc:33
+msgid "All roles may use default format"
+msgstr "Az összes csoport használhatja az alapértelmezett formát"
+
+#: modules/filter/filter.admin.inc:33
+msgid "No roles may use this format"
+msgstr "Egyik csoport sem használhatja ezt a beviteli formát"
+
+#: modules/filter/filter.admin.inc:38
+msgid "Set default format"
+msgstr "Alapértelmezett beviteli forma beállítása"
+
+#: modules/filter/filter.admin.inc:45
+msgid "Default format updated."
+msgstr "Az alapértelmezett beviteli forma frissült."
+
+#: modules/filter/filter.admin.inc:81 modules/filter/filter.module:83
+msgid "Add input format"
+msgstr "Beviteli forma hozzáadása"
+
+#: modules/filter/filter.admin.inc:97
+msgid "All roles for the default format must be enabled and cannot be changed."
+msgstr ""
+"Az alapértelmezett beviteli formát az összes csoport számára engedélyezni "
+"kell."
+
+#: modules/filter/filter.admin.inc:104
+msgid "Specify a unique name for this filter format."
+msgstr "A beviteli formának egyedi nevet kell adni."
+
+#: modules/filter/filter.admin.inc:111
+msgid ""
+"Choose which roles may use this filter format. Note that roles with the "
+"\"administer filters\" permission can always use all the filter formats."
+msgstr ""
+"Azon felhasználói csoportok, amelyek számára engedélyezett ez a beviteli "
+"forma. A „szűrők adminisztrációja” jogosultsággal rendelkező felhasználók "
+"minden beviteli formát használhatnak."
+
+#: modules/filter/filter.admin.inc:130
+msgid "Filters"
+msgstr "Szűrők"
+
+#: modules/filter/filter.admin.inc:131
+msgid "Choose the filters that will be used in this filter format."
+msgstr "Az ebben a beviteli formában használt szűrők kiválasztása."
+
+#: modules/filter/filter.admin.inc:146 modules/filter/filter.module:583
+msgid "More information about formatting options"
+msgstr "További információ a formázási lehetőségekről"
+
+#: modules/filter/filter.admin.inc:149
+msgid "No guidelines available."
+msgstr "Nincs elérhető súgó."
+
+#: modules/filter/filter.admin.inc:151
+msgid ""
+"These are the guidelines that users will see for posting in this input "
+"format. They are automatically generated from the filter settings."
+msgstr ""
+"Ezt a súgót látja majd a felhasználó, ha erről a beviteli formáról további "
+"információt kér. A súgót a rendszer a szűrő beállításait alapul véve "
+"automatikusan állítja elő."
+
+#: modules/filter/filter.admin.inc:153 modules/filter/filter.module:512
+msgid "Formatting guidelines"
+msgstr "Súgó a formázáshoz"
+
+#: modules/filter/filter.admin.inc:168
+msgid ""
+"Filter format names need to be unique. A format named %name already exists."
+msgstr ""
+"A beviteli forma nevének egyedinek kell lennie. „%name” nevű formátum már "
+"van a rendszerben."
+
+#: modules/filter/filter.admin.inc:187
+msgid "Added input format %format."
+msgstr "„%format” beviteli forma hozzáadva."
+
+#: modules/filter/filter.admin.inc:190
+msgid "The input format settings have been updated."
+msgstr "A beviteli forma beállításai frissítve."
+
+#: modules/filter/filter.admin.inc:252
+msgid "Are you sure you want to delete the input format %format?"
+msgstr "„%format” beviteli forma biztosan törölhető?"
+
+#: modules/filter/filter.admin.inc:252
+msgid ""
+"If you have any content left in this input format, it will be switched to "
+"the default input format. This action cannot be undone."
+msgstr ""
+"Ha vannak még olyan tartalmak, amelyek ezt a beviteli formát használják, "
+"akkor azok az alapértelmezett beviteli formára lesznek állítva. A műveletet "
+"nem lehet visszavonni."
+
+#: modules/filter/filter.admin.inc:255
+msgid "The default format cannot be deleted."
+msgstr "Az alapértelmezett beviteli forma nem törölhető."
+
+#: modules/filter/filter.admin.inc:278
+msgid "Deleted input format %format."
+msgstr "„%format” beviteli forma törölve."
+
+#: modules/filter/filter.admin.inc:289
+msgid "Configure %format"
+msgstr "„%format” beállítása"
+
+#: modules/filter/filter.admin.inc:312
+msgid "No settings are available."
+msgstr "Nincs beállítás."
+
+#: modules/filter/filter.admin.inc:330
+msgid "Rearrange %format"
+msgstr "„%format” újrarendezése"
+
+#: modules/filter/filter.admin.inc:391
+msgid "The filter ordering has been saved."
+msgstr "A szűrők súlyozása elmentve."
+
+#: modules/filter/filter.pages.inc:35
+msgid "input formats"
+msgstr "beviteli formák"
+
+#: modules/filter/filter.module:23
+msgid ""
+"The filter module allows administrators to configure text input formats for "
+"use on your site. An input format defines the HTML tags, codes, and other "
+"input allowed in both content and comments, and is a key feature in guarding "
+"against potentially damaging input from malicious users. Two input formats "
+"included by default are <em>Filtered HTML</em> (which allows only an "
+"administrator-approved subset of HTML tags) and <em>Full HTML</em> (which "
+"allows the full set of HTML tags). Additional input formats may be created "
+"by an administrator."
+msgstr ""
+"A Filter modul segítségével a webhely adminisztrátora beállíthatja, hogy "
+"milyen beviteli formák használhatók a honlapon. A beviteli formák "
+"meghatározzák, hogy mely HTML jelölők és programkódok engedélyezettek  a "
+"tartalmak és a hozzászólások beküldésekor, ezzel védik a webhelyet a "
+"rosszindulatú felhasználók által okozott károktól. A rendszer által "
+"létrehozott két beviteli forma a <em>Szűrt HTML</em> (amely kiszűri az "
+"adminisztrátor által nem engedélyezett HTML jelölőket), és a <em>Full HTML</"
+"em> (amely engedélyezi az összes HTML jelölőt). Az adminisztrátor további "
+"beviteli formákat hozhat létre."
+
+#: modules/filter/filter.module:24
+msgid ""
+"Each input format uses filters to manipulate text, and most input formats "
+"apply several different filters to text in a specific order. Each filter is "
+"designed for a specific purpose, and generally either adds, removes or "
+"transforms elements within user-entered text before it is displayed. A "
+"filter does not change the actual content of a post, but instead, modifies "
+"it temporarily before it is displayed. A filter may remove unapproved HTML "
+"tags, for instance, while another automatically adds HTML to make links "
+"referenced in text clickable."
+msgstr ""
+"Minden beviteli forma szűrőket használ a szövegek átalakításához. A legtöbb "
+"beviteli forma többféle szűrőt alkalmaz előre meghatározott sorrendben. "
+"Minden szűrő egy meghatározott feldolgozási műveletet végez, és vagy "
+"eltávolít, vagy hozzáad elemeket a megjelenítendő szöveghez. A szűrő nem "
+"változtatja meg a tartalmat, csak a megjelenítés előtt ideiglenesen "
+"módosítja azt. Például az egyik szűrő eltávolítja a nem engedélyezett HTML "
+"jelölőkódokat, míg egy másik HTML jelölőket ad a szöveghez annak érdekében, "
+"hogy a szövegben szereplő linkek kattinthatóvá váljanak."
+
+#: modules/filter/filter.module:25
+msgid ""
+"Users can choose between the available input formats when creating or "
+"editing content. Administrators can configure which input formats are "
+"available to which user roles, as well as choose a default input format."
+msgstr ""
+"A felhasználók a tartalom létrehozásakor vagy szerkesztésekor választhatnak "
+"a számukra elérhető beviteli formák közül. A webhely adminisztrátora "
+"meghatározhatja, hogy mely beviteli forma legyen alapértelmezett, és az "
+"egyes felhasználói csoportok mely beviteli formákat használhatják."
+
+#: modules/filter/filter.module:26
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@filter"
+"\">Filter module</a>."
+msgstr ""
+"További információ a kézikönyv <a href=\"@filter\">Filter modulról szóló "
+"oldalán</a> található."
+
+#: modules/filter/filter.module:29
+msgid ""
+"<em>Input formats</em> define a way of processing user-supplied text in "
+"Drupal. Each input format uses filters to manipulate text, and most input "
+"formats apply several different filters to text, in a specific order. Each "
+"filter is designed to accomplish a specific purpose, and generally either "
+"removes elements from or adds elements to text before it is displayed. Users "
+"can choose between the available input formats when submitting content."
+msgstr ""
+"A <em>beviteli formák</em> a felhasználók által beküldött tartalmak "
+"feldolgozását végzik. Minden beviteli forma szűrőket használ a szövegek "
+"átalakításához. A legtöbb beviteli forma többféle szűrőt alkalmaz előre "
+"meghatározott sorrendben. Minden szűrő egy meghatározott feldolgozási "
+"műveletet végez, és vagy eltávolít, vagy hozzáad elemeket a megjelenítendő "
+"szöveghez. A felhasználók tartalom beküldésekor választhatnak a számukra "
+"engedélyezett beviteli formák közül."
+
+#: modules/filter/filter.module:30
+msgid ""
+"Use the list below to configure which input formats are available to which "
+"roles, as well as choose a default input format (used for imported content, "
+"for example). The default format is always available to users. All input "
+"formats are available to users in a role with the \"administer filters\" "
+"permission."
+msgstr ""
+"Az alábbi lista segítségével meghatározható, hogy az egyes felhasználói "
+"csoportok mely beviteli formákat használhatják; valamint kiválasztható az "
+"alapértelmezett beviteli forma, amelyet például tartalmak importálásakor "
+"használ a rendszer. Az alapértelmezett beviteli forma mindig használható. A "
+"„szűrők adminisztrációja” jogosultsággal rendelkező felhasználók minden "
+"beviteli formát használhatnak."
+
+#: modules/filter/filter.module:33
+msgid ""
+"Every <em>filter</em> performs one particular change on the user input, for "
+"example stripping out malicious HTML or making URLs clickable. Choose which "
+"filters you want to apply to text in this input format. If you notice some "
+"filters are causing conflicts in the output, you can <a href=\"@rearrange"
+"\">rearrange them</a>."
+msgstr ""
+"Minden <em>szűrő</em> egy meghatározott műveletet végez a szövegen, például "
+"kiszűri a rosszindulatú HTML elemeket, vagy kattinthatóvá alakítja a "
+"webcímeket. Az ebben a beviteli formában alkalmazandó szűrők itt "
+"választhatók ki. Előfordulhat, hogy bizonyos szűrők összeakadnak. Ilyenkor a "
+"<a href=\"@rearrange\">sorrend megváltoztatásával</a> megoldható a probléma."
+
+#: modules/filter/filter.module:35
+msgid ""
+"If you cannot find the settings for a certain filter, make sure you have "
+"enabled it on the <a href=\"@url\">view tab</a> first."
+msgstr ""
+"Ha egy szűrő beállításai hiányoznak, a <a href=\"@url\">listázó oldalon</a> "
+"oldalon a szűrőt be kell kapcsolni."
+
+#: modules/filter/filter.module:37
+msgid ""
+"Because of the flexible filtering system, you might encounter a situation "
+"where one filter prevents another from doing its job. For example: a word in "
+"an URL gets converted into a glossary term, before the URL can be converted "
+"to a clickable link. When this happens, rearrange the order of the filters."
+msgstr ""
+"A sokoldalú szűrőrendszernek köszönhetően előfordulhat, hogy az egyik szűrő "
+"akadályozza egy másik munkáját. Például lehetséges, hogy egy webcímben lévő "
+"szó szójegyzék-elemmé alakul, mielőtt kattintható linkké válna. Ilyen "
+"esetekben érdemes a szűrők sorrendjén változtatni."
+
+#: modules/filter/filter.module:38
+msgid ""
+"Filters are executed from top-to-bottom. To change the order of the filters, "
+"modify the values in the <em>Weight</em> column or grab a drag-and-drop "
+"handle under the <em>Name</em> column and drag filters to new locations in "
+"the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save configuration</em> button at the bottom of the page."
+msgstr ""
+"A szűrők fentről lefelé sorrendben futnak le. A szűrők sorrendje a <em>Súly</"
+"em> oszlopban található érték módosításával vagy húzd és dobd (drag-and-"
+"drop) módszerrel változtatható. (Egérrel rákattintva a fogó ikonra, "
+"folyamatosan nyomva tartva áthúzható egy másik helyre.) A változtatások "
+"mindaddig nem lesznek elmenve, amíg az oldal alján található <em>Beállítások "
+"mentése</em> gombra nem kattintunk."
+
+#: modules/filter/filter.module:176;178
+msgid "Allowed HTML tags: @tags"
+msgstr "Engedélyezett HTML elemek: @tags"
+
+#: modules/filter/filter.module:183
+msgid ""
+"\n"
+"<p>This site allows HTML content. While learning all of HTML may feel "
+"intimidating, learning how to use a very small number of the most basic HTML "
+"\"tags\" is very easy. This table provides examples for each tag that is "
+"enabled on this site.</p>\n"
+"<p>For more information see W3C's <a href=\"http://www.w3.org/TR/html/"
+"\">HTML Specifications</a> or use your favorite search engine to find other "
+"sites that explain HTML.</p>"
+msgstr ""
+"\n"
+"<p>A webhelyen engedélyezett a HTML formátumú tartalom bevitele. Bár a HTML "
+"nyelv megtanulása túl nagy feladatnak tűnhet, néhány egyszerű jelölő "
+"alkalmazását könnyű elsajátítani. Ez a táblázat a webhelyen használható HTML "
+"jelölőket mutatja be.</p>\n"
+"<p>További információ a W3C <a href=\"http://www.w3.org/TR/html/\">HTML "
+"Specifications</a> c. oldalán olvasható, vagy az interneten fellelhető HTML "
+"nyelvvel foglalkozó webhelyeken, amelyeket a keresők segítségével "
+"találhatunk meg.</p>"
+
+#: modules/filter/filter.module:187
+msgid "Anchors are used to make links to other pages."
+msgstr "A linkek más webhelyekre mutató kattintható hivatkozások."
+
+#: modules/filter/filter.module:188
+msgid ""
+"By default line break tags are automatically added, so use this tag to add "
+"additional ones. Use of this tag is different because it is not used with an "
+"open/close pair like all the others. Use the extra \" /\" inside the tag to "
+"maintain XHTML 1.0 compatibility"
+msgstr ""
+"Alapértelmezésben a sortörések automatikusan bekerülnek a szövegbe; ezzel a "
+"jelölővel újabbakat lehet felvenni. A többi jelölővel ellentétben ezt nem "
+"párban kell használni, így a végén található \" /\" jelet is meg kell adni "
+"az XHTML 1.0 szabványnak megfelelően."
+
+#: modules/filter/filter.module:188
+msgid "Text with <br />line break"
+msgstr "Szöveg <br />sortöréssel"
+
+#: modules/filter/filter.module:189
+msgid ""
+"By default paragraph tags are automatically added, so use this tag to add "
+"additional ones."
+msgstr ""
+"Alapértelmezésben a bekezdéskódok automatikusan bekerülnek a szövegbe; ezzel "
+"a jelölővel újabbakat lehet felvenni."
+
+#: modules/filter/filter.module:189
+msgid "Paragraph one."
+msgstr "Első bekezdés."
+
+#: modules/filter/filter.module:189
+msgid "Paragraph two."
+msgstr "Második bekezdés."
+
+#: modules/filter/filter.module:190;190
+msgid "Strong"
+msgstr "Fontos"
+
+#: modules/filter/filter.module:191;191
+msgid "Emphasized"
+msgstr "Kiemelt"
+
+#: modules/filter/filter.module:192;192
+msgid "Cited"
+msgstr "Idézett"
+
+#: modules/filter/filter.module:193
+msgid "Coded text used to show programming source code"
+msgstr "Program forráskódját tartalmazó szöveg"
+
+#: modules/filter/filter.module:193
+msgid "Coded"
+msgstr "Kód"
+
+#: modules/filter/filter.module:194;194
+msgid "Bolded"
+msgstr "Vastag"
+
+#: modules/filter/filter.module:195;195
+msgid "Underlined"
+msgstr "Aláhúzott"
+
+#: modules/filter/filter.module:196;196
+msgid "Italicized"
+msgstr "Dőlt"
+
+#: modules/filter/filter.module:197
+msgid "Superscripted"
+msgstr "Felső indexben"
+
+#: modules/filter/filter.module:197
+msgid "<sup>Super</sup>scripted"
+msgstr "<sup>Felső</sup>indexben"
+
+#: modules/filter/filter.module:198
+msgid "Subscripted"
+msgstr "Alsó indexben"
+
+#: modules/filter/filter.module:198
+msgid "<sub>Sub</sub>scripted"
+msgstr "<sub>Alsó</sub>indexben"
+
+#: modules/filter/filter.module:199;199
+msgid "Preformatted"
+msgstr "Előre formázott"
+
+#: modules/filter/filter.module:200
+msgid "Abbreviation"
+msgstr "Rövidítés"
+
+#: modules/filter/filter.module:200
+msgid "<abbr title=\"Abbreviation\">Abbrev.</abbr>"
+msgstr "<abbr title=\"Rövidítés\">Röv.</abbr>"
+
+#: modules/filter/filter.module:201
+msgid "Acronym"
+msgstr "Betűszó"
+
+#: modules/filter/filter.module:201
+msgid "<acronym title=\"Three-Letter Acronym\">TLA</acronym>"
+msgstr "<acronym title=\"Hárombetűs betűszó\">HBB</acronym>"
+
+#: modules/filter/filter.module:202;202
+msgid "Block quoted"
+msgstr "Idézetet tartalmazó bekezdés"
+
+#: modules/filter/filter.module:203;203
+msgid "Quoted inline"
+msgstr "Bekezdésen belüli idézet"
+
+#: modules/filter/filter.module:205
+msgid "Table"
+msgstr "Táblázat"
+
+#: modules/filter/filter.module:205
+msgid "Table header"
+msgstr "Táblázatfejléc"
+
+#: modules/filter/filter.module:205
+msgid "Table cell"
+msgstr "Táblázatcella"
+
+#: modules/filter/filter.module:207;207
+msgid "Deleted"
+msgstr "Törölt"
+
+#: modules/filter/filter.module:208;208
+msgid "Inserted"
+msgstr "Beillesztett"
+
+#: modules/filter/filter.module:210
+msgid "Ordered list - use the &lt;li&gt; to begin each list item"
+msgstr ""
+"Számozott felsorolás &ndash; a lista elemeit a &lt;li&gt; jelölővel kell "
+"megadni"
+
+#: modules/filter/filter.module:210;211
+msgid "First item"
+msgstr "Első listaelem"
+
+#: modules/filter/filter.module:210;211
+msgid "Second item"
+msgstr "Második listaelem"
+
+#: modules/filter/filter.module:211
+msgid "Unordered list - use the &lt;li&gt; to begin each list item"
+msgstr ""
+"Számozatlan felsorolás &ndash; a lista elemeit a &lt;li&gt; jelölővel kell "
+"megadni"
+
+#: modules/filter/filter.module:214
+msgid ""
+"Definition lists are similar to other HTML lists. &lt;dl&gt; begins the "
+"definition list, &lt;dt&gt; begins the definition term and &lt;dd&gt; begins "
+"the definition description."
+msgstr ""
+"A definíciós listákat a &lt;dl&gt; jelölővel kell létrehozni. Az elemen "
+"belül &lt;dt&gt; kód jelzi a definiált kifejezést, a &lt;dd&gt; pedig a "
+"definíciót."
+
+#: modules/filter/filter.module:214
+msgid "First term"
+msgstr "Első kifejezés"
+
+#: modules/filter/filter.module:214
+msgid "First definition"
+msgstr "Első definíció"
+
+#: modules/filter/filter.module:214
+msgid "Second term"
+msgstr "Második kifejezés"
+
+#: modules/filter/filter.module:214
+msgid "Second definition"
+msgstr "Második definíció"
+
+#: modules/filter/filter.module:217
+msgid "Subtitle"
+msgstr "Alcím"
+
+#: modules/filter/filter.module:218
+msgid "Subtitle three"
+msgstr "Harmadrangú alcím"
+
+#: modules/filter/filter.module:219
+msgid "Subtitle four"
+msgstr "Negyedrangú alcím"
+
+#: modules/filter/filter.module:220
+msgid "Subtitle five"
+msgstr "Ötödrangú alcím"
+
+#: modules/filter/filter.module:221
+msgid "Subtitle six"
+msgstr "Hatodrangú alcím"
+
+#: modules/filter/filter.module:223
+msgid "Tag Description"
+msgstr "Jelölő leírása"
+
+#: modules/filter/filter.module:223;252
+msgid "You Type"
+msgstr "Beírandó"
+
+#: modules/filter/filter.module:223;252
+msgid "You Get"
+msgstr "Eredmény"
+
+#: modules/filter/filter.module:237
+msgid "No help provided for tag %tag."
+msgstr "A %tag HTML jelölőhöz nincs súgó."
+
+#: modules/filter/filter.module:243
+msgid ""
+"\n"
+"<p>Most unusual characters can be directly entered without any problems.</"
+"p>\n"
+"<p>If you do encounter problems, try using HTML character entities. A common "
+"example looks like &amp;amp; for an ampersand &amp; character. For a full "
+"list of entities see HTML's <a href=\"http://www.w3.org/TR/html4/sgml/"
+"entities.html\">entities</a> page. Some of the available characters include:"
+"</p>"
+msgstr ""
+"\n"
+"<p>A legtöbb speciális karakter gond nélkül beírható.</p>\n"
+"<p>Ha a karakterek rosszul jelennek meg, célszerű HTML karakterentitásokat "
+"alkalmazni &ndash; például az &amp; karakter jelölése a következő módon "
+"történik: &amp;amp;. A karakterentitások teljes listája a <a href=\"http://"
+"www.w3.org/TR/html4/sgml/entities.html\">HTML szabvány vonatkozó oldalán</a> "
+"található. Néhány fontosabb karakterentitás:</p>"
+
+#: modules/filter/filter.module:247
+msgid "Ampersand"
+msgstr "És jel"
+
+#: modules/filter/filter.module:248
+msgid "Greater than"
+msgstr "Nagyobb jel"
+
+#: modules/filter/filter.module:249
+msgid "Less than"
+msgstr "Kisebb jel"
+
+#: modules/filter/filter.module:250
+msgid "Quotation mark"
+msgstr "Idézőjel"
+
+#: modules/filter/filter.module:252
+msgid "Character Description"
+msgstr "Karakter leírása"
+
+#: modules/filter/filter.module:266
+msgid "No HTML tags allowed"
+msgstr "Nincs engedélyezett HTML jelölő"
+
+#: modules/filter/filter.module:274
+msgid "Lines and paragraphs break automatically."
+msgstr "A sorokat és bekezdéseket a rendszer automatikusan felismeri."
+
+#: modules/filter/filter.module:276
+msgid ""
+"Lines and paragraphs are automatically recognized. The &lt;br /&gt; line "
+"break, &lt;p&gt; paragraph and &lt;/p&gt; close paragraph tags are inserted "
+"automatically. If paragraphs are not recognized simply add a couple blank "
+"lines."
+msgstr ""
+"A sorokat és bekezdéseket a rendszer felismeri, a megjelenítésükhöz "
+"szükséges &lt;br /&gt; sortörés, &lt;p&gt; bekezdésnyitó és &lt;/p&gt; "
+"bekezdészáró címkéket automatikusan beilleszti a szövegbe. Ha a bekezdések "
+"nem jelennek meg helyesen, a szövegbe illesztett üres sorok megoldják a "
+"problémát."
+
+#: modules/filter/filter.module:280
+msgid "Web page addresses and e-mail addresses turn into links automatically."
+msgstr "A webcímek és email címek automatikusan linkekké alakulnak."
+
+#: modules/filter/filter.module:484
+msgid "Input format"
+msgstr "Beviteli forma"
+
+#: modules/filter/filter.module:604;655
+msgid "HTML filter"
+msgstr "HTML-szűrő"
+
+#: modules/filter/filter.module:604
+msgid "Line break converter"
+msgstr "Sortörés-átalakító"
+
+#: modules/filter/filter.module:604;715
+msgid "URL filter"
+msgstr "URL-szűrő"
+
+#: modules/filter/filter.module:604
+msgid "HTML corrector"
+msgstr "HTML korrektor"
+
+#: modules/filter/filter.module:609
+msgid ""
+"Allows you to restrict whether users can post HTML and which tags to filter "
+"out. It will also remove harmful content such as JavaScript events, "
+"JavaScript URLs and CSS styles from those tags that are not removed."
+msgstr ""
+"Segítségével szabályozható, hogy a felhasználók beküldhetnek-e HTML "
+"formátumú tartalmakat, valamint kiszűrhetők a nem engedélyezett HTML "
+"jelölők. Az engedélyezett HTML jelölőkből eltávolítja a JavaScript "
+"eseményeket, a JavaScript URL-eket és a CSS stílusdeklarációkat."
+
+#: modules/filter/filter.module:611
+msgid "Converts line breaks into HTML (i.e. &lt;br&gt; and &lt;p&gt; tags)."
+msgstr ""
+"A szövegbe írt sortöréseket HTML sortörésekké alakítja &lt;br&gt; és &lt;"
+"p&gt; HTML elemek használatával."
+
+#: modules/filter/filter.module:613
+msgid "Turns web and e-mail addresses into clickable links."
+msgstr "A webcímeket és email címeket kattintható linkekké alakítja."
+
+#: modules/filter/filter.module:615
+msgid "Corrects faulty and chopped off HTML in postings."
+msgstr "Hibás és lezáratlan HTML elemek javítását végzi."
+
+#: modules/filter/filter.module:660
+msgid "Filter HTML tags"
+msgstr "HTML jelölőkódok szűrése"
+
+#: modules/filter/filter.module:662
+msgid "Strip disallowed tags"
+msgstr "Tiltott jelölőkódok törlése"
+
+#: modules/filter/filter.module:662
+msgid "Escape all tags"
+msgstr "Jelölőkódok semlegesítése"
+
+#: modules/filter/filter.module:663
+msgid ""
+"How to deal with HTML tags in user-contributed content. If set to \"Strip "
+"disallowed tags\", dangerous tags are removed (see below). If set to "
+"\"Escape tags\", all HTML is escaped and presented as it was typed."
+msgstr ""
+"A felhasználók által beküldött tartalmakban található HTML jelölők kezelése. "
+"A „tiltott jelölőkódok törlése” beállítás esetén a veszélyes elemek "
+"törlődnek (lásd az alábbiakban). A „jelölőkódok semlegesítése” lehetőség "
+"választásával a kód semlegesítés alá esik, azaz a bevitt szöveg úgy lesz "
+"olvasható a böngészőben, ahogyan beírták."
+
+#: modules/filter/filter.module:671
+msgid ""
+"If \"Strip disallowed tags\" is selected, optionally specify tags which "
+"should not be stripped. JavaScript event attributes are always stripped."
+msgstr ""
+"A „tiltott jelölőkódok törlése” opció kiválasztása esetén itt megadható azon "
+"jelölők listája, amelyek használata engedélyezett. A Javascript "
+"eseményattribútumok mindig törlődnek."
+
+#: modules/filter/filter.module:675
+msgid "Display HTML help"
+msgstr "HTML-súgó megjelenítése"
+
+#: modules/filter/filter.module:677
+msgid ""
+"If enabled, Drupal will display some basic HTML help in the long filter tips."
+msgstr "Alapszintű HTML-szerkesztési tippek megjelenítése."
+
+#: modules/filter/filter.module:681
+msgid "Spam link deterrent"
+msgstr "Kéretlen linkek ártalmatlanítása"
+
+#: modules/filter/filter.module:683
+msgid ""
+"If enabled, Drupal will add rel=\"nofollow\" to all links, as a measure to "
+"reduce the effectiveness of spam links. Note: this will also prevent valid "
+"links from being followed by search engines, therefore it is likely most "
+"effective when enabled for anonymous users."
+msgstr ""
+"Ha engedélyezett, akkor a Drupal rel=\"nofollow\" attribútummal egészít ki "
+"minden linket, és ezzel megakadályozza, hogy a reklámcéllal, kéretlenül "
+"beküldött linkeket a keresők figyelembe vegyék. Figyelem: az attribútum a "
+"valódi linkek értékét is csökkenti, ezért megfontolandó, hogy az "
+"ártalmatlanító csak a névtelen felhasználók által beküldött linkek esetén "
+"lépjen működésbe."
+
+#: modules/filter/filter.module:720
+msgid "Maximum link text length"
+msgstr "A linkek szövegének maximális hossza"
+
+#: modules/filter/filter.module:723
+msgid ""
+"URLs longer than this number of characters will be truncated to prevent long "
+"strings that break formatting. The link itself will be retained; just the "
+"text portion of the link will be truncated."
+msgstr ""
+"A hosszú szövegű linkek gondot okozhatnak a weboldalak megjelenítésekor, "
+"ezért az itt megadottnál hosszabb karakterláncokat a rendszer lerövidíti. A "
+"linkek a megfelelő webcímre fognak mutatni, csak a szövegük lesz rövidebb."
+
+#: modules/filter/filter.module:153
+msgid "administer filters"
+msgstr "szűrők adminisztrációja"
+
+#: modules/filter/filter.module:71
+msgid "Input formats"
+msgstr "Beviteli formák"
+
+#: modules/filter/filter.module:72
+msgid ""
+"Configure how content input by users is filtered, including allowed HTML "
+"tags. Also allows enabling of module-provided filters."
+msgstr ""
+"A felhasználók által bevitt tartalmak szűrésének beállításai és az "
+"engedélyezett HTML elemek listája. Modulok által létrehozott szűrők "
+"engedélyezése."
+
+#: modules/filter/filter.module:90
+msgid "Delete input format"
+msgstr "Beviteli forma törlése"
+
+#: modules/filter/filter.module:97
+msgid "Compose tips"
+msgstr "Szerkesztési tippek"
+
+#: modules/filter/filter.module:128
+msgid "Rearrange"
+msgstr "Újrarendezés"
+
+#: modules/filter/filter.module:0
+msgid "filter"
+msgstr "szűrő"
+
+#: modules/filter/filter.install:9
+msgid ""
+"Table that maps filters (HTML corrector) to input formats (Filtered HTML)."
+msgstr ""
+"Táblázat, amely a szűrőket (pl. HTML szűrő) beviteli formákhoz (Szűrt HTML) "
+"rendeli."
+
+#: modules/filter/filter.install:14
+msgid "Primary Key: Auto-incrementing filter ID."
+msgstr "Elsődleges kulcs: automatikusan növekedő azonosító."
+
+#: modules/filter/filter.install:20
+msgid ""
+"Foreign key: The {filter_formats}.format to which this filter is assigned."
+msgstr ""
+"Idegen kulcs: A {filter_formats}.format oszlop értéke, amelyhez a szűrő "
+"tartozik."
+
+#: modules/filter/filter.install:27
+msgid "The origin module of the filter."
+msgstr "A szűrőt létrehozó modul."
+
+#: modules/filter/filter.install:34
+msgid "ID to identify which filter within module is being referenced."
+msgstr ""
+"Azonosító, amely megmutatja, hogy a modulon belül mely szűrőkre történik "
+"hivatkozás."
+
+#: modules/filter/filter.install:41
+msgid "Weight of filter within format."
+msgstr "A szűrő súlya a beviteli formán belül."
+
+#: modules/filter/filter.install:53
+msgid ""
+"Stores input formats: custom groupings of filters, such as Filtered HTML."
+msgstr "Beviteli formák mentése: csoportba rendezett szűrők, pl. Szűrt HTML."
+
+#: modules/filter/filter.install:58
+msgid "Primary Key: Unique ID for format."
+msgstr "Elsődleges kulcs: egyedi beviteliforma-azonosító."
+
+#: modules/filter/filter.install:65
+msgid "Name of the input format (Filtered HTML)."
+msgstr "A beviteli forma neve (Szűrt HTML)."
+
+#: modules/filter/filter.install:72
+msgid "A comma-separated string of roles; references {role}.rid."
+msgstr ""
+"A felhasználói csoportok vesszővel elválasztott listája, a {role}.rid oszlop "
+"értékei alapján."
+
+#: modules/filter/filter.install:79
+msgid ""
+"Flag to indicate whether format is cachable. (1 = cachable, 0 = not cachable)"
+msgstr ""
+"Gyorstárazható-e a beviteli forma? (1 = gyorstárazható, 0 = nem "
+"gyorstárazható.)"
+
+#: modules/filter/filter.install:87
+msgid ""
+"Cache table for the Filter module to store already filtered pieces of text, "
+"identified by input format and md5 hash of the text."
+msgstr ""
+"A Filter modul által használt gyorstár, amelyben a szűrt szövegeket tárolja. "
+"A szövegek azonosítása beviteli forma és md5 lenyomat alapján történik."
+
+#~ msgid ""
+#~ "Filters are executed from top-to-bottom. You can use the weight column to "
+#~ "rearrange them: heavier filters \"sink\" to the bottom."
+#~ msgstr ""
+#~ "A szűrők felülről lefelé haladó sorrendben futnak le. A sorrend "
+#~ "átalakítása a szűrők súlyának változtatásával történik: a „nehezebb” "
+#~ "szűrők futnak le utoljára."

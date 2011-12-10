@@ -1,0 +1,202 @@
+# $Id: modules-dblog.po,v 1.1.2.5 2008/01/22 17:12:22 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-dblog)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  dblog.admin.inc,v 1.6 2008/01/08 10:35:41 goba
+#  dblog.module,v 1.21 2008/01/08 10:35:41 goba
+#  dblog.install,v 1.6 2007/11/04 14:33:06 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2007-12-20 11:52+0100\n"
+"PO-Revision-Date: 2008-01-22 18:07+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: modules/dblog/dblog.admin.inc:18
+msgid "Discard log entries above the following row limit"
+msgstr "Naplóbejegyzések törlése a következő sorszám felett"
+
+#: modules/dblog/dblog.admin.inc:21
+msgid ""
+"The maximum number of rows to keep in the database log. Older entries will "
+"be automatically discarded. (Requires a correctly configured <a href=\"@cron"
+"\">cron maintenance task</a>.)"
+msgstr ""
+"Az adatbázis táblában tárolt napló rekordok maximális száma. A régebbi "
+"rekordok automatikusan törlődnek. Az <a href=\"@cron\">időzített feladatok</"
+"a> helyes beállítása szükséges a megfelelő működéshez."
+
+#: modules/dblog/dblog.admin.inc:81;109
+msgid "No log messages available."
+msgstr "Nincs egyetlen rögzített esemény sem."
+
+#: modules/dblog/dblog.admin.inc:97
+msgid "Count"
+msgstr "Mennyiség"
+
+#: modules/dblog/dblog.admin.inc:140
+msgid "Location"
+msgstr "Hely"
+
+#: modules/dblog/dblog.admin.inc:152;220
+msgid "Severity"
+msgstr "Szint"
+
+#: modules/dblog/dblog.admin.inc:260
+msgid "Filter log messages"
+msgstr "Napló bejegyzések szűrése"
+
+#: modules/dblog/dblog.admin.inc:297
+msgid "You must select something to filter by."
+msgstr "Ki kell választani egy szűrési szempontot."
+
+#: modules/dblog/dblog.module:21
+msgid ""
+"The dblog module monitors your system, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. This is useful for "
+"site administrators who want a quick overview of activities on their site. "
+"The logs also record the sequence of events, so it can be useful for "
+"debugging site errors."
+msgstr ""
+"Az adatbázis alapú eseménynapló a webhely által generált rendszer üzeneteket "
+"tárolja, hogy azokat később egy megfelelő jogosultsággal rendelkező "
+"felhasználó át tudja tekinteni. Gyors áttekintést biztosít a webhelyen zajló "
+"eseményekről. Mivel ezen eseményeket sorrendjükben tárolja, bizonyos hibák "
+"kiváltó folyamatainak áttekintésével azok kialakulásának okaira is "
+"rávezethet."
+
+#: modules/dblog/dblog.module:22
+msgid ""
+"The dblog log is simply a list of recorded events containing usage data, "
+"performance data, errors, warnings and operational information. "
+"Administrators should check the dblog report on a regular basis to ensure "
+"their site is working properly."
+msgstr ""
+"Az adatbázis alapú eseménynapló egy lista a felhasználókhoz, teljesítmény "
+"adatokhoz, észlelt hibákhoz, rendszer figyelmeztetésekhez és más működési "
+"adatokhoz kapcsolható üzenetekkel. Ajánlott az eseménynapló rendszeres "
+"áttekintése az esetleges hibák mielőbbi felderítése érdekében."
+
+#: modules/dblog/dblog.module:23
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@dblog"
+"\">Dblog module</a>."
+msgstr ""
+"További információ az online kézikönyv <a href=\"@dblog\">adatbázis alapú "
+"eseménynaplóról szóló oldalán</a> olvasható."
+
+#: modules/dblog/dblog.module:26
+msgid ""
+"The dblog module monitors your website, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. The dblog log is "
+"simply a list of recorded events containing usage data, performance data, "
+"errors, warnings and operational information. It is vital to check the dblog "
+"report on a regular basis as it is often the only way to tell what is going "
+"on."
+msgstr ""
+"Az adatbázis alapú eseménynapló a webhely komponensei által kiadott rendszer "
+"üzeneteket tárolja, hogy azokat később egy megfelelő jogosultsággal "
+"rendelkező felhasználó át tudja tekinteni. Rögzíti azokat az említésre méltó "
+"történéseket (használati, teljesítmény, hiba, figyelmeztetés és működési "
+"információkat), melyek a webhely működése során előfordultak. Érdemes "
+"rendszeresen ellenőrizni a napló alapján készülő jelentéseket, mivel nagyon "
+"jó segítséget nyújt a webhelyen történt események követéséhez."
+
+#: modules/dblog/dblog.module:47
+msgid ""
+"Settings for logging to the Drupal database logs. This is the most common "
+"method for small to medium sites on shared hosting. The logs are viewable "
+"from the admin pages."
+msgstr ""
+"A Drupal adatbázis alapú eseménynaplójával kapcsolatos beállítások. Ez a "
+"legjellemzőbb rendszer megfigyelő eszköz kis és közepes webhelyeken, "
+"különösen megosztott hoszting rendszerekben. A napló alapján készült "
+"jelentések a rendszer adminisztrációs oldaláról érhetőek el."
+
+#: modules/dblog/dblog.module:54
+msgid "Recent log entries"
+msgstr "Legutóbbi napló bejegyzések"
+
+#: modules/dblog/dblog.module:55
+msgid "View events that have recently been logged."
+msgstr "A legutóbbi naplóbejegyzések megtekintése."
+
+#: modules/dblog/dblog.module:61
+msgid "Top 'page not found' errors"
+msgstr "A legtöbbet látogatott nem található oldalak"
+
+#: modules/dblog/dblog.module:62
+msgid "View 'page not found' errors (404s)."
+msgstr "Nem található oldalakkal (404) kapcsolatos hibák"
+
+#: modules/dblog/dblog.module:68
+msgid "Top 'access denied' errors"
+msgstr "A legtöbbet látogatott tiltott oldalak"
+
+#: modules/dblog/dblog.module:69
+msgid "View 'access denied' errors (403s)."
+msgstr "Tiltott oldalakkal (403) kapcsolatos hibák"
+
+#: modules/dblog/dblog.module:0
+msgid "dblog"
+msgstr "adatbázis alapú eseménynapló"
+
+#: modules/dblog/dblog.install:25
+msgid "Table that contains logs of all system events."
+msgstr "Rendszer események naplóját tároló tábla."
+
+#: modules/dblog/dblog.install:30
+msgid "Primary Key: Unique watchdog event ID."
+msgstr "Elsődleges kulcs: egyedi esemény azonosító."
+
+#: modules/dblog/dblog.install:36
+msgid "The {users}.uid of the user who triggered the event."
+msgstr "Az eseményt kiváltó felhasználó {users}.uid azonosítója."
+
+#: modules/dblog/dblog.install:43
+msgid "Type of log message, for example \"user\" or \"page not found.\""
+msgstr "Az esemény típusa, például \"user\" vagy \"page not found\"."
+
+#: modules/dblog/dblog.install:49
+msgid "Text of log message to be passed into the t() function."
+msgstr "A t() függvény segítéségével lokalizált napló üzenet."
+
+#: modules/dblog/dblog.install:55
+msgid ""
+"Serialized array of variables that match the message string and that is "
+"passed into the t() function."
+msgstr ""
+"Az üzenet szövegébe helyettesítendő változók szerializált tömbje. A tömb a t"
+"() paramétereként kerül felhasználásra."
+
+#: modules/dblog/dblog.install:63
+msgid "The severity level of the event; ranges from 0 (Emergency) to 7 (Debug)"
+msgstr ""
+"Az esemény komolysági szintje: 0 (vészeset) értéktől 7 (hibakeresés) értékig."
+
+#: modules/dblog/dblog.install:70
+msgid "Link to view the result of the event."
+msgstr "Az esemény lefutási eredményének linkje."
+
+#: modules/dblog/dblog.install:75
+msgid "URL of the origin of the event."
+msgstr "Az esemény forrásának webcíme."
+
+#: modules/dblog/dblog.install:82
+msgid "URL of referring page."
+msgstr "A hivatkozó oldal webcíme."
+
+#: modules/dblog/dblog.install:89
+msgid "Hostname of the user who triggered the event."
+msgstr "Az eseményt kiváltó látógató hoszt neve."
+
+#: modules/dblog/dblog.install:95
+msgid "Unix timestamp of when event occurred."
+msgstr "Az esemény időpontjának UNIX időbélyege."

@@ -1,0 +1,5 @@
+; $Id: captcha.info,v 1.7 2008/02/17 12:49:24 soxofaan Exp $
+name = CAPTCHA
+description = Base CAPTCHA module for adding challenges to arbitrary forms.
+package = "Spam control"
+core = 6.x

@@ -1,0 +1,6 @@
+clonewl.php
+fixuploads.php
+postupdate.php
+sites/*/settings*.php
+sites/*/files
+sites/*/private

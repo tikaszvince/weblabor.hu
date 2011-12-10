@@ -1,0 +1,150 @@
+<?php
+
+/**
+ * Implementation of hook_help().
+ */
+function job_help($path, $arg) {  
+  if ($path == 'munka/bekuldes') {
+    return '<p>Ha hirdetésedet belépett felhasználóként küldöd be, később is tudod szerkeszteni annak tartalmát!</p>';
+  }
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function job_menu() {
+  $items = array();
+  $items['munka'] = array(
+    'title' => 'Munka és állás',
+    'page callback' => 'job_page',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['munka/attekintes'] = array(
+    'title' => 'Áttekintés',
+    'access callback' => TRUE,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => 1,
+  );
+  $items['munka/kinal'] = array(
+    'title' => 'Kínál',
+    'page callback' => 'job_list_page',
+    'page arguments' => array((string) JOB_OFFERED),
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 5,
+  );
+  $items['munka/keres'] = array(
+    'title' => 'Keres',
+    'page callback' => 'job_list_page',
+    'page arguments' => array((string) JOB_LOOKEDFOR),
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 10,
+  );
+  $items['munka/bekuldes'] = array(
+    'title' => 'Beküldés',
+    'page callback' => 'job_add_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('create job content'),
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 20,
+  );
+  return $items;
+}
+
+/**
+ * Proxy függvény a taxonomy hívásához. (A menu API 'file' csak lokális.)
+ */
+function job_list_page($str_tids) {
+  include_once drupal_get_path('module', 'taxonomy') .'/taxonomy.pages.inc';
+  return taxonomy_term_page($str_tids);
+}
+
+/**
+ * Proxy függvény a node form hívásához. (A menu API 'file' csak lokális.)
+ */
+function job_add_page() {
+  include_once drupal_get_path('module', 'node') .'/node.pages.inc';
+  return node_add('job');
+}
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function job_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'job_node_form') {
+    $form['job_relevant'] = array(
+      '#type' => 'checkbox',
+      '#title' => 'A Weblaborhoz kapcsolódik',
+      // Meglévő node már egyszer nyilatkozott, hogy kapcsolódik, új beküldésnél
+      // viszont preview-ban kell megőrizni.
+      '#default_value' => !empty($form['#post']['job_relevant']) ? $form['#post']['job_relevant'] : (int) isset($form['#node']->nid),
+      '#description' => '<p>Kijelentem, hogy a hirdetés  konkrét állást/munkát érint, ami <strong>webfejlesztésre, webes grafikusi vagy projekt menedzseri feladatokra</strong> vonatkozik. Amennyiben ez nem teljesül, a hirdetést a  szerkesztőség értesítés nélkül törli. Az azonos tartalmú, többszörösen beküldött hirdetéseket automatikusan eltávolítjuk.</p><p>A <em>Munka és állás</em> rovat célja az álláskeresők és munkáltatók egymáshoz segítése. Ennek érdekében <strong>munkavállalói oldalról kizárólag rész vagy teljes munkaidős, alkalmazotti állásra vonatkozó hirdetést fogadunk.</strong> Azok számára jelenleg nem tudunk hirdetési felületet biztosítani, akik csak alkalmi munkát keresnek.</p>',
+      '#weight' => -10,
+    );
+    $form['#validate'][] = 'job_form_validate';
+
+    // Taxonómia űrlap átírása könnyebbre.
+    $form['taxonomy'][WL_V_JOBS]['#type'] = 'radios';
+    $form['taxonomy'][WL_V_JOBS]['#title'] = 'A hirdetés típusa';
+    $form['taxonomy'][WL_V_JOBS]['#options'] = array(JOB_OFFERED => 'Munkát vagy állást kínál, ajánl', JOB_LOOKEDFOR => 'Rész vagy teljes munkaidős állást keres');
+    unset($form['taxonomy'][WL_V_JOBS]['#theme']);
+    $form['taxonomy'][WL_V_JOBS]['#default_value'] = is_array($form['#node']->taxonomy) ? array_shift(array_keys($form['#node']->taxonomy)) : JOB_OFFERED; 
+  }
+}
+
+/**
+ * A nyilatkozat ellenőrzése.
+ */
+function job_form_validate($form, &$form_state) {
+  if ($form_state['values']['job_relevant'] != 1) {
+    form_set_error('job_relevant', 'Nyilatkozni kell, hogy a hirdetés a Weblaborhoz kapcsolódik.');
+  }
+}
+
+/**
+ * Munka/állás index oldal.
+ */
+function job_page() {
+  $output = '<div id="jobs-main"><p>Az alábbiak webfejlesztőknek szóló állás illetve munkaajánlatok, sőt, közösségünk tagjainak a munkakeresés lehetőségét is biztosítjuk. Mind a keres, mind a kínál rovat hirdetései elérhetőek RSS formában is.</p>';
+  $output .= "<div class=\"jobcolumn\"><h2>Kínál</h2>\n".
+    _job_node_list(JOB_OFFERED)
+    ."</div><div class=\"jobcolumn\"><h2>Keres</h2>\n".
+    _job_node_list(JOB_LOOKEDFOR) ."</div></div>\n";
+  drupal_add_feed('rss/munka', 'Minden munka és állás hirdetés');
+  drupal_add_feed('rss/munka/keres', 'Munkát és állást keres');
+  drupal_add_feed('rss/munka/kinal', 'Munkát és állást kínál');
+  return $output;
+}
+
+/**
+ * Friss állás lista lekérdezés kategória alapján.
+ */
+function _job_get($tid = JOB_OFFERED) {
+  $sql = 'SELECT DISTINCT(n.nid), n.title, n.created FROM {node} n INNER JOIN {term_node} tn ON n.nid = tn.nid WHERE tn.tid = %d AND n.status = 1 ORDER BY n.sticky DESC, n.created DESC';
+  return db_query_range($sql, $tid, 0, 45);
+}
+
+/**
+ * RSS linkek az állásokhoz.
+ */
+function _job_links($tid = JOB_OFFERED) {
+  return '<div class="jobs-links">'. theme('rss_image', drupal_get_path_alias('taxonomy/term/'. $tid .'/0/feed'), 'n') .'</div>';
+}
+
+/**
+ * Hirdetés listázó, kategória alapján.
+ */
+function _job_node_list($tid = JOB_OFFERED) {
+  $output = '<ul>';
+  $num = 0;
+  // Állások listájának lekérdezése.
+  $jobs = _job_get($tid);
+  while ($job = db_fetch_object($jobs)) {
+    $num++;
+    $output .= '<li class="'. ($num % 2 ? 'even' : 'odd') .'">'. theme('mark', node_mark($job->nid, $job->created)) . l($job->title, 'node/'. $job->nid) ."</li>\n";
+  }
+  $output .= '</ul>'. _job_links($tid);
+  return $output;
+}

@@ -1,0 +1,484 @@
+# $Id: modules-forum.po,v 1.1.2.11 2008/02/15 12:58:05 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-forum)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  forum-list.tpl.php,v 1.4 2007/08/30 18:58:12 goba
+#  forum-submitted.tpl.php,v 1.3 2007/08/07 08:39:35 goba
+#  forum-topic-navigation.tpl.php,v 1.2 2007/08/07 08:39:35 goba
+#  forum.admin.inc,v 1.8 2008/01/30 10:14:42 goba
+#  forum.module,v 1.448.2.2 2008/02/13 14:06:36 goba
+#  forum.install,v 1.16 2007/12/31 16:58:34 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-01-11 00:39+0100\n"
+"PO-Revision-Date: 2008-01-29 17:56+0100\n"
+"Last-Translator: Edith Illyes <info@oriola.info>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/forum/forum-list.tpl.php:38
+msgid "Topics"
+msgstr "Témák"
+
+#: modules/forum/forum-list.tpl.php:39
+msgid "Posts"
+msgstr "Hozzászólások"
+
+#: modules/forum/forum-list.tpl.php:40
+msgid "Last post"
+msgstr "Utolsó beküldés"
+
+#: modules/forum/forum-submitted.tpl.php:21
+msgid "@time ago<br />by !author"
+msgstr "@time<br />[!author]"
+
+#: modules/forum/forum-topic-navigation.tpl.php:29
+msgid "Go to previous forum topic"
+msgstr "Ugrás az előző fórumtémára"
+
+#: modules/forum/forum-topic-navigation.tpl.php:32
+msgid "Go to next forum topic"
+msgstr "Ugrás a következő fórumtémára"
+
+#: modules/forum/forum.admin.inc:38
+msgid "Forum name"
+msgstr "Fórum neve"
+
+#: modules/forum/forum.admin.inc:41
+msgid "Short but meaningful name for this collection of threaded discussions."
+msgstr "A fórum neve a kapcsolódó eszmecserék azonosítására szolgál."
+
+#: modules/forum/forum.admin.inc:47
+msgid "Description and guidelines for discussions within this forum."
+msgstr "Leírás és útmutató a fórumon zajló eszmecseréhez."
+
+#: modules/forum/forum.admin.inc:54
+msgid ""
+"Forums are displayed in ascending order by weight (forums with equal weights "
+"are displayed alphabetically)."
+msgstr ""
+"A fórumok súly szerint növekvő sorrendben jelennek meg (az azonos súlyú "
+"fórumokat a rendszer betűrendben listázza)."
+
+#: modules/forum/forum.admin.inc:75
+msgid "forum container"
+msgstr "fórumcsoport"
+
+#: modules/forum/forum.admin.inc:79 modules/forum/forum.module:0
+msgid "forum"
+msgstr "fórum"
+
+#: modules/forum/forum.admin.inc:90
+msgid "Created new @type %term."
+msgstr "Új „%term” @type létrehozva."
+
+#: modules/forum/forum.admin.inc:93
+msgid "The @type %term has been updated."
+msgstr "„%term” @type frissítve."
+
+#: modules/forum/forum.admin.inc:116
+msgid "Container name"
+msgstr "Csoport neve"
+
+#: modules/forum/forum.admin.inc:120
+msgid "Short but meaningful name for this collection of related forums."
+msgstr "A csoport neve az összetartozó fórumok azonosítására szolgál."
+
+#: modules/forum/forum.admin.inc:128
+msgid "Description and guidelines for forums within this container."
+msgstr "Leírás és útmutató a csoporton belüli fórumokhoz."
+
+#: modules/forum/forum.admin.inc:136
+msgid ""
+"Containers are displayed in ascending order by weight (containers with equal "
+"weights are displayed alphabetically)."
+msgstr ""
+"A csoportok súly szerint növekvő sorrendben jelennek meg (az azonos súlyú "
+"csoportokat a rendszer betűrendben listázza)."
+
+#: modules/forum/forum.admin.inc:168
+msgid "Are you sure you want to delete the forum %name?"
+msgstr "„%name” fórum biztosan törölhető?"
+
+#: modules/forum/forum.admin.inc:168
+msgid ""
+"Deleting a forum or container will also delete its sub-forums, if any. To "
+"delete posts in this forum, visit <a href=\"@content\">content "
+"administration</a> first. This action cannot be undone."
+msgstr ""
+"Egy fórum vagy csoport törlése minden alatta lévő fórumot és fórumtémát "
+"töröl. Hozzászólások törlése a <a href=\"@content\">Tartalom</a> oldalon "
+"lehetséges. A művelet nem visszavonható."
+
+#: modules/forum/forum.admin.inc:176
+msgid ""
+"The forum %term and all sub-forums and associated posts have been deleted."
+msgstr "„%term” fórum és minden alatta lévő fórum és fórumtéma törölve."
+
+#: modules/forum/forum.admin.inc:192
+msgid "Hot topic threshold"
+msgstr "Aktív fórumtémák küszöbértéke"
+
+#: modules/forum/forum.admin.inc:195
+msgid "The number of posts a topic must have to be considered \"hot\"."
+msgstr ""
+"Ennyi hozzászólás után kapja meg egy-egy fórum téma az „aktív” jelzést."
+
+#: modules/forum/forum.admin.inc:199
+msgid "Topics per page"
+msgstr "A témák száma oldalanként"
+
+#: modules/forum/forum.admin.inc:202
+msgid "Default number of forum topics displayed per page."
+msgstr "Az oldalanként megjelenített fórumtémák száma"
+
+#: modules/forum/forum.admin.inc:204
+msgid "Posts - most active first"
+msgstr "A legaktívabbak felül"
+
+#: modules/forum/forum.admin.inc:204
+msgid "Posts - least active first"
+msgstr "A legkevésbé aktívak felül"
+
+#: modules/forum/forum.admin.inc:206
+msgid "Default order"
+msgstr "Alapértelmezett sorrend"
+
+#: modules/forum/forum.admin.inc:209
+msgid "Default display order for topics."
+msgstr "A témák alapértelmezett sorrendje."
+
+#: modules/forum/forum.admin.inc:230
+msgid "edit container"
+msgstr "csoport szerkesztése"
+
+#: modules/forum/forum.admin.inc:233
+msgid "edit forum"
+msgstr "fórum szerkesztése"
+
+#: modules/forum/forum.admin.inc:245
+msgid ""
+"There are no existing containers or forums. Containers and forums may be "
+"added using the <a href=\"@container\">add container</a> and <a href=\"@forum"
+"\">add forum</a> pages."
+msgstr ""
+"Még egy csoport vagy fórum sincs beállítva. A <a href=\"@container\">csoport "
+"hozzáadása</a> és a <a href=\"@forum\">fórum hozzáadása</a> oldalak "
+"használhatóak csoportok és fórumok létrehozásra."
+
+#: modules/forum/forum.admin.inc:286
+msgid ""
+"Containers are usually placed at the top (root) level, but may also be "
+"placed inside another container or forum."
+msgstr ""
+"A csoportok megjelenhetnek a struktúra legfelső szintjén (a gyökérben), de "
+"egymásba is ágyazhatóak, sőt fórumokba is kerülhetnek csoportok."
+
+#: modules/forum/forum.admin.inc:289
+msgid ""
+"Forums may be placed at the top (root) level, or inside another container or "
+"forum."
+msgstr ""
+"Fórumok megjelenhetnek a struktúra legfelső szintjén (a gyökérben), de "
+"csoport, vagy akár önálló fórum alá is rendelődhetnek."
+
+#: modules/forum/forum.admin.inc:177
+msgid "forum: deleted %term and all its sub-forums and associated posts."
+msgstr "fórum: „%term” fórum és minden alatta lévő fórum és fórumtéma törölve."
+
+#: modules/forum/forum.module:15
+msgid ""
+"The forum module lets you create threaded discussion forums with "
+"functionality similar to other message board systems. Forums are useful "
+"because they allow community members to discuss topics with one another "
+"while ensuring those conversations are archived for later reference. The <a "
+"href=\"@create-topic\">forum topic</a> menu item (under <em>Create content</"
+"em> on the Navigation menu) creates the initial post of a new threaded "
+"discussion, or thread."
+msgstr ""
+"A fórum modul lehetővé teszi adott témákra vonatkozó szálakba rendezett "
+"eszmecserék létrehozását, hasonlóan más üzenőfal típusú megoldásokhoz. A "
+"fórumokon a közösség tagjai megvitathatnak kérdéseket, az eszmecsere pedig "
+"később is olvasható marad a webhelyen. A navigációs menü <em>Tartalom "
+"beküldése</em> című pontja alatt elérhető  <a href=\"@create-topic"
+"\">fórumtéma létrehozása</a> oldalon keresztül beküldött bejegyzés lesz a "
+"szál első eleme."
+
+#: modules/forum/forum.module:16
+msgid ""
+"A threaded discussion occurs as people leave comments on a forum topic (or "
+"on other comments within that topic). A forum topic is contained within a "
+"forum, which may hold many similar or related forum topics. Forums are "
+"(optionally) nested within a container, which may hold many similar or "
+"related forums. Both containers and forums may be nested within other "
+"containers and forums, and provide structure for your message board. By "
+"carefully planning this structure, you make it easier for users to find and "
+"comment on a specific forum topic."
+msgstr ""
+"Szálakba rendezett eszmecserék jönnek létre akkor, ha a webhely látogatói "
+"hozzászólásokat küldenek be fórumtémákhoz (vagy korábban beküldött "
+"hozzászólásokra válaszolnak). A fórumtémák fórumokba rendeződnek, amelyeket "
+"hasonló vagy kapcsolódó témák alkotnak. A fórumok (választhatóan) "
+"csoportokba szervezhetők, amelyek hasonló vagy kapcsolódó fórumokat "
+"tartalmaznak. Mind a csoportok, mind a fórumok tartalmazhatnak további "
+"csoportokat és fórumokat, és segítségükkel kialakítható a fórumok "
+"struktúrája. A struktúra gondos tervezésével elérhető, hogy a látogatók "
+"könnyen megtalálják az őket érdeklő témákat."
+
+#: modules/forum/forum.module:17
+msgid "When administering a forum, note that:"
+msgstr "Fórumok adminisztrálásakor:"
+
+#: modules/forum/forum.module:18
+msgid ""
+"a forum topic (and all of its comments) may be moved between forums by "
+"selecting a different forum while editing a forum topic."
+msgstr ""
+"egy fórumtéma (a hozzá kapcsolódó hozzászólásokkal együtt) áthelyezhető egy "
+"másik csoportba a fórumtéma szerkesztési űrlapján."
+
+#: modules/forum/forum.module:19
+msgid ""
+"when moving a forum topic between forums, the <em>Leave shadow copy</em> "
+"option creates a link in the original forum pointing to the new location."
+msgstr ""
+"fórumtéma áthelyezése esetén az <em>Árnyékmásolat megtartása</em> opció "
+"kiválasztásával a téma régi helyén létrehozható egy link, amely az új helyre "
+"mutat."
+
+#: modules/forum/forum.module:20
+msgid ""
+"selecting <em>Read only</em> under <em>Comment settings</em> while editing a "
+"forum topic will lock (prevent new comments) on the thread."
+msgstr ""
+"A <em>Hozzászólás-beküldési beállítások</em> űrlapon található <em>Csak "
+"olvasható<em> opció kiválasztása esetén az eszmecsere lezárható (lezárt "
+"eszmecseréhez új hozzászólások nem küldhetők be)."
+
+#: modules/forum/forum.module:21
+msgid ""
+"selecting <em>Disabled</em> under <em>Comment settings</em> while editing a "
+"forum topic will hide all existing comments on the thread, and prevent new "
+"ones."
+msgstr ""
+"A <em>Hozzászólás-beküldési beállítások</em> űrlapon található <em>Tiltott</"
+"em> opció választása esetén az eddig beérkezett hozzászólások nem jelennek "
+"meg, és újakat sem lehet beküldeni."
+
+#: modules/forum/forum.module:22
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@forum"
+"\">Forum module</a>."
+msgstr ""
+"További információ a kézikönyv <a href=\"@forum\">fórum modulról szóló "
+"oldalán</a> olvasható."
+
+#: modules/forum/forum.module:25
+msgid ""
+"This page displays a list of existing forums and containers. Containers "
+"(optionally) hold forums, and forums hold forum topics (a forum topic is the "
+"initial post to a threaded discussion). To provide structure, both "
+"containers and forums may be placed inside other containers and forums. To "
+"rearrange forums and containers, grab a drag-and-drop handle under the "
+"<em>Name</em> column and drag the forum or container to a new location in "
+"the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save</em> button at the bottom of the page."
+msgstr ""
+"Ezen az oldalon a fórumok és csoportok listája látható. A csoportok "
+"fórumokat tartalmazhatnak, a fórumok pedig fórumtémákat (a fórumtéma az "
+"eszmecsere nyitó bejegyzése). Fórumok és csoportok más fórumokba és "
+"csoportokba helyezésével hierarchikus struktúra alakítható ki. A fórumok és "
+"csoportok „fogd és vidd” módszerrel is áthelyezhetők: a <em>Név</em> "
+"oszlopban az ikon fölött bal egérgombbal kattintva és a gombot lenyomva "
+"tartva húzható át a fórum vagy fórumcsoport az új helyre. A változtatások "
+"elmentéséhez a Mentés gombra kell kattintani a lap alján."
+
+#: modules/forum/forum.module:27
+msgid ""
+"By grouping related or similar forums, containers help organize forums. For "
+"example, a container named \"Food\" may hold two forums named \"Fruit\" and "
+"\"Vegetables\", respectively."
+msgstr ""
+"A csoportok segítik a fórumok rendszerbe szervezését. Szerepük, hogy olyan "
+"fórumokat fogjanak össze, amelyek valamilyen közös tulajdonsággal "
+"rendelkeznek. Például az „Ételek” csoport tartalmazhat „Gyümölcsök” és "
+"„Zöldségek” című fórumot."
+
+#: modules/forum/forum.module:29
+msgid ""
+"A forum holds related or similar forum topics (a forum topic is the initial "
+"post to a threaded discussion). For example, a forum named \"Fruit\" may "
+"contain forum topics titled \"Apples\" and \"Bananas\", respectively."
+msgstr ""
+"A fórumok egymáshoz kapcsolódó témákat tartalmazhatnak. Egy „Gyümölcsök” "
+"nevű fórum tartalmazhatja pl. az „Almák” és „Banánok” témákat."
+
+#: modules/forum/forum.module:31
+msgid ""
+"These settings allow you to adjust the display of your forum topics. The "
+"content types available for use within a forum may be selected by editing "
+"the <em>Content types</em> on the <a href=\"@forum-vocabulary\">forum "
+"vocabulary page</a>."
+msgstr ""
+"A beállítások lehetővé teszik a fórumtémák megjelenítésének szabályozását. A "
+"fórumokban használható <em>tartalomtípusok</em> a <a href=\"@forum-vocabulary"
+"\">Fórum szótár</a> beállításai között adhatók meg."
+
+#: modules/forum/forum.module:230
+msgid ""
+"The item %forum is only a container for forums. Please select one of the "
+"forums below it."
+msgstr ""
+"„%forum” témacsoportokat tartalmaz, és közvetlenül nem lehetnek benne témák, "
+"ezért a bejegyzés számára alsóbb szintű fórumot kell választani."
+
+#: modules/forum/forum.module:296
+msgid "Forum topic"
+msgstr "Fórumtéma"
+
+#: modules/forum/forum.module:298
+msgid ""
+"A <em>forum topic</em> is the initial post to a new discussion thread within "
+"a forum."
+msgstr ""
+"A <em>fórumtéma</em> egy fórumban megjelenő eszmecsere kezdő bejegyzése."
+
+#: modules/forum/forum.module:361
+msgid ""
+"This is the designated forum vocabulary. Some of the normal vocabulary "
+"options have been removed."
+msgstr ""
+"Ez a szótár kifejezetten fórumok számára van fenntartva. Néhány szótáraknál "
+"adott beállítási lehetőség lehetőség itt nem változtatható."
+
+#: modules/forum/forum.module:403;419
+msgid "Active forum topics"
+msgstr "Aktív fórumtémák"
+
+#: modules/forum/forum.module:404;426
+msgid "New forum topics"
+msgstr "Új fórumtémák"
+
+#: modules/forum/forum.module:408
+msgid "Number of topics"
+msgstr "A megjelenített témák száma"
+
+#: modules/forum/forum.module:435
+msgid "Read the latest forum topics."
+msgstr "A legfrissebb fórumtémák olvasása."
+
+#: modules/forum/forum.module:454
+msgid "Leave shadow copy"
+msgstr "Árnyékmásolat megtartása"
+
+#: modules/forum/forum.module:454
+msgid ""
+"If you move this topic, you can leave a link in the old forum to the new "
+"forum."
+msgstr ""
+"A fórumtéma áthelyezését követően a régi fórumban marad egy link, amely a "
+"téma új helyére mutat."
+
+#: modules/forum/forum.module:561
+msgid "Topic"
+msgstr "Téma"
+
+#: modules/forum/forum.module:563
+msgid "Created"
+msgstr "Létrehozva"
+
+#: modules/forum/forum.module:564
+msgid "Last reply"
+msgstr "Utolsó válasz"
+
+#: modules/forum/forum.module:677
+msgid "Post new @node_type"
+msgstr "Új @node_type beküldése"
+
+#: modules/forum/forum.module:684
+msgid "You are not allowed to post new content in forum."
+msgstr "Nincs megfelelő jogosultság új bejegyzés beküldéséhez."
+
+#: modules/forum/forum.module:688
+msgid "<a href=\"@login\">Login</a> to post new content in forum."
+msgstr ""
+"Csak <a href=\"@login\">belépett</a> felhasználók tudnak új bejegyzéseket "
+"létrehozni."
+
+#: modules/forum/forum.module:726
+msgid "No forums defined"
+msgstr "Egy fórum sincs definiálva"
+
+#: modules/forum/forum.module:812
+msgid "This topic has been moved"
+msgstr "A téma mozgatása megtörtént"
+
+#: modules/forum/forum.module:322
+msgid "create forum topics"
+msgstr "fórumtéma létrehozása"
+
+#: modules/forum/forum.module:322
+msgid "delete own forum topics"
+msgstr "saját fórumtémák törlése"
+
+#: modules/forum/forum.module:322
+msgid "delete any forum topic"
+msgstr "fórumtémák törlése"
+
+#: modules/forum/forum.module:322
+msgid "edit own forum topics"
+msgstr "saját fórumtémák szerkesztése"
+
+#: modules/forum/forum.module:322
+msgid "edit any forum topic"
+msgstr "fórumtémák szerkesztése"
+
+#: modules/forum/forum.module:322
+msgid "administer forums"
+msgstr "fórumok adminisztrációja"
+
+#: modules/forum/forum.module:86;93 modules/forum/forum.install:27;116
+msgid "Forums"
+msgstr "Fórum"
+
+#: modules/forum/forum.module:94
+msgid "Control forums and their hierarchy and change forum settings."
+msgstr "Fórum struktúra és más beállítások."
+
+#: modules/forum/forum.module:106
+msgid "Add container"
+msgstr "Csoport hozzáadása"
+
+#: modules/forum/forum.module:114
+msgid "Add forum"
+msgstr "Fórum hozzáadása"
+
+#: modules/forum/forum.module:136
+msgid "Edit container"
+msgstr "Csoport szerkesztése"
+
+#: modules/forum/forum.module:143
+msgid "Edit forum"
+msgstr "Fórum szerkesztése"
+
+#: modules/forum/forum.install:69
+msgid "Stores the relationship of nodes to forum terms."
+msgstr "A tartalmakat fórum kategóriákhoz rendeli."
+
+#: modules/forum/forum.install:76
+msgid "The {node}.nid of the node."
+msgstr "A tartalom {node}.nid értéke."
+
+#: modules/forum/forum.install:90
+msgid "The {term_data}.tid of the forum term assigned to the node."
+msgstr "A tartalomhoz rendelt fórum kategória {term_data}.tid értéke."
+
+#~ msgid "!count new"
+#~ msgstr "!count új"

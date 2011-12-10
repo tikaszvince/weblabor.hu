@@ -1,0 +1,708 @@
+# $Id: modules-taxonomy.po,v 1.1.2.14 2008/02/08 23:53:36 goba Exp $
+#
+# Hungarian translation of Drupal 6 (modules-taxonomy)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  taxonomy.admin.inc,v 1.22.2.1 2008/02/07 20:46:57 goba
+#  taxonomy.module,v 1.414 2008/01/27 17:55:15 goba
+#  taxonomy.install,v 1.7 2008/01/08 07:46:41 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-02-09 00:39+0100\n"
+"PO-Revision-Date: 2008-02-09 00:52+0100\n"
+"Last-Translator: Drupal.hu Fordítási Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítási Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: modules/taxonomy/taxonomy.admin.inc:29
+msgid "edit vocabulary"
+msgstr "szótár szerkesztése"
+
+#: modules/taxonomy/taxonomy.admin.inc:30
+msgid "list terms"
+msgstr "kifejezések listája"
+
+#: modules/taxonomy/taxonomy.admin.inc:31
+msgid "add terms"
+msgstr "kifejezések hozzáadása"
+
+#: modules/taxonomy/taxonomy.admin.inc:85
+msgid "No vocabularies available."
+msgstr "Nincs elérhető szótár."
+
+#: modules/taxonomy/taxonomy.admin.inc:122
+msgid "Vocabulary name"
+msgstr "Szótár neve"
+
+#: modules/taxonomy/taxonomy.admin.inc:125
+msgid "The name for this vocabulary, e.g., <em>\"Tags\"</em>."
+msgstr "A szótár neve. Például <em>„Cikkek”</em>."
+
+#: modules/taxonomy/taxonomy.admin.inc:131
+msgid "Description of the vocabulary; can be used by modules."
+msgstr "A szótár leírása, melyet más modulok megjeleníthetnek."
+
+#: modules/taxonomy/taxonomy.admin.inc:134
+msgid "Help text"
+msgstr "Súgó szöveg"
+
+#: modules/taxonomy/taxonomy.admin.inc:137
+msgid ""
+"Instructions to present to the user when selecting terms, e.g., <em>\"Enter "
+"a comma separated list of words\"</em>."
+msgstr ""
+"Kifejezés kiválasztásakor megjelenő útmutató, például <em>„Vesszővel "
+"elválasztott szavak listája.”</em>"
+
+#: modules/taxonomy/taxonomy.admin.inc:148
+msgid "Select content types to categorize using this vocabulary."
+msgstr "Azoknak a tartalomtípusok listája, melyek ezt a szótárt használják."
+
+#: modules/taxonomy/taxonomy.admin.inc:156
+msgid "Tags"
+msgstr "Címkék"
+
+#: modules/taxonomy/taxonomy.admin.inc:158
+msgid ""
+"Terms are created by users when submitting posts by typing a comma separated "
+"list."
+msgstr ""
+"A vesszővel elválasztott kifejezések a tartalom beküldésekor jönnek létre."
+
+#: modules/taxonomy/taxonomy.admin.inc:161
+msgid "Multiple select"
+msgstr "Többszörös választás"
+
+#: modules/taxonomy/taxonomy.admin.inc:163
+msgid ""
+"Allows posts to have more than one term from this vocabulary (always true "
+"for tags)."
+msgstr ""
+"Engedélyezi a tartalmak számára, hogy több ebbe a szótárba tartozó "
+"kifejezéshez kapcsolódjanak (szabad címkézés esetén mindig engedélyezett)."
+
+#: modules/taxonomy/taxonomy.admin.inc:168
+msgid ""
+"At least one term in this vocabulary must be selected when submitting a post."
+msgstr ""
+"A tartalmaknak legalább egy ebbe a szótárba tartozó kifejezéshez "
+"kapcsolódniuk kell."
+
+#: modules/taxonomy/taxonomy.admin.inc:173
+msgid "Vocabularies are displayed in ascending order by weight."
+msgstr ""
+"A szótárak a súlyozásuknak megfelelően növekvő sorrendben jelennek meg."
+
+#: modules/taxonomy/taxonomy.admin.inc:202;203
+msgid "Created new vocabulary %name."
+msgstr "„%name” szótár létrejött."
+
+#: modules/taxonomy/taxonomy.admin.inc:206;207
+msgid "Updated vocabulary %name."
+msgstr "„%name” szótár frissítve."
+
+#: modules/taxonomy/taxonomy.admin.inc:254
+msgid "Terms in %vocabulary"
+msgstr "Kifejezések ebből a szótárból: %vocabulary"
+
+#: modules/taxonomy/taxonomy.admin.inc:409
+msgid "No terms available."
+msgstr "Nincs elérhető kifejezés."
+
+#: modules/taxonomy/taxonomy.admin.inc:418;445;912
+msgid "Reset to alphabetical"
+msgstr "Visszaállítás ABC-szerint"
+
+#: modules/taxonomy/taxonomy.admin.inc:624
+msgid "Add term to %vocabulary"
+msgstr "Kifejezés hozzáadása a szótárhoz: %vocabulary"
+
+#: modules/taxonomy/taxonomy.admin.inc:663
+msgid "Term name"
+msgstr "Kifejezés neve"
+
+#: modules/taxonomy/taxonomy.admin.inc:666
+msgid "The name of this term."
+msgstr "A kifejezés neve."
+
+#: modules/taxonomy/taxonomy.admin.inc:672
+msgid ""
+"A description of the term. To be displayed on taxonomy/term pages and RSS "
+"feeds."
+msgstr ""
+"Leírás hozzáadása a kifejezéshez. Megjelenik a <code>taxonomy/term </code> "
+"útvonalat tartalmazó oldalakon és az RSS-csatornákban."
+
+#: modules/taxonomy/taxonomy.admin.inc:676
+msgid "Advanced options"
+msgstr "Haladó beállítások"
+
+#: modules/taxonomy/taxonomy.admin.inc:695
+msgid "Parents"
+msgstr "Szülők"
+
+#: modules/taxonomy/taxonomy.admin.inc:695
+msgid "Parent terms"
+msgstr "Szülő kifejezések"
+
+#: modules/taxonomy/taxonomy.admin.inc:696
+msgid "Related terms"
+msgstr "Kapcsolódó kifejezések"
+
+#: modules/taxonomy/taxonomy.admin.inc:700
+msgid "Synonyms"
+msgstr "Szinonimák"
+
+#: modules/taxonomy/taxonomy.admin.inc:702
+msgid "Synonyms of this term, one synonym per line."
+msgstr "A kifejezés szinonimái; minden sor egy szinonimát tartalmaz."
+
+#: modules/taxonomy/taxonomy.admin.inc:708
+msgid "Terms are displayed in ascending order by weight."
+msgstr ""
+"A kifejezések a súlyozásuknak megfelelően növekvő sorrendben jelennek meg."
+
+#: modules/taxonomy/taxonomy.admin.inc:739
+msgid "Weight value must be numeric."
+msgstr "A súlyozás számérték kell legyen."
+
+#: modules/taxonomy/taxonomy.admin.inc:768;769
+msgid "Created new term %term."
+msgstr "„%term” kifejezés létrejött."
+
+#: modules/taxonomy/taxonomy.admin.inc:772;773
+msgid "Updated term %term."
+msgstr "A kifejezés frissült: %term."
+
+#: modules/taxonomy/taxonomy.admin.inc:818
+msgid "Set multiple term parents?"
+msgstr "A kifejezésnek több szülője is lehessen?"
+
+#: modules/taxonomy/taxonomy.admin.inc:819
+msgid ""
+"Adding multiple parents to a term will cause the %vocabulary vocabulary to "
+"look for multiple parents on every term. Because multiple parents are not "
+"supported when using the drag and drop outline interface, drag and drop will "
+"be disabled if you enable this option. If you choose to have multiple "
+"parents, you will only be able to set parents by using the term edit form."
+msgstr ""
+"Ha egy kifejezéshez több szülőkifejezés (többszörös öröklődés) rendelhető az "
+"azt eredményezi, hogy a szótár (%vocabulary) minden egyes kifejezéséhez több "
+"szülő lesz keresve, ami egyrészt lassabb, másrészt a „fogd és vidd” "
+"műveletek minden esetben le lesznek tiltva még akkor is, ha elvileg "
+"lehetőség lenne rá. Ez azt jelenti, hogy a többszörös öröklődés "
+"engedélyezése esetén a kifejezéseket csak a kifejezés szerkesztése űrlapon "
+"keresztül lehet megadni."
+
+#: modules/taxonomy/taxonomy.admin.inc:820
+msgid ""
+"You may re-enable the drag and drop interface at any time by reducing "
+"multiple parents to a single parent for the terms in this vocabulary."
+msgstr ""
+"A „fogd és vidd” felület bármikor engedélyezhető a szótár kifejezéseinek "
+"többszörös öröklődés tulajdonságának egyszeres öröklődésre való "
+"csökkentésével."
+
+#: modules/taxonomy/taxonomy.admin.inc:821
+msgid "Set multiple parents"
+msgstr "Többszörös öröklődés engedélyezése"
+
+#: modules/taxonomy/taxonomy.admin.inc:838
+msgid "Are you sure you want to delete the term %title?"
+msgstr "„%title” kifejezés biztosan törölhető?"
+
+#: modules/taxonomy/taxonomy.admin.inc:841
+msgid ""
+"Deleting a term will delete all its children if there are any. This action "
+"cannot be undone."
+msgstr ""
+"Egy kifejezés törlése minden gyermek kifejezését is törli, amennyiben van "
+"ilyen. A művelet nem vonható vissza."
+
+#: modules/taxonomy/taxonomy.admin.inc:854;855
+msgid "Deleted term %name."
+msgstr "„%name” kifejezés törlése megtörtént."
+
+#: modules/taxonomy/taxonomy.admin.inc:873
+msgid "Are you sure you want to delete the vocabulary %title?"
+msgstr "„%title” szótár biztosan törölhető?"
+
+#: modules/taxonomy/taxonomy.admin.inc:876
+msgid ""
+"Deleting a vocabulary will delete all the terms in it. This action cannot be "
+"undone."
+msgstr ""
+"A szótár törlése minden benne található kifejezés törlését is maga után "
+"vonja. A művelet nem vonható vissza."
+
+#: modules/taxonomy/taxonomy.admin.inc:888;889
+msgid "Deleted vocabulary %name."
+msgstr "„%name” szótár törlése megtörtént."
+
+#: modules/taxonomy/taxonomy.admin.inc:908
+msgid ""
+"Are you sure you want to reset the vocabulary %title to alphabetical order?"
+msgstr "Biztosan újra legyen rendezve ABC szerint a szótár („%title”)?"
+
+#: modules/taxonomy/taxonomy.admin.inc:911
+msgid ""
+"Resetting a vocabulary will discard all custom ordering and sort items "
+"alphabetically."
+msgstr ""
+"Az ABC-szerinti rendezés az elemek esetleges egyedi sorrendjét figyelmen "
+"kívül fogja hagyni."
+
+#: modules/taxonomy/taxonomy.admin.inc:923;924
+msgid "Reset vocabulary %name to alphabetical order."
+msgstr "A szótár („%name”) ABC-szerinti rendezése."
+
+#: modules/taxonomy/taxonomy.admin.inc:203;207;769;773;855;889;924
+#: modules/taxonomy/taxonomy.module:0
+msgid "taxonomy"
+msgstr "taxonómia"
+
+#: modules/taxonomy/taxonomy.module:418
+msgid "- None selected -"
+msgstr "- Nincs kiválasztott elem -"
+
+#: modules/taxonomy/taxonomy.module:421
+msgid "- None -"
+msgstr "- Nincs -"
+
+#: modules/taxonomy/taxonomy.module:517
+msgid ""
+"A comma-separated list of terms describing this content. Example: funny, "
+"bungee jumping, \"Company, Inc.\"."
+msgstr ""
+"A tartalmat meghatározó kifejezések vesszővel elválasztott listája. Például: "
+"móka, kötélugrás, mogyorós csoki, \"Cégnév, Kft.\"."
+
+#: modules/taxonomy/taxonomy.module:548
+msgid "Vocabularies"
+msgstr "Szótárak"
+
+#: modules/taxonomy/taxonomy.module:635
+msgid "The %name vocabulary can not be modified in this way."
+msgstr "%name szótár így nem módosítható."
+
+#: modules/taxonomy/taxonomy.module:1133
+msgid "There are currently no posts in this category."
+msgstr "Jelenleg nincs beküldött tartalom a kategóriában."
+
+#: modules/taxonomy/taxonomy.module:1236
+msgid ""
+"The taxonomy module allows you to categorize content using various systems "
+"of classification. Free-tagging vocabularies are created by users on the fly "
+"when they submit posts (as commonly found in blogs and social bookmarking "
+"applications). Controlled vocabularies allow for administrator-defined short "
+"lists of terms as well as complex hierarchies with multiple relationships "
+"between different terms. These methods can be applied to different content "
+"types and combined together to create a powerful and flexible method of "
+"classifying and presenting your content."
+msgstr ""
+"A taxonómia modul segítségével a tartalmak számos módszer szerint "
+"csoportosíthatóak. A szabadszavas címkézéssel a felhasználók a tartalom "
+"beküldésekor (ahogy számos közösségi linkgyűjtő oldalon vagy blog motor "
+"esetében) hozhatnak létre kifejezéseket. A kötött szótárakat használva az "
+"adminisztrátorok előre meghatározott kifejezések összetett struktúráját "
+"hozhatják létre, az egyes kifejezések között többszörös kapcsolattal. Ezek a "
+"kategóriák eltérő tartalomtípusokhoz rendelhetőek és más modulokkal "
+"összekapcsolhatók a tartalmak eltérő osztályozás szerinti megjelenítésének "
+"érdekében."
+
+#: modules/taxonomy/taxonomy.module:1237
+msgid ""
+"For example, when creating a recipe site, you might want to classify posts "
+"by both the type of meal and preparation time. A vocabulary for each allows "
+"you to categorize using each criteria independently instead of creating a "
+"tag for every possible combination."
+msgstr ""
+"Például egy receptgyűjtő webhely esetében a tartalmakat (receptek) "
+"csoportosítani kell mind az étel jellege mind az előkészületi idő szerint. "
+"Erre a célra két önálló, egymástól független szótárat érdemes létrehozni a "
+"nekik megfelelő feltételekkel ahelyett, hogy egy szótárat hoznánk létre az "
+"összes lehetséges változattal."
+
+#: modules/taxonomy/taxonomy.module:1238
+msgid "Type of Meal: <em>Appetizer, Main Course, Salad, Dessert</em>"
+msgstr "Étel típusa: <em>Előétel, Főétel, Saláta, Desszert</em>"
+
+#: modules/taxonomy/taxonomy.module:1239
+msgid "Preparation Time: <em>0-30mins, 30-60mins, 1-2 hrs, 2hrs+</em>"
+msgstr "Előkészület ideje: <em>0-30 perc, 30-60 perc, 1-2 óra, 2 óra+</em>"
+
+#: modules/taxonomy/taxonomy.module:1240
+msgid ""
+"Each taxonomy term (often called a 'category' or 'tag' in other systems) "
+"automatically provides lists of posts and a corresponding RSS feed. These "
+"taxonomy/term URLs can be manipulated to generate AND and OR lists of posts "
+"classified with terms. In our recipe site example, it then becomes easy to "
+"create pages displaying 'Main courses', '30 minute recipes', or '30 minute "
+"main courses and appetizers' by using terms on their own or in combination "
+"with others. There are a significant number of contributed modules which you "
+"to alter and extend the behavior of the core module for both display and "
+"organization of terms."
+msgstr ""
+"Minden taxonómia-kifejezés (amely különböző helyeken gyakran „kategória” "
+"vagy „címke” formában van említve) a rá illeszkedő tartalmakból "
+"automatikusan nyújt egy lista-oldalt illetve egy RSS-csatornát. Ezeknek az "
+"URL-ben „taxonomy/term” formában szereplő oldalak szűrőfeltételei "
+"kombinálhatóak ÉS és VAGY kapcsolattal. A receptgyűjtő webhely példával "
+"élve, könnyen létrehozható a „Főétel”, a „30 perces receptek” vagy a „30 "
+"perces elő- és főételek” lista a kifejezések azonosítóinak kombinálásával. "
+"Számos kiegészítő modul létezik, amely ezt a lehetőséget mind megjelenítés, "
+"mind rendszerezés terén tovább bővíti."
+
+#: modules/taxonomy/taxonomy.module:1241
+msgid ""
+"Terms can also be organized in parent/child relationships from the admin "
+"interface. An example would be a vocabulary grouping countries under their "
+"parent geo-political regions. The taxonomy module also enables advanced "
+"implementations of hierarchy, for example placing Turkey in both the 'Middle "
+"East' and 'Europe'."
+msgstr ""
+"A kifejezések szülő-gyermek viszonyba rendezhetők az adminisztrációs "
+"felületen keresztül, amely támogatja a többszörös öröklődést is. Például: "
+"elképzelhető szeretnénk az országokat földrajzi helyzetük szerint "
+"csoportosítani, ezért a „Törökország” kifejezés gyermeke lehet mind a „Közel-"
+"Kelet”, mind az „Európa” kifejezéseknek."
+
+#: modules/taxonomy/taxonomy.module:1242
+msgid ""
+"The taxonomy module supports the use of both synonyms and related terms, but "
+"does not directly use this functionality. However, optional contributed or "
+"custom modules may make full use of these advanced features."
+msgstr ""
+"A taxonómia modul támogatja a kifejezések egymáshoz való viszonyát és a "
+"szinonimákat, de ezek a funkciók közvetlenül nem, csak kiegészítő modulok "
+"révén használhatóak."
+
+#: modules/taxonomy/taxonomy.module:1243
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@taxonomy"
+"\">Taxonomy module</a>."
+msgstr ""
+"További információ az online kézikönyv <a href=\"@taxonomy\">taxonómia "
+"modulról szóló oldalán</a> olvasható."
+
+#: modules/taxonomy/taxonomy.module:1246
+msgid ""
+"The taxonomy module allows you to categorize your content using both tags "
+"and administrator defined terms. It is a flexible tool for classifying "
+"content with many advanced features. To begin, create a 'Vocabulary' to hold "
+"one set of terms or tags. You can create one free-tagging vocabulary for "
+"everything, or separate controlled vocabularies to define the various "
+"properties of your content, for example 'Countries' or 'Colors'."
+msgstr ""
+"A taxonómia modul segítségével a tartalmak adminisztrátorok által "
+"létrehozott listákba csoportosíthatóak, vagy akár szabadon címkézhetőek. "
+"Rendkívül rugalmas eszköz, amely nagy segítséget nyújt a tartalmak "
+"osztályozásához. Induláskor létre kell hozni egy „szótárat”, amely "
+"kifejezéseket &ndash; más néven címkéket &ndash; fog tartalmazni. "
+"Létrehozható olyan szótár is, amely minden tartalom szabadszavas címkékkel "
+"látható el, vagy olyan is, ahol a csoportosítási szempontok egy előre "
+"meghatározott listában vannak meghatározva. Például ilyen csoportosítás "
+"lehet az „Országok” vagy a „Színek”."
+
+#: modules/taxonomy/taxonomy.module:1247
+msgid ""
+"Use the list below to configure and review the vocabularies defined on your "
+"site, or to list and manage the terms (tags) they contain. A vocabulary may "
+"(optionally) be tied to specific content types as shown in the <em>Type</em> "
+"column and, if so, will be displayed when creating or editing posts of that "
+"type. Multiple vocabularies tied to the same content type will be displayed "
+"in the order shown below. To change the order of a vocabulary, grab a drag-"
+"and-drop handle under the <em>Name</em> column and drag it to a new location "
+"in the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save</em> button at the bottom of the page."
+msgstr ""
+"Az alábbi lista a webhely szótárainak áttekintésére és beállítására vagy az "
+"ezekben használt kifejezések (címkék) listázására illetve kezelésére "
+"használható. A szótárak tartalom típusokhoz rendelhetők, ahogy a <em>Típus</"
+"em> oszlop mutatja. A szótár kifejezés választója ilyen típusú tartalmak "
+"bevitelekor és szerkesztésekor jelenik meg. Azonos típushoz rendelt több "
+"szótár az alábbi sorrendben fog megjelenni. A szótárak sorrendjének "
+"megváltoztatására a szótárt megfogva és áthúzva a <em>Név</em> oszlop alatt "
+"a szótár új helyre mozgatásával nyílik lehetőség. (Egérrel rákattintva a "
+"fogó ikonra, folyamatosan nyomva tartva áthúzható egy másik helyre.) A "
+"változtatások mindaddig nem lesznek elmenve, amíg az oldal alján található "
+"<em>Mentés</em> gombra nem kattintunk."
+
+#: modules/taxonomy/taxonomy.module:1252
+msgid ""
+"%capital_name is a free-tagging vocabulary. To change the name or "
+"description of a term, click the <em>edit</em> link next to the term."
+msgstr ""
+"Ez a szótár (%capital_name) támogatja a szabadszavas címkézést. Egy "
+"kifejezés nevének vagy leírásának megváltoztatásához a <em>szerkesztés</em> "
+"linkre kell kattintani."
+
+#: modules/taxonomy/taxonomy.module:1256
+msgid ""
+"%capital_name is a flat vocabulary. You may organize the terms in the %name "
+"vocabulary by using the handles on the left side of the table. To change the "
+"name or description of a term, click the <em>edit</em> link next to the term."
+msgstr ""
+"Ez (%capital_name) egy egyszintű szótár. A kifejezések átrendezhetőek a "
+"táblázat bal oldalán található fogantyúkkal. Egy kifejezés nevének vagy "
+"leírásának megváltoztatásához a <em>szerkesztés</em> linkre kell kattintani."
+
+#: modules/taxonomy/taxonomy.module:1258
+msgid ""
+"%capital_name is a single hierarchy vocabulary. You may organize the terms "
+"in the %name vocabulary by using the handles on the left side of the table. "
+"To change the name or description of a term, click the <em>edit</em> link "
+"next to the term."
+msgstr ""
+"A szótár (%capital_name) egyszeres öröklődésű. A kifejezések átrendezhetőek "
+"a táblázat bal oldalán található fogantyúkkal. Egy kifejezés nevének vagy "
+"leírásának megváltoztatásához a <em>szerkesztés</em> linkre kell kattintani."
+
+#: modules/taxonomy/taxonomy.module:1260
+msgid ""
+"%capital_name is a multiple hierarchy vocabulary. To change the name or "
+"description of a term, click the <em>edit</em> link next to the term. Drag "
+"and drop of multiple hierarchies is not supported, but you can re-enable "
+"drag and drop support by editing each term to include only a single parent."
+msgstr ""
+"A szótárban (%capital_name) engedélyezett a többszörös öröklődés. Egy "
+"kifejezés leírásának vagy nevének megváltoztatásához a <em>szerkesztés</em> "
+"linkre kell kattintani. A „fogd és vidd” művelet többszörös öröklődés esetén "
+"nem támogatott, de a szótárat visszaállítva egyszeres öröklődésre a funkció "
+"elérhetővé válik."
+
+#: modules/taxonomy/taxonomy.module:1263
+msgid ""
+"Define how your vocabulary will be presented to administrators and users, "
+"and which content types to categorize with it. Tags allows users to create "
+"terms when submitting posts by typing a comma separated list. Otherwise "
+"terms are chosen from a select list and can only be created by users with "
+"the \"administer taxonomy\" permission."
+msgstr ""
+"Megadható, hogy az adminisztrátoroknak hogyan jelenjen meg a szótár és "
+"milyen tartalomtípusokhoz legyen hozzárendelve. A címkézés segítségével a "
+"felhasználók a tartalom beküldése során egy vesszővel elválasztott listával "
+"hozhatnak létre új kifejezéseket. Amennyiben ez a lehetőség tiltott, úgy a "
+"„taxonómia adminisztrációja” jogosultsággal rendelkező felhasználók által "
+"létrehozott listából választhatnak."
+
+#: modules/taxonomy/taxonomy.module:1302
+msgid "After saving a new term to the database"
+msgstr "Új kifejezés adatbázisba mentése után"
+
+#: modules/taxonomy/taxonomy.module:1305
+msgid "After saving an updated term to the database"
+msgstr "Frissített kifejezés adatbázisba mentése után"
+
+#: modules/taxonomy/taxonomy.module:1308
+msgid "After deleting a term"
+msgstr "Kifejezés törlése után"
+
+#: modules/taxonomy/taxonomy.module:13
+msgid "administer taxonomy"
+msgstr "taxonómia adminisztrációja"
+
+#: modules/taxonomy/taxonomy.module:114
+msgid "Manage tagging, categorization, and classification of your content."
+msgstr ""
+"A tartalmak címkézésének, kategorizálásának és osztályozásának karbantartása."
+
+#: modules/taxonomy/taxonomy.module:128
+msgid "Add vocabulary"
+msgstr "Szótár hozzáadása"
+
+#: modules/taxonomy/taxonomy.module:137
+msgid "Edit vocabulary"
+msgstr "Szótár szerkesztése"
+
+#: modules/taxonomy/taxonomy.module:145
+msgid "Edit term"
+msgstr "Kifejezés szerkesztése"
+
+#: modules/taxonomy/taxonomy.module:152
+msgid "Taxonomy term"
+msgstr "Taxonómia kifejezés"
+
+#: modules/taxonomy/taxonomy.module:161
+msgid "Autocomplete taxonomy"
+msgstr "Taxonómia kifejezések automatikus kiegészítése"
+
+#: modules/taxonomy/taxonomy.module:168
+msgid "List terms"
+msgstr "Kifejezések listája"
+
+#: modules/taxonomy/taxonomy.module:183
+msgid "Add term"
+msgstr "Kifejezés hozzáadása"
+
+#: modules/taxonomy/taxonomy.install:9
+msgid "Stores term information."
+msgstr "A kifejezések adatait tartalmazza."
+
+#: modules/taxonomy/taxonomy.install:15
+msgid "Primary Key: Unique term ID."
+msgstr "Elsődleges kulcs: Egyedi kategória-azonosító."
+
+#: modules/taxonomy/taxonomy.install:22
+msgid "The {vocabulary}.vid of the vocabulary to which the term is assigned."
+msgstr ""
+"A szótár {vocabulary}.vid adatbázis-mezeje, amelyhez a kifejezés kapcsolódik."
+
+#: modules/taxonomy/taxonomy.install:29
+msgid "The term name."
+msgstr "A kifejezés neve"
+
+#: modules/taxonomy/taxonomy.install:35
+msgid "A description of the term."
+msgstr "A kifejezés leírása."
+
+#: modules/taxonomy/taxonomy.install:42
+msgid "The weight of this term in relation to other terms."
+msgstr "A kifejezés súlyozása a többi kifejezéshez viszonyítva."
+
+#: modules/taxonomy/taxonomy.install:53
+msgid "Stores the hierarchical relationship between terms."
+msgstr "A kifejezések hierarchiában betöltött helyzetét tartalmazza."
+
+#: modules/taxonomy/taxonomy.install:60
+msgid "Primary Key: The {term_data}.tid of the term."
+msgstr "Elsődleges kulcs: A kifejezés {term_data}.tid értéke."
+
+#: modules/taxonomy/taxonomy.install:67
+msgid ""
+"Primary Key: The {term_data}.tid of the term's parent. 0 indicates no parent."
+msgstr ""
+"Elsődleges kulcs: A kifejezés szülőjének {term_data}.tid értéke. A 0 (nulla) "
+"azt jelenti, hogy nincs szülője."
+
+#: modules/taxonomy/taxonomy.install:77
+msgid "Stores the relationship of terms to nodes."
+msgstr "A tartalmak és a kifejezések viszonyát tartalmazza."
+
+#: modules/taxonomy/taxonomy.install:84
+msgid "Primary Key: The {node}.nid of the node."
+msgstr "Elsődleges kulcs: A tartalom {node}.nid értéke."
+
+#: modules/taxonomy/taxonomy.install:98
+msgid "Primary Key: The {term_data}.tid of a term assigned to the node."
+msgstr ""
+"Elsődleges kulcs: A tartalomhoz rendelt kifejezés {term_data}.tid értéke."
+
+#: modules/taxonomy/taxonomy.install:109
+msgid "Stores non-hierarchical relationships between terms."
+msgstr "A kifejezések hierarchián kívüli viszonyát tartalmazza."
+
+#: modules/taxonomy/taxonomy.install:114
+msgid "Primary Key: Unique term relation ID."
+msgstr "Elsődleges kulcs: egyedi kifejezés-viszony azonosító."
+
+#: modules/taxonomy/taxonomy.install:121
+msgid "The {term_data}.tid of the first term in a relationship."
+msgstr "Egy kifejezés-viszony első kifejezésének {term_data}.tid értéke."
+
+#: modules/taxonomy/taxonomy.install:128
+msgid "The {term_data}.tid of the second term in a relationship."
+msgstr "Egy kifejezés-viszony második kifejezésének {term_data}.tid értéke."
+
+#: modules/taxonomy/taxonomy.install:141
+msgid "Stores term synonyms."
+msgstr "A kifejezések szinonímáit tartalmazza."
+
+#: modules/taxonomy/taxonomy.install:146
+msgid "Primary Key: Unique term synonym ID."
+msgstr "Elsődleges kulcs: egyedi szinonima azonosító."
+
+#: modules/taxonomy/taxonomy.install:153
+msgid "The {term_data}.tid of the term."
+msgstr "A kifejezés {term_data}.tid értéke."
+
+#: modules/taxonomy/taxonomy.install:160
+msgid "The name of the synonym."
+msgstr "A szinonima neve."
+
+#: modules/taxonomy/taxonomy.install:171
+msgid "Stores vocabulary information."
+msgstr "A szótárak adatait tartalmazza."
+
+#: modules/taxonomy/taxonomy.install:177
+msgid "Primary Key: Unique vocabulary ID."
+msgstr "Elsődleges kulcs: egyedi szótár azonosító."
+
+#: modules/taxonomy/taxonomy.install:184
+msgid "Name of the vocabulary."
+msgstr "A szótár neve."
+
+#: modules/taxonomy/taxonomy.install:190
+msgid "Description of the vocabulary."
+msgstr "A szótár leírása."
+
+#: modules/taxonomy/taxonomy.install:197
+msgid "Help text to display for the vocabulary."
+msgstr "A szótár súgójának szövege."
+
+#: modules/taxonomy/taxonomy.install:205
+msgid ""
+"Whether or not related terms are enabled within the vocabulary. (0 = "
+"disabled, 1 = enabled)"
+msgstr ""
+"Engedélyezett vagy nem a kifejezések egymáshoz való viszonya a szótárban. (0 "
+"= tiltott, 1 = engedélyezett)"
+
+#: modules/taxonomy/taxonomy.install:213
+msgid ""
+"The type of hierarchy allowed within the vocabulary. (0 = disabled, 1 = "
+"single, 2 = multiple)"
+msgstr ""
+"A szótárban engedélyezett kifejezés-hierarchia típusa. (0 = nincs "
+"hierarchia, 1 = egyszeres, 2 = többszörös)"
+
+#: modules/taxonomy/taxonomy.install:221
+msgid ""
+"Whether or not multiple terms from this vocabulary may be assigned to a "
+"node. (0 = disabled, 1 = enabled)"
+msgstr ""
+"A tartalmakhoz egy vagy több kifejezés kapcsolódhasson? (0 = egy, 1 = több)"
+
+#: modules/taxonomy/taxonomy.install:229
+msgid ""
+"Whether or not terms are required for nodes using this vocabulary. (0 = "
+"disabled, 1 = enabled)"
+msgstr ""
+"A szótárhoz kapcsolt tartalomtípusú tartalmaknak szükséges-e legalább egy "
+"kifejezéshez kapcsolódniuk? (0 = nem, 1 = igen)"
+
+#: modules/taxonomy/taxonomy.install:237
+msgid ""
+"Whether or not free tagging is enabled for the vocabulary. (0 = disabled, 1 "
+"= enabled)"
+msgstr ""
+"A szabadszavas címkézés engedélyezett-e a szótárban? (0 = nem, 1 = igen)"
+
+#: modules/taxonomy/taxonomy.install:244
+msgid "The module which created the vocabulary."
+msgstr "A szótárat létrehozó modul."
+
+#: modules/taxonomy/taxonomy.install:251
+msgid "The weight of the vocabulary in relation to other vocabularies."
+msgstr "A szótár súlyozása a többi szótárhoz viszonyítva."
+
+#: modules/taxonomy/taxonomy.install:261
+msgid "Stores which node types vocabularies may be used with."
+msgstr ""
+"Tartalmazza, hogy mely tartalomtípushoz mely szótárak vannak hozzárendelve."
+
+#: modules/taxonomy/taxonomy.install:268
+msgid "Primary Key: the {vocabulary}.vid of the vocabulary."
+msgstr "Elsődleges kulcs: a szótár {vocabulary}.vid értéke."
+
+#: modules/taxonomy/taxonomy.install:275
+msgid "The {node}.type of the node type for which the vocabulary may be used."
+msgstr ""
+"A tartalmak {node}.type értéke (típusa), amelyhez a szótár hozzá van "
+"rendelve."

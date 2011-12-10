@@ -1,0 +1,573 @@
+# $Id: comment-module.pot,v 1.8.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (modules/comment/comment.module)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: comment.module,v 1.520 2007/01/03 11:32:38 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-10 23:23+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: modules/comment/comment.module:129
+msgid ""
+"The comment module creates a discussion board for each post. Users can post "
+"comments to discuss a forum topic, weblog post, story, collaborative book "
+"page, etc. The ability to comment is an important part of involving members "
+"in a community dialogue."
+msgstr ""
+"A hozzászólás modul az eszmecsere lehetőségével ruházza fel a tartalmakat. A "
+"felhasználók reagálhatnak a fórumok témáira, blogbejegyzésekre, könyvek "
+"lapjaira stb. Ennek lehetősége fontos eszköz, hogy a közösség tagjait "
+"párbeszédre késztessük."
+
+#: modules/comment/comment.module:130
+msgid ""
+"An administrator can give comment permissions to user groups, and users can "
+"(optionally) edit their last comment, assuming no others have been posted "
+"since. Attached to each comment board is a control panel for customizing the "
+"way that comments are displayed. Users can control the chronological "
+"ordering of posts (newest or oldest first) and the number of posts to "
+"display on each page. Comments behave like other user submissions. Filters, "
+"smileys and HTML that work in nodes will also work with comments. The "
+"comment module provides specific features to inform site members when new "
+"comments have been posted."
+msgstr ""
+"Az adminisztrátorok döntik el, hogy mely csoportok kaphatnak hozzászólás "
+"küldési jogosultságot. A megfelelő beállítással a felhasználók még saját "
+"hozzászólásaikat is szerkeszthetik, amíg válasz nem érkezik azokra. "
+"Mindegyik hozzászólás megjelenítő felülethez tartozik egy listázást "
+"szabályzó vezérlőpanel, amelyen a felhasználók beállíthatják a hozzászólások "
+"idő szerinti rendezését (a legfrissebb vagy legkorábbi legyen az első) és az "
+"oldalanként látható hozzászólások számát. A hozzászólások tartalmára a többi "
+"felhasználói tartalomnak megfelelő szabályok vonatkoznak, a beviteli "
+"formátumok, és az ezek által adott lehetőségek itt is érvényesek. A modul "
+"speciális funkciókkal értesíti a felhasználókat az új hozzászólások "
+"megjelenéséről."
+
+#: modules/comment/comment.module:131
+msgid ""
+"For more information please read the configuration and customization "
+"handbook <a href=\"@comment\">Comment page</a>."
+msgstr ""
+"További információ a beállítási és testreszabási kézikönyv <a href=\"@comment"
+"\">hozzászólásokról szóló oldalán</a> található."
+
+#: modules/comment/comment.module:135
+msgid ""
+"Below is a list of the latest comments posted to your site. Click on a "
+"subject to see the comment, the author's name to edit the author's user "
+"information , 'edit' to modify the text, and 'delete' to remove their "
+"submission."
+msgstr ""
+"Az alábbiakban a legutóbb beérkezett hozzászólások láthatóak. Egy "
+"hozzászólás a címére kattintva tekinthető meg, a szerző neve pedig a szerző "
+"adatainak szerkesztéséhez vezet."
+
+#: modules/comment/comment.module:137
+msgid ""
+"Below is a list of the comments posted to your site that need approval. To "
+"approve a comment, click on 'edit' and then change its 'moderation status' "
+"to Approved. Click on a subject to see the comment, the author's name to "
+"edit the author's user information, 'edit' to modify the text, and 'delete' "
+"to remove their submission."
+msgstr ""
+"Az alábbiakban a webhelyre érkezett elfogadásra váró hozzászólások "
+"láthatóak. Egy hozzászólás elfogadásához meg kell nyitni szerkesztésre, és a "
+"moderálási állapotát „Elfogadottra” kell állítani. A hozzászólás címére "
+"kattintva tekinthető meg a tartalma, a szerző neve pedig a szerző adatainak "
+"szerkesztéséhez vezet."
+
+#: modules/comment/comment.module:139
+msgid ""
+"Comments can be attached to any node, and their settings are below. The "
+"display comes in two types: a 'flat list' where everything is flush to the "
+"left side, and comments come in chronological order, and a 'threaded list' "
+"where replies to other comments are placed immediately below and slightly "
+"indented, forming an outline. They also come in two styles: 'expanded', "
+"where you see both the title and the contents, and 'collapsed' where you "
+"only see the title. Preview comment forces a user to look at their comment "
+"by clicking on a 'Preview' button before they can actually add the comment."
+msgstr ""
+"A hozzászólások bármilyen tartalomhoz fűzhetőek, megjelenítésük pedig az "
+"alábbi beállítások szerint történik. Az „egyszerű” listában balra igazítva "
+"egymás alatt, időrendben jelennek meg a hozzászólások, a „beágyazott” "
+"nézetben beljebb kezdve, az érkezett válaszok szerint csoportosítva íródnak "
+"ki. „Teljes” nézetben a cím és a hozzászólás szövege egyszerre látszik, "
+"„csak cím” nézetben viszont a szöveg nem látható. A hozzászólók "
+"kötelezhetőek az előnézet megtekintésére beküldés előtt, az „Előnézet” gomb "
+"használatával."
+
+#: modules/comment/comment.module:154
+msgid "List and edit site comments and the comment moderation queue."
+msgstr ""
+"A webhelyre érkezett hozzászólások listája, szerkesztése és hozzászólás "
+"moderálás."
+
+#: modules/comment/comment.module:164
+msgid "Published comments"
+msgstr "Közzétett hozzászólások"
+
+#: modules/comment/comment.module:166
+msgid "Approval queue"
+msgstr "Elfogadási sor"
+
+#: modules/comment/comment.module:181
+msgid "Delete comment"
+msgstr "Hozzászólás törlése"
+
+#: modules/comment/comment.module:185
+msgid "Edit comment"
+msgstr "Hozzászólás szerkesztése"
+
+#: modules/comment/comment.module:193
+msgid "Reply to comment"
+msgstr "Válasz a hozzászólásra"
+
+#: modules/comment/comment.module:225;229
+msgid "Recent comments"
+msgstr "Friss hozzászólások"
+
+#: modules/comment/comment.module:306
+msgid "Jump to the first comment of this posting."
+msgstr "Az első hozzászólásra ugrás."
+
+#: modules/comment/comment.module:316
+msgid "Jump to the first new comment of this posting."
+msgstr "Az első új hozzászólásra ugrás."
+
+#: modules/comment/comment.module:325;346
+msgid "Add new comment"
+msgstr "Új hozzászólás"
+
+#: modules/comment/comment.module:327
+msgid "Add a new comment to this page."
+msgstr "Új hozzászólás beküldése."
+
+#: modules/comment/comment.module:348
+msgid "Share your thoughts and opinions related to this posting."
+msgstr "A tartalomhoz kapcsolódó vélemények, gondolatok beküldése."
+
+#: modules/comment/comment.module:374
+msgid "Default comment setting"
+msgstr "Alapértelmezett hozzászólás beállítás"
+
+#: modules/comment/comment.module:376;395
+msgid "Read only"
+msgstr "Csak olvasható"
+
+#: modules/comment/comment.module:376;395
+msgid "Read/Write"
+msgstr "Olvasható/Írható"
+
+#: modules/comment/comment.module:377
+msgid ""
+"Users with the <em>administer comments</em> permission will be able to "
+"override this setting."
+msgstr ""
+"A <em>hozzászólások adminisztrációja</em> jogosultsággal rendelkező "
+"felhasználók képesek lesznek az alapértelmezés felülbírálására."
+
+#: modules/comment/comment.module:386;458
+msgid "Comment settings"
+msgstr "Hozzászólás beküldési beállítások"
+
+#: modules/comment/comment.module:463
+msgid "Signature"
+msgstr "Aláírás"
+
+#: modules/comment/comment.module:465
+msgid "Your signature will be publicly displayed at the end of your comments."
+msgstr "Az aláírás nyilvánosan meg fog jelenni a hozzászólások alján."
+
+#: modules/comment/comment.module:481
+msgid "Viewing options"
+msgstr "Megjelenítési lehetőségek"
+
+#: modules/comment/comment.module:487
+msgid "Default display mode"
+msgstr "Alapértelmezett megjelenítési mód"
+
+#: modules/comment/comment.module:490
+msgid ""
+"The default view for comments. Expanded views display the body of the "
+"comment. Threaded views keep replies together."
+msgstr ""
+"A hozzászólások alapértelmezett megjelenítési módja. A teljes nézet a "
+"hozzászólások törzsét is megjeleníti, a szál szerinti nézet a válaszokat "
+"együtt írja ki."
+
+#: modules/comment/comment.module:495
+msgid "Default display order"
+msgstr "Alapértelmezett megjelenítési sorrend"
+
+#: modules/comment/comment.module:498
+msgid ""
+"The default sorting for new users and anonymous users while viewing "
+"comments. These users may change their view using the comment control panel. "
+"For registered users, this change is remembered as a persistent user "
+"preference."
+msgstr ""
+"Új felhasználók és látogatók számára alkalmazott megjelenítési sorrend. A "
+"regisztrált felhasználók saját hozzászólás beállításait megjegyzi a rendszer."
+
+#: modules/comment/comment.module:503
+msgid "Default comments per page"
+msgstr "Alapértelmezett hozzászólás szám oldalanként"
+
+#: modules/comment/comment.module:506
+msgid ""
+"Default number of comments for each page: more comments are distributed in "
+"several pages."
+msgstr ""
+"Ha ennél több hozzászólás tartozik egy tartalomhoz, akkor azok újabb oldalon "
+"fognak megjelenni."
+
+#: modules/comment/comment.module:511
+msgid "Comment controls"
+msgstr "Hozzászólás irányítópult"
+
+#: modules/comment/comment.module:514
+msgid "Display above the comments"
+msgstr "A hozzászólások felett jelenjen meg"
+
+#: modules/comment/comment.module:515
+msgid "Display below the comments"
+msgstr "A hozzászólások alatt jelenjen meg"
+
+#: modules/comment/comment.module:516
+msgid "Display above and below the comments"
+msgstr "A hozzászólások felett és alatt jelenjen meg"
+
+#: modules/comment/comment.module:517
+msgid "Do not display"
+msgstr "Ne jelenjen meg"
+
+#: modules/comment/comment.module:518
+msgid ""
+"Position of the comment controls box. The comment controls let the user "
+"change the default display mode and display order of comments."
+msgstr ""
+"A hozzászólás irányítópult helyzete. A pult lehetővé teszi a felhasználók "
+"számára, hogy a megjelenítési módot és sorrendet megváltoztassák."
+
+#: modules/comment/comment.module:523
+msgid "Posting settings"
+msgstr "Hozzászólások beküldési beállításai"
+
+#: modules/comment/comment.module:529
+msgid "Anonymous commenting"
+msgstr "Névtelen hozzászólás"
+
+#: modules/comment/comment.module:532
+msgid "Anonymous posters may not enter their contact information"
+msgstr "Névtelen hozzászóláshoz nem lehet megadni kapcsolati adatokat."
+
+#: modules/comment/comment.module:533
+msgid "Anonymous posters may leave their contact information"
+msgstr "Névtelen hozzászóláshoz meg lehet adni kapcsolati adatokat."
+
+#: modules/comment/comment.module:534
+msgid "Anonymous posters must leave their contact information"
+msgstr "A névtelen hozzászólásokhoz meg kell adni kapcsolati adatokat."
+
+#: modules/comment/comment.module:535
+msgid ""
+"This option is enabled when anonymous users have permission to post comments "
+"on the <a href=\"@url\">permissions page</a>."
+msgstr ""
+"Az itt megadott választás akkor érvényes, ha a névtelen hozzászólások "
+"engedélyezve vannak a <a href=\"@url\">jogosultságok oldalon</a>."
+
+#: modules/comment/comment.module:543
+msgid "Comment subject field"
+msgstr "Hozzászólás téma mező"
+
+#: modules/comment/comment.module:546
+msgid "Can users provide a unique subject for their comments?"
+msgstr "Meg lehessen adni a hozzászólások témáját?"
+
+#: modules/comment/comment.module:551;633;1547;1553;1557;1581
+msgid "Preview comment"
+msgstr "Előnézet"
+
+#: modules/comment/comment.module:558
+msgid "Location of comment submission form"
+msgstr "Hozzászólás beküldő űrlap helyzete"
+
+#: modules/comment/comment.module:560
+msgid "Display on separate page"
+msgstr "Külön oldalon"
+
+#: modules/comment/comment.module:560
+msgid "Display below post or comments"
+msgstr "A tartalom illetve hozzászólások alatt"
+
+#: modules/comment/comment.module:638;678
+msgid "You are not authorized to post comments."
+msgstr "Hozzászólás beküldése nem lehetséges."
+
+#: modules/comment/comment.module:651;660
+msgid "The comment you are replying to does not exist."
+msgstr "Ez a hozzászólás már nem létezik."
+
+#: modules/comment/comment.module:671
+msgid "This discussion is closed: you can't post new comments."
+msgstr "Ez az eszmecsere zárt, nem lehet újabb hozzászólásokat küldeni."
+
+#: modules/comment/comment.module:675
+msgid "Reply"
+msgstr "Válasz"
+
+#: modules/comment/comment.module:684
+msgid "You are not authorized to view comments."
+msgstr "Hozzászólások olvasása nem lehetséges."
+
+#: modules/comment/comment.module:715;1222
+msgid "Comment: updated %subject."
+msgstr "Hozzászólás: „%subject” hozzászólás frissítve."
+
+#: modules/comment/comment.module:722
+msgid "Comment: duplicate %subject."
+msgstr "Hozzászólás: „%subject” hozzászólás duplikátum."
+
+#: modules/comment/comment.module:795
+msgid "Comment: added %subject."
+msgstr "Hozzászólás: „%subject” hozzászólás elmentve."
+
+#: modules/comment/comment.module:804
+msgid ""
+"Your comment has been queued for moderation by site administrators and will "
+"be published after approval."
+msgstr ""
+"A hozzászólás bekerült a moderálási várakozási sorba, csak elfogadása után "
+"jelenik majd meg a webhelyen."
+
+#: modules/comment/comment.module:813
+msgid ""
+"Comment: unauthorized comment submitted or comment submitted to a closed "
+"node %subject."
+msgstr ""
+"Hozzászólás: „%subject” témájú, jogosulatlan, vagy lezárt tartalomhoz "
+"küldött hozzászólás."
+
+#: modules/comment/comment.module:828
+msgid "parent"
+msgstr "szülő"
+
+#: modules/comment/comment.module:845;857
+msgid "reply"
+msgstr "válasz"
+
+#: modules/comment/comment.module:1060
+msgid "Post new comment"
+msgstr "Hozzászólás"
+
+#: modules/comment/comment.module:1081
+msgid "The comment and all its replies have been deleted."
+msgstr "A hozzászólás, és minden arra érkezett válasz törölve."
+
+#: modules/comment/comment.module:1097
+msgid "The comment no longer exists."
+msgstr "Ez a hozzászólás már nem létezik."
+
+#: modules/comment/comment.module:1106
+msgid "Are you sure you want to delete the comment %title?"
+msgstr ""
+"Biztosan törölhető a hozzászólás („%title”), és minden rá érkezett válasz?"
+
+#: modules/comment/comment.module:1108
+msgid "Any replies to this comment will be lost. This action cannot be undone."
+msgstr ""
+"Minden erre a hozzászólásra érkezett válasz elvész. A művelet nem "
+"visszavonható."
+
+#: modules/comment/comment.module:1120;1132
+msgid "Publish the selected comments"
+msgstr "A kijelölt hozzászólások közzététele"
+
+#: modules/comment/comment.module:1121;1127;1134
+msgid "Delete the selected comments"
+msgstr "A kijelölt hozzászólások törlése"
+
+#: modules/comment/comment.module:1126;1133
+msgid "Unpublish the selected comments"
+msgstr "A kijelölt hozzászólások elrejtése"
+
+#: modules/comment/comment.module:1199
+msgid "Please select one or more comments to perform the update on."
+msgstr "Legalább egy hozzászólást ki kell választani."
+
+#: modules/comment/comment.module:1245
+msgid "No comments available."
+msgstr "Nincs megjeleníthető hozzászólás."
+
+#: modules/comment/comment.module:1279
+msgid ""
+"There do not appear to be any comments to delete or your selected comment "
+"was deleted by another administrator."
+msgstr ""
+"Nincs törölhető hozzászólás. Lehetséges, hogy időközben a törlésre "
+"kiválasztott hozzászólást egy másik adminisztrátor törölte."
+
+#: modules/comment/comment.module:1284
+msgid "Are you sure you want to delete these comments and all their children?"
+msgstr ""
+"Biztosan törölhetőek ezek a hozzászólások a rájuk érkezett válaszokkal "
+"együtt?"
+
+#: modules/comment/comment.module:1286
+msgid "Delete comments"
+msgstr "Hozzászólások törlése"
+
+#: modules/comment/comment.module:1301
+msgid "The comments have been deleted."
+msgstr "A hozzászólások törlése megtörtént."
+
+#: modules/comment/comment.module:1378
+msgid "You have to specify a valid author."
+msgstr "Érvényes szerzőt kell megadni."
+
+#: modules/comment/comment.module:1388
+msgid "The name you used belongs to a registered user."
+msgstr "A megadott név a webhelyen már foglalt felhasználói név."
+
+#: modules/comment/comment.module:1393
+msgid "You have to leave your name."
+msgstr "A nevet meg kell adni."
+
+#: modules/comment/comment.module:1398
+msgid "The e-mail address you specified is not valid."
+msgstr "A megadott email cím érvénytelen."
+
+#: modules/comment/comment.module:1402
+msgid "You have to leave an e-mail address."
+msgstr "Az email cím mezőt ki kell tölteni."
+
+#: modules/comment/comment.module:1407
+msgid ""
+"The URL of your homepage is not valid. Remember that it must be fully "
+"qualified, i.e. of the form <code>http://example.com/directory</code>."
+msgstr ""
+"A megadott honlap webcíme érvénytelen, teljes címet kell megadni. Például: "
+"<code>http://example.com/directory</code>"
+
+#: modules/comment/comment.module:1454
+msgid "Administration"
+msgstr "Adminisztráció"
+
+#: modules/comment/comment.module:1497;1522;1529
+msgid "Homepage"
+msgstr "Címlap"
+
+#: modules/comment/comment.module:1506
+msgid "Not published"
+msgstr "Elrejtve"
+
+#: modules/comment/comment.module:1553;1554
+msgid "Post comment"
+msgstr "Beküldés"
+
+#: modules/comment/comment.module:1656
+msgid "(No subject)"
+msgstr "(Nincs téma)"
+
+#: modules/comment/comment.module:1725
+msgid "!a comments per page"
+msgstr "!a egy oldalon"
+
+#: modules/comment/comment.module:1734
+msgid "Save settings"
+msgstr "Beállítás"
+
+#: modules/comment/comment.module:1745
+msgid ""
+"Select your preferred way to display the comments and click \"Save settings"
+"\" to activate your changes."
+msgstr ""
+"A választott hozzászólás megjelenítési mód a „Beállítás” gombbal rögzíthető."
+
+#: modules/comment/comment.module:1746
+msgid "Comment viewing options"
+msgstr "Hozzászólás megjelenítési lehetőségek"
+
+#: modules/comment/comment.module:1769
+msgid "by %a on %b"
+msgstr "%a, %b"
+
+#: modules/comment/comment.module:1779
+msgid "by"
+msgstr "-"
+
+#: modules/comment/comment.module:1806
+msgid "you can't post comments"
+msgstr "nem lehet hozzászólást küldeni"
+
+#: modules/comment/comment.module:1818
+msgid ""
+"<a href=\"@login\">Login</a> or <a href=\"@register\">register</a> to post "
+"comments"
+msgstr ""
+"A hozzászóláshoz <a href=\"@register\">regisztráció</a> és <a href=\"@login"
+"\">belépés</a> szükséges"
+
+#: modules/comment/comment.module:1821
+msgid "<a href=\"@login\">Login</a> to post comments"
+msgstr "A hozzászóláshoz <a href=\"@login\">belépés</a> szükséges"
+
+#: modules/comment/comment.module:1835
+msgid "Can not delete non-existent comment."
+msgstr "Nem létező hozzászólást nem lehet törölni."
+
+#: modules/comment/comment.module:1841
+msgid "Comment: deleted %subject."
+msgstr "Hozzászólás: „%subject” hozzászólás törölve."
+
+#: modules/comment/comment.module:1861
+msgid "Flat list - collapsed"
+msgstr "Egyszerű (csak címek)"
+
+#: modules/comment/comment.module:1862
+msgid "Flat list - expanded"
+msgstr "Egyszerű (teljes)"
+
+#: modules/comment/comment.module:1863
+msgid "Threaded list - collapsed"
+msgstr "Beágyazott (csak címek)"
+
+#: modules/comment/comment.module:1864
+msgid "Threaded list - expanded"
+msgstr "Beágyazott (teljes)"
+
+#: modules/comment/comment.module:314
+msgid "1 new comment"
+msgid_plural "@count new comments"
+msgstr[0] "1 új hozzászólás"
+msgstr[1] "@count új hozzászólás"
+
+#: modules/comment/comment.module:215
+msgid "access comments"
+msgstr "hozzászólások hozzáférése"
+
+#: modules/comment/comment.module:215
+msgid "post comments"
+msgstr "hozzászólások beküldése"
+
+#: modules/comment/comment.module:215
+msgid "administer comments"
+msgstr "hozzászólások adminisztrációja"
+
+#: modules/comment/comment.module:215
+msgid "post comments without approval"
+msgstr "hozzászólások beküldése elfogadás nélkül"
+
+#: modules/comment/comment.module:0
+msgid "comment"
+msgstr "hozzászólás"

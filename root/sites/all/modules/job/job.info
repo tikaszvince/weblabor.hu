@@ -1,0 +1,5 @@
+name = "Munka/állás"
+description = "Weblabor állás közvetítő"
+package = Weblabor
+version = 6.x-1.0
+core = 6.x

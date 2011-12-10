@@ -1,0 +1,2005 @@
+# $Id: includes.po,v 1.1.2.11 2008/02/15 12:58:05 goba Exp $
+#
+# Hungarian translation of Drupal 6 (includes)
+# Copyright 2007 Hungarian Translation Team
+# Generated from files:
+#  actions.inc,v 1.8 2007/12/31 14:51:04 goba
+#  batch.inc,v 1.14 2007/12/20 11:57:20 goba
+#  unicode.inc,v 1.29 2007/12/28 12:02:50 dries
+#  common.inc,v 1.756.2.5 2008/02/13 15:39:27 goba
+#  database.mysql.inc,v 1.89 2008/01/24 10:46:54 goba
+#  database.mysqli.inc,v 1.54 2008/01/23 09:59:29 goba
+#  database.pgsql.inc,v 1.68.2.1 2008/02/07 10:17:26 goba
+#  file.inc,v 1.121.2.1 2008/02/07 18:20:37 goba
+#  form.inc,v 1.265.2.4 2008/02/11 14:45:57 goba
+#  image.gd.inc,v 1.4 2008/01/15 10:17:42 goba
+#  image.inc,v 1.24 2008/01/28 16:05:17 goba
+#  install.inc,v 1.56.2.2 2008/02/11 15:10:26 goba
+#  locale.inc,v 1.174 2008/01/09 21:36:13 goba
+#  mail.inc,v 1.8 2008/01/25 17:04:00 goba
+#  menu.inc,v 1.255.2.7 2008/02/12 22:33:51 goba
+#  module.inc,v 1.115 2007/12/27 12:31:05 goba
+#  pager.inc,v 1.63 2007/12/06 09:58:30 goba
+#  tablesort.inc,v 1.47 2008/01/04 09:31:48 goba
+#  theme.inc,v 1.415 2008/01/27 19:47:06 goba
+#  xmlrpc.inc,v 1.47 2008/01/09 21:52:43 goba
+#  xmlrpcs.inc,v 1.24 2007/12/31 08:54:36 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.0\n"
+"POT-Creation-Date: 2008-02-15 13:50+0100\n"
+"PO-Revision-Date: 2008-01-25 19:16+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: includes/actions.inc:301
+msgid "Remove orphaned actions"
+msgstr "Árva akciók törlése"
+
+#: includes/actions.inc:46
+msgid ""
+"Stack overflow: too many calls to actions_do(). Aborting to prevent infinite "
+"recursion."
+msgstr ""
+"Verem túlcsordulás: túl sok actions_do() hívás. Megszakítva egy végtelen "
+"ciklus megelőzése érdekében."
+
+#: includes/actions.inc:275
+msgid "Action '%action' added."
+msgstr "%action akció hozzáadva."
+
+#: includes/actions.inc:297
+msgid "Removed orphaned action '%action' from database."
+msgstr "%action árva akció törölve az adatbázisból."
+
+#: includes/actions.inc:329
+msgid "Action %action saved."
+msgstr "%action akció elmentve."
+
+#: includes/actions.inc:337
+msgid "Action %action created."
+msgstr "%action akció létrehozva."
+
+#: includes/actions.inc:303
+msgid "One orphaned action (%orphans) exists in the actions table. !link"
+msgid_plural ""
+"@count orphaned actions (%orphans) exist in the actions table. !link"
+msgstr[0] "Egy árva akció (%orphans) van az akciók listájában. !link"
+msgstr[1] "@count árva akció (%orphans) van az aciók listájában. !link"
+
+#: includes/batch.inc:100
+msgid "HTTP POST is required."
+msgstr "HTTP POST szükséges."
+
+#: (duplicate) includes/batch.inc:101 includes/unicode.inc:86
+msgid "Error"
+msgstr "Hiba"
+
+#: includes/common.inc:333
+msgid "Site off-line"
+msgstr "Karbantartás miatt zárva"
+
+#: includes/common.inc:360
+msgid "Page not found"
+msgstr "Az oldal nem található"
+
+#: includes/common.inc:361
+msgid "The requested page could not be found."
+msgstr "A kért oldal nem található."
+
+#: includes/common.inc:389
+msgid "Access denied"
+msgstr "Hozzáférés megtagadva"
+
+#: includes/common.inc:390
+msgid "You are not authorized to access this page."
+msgstr "Nincs megfelelő jogosultság a lap megtekintéséhez."
+
+#: includes/common.inc:430
+msgid "The server can't issue HTTP requests"
+msgstr "A szerver nem tud HTTP kéréseket indítani"
+
+#: includes/common.inc:1087
+msgid "KB"
+msgstr "KB"
+
+#: includes/common.inc:1092
+msgid "@size @suffix"
+msgstr "@size @suffix"
+
+#: includes/common.inc:1124
+msgid "0 sec"
+msgstr "0 másodperc"
+
+#: includes/common.inc:3465
+msgid "emergency"
+msgstr "vészeset"
+
+#: includes/common.inc:3466
+msgid "alert"
+msgstr "figyelmeztetés"
+
+#: includes/common.inc:3467
+msgid "critical"
+msgstr "kritikus"
+
+#: includes/common.inc:3470
+msgid "notice"
+msgstr "megjegyzés"
+
+#: includes/common.inc:3471
+msgid "info"
+msgstr "információ"
+
+#: includes/common.inc:3472
+msgid "debug"
+msgstr "hibakeresés"
+
+#: includes/common.inc:609
+msgid "%message in %file on line %line."
+msgstr "%message - %file - %line. sor."
+
+#: includes/common.inc:2521;2528;2543;2559
+msgid "cron"
+msgstr "időzítő"
+
+#: includes/common.inc:2521
+msgid "Cron has been running for more than an hour and is most likely stuck."
+msgstr ""
+"Az időzített feladatok futtatása több mint egy órát vett már igénybe, "
+"feltehetően valamilyen hiba miatt."
+
+#: includes/common.inc:2528
+msgid "Attempting to re-run cron while it is already running."
+msgstr "Az időzített feladatok futtatásának kísérlete, miközben ezek futnak."
+
+#: includes/common.inc:2543
+msgid "Cron run completed."
+msgstr "Az időzített feladatok futtatása befejeződött."
+
+#: includes/common.inc:2559
+msgid "Cron run exceeded the time limit and was aborted."
+msgstr ""
+"Az időzített feladatok futtatása a rendelkezésre álló időkereten túllépett, "
+"ezért leállt."
+
+#: includes/common.inc:1083
+msgid "1 byte"
+msgid_plural "@count bytes"
+msgstr[0] "1 byte"
+msgstr[1] "@count byte"
+
+#: includes/common.inc:0
+msgid "1 year"
+msgid_plural "@count years"
+msgstr[0] "1 év"
+msgstr[1] "@count év"
+
+#: includes/common.inc:0
+msgid "1 week"
+msgid_plural "@count weeks"
+msgstr[0] "1 hét"
+msgstr[1] "@count hét"
+
+#: includes/common.inc:0
+msgid "1 day"
+msgid_plural "@count days"
+msgstr[0] "1 nap"
+msgstr[1] "@count nap"
+
+#: includes/common.inc:0
+msgid "1 hour"
+msgid_plural "@count hours"
+msgstr[0] "1 óra"
+msgstr[1] "@count óra"
+
+#: includes/common.inc:0
+msgid "1 min"
+msgid_plural "@count min"
+msgstr[0] "1 perc"
+msgstr[1] "@count perc"
+
+#: includes/common.inc:0
+msgid "1 sec"
+msgid_plural "@count sec"
+msgstr[0] "1 másodperc"
+msgstr[1] "@count másodperc"
+
+#: (duplicate) includes/database.mysql.inc:26 includes/database.mysqli.inc:29
+msgid "MySQL database"
+msgstr "MySQL adatbázis"
+
+#: (duplicate) includes/database.mysql.inc:32 includes/database.mysqli.inc:35
+msgid "Your MySQL Server is too old. Drupal requires at least MySQL %version."
+msgstr ""
+"A MySQL adatbázis szerver nagyon régi verziójú. A Drupal működtetéséhez "
+"legalább MySQL %version szükséges."
+
+#: (duplicate) includes/database.pgsql.inc:23
+msgid "PostgreSQL database"
+msgstr "PostgreSQL adatbázis"
+
+#: (duplicate) includes/database.pgsql.inc:29
+msgid ""
+"Your PostgreSQL Server is too old. Drupal requires at least PostgreSQL %"
+"version."
+msgstr ""
+"A PostgreSQL adatbázis szerver nagyon régi verziójú. A Drupal működtetéséhez "
+"legalább PostgreSQL %version szükséges."
+
+#: (duplicate) includes/database.pgsql.inc:405
+msgid ""
+"Your PostgreSQL database is set up with the wrong character encoding (%"
+"encoding). It is possible it will not work as expected. It is advised to "
+"recreate it with UTF-8/Unicode encoding. More information can be found in "
+"the <a href=\"@url\">PostgreSQL documentation</a>."
+msgstr ""
+"A PostgreSQL adatbázis nem megfelelő kódolással (%encoding) van beállítva. "
+"Lehetséges, hogy nem az elvárt módon fog működni, ezért ajánlatos újra "
+"létrehozni UTF-8/Unicode kódolás használatával. További információ a <a href="
+"\"@url\">PostgreSQL dokumentációban</a>."
+
+#: includes/file.inc:104
+msgid "The directory %directory has been created."
+msgstr "„%directory” könyvtár létrehozva."
+
+#: includes/file.inc:118
+msgid ""
+"The permissions of directory %directory have been changed to make it "
+"writable."
+msgstr ""
+"„%directory” könyvtárra vonatkozó jogosultság az írhatóság érdekében "
+"megváltoztatva."
+
+#: includes/file.inc:121
+msgid "The directory %directory is not writable"
+msgstr "„%directory” könyvtár nem írható."
+
+#: includes/file.inc:135;136
+msgid ""
+"Security warning: Couldn't write .htaccess file. Please create a .htaccess "
+"file in your %directory directory which contains the following lines: <code>!"
+"htaccess</code>"
+msgstr ""
+"Biztonsági figyelmeztetés: a .htaccess fájl nem írható! %directory "
+"könyvtárban létre kell hozni egy .htaccess nevű fájlt a következő "
+"tartalommal: <code>!htaccess</code>"
+
+#: includes/file.inc:225
+msgid ""
+"The selected file %file could not be uploaded, because the destination %"
+"directory is not properly configured."
+msgstr ""
+"„%file” nem menthető el, mert „%directory” célkönyvtár nincs megfelelően "
+"beállítva."
+
+#: includes/file.inc:241
+msgid ""
+"The selected file %file could not be copied, because no file by that name "
+"exists. Please check that you supplied the correct filename."
+msgstr "„%file” nem található, így nem másolható."
+
+#: includes/file.inc:254;305
+msgid ""
+"The selected file %file could not be copied, because a file by that name "
+"already exists in the destination."
+msgstr "„%file” nem másolható, mert már létezik egy azonos nevű célfájl."
+
+#: includes/file.inc:259
+msgid "The selected file %file could not be copied."
+msgstr "„%file” nem másolható."
+
+#: includes/file.inc:339
+msgid "The removal of the original file %file has failed."
+msgstr "„%file” fájl törlése sikertelen."
+
+#: includes/file.inc:380
+msgid "For security reasons, your upload has been renamed to %filename."
+msgstr ""
+"Biztonsági okokból a feltöltött fájlt át kellett nevezni. Az új név: %"
+"filename."
+
+#: includes/file.inc:504
+msgid ""
+"The file %file could not be saved, because it exceeds %maxsize, the maximum "
+"allowed size for uploads."
+msgstr ""
+"„%file” nem menthető el, mert az engedélyezettnél (%maxsize) nagyobb méretű."
+
+#: includes/file.inc:509
+msgid "The file %file could not be saved, because the upload did not complete."
+msgstr "„%file” nem menthető el, mert a feltöltés nem volt teljes."
+
+#: includes/file.inc:514
+msgid "The file %file could not be saved. An unknown error has occurred."
+msgstr "„%file” azonosítatlan hiba miatt nem menthető el."
+
+#: includes/file.inc:558
+msgid "The selected file %name could not be uploaded."
+msgstr "„%name” nem tölthető fel."
+
+#: includes/file.inc:573
+msgid "File upload error. Could not move uploaded file."
+msgstr "Fájl feltöltési hiba. A feltöltött fájl nem mozgatható."
+
+#: includes/file.inc:603
+msgid ""
+"Its name exceeds the 255 characters limit. Please rename the file and try "
+"again."
+msgstr ""
+"A név több mint 255 karakter. Csak rövidebb nevű fájlok tölthetőek fel."
+
+#: includes/file.inc:628
+msgid "Only files with the following extensions are allowed: %files-allowed."
+msgstr ""
+"Csak a következő kiterjesztések egyikével rendelkező fájlok tölthetőek fel: %"
+"files-allowed."
+
+#: includes/file.inc:657
+msgid "The file is %filesize exceeding the maximum file size of %maxsize."
+msgstr ""
+"A feltöltött fájl mérete (%filesize) túllépi a megengedett fájl méretet (%"
+"maxsize)."
+
+#: includes/file.inc:662
+msgid "The file is %filesize which would exceed your disk quota of %quota."
+msgstr ""
+"A fájl mérete (%filesize) felöltésével túllépné a lemezen rendelkezésre álló "
+"kvótát (%quota)."
+
+#: includes/file.inc:681
+msgid "Only JPEG, PNG and GIF images are allowed."
+msgstr "Csak JPEG, PNG vagy GIF formátumú képek menengedettek."
+
+#: includes/file.inc:716
+msgid ""
+"The image was resized to fit within the maximum allowed dimensions of %"
+"dimensions pixels."
+msgstr ""
+"A képet át kellett méretezni, hogy az engedélyezett %dimension méreten belül "
+"maradjon."
+
+#: includes/file.inc:724
+msgid "The image is too large; the maximum dimensions are %dimensions pixels."
+msgstr "A feltöltött kép túl nagy, legfeljebb %dimensions képpont lehet."
+
+#: includes/file.inc:733
+msgid "The image is too small; the minimum dimensions are %dimensions pixels."
+msgstr "A feltöltött kép túl kicsi, legalább %dimensions képpont legyen."
+
+#: includes/file.inc:758
+msgid "The file could not be created."
+msgstr "A fájl nem hozható létre."
+
+#: includes/file.inc:122
+msgid ""
+"The directory %directory is not writable, because it does not have the "
+"correct permissions set."
+msgstr ""
+"„%directory” könyvtár a megfelelő jogosultságok hiánya miatt nem írható."
+
+#: includes/file.inc:226
+msgid ""
+"The selected file %file could not be uploaded, because the destination %"
+"directory could not be found, or because its permissions do not allow the "
+"file to be written."
+msgstr ""
+"„%file” nem menthető el, mert „%directory” célkönyvtár nem létezik, vagy "
+"nincs megfelelő jogosultság az írásához."
+
+#: includes/file.inc:574
+msgid "file"
+msgstr "fájl"
+
+#: includes/file.inc:574
+msgid ""
+"Upload error. Could not move uploaded file %file to destination %destination."
+msgstr ""
+"Fájl feltöltési hiba. A feltöltött fájl (%file) nem mozgatható el a "
+"célkönyvtárba (%destination)."
+
+#: includes/form.inc:567
+msgid ""
+"Validation error, please try again. If this error persists, please contact "
+"the site administrator."
+msgstr ""
+"Helyesség ellenőrzési hiba. Kérjük próbálkozzon újra! Amennyiben a hiba "
+"továbbra is fennáll, javasolt felvenni a kapcsolatot a webhely gazdájával."
+
+#: includes/form.inc:1575
+msgid "Confirm password"
+msgstr "Jelszó megerősítése"
+
+#: includes/form.inc:1598
+msgid "The specified passwords do not match."
+msgstr "A megadott jelszavak nem egyeznek meg."
+
+#: includes/form.inc:1602
+msgid "Password field is required."
+msgstr "A jelszó mező szükséges."
+
+#: includes/form.inc:1683
+msgid "The specified date is invalid."
+msgstr "A megadott dátum érvénytelen."
+
+#: (duplicate) includes/form.inc:672
+msgid "!name field is required."
+msgstr "„!name” mező szükséges."
+
+#: (duplicate) includes/form.inc:677
+msgid ""
+"!name cannot be longer than %max characters but is currently %length "
+"characters long."
+msgstr ""
+"„!name” értéke nem lehet hosszabb, mint %max karakter, a jelenlegi hossza "
+"viszont %length karakter."
+
+#: (duplicate) includes/form.inc:2161
+msgid "This field is required."
+msgstr "Szükséges mező."
+
+#: (duplicate) includes/form.inc:2166 ;2169
+msgid "!title: !required"
+msgstr "!title: !required"
+
+#: (duplicate) includes/form.inc:2407
+msgid "Initializing."
+msgstr "Indítás."
+
+#: (duplicate) includes/form.inc:2408
+msgid "Remaining @remaining of @total."
+msgstr "@remaining/@total van még hátra."
+
+#: (duplicate) includes/form.inc:2409
+msgid "An error has occurred."
+msgstr "Hiba történt."
+
+#: (duplicate) includes/form.inc:2482
+msgid "Please continue to <a href=\"@error_url\">the error page</a>"
+msgstr "További információ a <a href=\"@error_url\">hiba oldalon</a>"
+
+#: includes/form.inc:692
+msgid "Illegal choice %choice in !name element."
+msgstr "„!name” mezőben érvénytelen kiválasztott érték (%choice)."
+
+#: includes/image.gd.inc:18
+msgid "GD2 image manipulation toolkit"
+msgstr "GD2 képkezelési eszközkészlet"
+
+#: includes/image.gd.inc:28
+msgid "The GD toolkit is installed and working properly."
+msgstr "A GD eszközkészlet telepítve van és helyesen működik."
+
+#: includes/image.gd.inc:33
+msgid "JPEG quality"
+msgstr "JPEG minőség"
+
+#: includes/image.gd.inc:34
+msgid ""
+"Define the image quality for JPEG manipulations. Ranges from 0 to 100. "
+"Higher values mean better image quality but bigger files."
+msgstr ""
+"A JPEG műveletek során alkalmazott képminőség, melyet nulla és száz közötti "
+"számként kell megadni. A nagyobb értékek jobb minőségű de nagyobb fájlméretű "
+"képet eredményeznek."
+
+#: includes/image.gd.inc:38
+msgid "%"
+msgstr "%"
+
+#: includes/image.gd.inc:45
+msgid ""
+"The GD image toolkit requires that the GD module for PHP be installed and "
+"configured properly. For more information see <a href=\"@url\">PHP's image "
+"documentation</a>."
+msgstr ""
+"A GD képkezelő eszközkészlet működéséhez a PHP GD kiterjesztésének "
+"telepítése és beállítása szükséges. További információ <a href=\"@url\">a "
+"PHP kézikönyvben</a>."
+
+#: includes/image.gd.inc:57
+msgid "JPEG quality must be a number between 0 and 100."
+msgstr "A JPEG minőség 0 és 100 közötti szám kell legyen."
+
+#: includes/image.inc:95
+msgid ""
+"The selected image handling toolkit %toolkit can not correctly process %"
+"function."
+msgstr ""
+"A kiválasztott „%toolkit” eszközkészlet nem rendelkezik „%function” "
+"képességgel."
+
+#: includes/install.inc:727
+msgid "Currently using !item !version"
+msgstr "Jelenleg használatban: !item !version"
+
+#: includes/locale.inc:48;279
+msgid "Right to left"
+msgstr "Jobbról balra"
+
+#: includes/locale.inc:48;279
+msgid "Left to right"
+msgstr "Balról jobbra"
+
+#: includes/locale.inc:90
+msgid "Code"
+msgstr "Kód"
+
+#: includes/locale.inc:90
+msgid "English name"
+msgstr "Angol név"
+
+#: includes/locale.inc:90
+msgid "Native name"
+msgstr "Név"
+
+#: includes/locale.inc:90;275
+msgid "Direction"
+msgstr "Irány"
+
+#: includes/locale.inc:122
+msgid "Configuration saved."
+msgstr "A beállítások elmentve."
+
+#: includes/locale.inc:157
+msgid "Predefined language"
+msgstr "Előre definiált nyelv"
+
+#: includes/locale.inc:161;710
+msgid "Language name"
+msgstr "Nyelv neve"
+
+#: includes/locale.inc:164
+msgid ""
+"Select the desired language and click the <em>Add language</em> button. (Use "
+"the <em>Custom language</em> options if your desired language does not "
+"appear in this list.)"
+msgstr ""
+"A kívánt nyelv kiválasztása után a <em>Nyelv hozzáadása</em> gombot kell "
+"megnyomni. (Az <em>Egyedi nyelv</em> mezőcsoport ad lehetőséget olyan "
+"nyelvek hozzáadására, amelyek nem találhatók meg a listában.)"
+
+#: includes/locale.inc:176
+msgid "Custom language"
+msgstr "Egyedi nyelv"
+
+#: includes/locale.inc:183
+msgid "Add custom language"
+msgstr "Egyedi nyelv hozzáadása"
+
+#: includes/locale.inc:203
+msgid "Save language"
+msgstr "Nyelv mentése"
+
+#: includes/locale.inc:229;239
+msgid "Language code"
+msgstr "Nyelv kód"
+
+#: includes/locale.inc:245
+msgid ""
+"<a href=\"@rfc4646\">RFC 4646</a> compliant language identifier. Language "
+"codes typically use a country code, and optionally, a script or regional "
+"variant name. <em>Examples: \"en\", \"en-US\" and \"zh-Hant\".</em>"
+msgstr ""
+"<a href=\"@rfc4646\">RFC 4646</a> szerinti nyelv azonosító. A nyelv "
+"azonosítók jellemzően egy országkódot tartalmaznak, opcionálisan egy írásmód "
+"vagy helyi változat megnevezéssel. <em>Például „hu”, „en”, „en-US” vagy „zh-"
+"Hant”</em>."
+
+#: includes/locale.inc:249
+msgid "Language name in English"
+msgstr "A nyelv neve angolul"
+
+#: includes/locale.inc:253
+msgid ""
+"Name of the language in English. Will be available for translation in all "
+"languages."
+msgstr ""
+"A nyelv neve angolul, melyet így a különböző nyelvű felületeken is "
+"megfelelően le lehet fordítani. <em>Például: Hungarian</em>."
+
+#: includes/locale.inc:256
+msgid "Native language name"
+msgstr "A nyelv neve"
+
+#: includes/locale.inc:260
+msgid "Name of the language in the language being added."
+msgstr "A nyelv neve az eredeti nyelven. <em>Például: Magyar</em>."
+
+#: includes/locale.inc:263
+msgid "Path prefix"
+msgstr "Útvonal előtag"
+
+#: includes/locale.inc:266
+msgid ""
+"Language code or other custom string for pattern matching within the path. "
+"With language negotiation set to <em>Path prefix only</em> or <em>Path "
+"prefix with language fallback</em>, this site is presented in this language "
+"when the Path prefix value matches an element in the path. For the default "
+"language, this value may be left blank. <strong>Modifying this value will "
+"break existing URLs and should be used with caution in a production "
+"environment.</strong> <em>Example: Specifying \"deutsch\" as the path prefix "
+"for German results in URLs in the form \"www.example.com/deutsch/node\".</em>"
+msgstr ""
+"Nyelvi azonosító vagy más egyedi karaktersorozat, amit az útvonalak elején "
+"használ majd a rendszer. A <em>Csak útvonal előtagok</em> vagy <em>Útvonal "
+"előtagok nyelvi alapértelmezéssel</em> módokban a webhely nyelve az útvonal "
+"előtag illeszkedése alapján kerül megállapításra. Az alapértelmezett nyelv "
+"esetén üresen hagyható. <strong>Az érték módosítása meglévő éles webhelyen a "
+"korábbi webcímeket megváltoztatja, ezért csak komolyan átgondolva érdemes "
+"megváltoztatni.</strong> <em>Példák: A \"nemet\" értéket megadva útvonal "
+"előtagnak a német nyelvhez \"www.example.com/nemet/node\" típusú webcímeket "
+"eredményez.</em>"
+
+#: includes/locale.inc:269
+msgid "Language domain"
+msgstr "A nyelv domain neve"
+
+#: includes/locale.inc:272
+msgid ""
+"Language-specific URL, with protocol. With language negotiation set to "
+"<em>Domain name only</em>, the site is presented in this language when the "
+"URL accessing the site references this domain. For the default language, "
+"this value may be left blank. <strong>This value must include a protocol as "
+"part of the string.</strong> <em>Example: Specifying \"http://example.de\" "
+"or \"http://de.example.com\" as language domains for German results in URLs "
+"in the forms \"http://example.de/node\" and \"http://de.example.com/node\", "
+"respectively.</em>"
+msgstr ""
+"A nyelvhez rendelt webcím protokoll meghatározással. A <em>Csak domain "
+"nevek</em> nyelv megállapítási módban a nyelv kiválasztásához használatos "
+"érték. Az alapértelmezett nyelv esetén üresen hagyható. <strong>Meg kell "
+"adni a protokollt is.</strong> <em>Például: Az \"http://example.de\" vagy "
+"\"http://de.example.com\" webcím megadásával a német nyelvhez \"http://"
+"example.de/node\" illetve \"http://de.example.com/node\", típusú webcímek "
+"tartoznak majd.</em>"
+
+#: includes/locale.inc:277
+msgid "Direction that text in this language is presented."
+msgstr "Ezen a nyelven megjelenő tartalmak írási iránya."
+
+#: includes/locale.inc:291
+msgid "The language %language (%code) already exists."
+msgstr "„%language” (%code) nyelv már létezik."
+
+#: includes/locale.inc:298
+msgid "Invalid language code."
+msgstr "Érvénytelen nyelv kód."
+
+#: includes/locale.inc:315;321
+msgid ""
+"The language %language has been created and can now be used. More "
+"information is available on the <a href=\"@locale-help\">help screen</a>."
+msgstr ""
+"„%language” nyelv hozzáadva, használatra kész. További információ a <a href="
+"\"%locale-help\">súgó oldalon</a> található."
+
+#: includes/locale.inc:339
+msgid "Domain and path prefix values should not be set at the same time."
+msgstr "A domain név és útvonal előtag nem adható meg egyidőben."
+
+#: includes/locale.inc:342
+msgid "The domain (%domain) is already tied to a language (%language)."
+msgstr "A megadott domain (%domain) már egy nyelvhez (%language) van rendelve."
+
+#: includes/locale.inc:345
+msgid "Only the default language can have both the domain and prefix empty."
+msgstr ""
+"Csak az alapértelmezett nyelvnél lehet mind az útvonal előtag mind a domain "
+"név üres."
+
+#: includes/locale.inc:348
+msgid "The prefix (%prefix) is already tied to a language (%language)."
+msgstr ""
+"A megadott útvonal előtag (%prefix) már egy nyelvhez (%language) van "
+"rendelve."
+
+#: includes/locale.inc:386
+msgid "The English language cannot be deleted."
+msgstr "A beépített angol nyelv nem törölhető."
+
+#: includes/locale.inc:391
+msgid "The default language cannot be deleted."
+msgstr "Az alapértelmezett nyelv nem törölhető."
+
+#: includes/locale.inc:403
+msgid "Are you sure you want to delete the language %name?"
+msgstr "„%name” nyelv biztosan törölhető?"
+
+#: includes/locale.inc:403
+msgid ""
+"Deleting a language will remove all interface translations associated with "
+"it, and posts in this language will be set to be language neutral. This "
+"action cannot be undone."
+msgstr ""
+"Egy nyelv törlése során minden ehhez kapcsolódó felület fordítás törlődik. "
+"Az ezen nyelven tárolt tartalmak nyelv függetlenek lesznek. A művelet nem "
+"vonható vissza."
+
+#: includes/locale.inc:422;423
+msgid "The language %locale has been removed."
+msgstr "„%locale” nyelv eltávolítva."
+
+#: includes/locale.inc:446
+msgid "Language negotiation"
+msgstr "Nyelv megállapítás"
+
+#: includes/locale.inc:449
+msgid "None."
+msgstr "Nincs."
+
+#: includes/locale.inc:450
+msgid "Path prefix only."
+msgstr "Csak útvonal előtagok."
+
+#: includes/locale.inc:451
+msgid "Path prefix with language fallback."
+msgstr "Útvonal előtagok nyelvi alapértelmzéssel."
+
+#: includes/locale.inc:452
+msgid "Domain name only."
+msgstr "Csak domain nevek."
+
+#: includes/locale.inc:454
+msgid ""
+"Select the mechanism used to determine your site's presentation language. "
+"<strong>Modifying this setting may break all incoming URLs and should be "
+"used with caution in a production environment.</strong>"
+msgstr ""
+"A webhely nyelvének meghatározásához használt mód kiválasztása. <strong>A "
+"beállítás módosítása a kiírt linkeket és a kérésekben beérkező linkek "
+"értelmezését is megváltoztatja, ezért elronthat meglévő webcímeket. Így csak "
+"alapos meggondolás után állítandó át működő webhelyeken.</strong>"
+
+#: includes/locale.inc:468
+msgid "Language negotiation configuration saved."
+msgstr "Nyelv megállapítási beállítások elmentve."
+
+#: includes/locale.inc:501
+msgid "English (built-in)"
+msgstr "Angol (beépített)"
+
+#: includes/locale.inc:549
+msgid "String contains"
+msgstr "A karaktersorozat tartalma"
+
+#: includes/locale.inc:551
+msgid "Leave blank to show all strings. The search is case sensitive."
+msgstr ""
+"Az összes karaktersorozat megtekintéséhez maradjon üresen. A keresés kisbetű/"
+"nagybetű érzékeny."
+
+#: includes/locale.inc:559
+msgid "English (provided by Drupal)"
+msgstr "Angol (az eredeti Drupal változat)"
+
+#: includes/locale.inc:562
+msgid "Search in"
+msgstr "Keresés"
+
+#: includes/locale.inc:564
+msgid "Both translated and untranslated strings"
+msgstr "Lefordított és fordítatlan karaktersorozatok"
+
+#: includes/locale.inc:564
+msgid "Only translated strings"
+msgstr "Csak lefordított karaktersorozatok"
+
+#: includes/locale.inc:564
+msgid "Only untranslated strings"
+msgstr "Csak fordítatlan karaktersorozatok"
+
+#: includes/locale.inc:568
+msgid "Limit search to"
+msgstr "Keresés csak a következőkben"
+
+#: includes/locale.inc:570
+msgid "All text groups"
+msgstr "Minden szövegcsoport"
+
+#: includes/locale.inc:601
+msgid "Already added languages"
+msgstr "Már hozzáadott nyelvek"
+
+#: includes/locale.inc:602
+msgid "Languages not yet added"
+msgstr "Még hozzá nem adott nyelvek"
+
+#: includes/locale.inc:609
+msgid "Import translation"
+msgstr "Fordítás importálása"
+
+#: includes/locale.inc:612
+msgid "Language file"
+msgstr "Nyelvi fájl"
+
+#: includes/locale.inc:614
+msgid "A Gettext Portable Object (<em>.po</em>) file."
+msgstr "Egy Gettext Portable Object (<em>.po</em>) fájl."
+
+#: includes/locale.inc:617
+msgid "Import into"
+msgstr "Import"
+
+#: includes/locale.inc:620
+msgid ""
+"Choose the language you want to add strings into. If you choose a language "
+"which is not yet set up, it will be added."
+msgstr ""
+"A fordítások importálásának célnyelve. Még be nem állított nyelv választása "
+"esetén az importálás előtt a nyelv is felvételre kerül."
+
+#: includes/locale.inc:623;715;734;1970
+msgid "Text group"
+msgstr "Szövegcsoport"
+
+#: includes/locale.inc:626
+msgid "Imported translations will be added to this text group."
+msgstr "A betöltött fordítások ebbe a szövegcsoportba kerülnek elmentésre."
+
+#: includes/locale.inc:629
+msgid "Mode"
+msgstr "Mód"
+
+#: includes/locale.inc:632
+msgid "Strings in the uploaded file replace existing ones, new ones are added"
+msgstr ""
+"A feltöltött karaktersorozatok felülírják a létezőket, az új "
+"karaktersorozatokkal bővül az adatbázis"
+
+#: includes/locale.inc:633
+msgid "Existing strings are kept, only new strings are added"
+msgstr ""
+"A már fordítással rendelkező karaktersorozatok megmaradnak, csak az új "
+"karaktersorozatokkal bővül az adatbázis"
+
+#: includes/locale.inc:655
+msgid "The language %language has been created."
+msgstr "%language nyelv hozzáadva."
+
+#: includes/locale.inc:661;662
+msgid "The translation import of %filename failed."
+msgstr "„%filename” fordítás importálása sikertelen."
+
+#: includes/locale.inc:666
+msgid "File to import not found."
+msgstr "Az importálandó fájl nem található."
+
+#: includes/locale.inc:706
+msgid "Export translation"
+msgstr "Fordítás exportálása"
+
+#: includes/locale.inc:712
+msgid ""
+"Select the language to export in Gettext Portable Object (<em>.po</em>) "
+"format."
+msgstr ""
+"A Gettext Portable Object (<em>.po</em>) formátumba exportálandó nyelv."
+
+#: includes/locale.inc:729
+msgid "Export template"
+msgstr "Sablon exportálása"
+
+#: includes/locale.inc:731
+msgid ""
+"Generate a Gettext Portable Object Template (<em>.pot</em>) file with all "
+"strings from the Drupal locale database."
+msgstr ""
+"Gettext Portable Object Template (<em>.pot</em>) sablon generálása az összes "
+"adatbázisban található fordítandó karaktersorozattal."
+
+#: includes/locale.inc:773
+msgid "String not found."
+msgstr "A karaktersorozat nem található."
+
+#: includes/locale.inc:781
+msgid "Original text"
+msgstr "Eredeti szöveg"
+
+#: includes/locale.inc:823
+msgid "Save translations"
+msgstr "Fordítások mentése"
+
+#: includes/locale.inc:853
+msgid "The string has been saved."
+msgstr "Karaktersorozat elmentve."
+
+#: includes/locale.inc:879
+msgid "The string has been removed."
+msgstr "Karaktersorozat törölve."
+
+#: includes/locale.inc:973
+msgid "The language selected for import is not supported."
+msgstr "Az importáláshoz választott nyelv nem támogatott."
+
+#: includes/locale.inc:988
+msgid ""
+"The translation file %filename appears to have a missing or malformed header."
+msgstr "„%filename” fájl fejléc nélküli vagy hibás fejlécet tartalmaz."
+
+#: includes/locale.inc:998
+msgid ""
+"The translation was successfully imported. There are %number newly created "
+"translated strings, %update strings were updated and %delete strings were "
+"removed."
+msgstr ""
+"Sikeres fordítás import. %number új, %update módosított és %delete törölt "
+"karaktersorozat."
+
+#: includes/locale.inc:1374
+msgid ""
+"The translation file %filename contains an error: the plural formula could "
+"not be parsed."
+msgstr "„%filename” hibás: a többesszámokat leíró formula nem elemezhető."
+
+#: includes/locale.inc:1970
+msgid "String"
+msgstr "Karaktersorozat"
+
+#: includes/locale.inc:1996
+msgid "No strings found for your search."
+msgstr "Egy karaktersorozat sem illeszkedik a feltételekre."
+
+#: (duplicate) includes/locale.inc:1021
+msgid ""
+"The translation import failed, because the file %filename could not be read."
+msgstr "„%filename” nem olvasható, importálása sikertelen."
+
+#: (duplicate) includes/locale.inc:1050
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" was expected "
+"but not found on line %line."
+msgstr "„%filename” hibás: a várt „msgstr” nem található - %line. sor"
+
+#: (duplicate) includes/locale.inc:1056
+msgid ""
+"The translation file %filename contains an error: \"msgid_plural\" was "
+"expected but not found on line %line."
+msgstr "„%filename” hibás: a várt „msgid_plural” nem található - %line. sor"
+
+#: (duplicate) includes/locale.inc:1062 ;1080 ;1092 ;1100 ;1114 ;1123
+msgid "The translation file %filename contains a syntax error on line %line."
+msgstr "„%filename” hibás - %line. sor"
+
+#: (duplicate) includes/locale.inc:1074
+msgid ""
+"The translation file %filename contains an error: \"msgid\" is unexpected on "
+"line %line."
+msgstr "„%filename” hibás: nem várt „msgid” - %line. sor"
+
+#: (duplicate) includes/locale.inc:1088
+msgid ""
+"The translation file %filename contains an error: \"msgstr[]\" is unexpected "
+"on line %line."
+msgstr "„%filename” hibás: nem várt „msgstr[]” - %line. sor"
+
+#: (duplicate) includes/locale.inc:1108
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" is unexpected "
+"on line %line."
+msgstr "„%filename” hibás: nem várt „msgstr” - %line. sor"
+
+#: (duplicate) includes/locale.inc:1136
+msgid ""
+"The translation file %filename contains an error: there is an unexpected "
+"string on line %line."
+msgstr "„%filename” hibás: váratlan karaktersorozat - %line. sor"
+
+#: (duplicate) includes/locale.inc:1147
+msgid "The translation file %filename ended unexpectedly at line %line."
+msgstr "„%filename” hibás: váratlan fájl vége - %line. sor"
+
+#: (duplicate) includes/locale.inc:2514
+msgid "Importing interface translations"
+msgstr "Felület fordítás importálása"
+
+#: (duplicate) includes/locale.inc:2515
+msgid "Starting import"
+msgstr "Importálás megkezdése"
+
+#: (duplicate) includes/locale.inc:2516
+msgid "Error importing interface translations"
+msgstr "Hiba a felület fordítás importálás közben."
+
+#: includes/locale.inc:942
+msgid "The %language language (%code) has been created."
+msgstr "„%language” (%code) nyelv hozzáadva."
+
+#: includes/locale.inc:999
+msgid ""
+"Imported %file into %locale: %number new strings added, %update updated and %"
+"delete removed."
+msgstr ""
+"%file „%locale” fordításba importálása sikeres. %number új, %update "
+"módosított és %delete törölt karaktersorozat."
+
+#: includes/locale.inc:1816
+msgid "Exported %locale translation file: %filename."
+msgstr "„%locale” fordítás exportálva „%filename” néven."
+
+#: includes/locale.inc:1820
+msgid "Exported translation file: %filename."
+msgstr "Fordítás exportálva „%filename” néven."
+
+#: includes/locale.inc:2161
+msgid "Updated JavaScript translation file for the language %language."
+msgstr "%language nyelvhez tartozó JavaScript nyelvi fájl frissült."
+
+#: includes/locale.inc:2164
+msgid "Created JavaScript translation file for the language %language."
+msgstr "%language nyelvhez tartozó JavaScript nyelvi fájl létrejött."
+
+#: includes/locale.inc:2167
+msgid ""
+"Removed JavaScript translation file for the language %language, because no "
+"translations currently exist for that language."
+msgstr ""
+"%language nyelvhez tartozó JavaScript nyelvi fájl törölve, mivel nem "
+"tartozik ehhez a nyelvhez JavaScript-ben használt fordítás."
+
+#: includes/locale.inc:2170
+msgid ""
+"An error occurred during creation of the JavaScript translation file for the "
+"language %language."
+msgstr ""
+"%language nyelvhez tartozó JavaScript nyelvi fájl létrehozása közben hiba "
+"lépett fel."
+
+#: includes/locale.inc:2554
+msgid "One translation file imported for the newly installed modules."
+msgid_plural ""
+"@count translation files imported for the newly installed modules."
+msgstr[0] "Az újonnan telepített modulokhoz egy fordítási fájl betöltve."
+msgstr[1] "Az újonnan telepített modulokhoz @count fordítási fájl betöltve."
+
+#: includes/locale.inc:2564
+msgid "One translation file imported for the enabled modules."
+msgid_plural "@count translation files imported for the enabled modules."
+msgstr[0] "A bekapcsolt modulokhoz egy fordítási fájl betöltve."
+msgstr[1] "A bekapcsolt modulokhoz @count fordítási fájl betöltve."
+
+#: includes/locale.inc:2236
+msgid "Afar"
+msgstr "Afar"
+
+#: includes/locale.inc:2237
+msgid "Abkhazian"
+msgstr "Abház"
+
+#: includes/locale.inc:2238
+msgid "Avestan"
+msgstr "Avesztai"
+
+#: includes/locale.inc:2239
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: includes/locale.inc:2240
+msgid "Akan"
+msgstr "Akan"
+
+#: includes/locale.inc:2241
+msgid "Amharic"
+msgstr "Amhara"
+
+#: includes/locale.inc:2242
+msgid "Arabic"
+msgstr "Arab"
+
+#: includes/locale.inc:2243
+msgid "Assamese"
+msgstr "Asszámi"
+
+#: includes/locale.inc:2244
+msgid "Avar"
+msgstr "Avar"
+
+#: includes/locale.inc:2245
+msgid "Aymara"
+msgstr "Amhara"
+
+#: includes/locale.inc:2246
+msgid "Azerbaijani"
+msgstr "Azerbajdzsán"
+
+#: includes/locale.inc:2247
+msgid "Bashkir"
+msgstr "Baskír"
+
+#: includes/locale.inc:2248
+msgid "Belarusian"
+msgstr "Belorusz"
+
+#: includes/locale.inc:2249
+msgid "Bulgarian"
+msgstr "Bolgár"
+
+#: includes/locale.inc:2250
+msgid "Bihari"
+msgstr "Bihari"
+
+#: includes/locale.inc:2251
+msgid "Bislama"
+msgstr "Bislama"
+
+#: includes/locale.inc:2252
+msgid "Bambara"
+msgstr "Bambara"
+
+#: includes/locale.inc:2253
+msgid "Bengali"
+msgstr "Bengáli"
+
+#: includes/locale.inc:2254
+msgid "Tibetan"
+msgstr "Tibeti"
+
+#: includes/locale.inc:2255
+msgid "Breton"
+msgstr "Breton"
+
+#: includes/locale.inc:2256
+msgid "Bosnian"
+msgstr "Bosnyák"
+
+#: includes/locale.inc:2257
+msgid "Catalan"
+msgstr "Katalán"
+
+#: includes/locale.inc:2258
+msgid "Chechen"
+msgstr "Csecsen"
+
+#: includes/locale.inc:2259
+msgid "Chamorro"
+msgstr "Chamorro"
+
+#: includes/locale.inc:2260
+msgid "Corsican"
+msgstr "Korzikai"
+
+#: includes/locale.inc:2261
+msgid "Cree"
+msgstr "Krí"
+
+#: includes/locale.inc:2262
+msgid "Czech"
+msgstr "Cseh"
+
+#: includes/locale.inc:2263
+msgid "Old Slavonic"
+msgstr "Óegyházi szláv"
+
+#: includes/locale.inc:2264
+msgid "Chuvash"
+msgstr "Csuvas"
+
+#: includes/locale.inc:2265
+msgid "Welsh"
+msgstr "Walesi"
+
+#: includes/locale.inc:2266
+msgid "Danish"
+msgstr "Dán"
+
+#: includes/locale.inc:2267
+msgid "German"
+msgstr "Német"
+
+#: includes/locale.inc:2268
+msgid "Maldivian"
+msgstr "Maldív"
+
+#: includes/locale.inc:2269
+msgid "Bhutani"
+msgstr "Butáni"
+
+#: includes/locale.inc:2270
+msgid "Ewe"
+msgstr "Ewe"
+
+#: includes/locale.inc:2271
+msgid "Greek"
+msgstr "Görög"
+
+#: includes/locale.inc:2272
+msgid "English"
+msgstr "Angol"
+
+#: includes/locale.inc:2273
+msgid "Esperanto"
+msgstr "Eszperantó"
+
+#: includes/locale.inc:2274
+msgid "Spanish"
+msgstr "Spanyol"
+
+#: includes/locale.inc:2275
+msgid "Estonian"
+msgstr "Észt"
+
+#: includes/locale.inc:2276
+msgid "Basque"
+msgstr "Baszk"
+
+#: includes/locale.inc:2277
+msgid "Persian"
+msgstr "Perzsa"
+
+#: includes/locale.inc:2278
+msgid "Fulah"
+msgstr "Fula"
+
+#: includes/locale.inc:2279
+msgid "Finnish"
+msgstr "Finn"
+
+#: includes/locale.inc:2280
+msgid "Fiji"
+msgstr "Fidzsi"
+
+#: includes/locale.inc:2281
+msgid "Faeroese"
+msgstr "Férői"
+
+#: includes/locale.inc:2282
+msgid "French"
+msgstr "Francia"
+
+#: includes/locale.inc:2283
+msgid "Frisian"
+msgstr "Fríz"
+
+#: includes/locale.inc:2284
+msgid "Irish"
+msgstr "Ír"
+
+#: includes/locale.inc:2285
+msgid "Scots Gaelic"
+msgstr "Skót Gael"
+
+#: includes/locale.inc:2286
+msgid "Galician"
+msgstr "Galíciai"
+
+#: includes/locale.inc:2287
+msgid "Guarani"
+msgstr "Guaraní"
+
+#: includes/locale.inc:2288
+msgid "Gujarati"
+msgstr "Gudzsarati"
+
+#: includes/locale.inc:2289
+msgid "Manx"
+msgstr "Manx"
+
+#: includes/locale.inc:2290
+msgid "Hausa"
+msgstr "Hausza"
+
+#: includes/locale.inc:2291
+msgid "Hebrew"
+msgstr "Héber"
+
+#: includes/locale.inc:2292
+msgid "Hindi"
+msgstr "Hindi"
+
+#: includes/locale.inc:2293
+msgid "Hiri Motu"
+msgstr "Hiri Motu"
+
+#: includes/locale.inc:2294
+msgid "Croatian"
+msgstr "Horvát"
+
+#: includes/locale.inc:2295
+msgid "Hungarian"
+msgstr "Magyar"
+
+#: includes/locale.inc:2296
+msgid "Armenian"
+msgstr "Örmény"
+
+#: includes/locale.inc:2297
+msgid "Herero"
+msgstr "Herero"
+
+#: includes/locale.inc:2298
+msgid "Interlingua"
+msgstr "Interlingva"
+
+#: includes/locale.inc:2299
+msgid "Indonesian"
+msgstr "Indonéz"
+
+#: includes/locale.inc:2300
+msgid "Interlingue"
+msgstr "Okcidentál"
+
+#: includes/locale.inc:2301
+msgid "Igbo"
+msgstr "Ibo"
+
+#: includes/locale.inc:2302
+msgid "Inupiak"
+msgstr "Inupiak"
+
+#: includes/locale.inc:2303
+msgid "Icelandic"
+msgstr "Izlandi"
+
+#: includes/locale.inc:2304
+msgid "Italian"
+msgstr "Olasz"
+
+#: includes/locale.inc:2305
+msgid "Inuktitut"
+msgstr "Inuktitut"
+
+#: includes/locale.inc:2306
+msgid "Japanese"
+msgstr "Japán"
+
+#: includes/locale.inc:2307
+msgid "Javanese"
+msgstr "Jávai"
+
+#: includes/locale.inc:2308
+msgid "Georgian"
+msgstr "Grúz"
+
+#: includes/locale.inc:2309
+msgid "Kongo"
+msgstr "Kongói"
+
+#: includes/locale.inc:2310
+msgid "Kikuyu"
+msgstr "Kikuju"
+
+#: includes/locale.inc:2311
+msgid "Kwanyama"
+msgstr "Kwanyama"
+
+#: includes/locale.inc:2312
+msgid "Kazakh"
+msgstr "Kazah"
+
+#: includes/locale.inc:2313
+msgid "Greenlandic"
+msgstr "Grönlandi"
+
+#: includes/locale.inc:2314
+msgid "Cambodian"
+msgstr "Kambodzsai"
+
+#: includes/locale.inc:2315
+msgid "Kannada"
+msgstr "Kannada"
+
+#: includes/locale.inc:2316
+msgid "Korean"
+msgstr "Koreai"
+
+#: includes/locale.inc:2317
+msgid "Kanuri"
+msgstr "Kanuri"
+
+#: includes/locale.inc:2318
+msgid "Kashmiri"
+msgstr "Kasmíri"
+
+#: includes/locale.inc:2319
+msgid "Kurdish"
+msgstr "Kurd"
+
+#: includes/locale.inc:2320
+msgid "Komi"
+msgstr "Komi"
+
+#: includes/locale.inc:2321
+msgid "Cornish"
+msgstr "Korni"
+
+#: includes/locale.inc:2322
+msgid "Kirghiz"
+msgstr "Kirgiz"
+
+#: includes/locale.inc:2323
+msgid "Latin"
+msgstr "Latin"
+
+#: includes/locale.inc:2324
+msgid "Luxembourgish"
+msgstr "Luxemburgi"
+
+#: includes/locale.inc:2325
+msgid "Luganda"
+msgstr "Luganda"
+
+#: includes/locale.inc:2326
+msgid "Lingala"
+msgstr "Lingala"
+
+#: includes/locale.inc:2327
+msgid "Laothian"
+msgstr "Laoszi"
+
+#: includes/locale.inc:2328
+msgid "Lithuanian"
+msgstr "Litván"
+
+#: includes/locale.inc:2329
+msgid "Latvian"
+msgstr "Lett"
+
+#: includes/locale.inc:2330
+msgid "Malagasy"
+msgstr "Malagasy"
+
+#: includes/locale.inc:2331
+msgid "Marshallese"
+msgstr "Marshallese"
+
+#: includes/locale.inc:2332
+msgid "Maori"
+msgstr "Maori"
+
+#: includes/locale.inc:2333
+msgid "Macedonian"
+msgstr "Macedón"
+
+#: includes/locale.inc:2334
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: includes/locale.inc:2335
+msgid "Mongolian"
+msgstr "Mongol"
+
+#: includes/locale.inc:2336
+msgid "Moldavian"
+msgstr "Moldáv"
+
+#: includes/locale.inc:2337
+msgid "Marathi"
+msgstr "Marathi"
+
+#: includes/locale.inc:2338
+msgid "Malay"
+msgstr "Maláj"
+
+#: includes/locale.inc:2339
+msgid "Maltese"
+msgstr "Máltai"
+
+#: includes/locale.inc:2340
+msgid "Burmese"
+msgstr "Burmai"
+
+#: includes/locale.inc:2341
+msgid "Nauru"
+msgstr "Nauri"
+
+#: includes/locale.inc:2342
+msgid "North Ndebele"
+msgstr "Északi ndebele"
+
+#: includes/locale.inc:2343
+msgid "Nepali"
+msgstr "Nepáli"
+
+#: includes/locale.inc:2344
+msgid "Ndonga"
+msgstr "Ndonga"
+
+#: includes/locale.inc:2345
+msgid "Dutch"
+msgstr "Holland"
+
+#: includes/locale.inc:2346
+msgid "Norwegian Bokmål"
+msgstr "Norvég Bokmál"
+
+#: includes/locale.inc:2347
+msgid "Norwegian Nynorsk"
+msgstr "Norvég Nynorsk"
+
+#: includes/locale.inc:2348
+msgid "South Ndebele"
+msgstr "Déli ndebele"
+
+#: includes/locale.inc:2349
+msgid "Navajo"
+msgstr "Navahó"
+
+#: includes/locale.inc:2350
+msgid "Chichewa"
+msgstr "Chichewa (Bantu)"
+
+#: includes/locale.inc:2351
+msgid "Occitan"
+msgstr "Occitán"
+
+#: includes/locale.inc:2352
+msgid "Oromo"
+msgstr "Oromo"
+
+#: includes/locale.inc:2353
+msgid "Oriya"
+msgstr "Oriya"
+
+#: includes/locale.inc:2354
+msgid "Ossetian"
+msgstr "Osztják"
+
+#: includes/locale.inc:2355
+msgid "Punjabi"
+msgstr "Pandzsábi"
+
+#: includes/locale.inc:2356
+msgid "Pali"
+msgstr "Pali (prakrit)"
+
+#: includes/locale.inc:2357
+msgid "Polish"
+msgstr "Lengyel"
+
+#: includes/locale.inc:2358
+msgid "Pashto"
+msgstr "Pástu"
+
+#: includes/locale.inc:2359
+msgid "Portuguese, Portugal"
+msgstr "Portugál"
+
+#: includes/locale.inc:2360
+msgid "Portuguese, Brazil"
+msgstr "Brazíliai portugál"
+
+#: includes/locale.inc:2361
+msgid "Quechua"
+msgstr "Kecsua"
+
+#: includes/locale.inc:2362
+msgid "Rhaeto-Romance"
+msgstr "Rätoromán"
+
+#: includes/locale.inc:2363
+msgid "Kirundi"
+msgstr "Kirundi"
+
+#: includes/locale.inc:2364
+msgid "Romanian"
+msgstr "Román"
+
+#: includes/locale.inc:2365
+msgid "Russian"
+msgstr "Orosz"
+
+#: includes/locale.inc:2366
+msgid "Kinyarwanda"
+msgstr "Kinyaruanda"
+
+#: includes/locale.inc:2367
+msgid "Sanskrit"
+msgstr "Szanszkrit"
+
+#: includes/locale.inc:2368
+msgid "Sardinian"
+msgstr "Szardíniai"
+
+#: includes/locale.inc:2369
+msgid "Sindhi"
+msgstr "Szindhi"
+
+#: includes/locale.inc:2370
+msgid "Northern Sami"
+msgstr "Lapp (Sámi)"
+
+#: includes/locale.inc:2371
+msgid "Sango"
+msgstr "Szango"
+
+#: includes/locale.inc:2372
+msgid "Serbo-Croatian"
+msgstr "Szerb-horvát"
+
+#: includes/locale.inc:2373
+msgid "Singhalese"
+msgstr "Szingaléz"
+
+#: includes/locale.inc:2374
+msgid "Slovak"
+msgstr "Szlovák"
+
+#: includes/locale.inc:2375
+msgid "Slovenian"
+msgstr "Szlovén"
+
+#: includes/locale.inc:2376
+msgid "Samoan"
+msgstr "Szamoai"
+
+#: includes/locale.inc:2377
+msgid "Shona"
+msgstr "Sona"
+
+#: includes/locale.inc:2378
+msgid "Somali"
+msgstr "Szomáli"
+
+#: includes/locale.inc:2379
+msgid "Albanian"
+msgstr "Albán"
+
+#: includes/locale.inc:2380
+msgid "Serbian"
+msgstr "Szerb"
+
+#: includes/locale.inc:2381
+msgid "Siswati"
+msgstr "Siswati"
+
+#: includes/locale.inc:2382
+msgid "Sesotho"
+msgstr "Sesotho"
+
+#: includes/locale.inc:2383
+msgid "Sudanese"
+msgstr "Szudáni"
+
+#: includes/locale.inc:2384
+msgid "Swedish"
+msgstr "Svéd"
+
+#: includes/locale.inc:2385
+msgid "Swahili"
+msgstr "Szuahéli"
+
+#: includes/locale.inc:2386
+msgid "Tamil"
+msgstr "Tamil"
+
+#: includes/locale.inc:2387
+msgid "Telugu"
+msgstr "Telugu"
+
+#: includes/locale.inc:2388
+msgid "Tajik"
+msgstr "Tadzsik"
+
+#: includes/locale.inc:2389
+msgid "Thai"
+msgstr "Thai"
+
+#: includes/locale.inc:2390
+msgid "Tigrinya"
+msgstr "Tigrinya"
+
+#: includes/locale.inc:2391
+msgid "Turkmen"
+msgstr "Türkmén"
+
+#: includes/locale.inc:2392
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: includes/locale.inc:2393
+msgid "Setswana"
+msgstr "Setswana"
+
+#: includes/locale.inc:2394
+msgid "Tonga"
+msgstr "Tonga"
+
+#: includes/locale.inc:2395
+msgid "Turkish"
+msgstr "Török"
+
+#: includes/locale.inc:2396
+msgid "Tsonga"
+msgstr "Tszonga"
+
+#: includes/locale.inc:2397
+msgid "Tatar"
+msgstr "Tatár"
+
+#: includes/locale.inc:2398
+msgid "Twi"
+msgstr "Twi"
+
+#: includes/locale.inc:2399
+msgid "Tahitian"
+msgstr "Tahiti"
+
+#: includes/locale.inc:2400
+msgid "Uighur"
+msgstr "Ujgur"
+
+#: includes/locale.inc:2401
+msgid "Ukrainian"
+msgstr "Ukrán"
+
+#: includes/locale.inc:2402
+msgid "Urdu"
+msgstr "Urdu"
+
+#: includes/locale.inc:2403
+msgid "Uzbek"
+msgstr "Üzbég"
+
+#: includes/locale.inc:2404
+msgid "Venda"
+msgstr "Venda"
+
+#: includes/locale.inc:2405
+msgid "Vietnamese"
+msgstr "Vietnámi"
+
+#: includes/locale.inc:2406
+msgid "Wolof"
+msgstr "Volof"
+
+#: includes/locale.inc:2407
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: includes/locale.inc:2408
+msgid "Yiddish"
+msgstr "Jiddis"
+
+#: includes/locale.inc:2409
+msgid "Yoruba"
+msgstr "Joruba"
+
+#: includes/locale.inc:2410
+msgid "Zhuang"
+msgstr "Zhuang"
+
+#: includes/locale.inc:2411
+msgid "Chinese, Simplified"
+msgstr "Kínai (egyszerűsített)"
+
+#: includes/locale.inc:2412
+msgid "Chinese, Traditional"
+msgstr "Kínai (hagyományos)"
+
+#: includes/locale.inc:2413
+msgid "Zulu"
+msgstr "Zulu"
+
+#: includes/mail.inc:135
+msgid ""
+"Unable to send e-mail. Please contact the site admin, if the problem "
+"persists."
+msgstr ""
+"Nem sikerült elküldeni a levelet. Érdemes felvenni a kapcsolatot a webhely "
+"gazdájával."
+
+#: includes/mail.inc:134
+msgid "Error sending e-mail (from %from to %to)."
+msgstr "Email küldési hiba (%from címről %to címre)."
+
+#: includes/menu.inc:2362
+msgid "Operating in off-line mode."
+msgstr "Offline módú működés."
+
+#: includes/module.inc:200
+msgid ""
+"%module is part of a circular dependency. This is not supported and you will "
+"not be able to switch it on."
+msgstr ""
+"%module része egy körkörös függőségnek. Ez nem támogatott, ezért a modult "
+"nem lehet majd bekapcsolni."
+
+#: includes/pager.inc:145;395
+msgid "« first"
+msgstr "« első"
+
+#: includes/pager.inc:146;396
+msgid "‹ previous"
+msgstr "‹ előző"
+
+#: includes/pager.inc:147;397
+msgid "next ›"
+msgstr "következő ›"
+
+#: includes/pager.inc:148;398
+msgid "last »"
+msgstr "utolsó »"
+
+#: includes/pager.inc:395
+msgid "Go to first page"
+msgstr "Ugrás az első oldalra"
+
+#: includes/pager.inc:398
+msgid "Go to last page"
+msgstr "Ugrás az utolsó oldalra"
+
+#: includes/pager.inc:405
+msgid "Go to page @number"
+msgstr "@number. oldalra ugrás"
+
+#: includes/tablesort.inc:71
+msgid "sort by @s"
+msgstr "rendezés „@s” szerint"
+
+#: includes/theme.inc:1339;1342
+msgid "sort icon"
+msgstr "sorrend változtatás"
+
+#: includes/theme.inc:1339
+msgid "sort ascending"
+msgstr "növekvő sorrend"
+
+#: includes/theme.inc:1342
+msgid "sort descending"
+msgstr "csökkenő sorrend"
+
+#: includes/theme.inc:1380
+msgid "updated"
+msgstr "frissült"
+
+#: includes/theme.inc:1452
+msgid "[<a href=\"@link\">more help...</a>]"
+msgstr "[<a href=\"@link\">további segítség...</a>]"
+
+#: includes/theme.inc:1465;1465
+msgid "XML feed"
+msgstr "XML csatorna"
+
+#: includes/theme.inc:1479
+msgid "Syndicate content"
+msgstr "Tartalom átvétel"
+
+#: includes/theme.inc:1493
+msgid "<a href=\"@link\" title=\"@title\">more</a>"
+msgstr "<a href=\"@link\" title=\"@title\">tovább</a>"
+
+#: includes/theme.inc:1573
+msgid "not verified"
+msgstr "nem ellenőrzött"
+
+#: (duplicate) includes/unicode.inc:48
+msgid ""
+"The PCRE library in your PHP installation is outdated. This will cause "
+"problems when handling Unicode text. If you are running PHP 4.3.3 or higher, "
+"make sure you are using the PCRE library supplied by PHP. Please refer to "
+"the <a href=\"@url\">PHP PCRE documentation</a> for more information."
+msgstr ""
+"A PHP által használt PCRE kódkönyvtár túl régi, és így problémát fog okozni "
+"a Unicode kódolású karaktersorozatok kezelésekor. A PHP 4.3.3-as vagy újabb "
+"verzióját kell használni, meggyőződve arról, hogy a PHP-vel szállított PCRE "
+"kódkönyvtárt illesztették a nyelvhez. A PHP kézikönyv <a href=\"@url\">PCRE-"
+"ről szóló részét</a> érdemes elolvasni."
+
+#: (duplicate) includes/unicode.inc:53
+msgid ""
+"Operations on Unicode strings are emulated on a best-effort basis. Install "
+"the <a href=\"@url\">PHP mbstring extension</a> for improved Unicode support."
+msgstr ""
+"A Unicode karaktersorozatokon végzett műveleteket a Drupal igyekszik a "
+"lehető legjobban elvégezni. A <a href=\"@url\">PHP mbstring "
+"kiterjesztésének</a> telepítésével javítható a működés."
+
+#: (duplicate) includes/unicode.inc:58
+msgid ""
+"Multibyte string function overloading in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.func_overload</em> setting. Please refer to "
+"the <a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a hagyományos PHP "
+"függvényeket helyettesítse funkcionalitásával. A Drupal ilyen környezetben "
+"nem fog helyesen működni, ezért az <em>mbstring.func_overload</em> php.ini "
+"beállítás kikapcsolása javasolt. További információ a <a href=\"@url\">PHP "
+"kézikönyv mbstring-ről szóló részében</a>."
+
+#: (duplicate) includes/unicode.inc:61
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.encoding_translation</em> setting. Please "
+"refer to the <a href=\"@url\">PHP mbstring documentation</a> for more "
+"information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a bevitt "
+"karaktersorozatokat automatikusan átkódolja. A Drupal ilyen környezetben nem "
+"fog helyesen működni, ezért az <em>mbstring.encoding_translation</em> php."
+"ini beállítás kikapcsolása javasolt. További információ a <a href=\"@url"
+"\">PHP kézikönyv mbstring-ről szóló részében</a>."
+
+#: (duplicate) includes/unicode.inc:64
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_input</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a HTTP felett érkező "
+"karaktereket automatikusan átkódolja. A Drupal ilyen környezetben nem fog "
+"helyesen működni, ezért az <em>mbstring.http_input</em> php.ini beállítás "
+"kikapcsolása javasolt. További információ a <a href=\"@url\">PHP kézikönyv "
+"mbstring-ről szóló részében</a>."
+
+#: (duplicate) includes/unicode.inc:67
+msgid ""
+"Multibyte string output conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_output</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a kiírt karaktereket "
+"automatikusan átkódolja. A Drupal ilyen környezetben nem fog helyesen "
+"működni, ezért az <em>mbstring.http_output</em> php.ini beállítás "
+"kikapcsolása javasolt. További információ a <a href=\"@url\">PHP kézikönyv "
+"mbstring-ről szóló részében</a>."
+
+#: (duplicate) includes/unicode.inc:84
+msgid "Standard PHP"
+msgstr "Hagyományos PHP"
+
+#: (duplicate) includes/unicode.inc:85
+msgid "PHP Mbstring Extension"
+msgstr "PHP mbstring kiterjesztés"
+
+#: (duplicate) includes/unicode.inc:96
+msgid "Unicode library"
+msgstr "Unicode könyvtár"
+
+#: includes/unicode.inc:151
+msgid "Could not convert XML encoding %s to UTF-8."
+msgstr "„%s” kódolású XML fájl UTF-8-ra konvertálása nem lehetséges."
+
+#: includes/unicode.inc:184
+msgid ""
+"Unsupported encoding %s. Please install iconv, GNU recode or mbstring for "
+"PHP."
+msgstr ""
+"„%s” kódolás nem támogatott. Az PHP iconv, GNU recode vagy mbstring "
+"kiterjesztésének telepítése szükséges."
+
+#: includes/xmlrpc.inc:451
+msgid "Parse error. Not well formed"
+msgstr "Feldolgozási hiba. Nem jól formált XML."
+
+#: includes/xmlrpcs.inc:62
+msgid "Parse error. Request not well formed."
+msgstr "Feldolgozási hiba. Nem jól formált kérés."
+
+#: includes/xmlrpcs.inc:65
+msgid "Server error. Invalid XML-RPC. Request must be a methodCall."
+msgstr ""
+"Kiszolgálói hiba. Hibás formátumú XML-RPC hívás. A kérésnek methodCall "
+"hívásnak kell lennie."
+
+#: includes/xmlrpcs.inc:152;291
+msgid "Server error. Requested method %methodname not specified."
+msgstr "Kiszolgálói hiba. %methodname metódus nincs meghatározva."
+
+#: includes/xmlrpcs.inc:163
+msgid "Server error. Wrong number of method parameters."
+msgstr "Kiszolgálói hiba. Nem megfelelő számú paraméter."
+
+#: includes/xmlrpcs.inc:200
+msgid "Server error. Invalid method parameters."
+msgstr "Kiszolgálói hiba. Nem megfelelő metódus paraméterek."
+
+#: includes/xmlrpcs.inc:206
+msgid "Server error. Requested function %method does not exist."
+msgstr "Kiszolgálói hiba. %method metódus nem támogatott."
+
+#: includes/xmlrpcs.inc:219
+msgid "Invalid syntax for system.multicall."
+msgstr "Érvénytelen system.multicall hívási forma."
+
+#: includes/xmlrpcs.inc:225
+msgid "Recursive calls to system.multicall are forbidden."
+msgstr "A system.multicall rekurzív hívása nem engedélyezett."
+
+#: includes/xmlrpcs.inc:294
+msgid "Server error. Requested method %methodname signature not specified."
+msgstr "Kiszolgálói hiba. %methodname nem rendelkezik szignatúrával."

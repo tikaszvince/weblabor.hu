@@ -1,0 +1,116 @@
+# $Id: unicode-inc.pot,v 1.3.2.3 2007/01/10 21:31:10 goba Exp $
+#
+# Hungarian translation of Drupal (includes/unicode.inc)
+# Copyright Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>
+# Generated from file: unicode.inc,v 1.23 2006/12/06 16:15:52 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 5.0\n"
+"POT-Creation-Date: 2007-01-10 22:16+0100\n"
+"PO-Revision-Date: 2007-01-11 00:03+0100\n"
+"Last-Translator: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"Language-Team: Drupal.hu Fordítói Csapat <forditas [at] drupal.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=n != 1;\n"
+
+#: includes/unicode.inc:151
+msgid "Could not convert XML encoding %s to UTF-8."
+msgstr "„%s” kódolású XML fájl UTF-8-ra konvertálása nem lehetséges."
+
+#: includes/unicode.inc:184
+msgid ""
+"Unsupported encoding %s. Please install iconv, GNU recode or mbstring for "
+"PHP."
+msgstr ""
+"„%s” kódolás nem támogatott. Az PHP iconv, GNU recode vagy mbstring "
+"kiterjesztésének telepítése szükséges."
+
+#: includes/unicode.inc:48
+msgid ""
+"The PCRE library in your PHP installation is outdated. This will cause "
+"problems when handling Unicode text. If you are running PHP 4.3.3 or higher, "
+"make sure you are using the PCRE library supplied by PHP. Please refer to "
+"the <a href=\"@url\">PHP PCRE documentation</a> for more information."
+msgstr ""
+"A PHP által használt PCRE kódkönyvtár túl régi, és így problémát fog okozni "
+"a Unicode kódolású karaktersorozatok kezelésekor. A PHP 4.3.3-as vagy újabb "
+"verzióját kell használni, meggyőződve arról, hogy a PHP-vel szállított PCRE "
+"kódkönyvtárt illesztették a nyelvhez. A PHP kézikönyv <a href=\"@url\">PCRE-"
+"ről szóló részét</a> érdemes elolvasni."
+
+#: includes/unicode.inc:53
+msgid ""
+"Operations on Unicode strings are emulated on a best-effort basis. Install "
+"the <a href=\"@url\">PHP mbstring extension</a> for improved Unicode support."
+msgstr ""
+"A Unicode karaktersorozatokon végzett műveleteket a Drupal "
+"igyekszik a lehető legjobban elvégezni. A <a href=\"@url\">PHP mbstring "
+"kiterjesztésének</a> telepítésével javítható a működés."
+
+#: includes/unicode.inc:58
+msgid ""
+"Multibyte string function overloading in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.func_overload</em> setting. Please refer to "
+"the <a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a hagyományos PHP "
+"függvényeket helyettesítse funkcionalitásával. A Drupal ilyen környezetben "
+"nem fog helyesen működni, ezért az <em>mbstring.func_overload</em> php.ini "
+"beállítás kikapcsolása javasolt. További információ a "
+"<a href=\"@url\">PHP kézikönyv mbstring-ről szóló részében</a>."
+
+#: includes/unicode.inc:61
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.encoding_translation</em> setting. Please "
+"refer to the <a href=\"@url\">PHP mbstring documentation</a> for more "
+"information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a bevitt "
+"karaktersorozatokat automatikusan átkódolja. A Drupal ilyen környezetben "
+"nem fog helyesen működni, ezért az <em>mbstring.encoding_translation</em> "
+"php.ini beállítás kikapcsolása javasolt. További információ a "
+"<a href=\"@url\">PHP kézikönyv mbstring-ről szóló részében</a>."
+
+#: includes/unicode.inc:64
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_input</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a HTTP felett érkező "
+"karaktereket automatikusan átkódolja. A Drupal ilyen környezetben nem fog "
+"helyesen működni, ezért az <em>mbstring.http_input</em> php.ini beállítás "
+"kikapcsolása javasolt. További információ a <a href=\"@url\">PHP kézikönyv "
+"mbstring-ről szóló részében</a>."
+
+#: includes/unicode.inc:67
+msgid ""
+"Multibyte string output conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_output</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"A PHP mbstring kiterjesztése úgy van beállítva, hogy a kiírt karaktereket "
+"automatikusan átkódolja. A Drupal ilyen környezetben nem fog helyesen "
+"működni, ezért az <em>mbstring.http_output</em> php.ini beállítás kikapcsolása "
+"javasolt. További információ a <a href=\"@url\">PHP kézikönyv mbstring-ről "
+"szóló részében</a>."
+
+#: includes/unicode.inc:84
+msgid "Standard PHP"
+msgstr "Hagyományos PHP"
+
+#: includes/unicode.inc:85
+msgid "PHP Mbstring Extension"
+msgstr "PHP mbstring kiterjesztés"
+
+#: includes/unicode.inc:86
+msgid "Error"
+msgstr "Hiba"
+
+#: includes/unicode.inc:96
+msgid "Unicode library"
+msgstr "Unicode könyvtár"
