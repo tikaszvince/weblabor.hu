@@ -1,4 +1,4 @@
-ć<?php
+<?php
 // $Id: settings.php,v 1.37 2006/12/30 15:28:33 dries Exp $
 $db_url    = 'mysql://root:root@localhost/weblabor';
 $db_prefix = '';
