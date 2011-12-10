@@ -10,12 +10,12 @@
  */
 function wl_preprocess_page($variables, $hook) {
   global $user;
-  
+
   // Blogmark popup, más megjelenéssel.
   if (($_GET['q'] == 'blogmarkok/bekuldes' && (isset($_GET['u']) || isset($_GET['embed']))) || ($_GET['q'] == 'blogmarkok/koszonjuk')) {
     $variables['stripped_page'] = TRUE;
   }
-  
+
   // JS syntax highlighter
   $highlighter = array(
     'shCore.js', 'shBrushCss.js', 'shBrushJScript.js', 'shBrushPhp.js', 'shBrushSql.js',
@@ -65,7 +65,7 @@ function wl_preprocess_page($variables, $hook) {
  </rdf:RDF>
  -->
 ';
-  
+
   // Kulcsszavak képzése a címből, a túl rövid szavaktól és számoktól eltekintve.
   $keywords_array = preg_split("/[\s,;\.\-]+/", $raw_title .' programozás, informatika, web, fejlesztés');
   foreach ($keywords_array as $i => $keyword) {
@@ -84,9 +84,9 @@ function wl_preprocess_page($variables, $hook) {
   if (!empty($user->bbeditordisable)) {
     $variables['body_classes'] .= ' no-rich-controls';
   }
-  
+
   // Belépett felhasználók alapvető infója és belépés link külön panelen.
-  $variables['userpanel'] = ($user->uid != 0) ? 'Belépve '. l($user->name, 'user/'. $user->uid) .' néven. '. l('Kilépés', 'logout') : l('Belépés', 'user/login') .' vagy '. l('regisztráció', 'user/register');
+  $variables['userpanel'] = ($user->uid != 0) ? 'Belépve '. l($user->name, 'user/'. $user->uid) .' néven. '. l('Kilépés', 'logout') : l('Belépés', 'user/login', array('query'=> array('destination' => $_GET['q']))) .' vagy '. l('regisztráció', 'user/register');
 
   // Fő navigáció.
   $nav = array(
@@ -118,7 +118,7 @@ function wl_preprocess_page($variables, $hook) {
   $output .= '</li></ul>';
   $variables['page_navigation'] = $output;
   $variables['body_classes'] .= ' '. $page_type;
-  
+
   if ($page_type == 'page-wide') {
     // PHP-ből mergelünk, elkerülendő a CSS trükközést.
     $variables['right'] .= $variables['left'];
@@ -132,7 +132,7 @@ function wl_preprocess_page($variables, $hook) {
       str_replace($tags_block[1], '', $variables['right']);
       $variables['right'] .= $tags_block[1];
     }*/
-    
+
   }
 
   // @todo: itt viszont XSS veszélyes kívülről megadott adatokat használni(?)
@@ -159,7 +159,7 @@ function wl_preprocess_page($variables, $hook) {
  Attribution-NonCommercial-ShareAlike 2.0 licenc alatt érhetőek el, és
  használhatóak fel. A licenc a
  <strong>http://creativecommons.org/licenses/by-nc-sa/2.0/</strong> címen olvasható.
-';  
+';
 
   // Google analytics, admin oldalakon nem.
   if (!preg_match("!^(admin|aa)!", $_GET['q'])) {
@@ -177,7 +177,7 @@ function wl_preprocess_page($variables, $hook) {
       $variables['page_title_attrib'] = 'class="title node-title-editable" id="node-title-'. $found[1] .'"';
     }
   }
-  
+
   // Címlapon ne legyen breadcrumb.
   if (variable_get('site_frontpage', 'node') == $_GET['q']) {
     unset($variables['breadcrumb']);
@@ -217,7 +217,7 @@ function wl_node($node, $teaser = FALSE, $page = FALSE) {
 
   // Meta információk a felhasználó képével és a megjelenés idejével.
   $output .= '<div class="meta">'. theme('username', $node, TRUE) .' &middot; <span title="A megjelenés ideje: '. check_plain(wl_formatted_date($node->created, 'complete')) .'">'. wl_formatted_date($node->created) .'</span>'. $visitcount ."</div>\n";
-  
+
   // Kezdődik a tartalom.
   $output .= " <div class=\"content\">\n";
   $qed = '&nbsp;<abbr title="Vége a bejegyzésnek." class="qed">■</abbr>';
@@ -233,12 +233,12 @@ function wl_node($node, $teaser = FALSE, $page = FALSE) {
     $output .= $qed;
   }
   $output .= " </div>\n";
-  
+
   // További olvasás link eltűntetése.
   if (isset($node->links['node_read_more'])) {
     unset($node->links['node_read_more']);
   }
-  
+
   // Hozzászólás számok rövidítése.
   if (isset($node->links['comment_comments']) && preg_match('!^(\\d+) !', $node->links['comment_comments']['title'], $found)) {
     $node->links['comment_comments']['title'] = $found[1];
@@ -258,7 +258,7 @@ function wl_node($node, $teaser = FALSE, $page = FALSE) {
     // Tiltott hozzászólás esetén rejtsük el a nag szöveget.
     unset($node->links['comment_forbidden']);
   }
-  
+
   // A letöltések linkjét ne jelenítsük meg.
   unset($node->links['upload_attachments']);
 
@@ -284,7 +284,7 @@ function wl_node($node, $teaser = FALSE, $page = FALSE) {
     // A többi link (a fenti formázások utáni állapotban).
     $output .= '<div class="links">'. theme('links', $node->links, array('class' => 'links inline')) ."</div>\n";
   }
-  
+
   if ($page && $node->type == 'article') {
     // Cikk oldalakon a felhasználó bioja is megjelenik.
     $output .= theme('userbio_display', $node);
@@ -292,7 +292,7 @@ function wl_node($node, $teaser = FALSE, $page = FALSE) {
 
   // Ennyi volt, vége a node-nak.
   $output .= "</div>\n";
-  
+
   // Morzsákat típus szerint kell beállítani.
   if ($page && $node->type != 'forum') {
     $breadcrumb = array(l(t('Home'), NULL));
@@ -328,12 +328,12 @@ function wl_comment($comment, $node, $links = array()) {
   if ($ccounter == 0) {
     wl_comment_counter($comment->nid);
   }
-  
+
   $links['forum_topic'] = array(
     'title' => 'új téma',
     'href' => 'forumok/bekuldes',
   );
-  
+
   $ccounter++;
   $output  = '<div class="comment clear-block'. ($comment->status == COMMENT_NOT_PUBLISHED ? ' comment-unpublished' : '') . (($ccounter % 2 == 0) ? ' even' : ' odd') .'">';
   $output .= "<div class=\"commentnum\">". wl_comment_counter(NULL, $comment->cid) ."</div>". theme('mark', $comment->new, TRUE);
@@ -343,7 +343,7 @@ function wl_comment($comment, $node, $links = array()) {
   $output .= '<div class="links">'. theme('links', $links, array('class' => 'links inline')) .'</div>';
   $output .= '</div>';
   return $output;
-} 
+}
 
 // RSS kép HTML kódját generálja.
 function wl_rss_image($info, $type = 'n', $withid = FALSE) {
@@ -483,7 +483,7 @@ function wl_username($object, $withavatar = FALSE) {
   }
 
   return $output;
-} 
+}
 
 function wl_avatar_image($uid) {
   static $avatars = array();
