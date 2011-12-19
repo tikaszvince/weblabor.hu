@@ -3,7 +3,7 @@ var followTimeOut = null;
 
 function bindDblClickEdit() {
   $('.node-title-editable').click(function (event) { editTitleClick(this, event); });
-}
+};
 
 function editTitleClick(elem, e) {
   // Single click: if link, set timeout to follow link

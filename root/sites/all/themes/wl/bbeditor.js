@@ -17,27 +17,27 @@ function findPosX(obj) { // only in Mozilla
   var curleft = 0;
   if (obj.offsetParent) {
     while (obj.offsetParent) {
-      curleft += obj.offsetLeft
+      curleft += obj.offsetLeft;
       obj = obj.offsetParent;
     }
   } else if (obj.x) {
     curleft += obj.x;
   }
   return curleft;
-}
+};
 
 function findPosY(obj) { // only in Mozilla
   var curtop = 0;
   if (obj.offsetParent) {
     while (obj.offsetParent) {
-      curtop += obj.offsetTop
+      curtop += obj.offsetTop;
       obj = obj.offsetParent;
     }
   } else if (obj.y) {
     curtop += obj.y;
   }
   return curtop;
-}
+};
 
 function insertAtCursor(t, before, after, code ) { // only in Mozilla
   var startPos = t.selectionStart;
@@ -52,7 +52,7 @@ function insertAtCursor(t, before, after, code ) { // only in Mozilla
   t.selectionStart = startPos;
   t.selectionEnd = startPos + before.length + text.length + after.length;
   t.scrollTop = scrollPos;
-}
+};
 
 // TEXTARE CONTROL =============================================================
 
@@ -93,7 +93,7 @@ function setupControls() {
   elems.keypress(function(event) { return (controlsKeyHandler(this, event)); });
   elems.blur(function() { controls_timeout = setTimeout('detachControl()', 1000);});
   elems.focus(function() { attachControl(this); });
-}
+};
 
 function attachControl(t) {
   clearTimeout(controls_timeout);
@@ -114,12 +114,12 @@ function attachControl(t) {
   
   // Change control (we might quickly change between two textareas)
   controls_textarea = t;
-}
+};
 
 function detachControl() {
   controls_textarea = null;
   $('#textareaControl').fadeOut('normal');
-}
+};
 
 // Keypress events for more than what the buttons can do
 function controlsKeyHandler(t, e) {
@@ -147,7 +147,7 @@ function controlsKeyHandler(t, e) {
   }
   // Prevent default event handling for all events already handled
   e.preventDefault();
-}
+};
 
 function controlsAskForLink() {
   // Prevent controls from reappearing because of our blur
@@ -237,7 +237,7 @@ function controlsGeneralTag(t, tag, open, fn) {
       return(ret);
     }
   );
-}
+};
 
 // Search some user specified string starting from the current
 // cursor position. Highlight the found strings.

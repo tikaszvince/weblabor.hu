@@ -10,7 +10,7 @@ function whatCorrector() {
       replaces++;
     }
   });
-}
+};
 
 function linkModifiers() {
   $('a.feed-icon').click(
@@ -20,7 +20,7 @@ function linkModifiers() {
     }
   );
   $("a[@href]").not("[@href^=/]").not("[@href^=#]").not("[@href^=http://libikoka.weblabor.hu]").addClass('link-external');
-}
+};
 
 $(document).ready(whatCorrector);
 $(document).ready(linkModifiers);

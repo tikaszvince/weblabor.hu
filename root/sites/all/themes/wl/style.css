@@ -3,7 +3,7 @@
  */
 
 /**
- * Főoldal elrendezés.
+ * Fooldal elrendezes.
  */
 body {
   font-family: Tahoma, Geneva, sans-serif;
@@ -36,7 +36,7 @@ body.page-wide #page {
 #sidebar-left {
   padding: 0 10px 10px 10px;
   float: right;
-  background-color: #EEEECC; /* contentback.png szín */
+  background-color: #EEEECC; /* contentback.png szin */
   width: 179px;
   margin-left: 1px;
 }
@@ -53,7 +53,7 @@ body.page-wide #content {
   background: url(images/wlheader.png) no-repeat;
   height: 148px;
   position: relative;
-  width: 961px; /* #page szélesség */
+  width: 961px; /* #page szelesseg */
 }
 #header-region {
   position: absolute;
@@ -74,7 +74,7 @@ body.page-wide #content {
 }
 
 /**
- * Lábléc elemek.
+ * Lablec elemek.
  */
 #footer {
   color: #fff;
@@ -93,7 +93,7 @@ body.page-wide #content {
 }
 
 /**
- * Oldalsáv elemek (és kereső mező).
+ * Oldalsav elemek (es kereso mezo).
  */
 .block {
   padding-bottom: 1em;
@@ -137,7 +137,7 @@ body.page-wide #content {
 }
 #block-pages-search a {
   float: left;
-  color: #dee039; /* fejléc linkek színe */
+  color: #dee039; /* fejlec linkek szine */
 }
 #block-tagadelic-12 .content {
   text-align: justify;
@@ -199,7 +199,7 @@ body.page-wide #content {
 }
 
 /**
- * Fejléc elemek.
+ * Fejlec elemek.
  */
 #header h1 {
   margin: 0;
@@ -209,7 +209,7 @@ body.page-wide #content {
   display: block;
   position: absolute;
   top: 0;
-  left: 20px; /* A képen lévő logóra állítva */
+  left: 20px; /* A kepen levo logora allitva */
   width: 114px;
   height: 110px;
   text-indent: -800px;
@@ -224,7 +224,7 @@ body.page-wide #content {
   font-size: 0.9em;
 }
 #header #userpanel a {
-  color: #dee039; /* fejléc linkek színe */
+  color: #dee039; /* fejlec linkek szine */
 }
 #header #pagenav {
   position: absolute;
@@ -251,16 +251,16 @@ body.page-wide #content {
   text-decoration: underline;
 }
 #header #pagenav ul li a.active {
-  color: #dee039; /* fejléc linkek színe */
+  color: #dee039; /* fejlec linkek szine */
   font-size: 1.1em;
 }
 
 /**
- * Linkek általában.
+ * Linkek altalaban.
  */
 a, a:link, a:active, a:visited {
   text-decoration: underline;
-  color: #036; /* kék */
+  color: #036; /* kek */
 }
 a:visited {
   color: #7a3434; /* barna */
@@ -275,7 +275,7 @@ a.link-external {
 }
 
 /**
- * Listák általában.
+ * Listak altalaban.
  */
 ul {
   margin: 0.5em 0 1em;
@@ -309,7 +309,7 @@ fieldset ul.clear-block li {
 }
 
 /**
- * Fülek.
+ * Fulek.
  */
 .tabs {
   border-bottom: 1px dotted #adadad;
